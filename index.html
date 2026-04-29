@@ -67,11 +67,10 @@
             <nav class="site-nav" aria-label="Primary">
                 <ul class="site-nav__list">
                     <li><a class="site-nav__link" href="index.html" data-nav-link="index.html">Home</a></li>
-                    <li><a class="site-nav__link" href="collection.html?cat=coats" data-nav-link="collection.html">Coats &amp; Jackets</a></li>
+                    <li><a class="site-nav__link" href="collection.html?cat=coats-jackets" data-nav-link="collection.html">Coats &amp; Jackets</a></li>
                     <li><a class="site-nav__link" href="collection.html?cat=tops" data-nav-link="collection.html">Tops</a></li>
                     <li><a class="site-nav__link" href="collection.html?cat=pants" data-nav-link="collection.html">Pants</a></li>
                     <li><a class="site-nav__link" href="collection.html?cat=shoes" data-nav-link="collection.html">Shoes</a></li>
-                    <li><a class="site-nav__link" href="collection.html?cat=watches" data-nav-link="collection.html">Watches</a></li>
                     <li><a class="site-nav__link" href="collection.html?cat=glasses" data-nav-link="collection.html">Glasses</a></li>
                     <li><a class="site-nav__link" href="collection.html?cat=accessories" data-nav-link="collection.html">Accessories</a></li>
                     <li><a class="site-nav__link site-nav__link--sale" href="collection.html?cat=sale" data-nav-link="collection.html">Sale</a></li>
@@ -94,11 +93,10 @@
         </button>
         <ul class="mobile-nav__list">
             <li><a class="mobile-nav__link" href="index.html">Home</a></li>
-            <li><a class="mobile-nav__link" href="collection.html?cat=coats">Coats &amp; Jackets</a></li>
+            <li><a class="mobile-nav__link" href="collection.html?cat=coats-jackets">Coats &amp; Jackets</a></li>
             <li><a class="mobile-nav__link" href="collection.html?cat=tops">Tops</a></li>
             <li><a class="mobile-nav__link" href="collection.html?cat=pants">Pants</a></li>
             <li><a class="mobile-nav__link" href="collection.html?cat=shoes">Shoes</a></li>
-            <li><a class="mobile-nav__link" href="collection.html?cat=watches">Watches</a></li>
             <li><a class="mobile-nav__link" href="collection.html?cat=glasses">Glasses</a></li>
             <li><a class="mobile-nav__link" href="collection.html?cat=accessories">Accessories</a></li>
             <li><a class="mobile-nav__link mobile-nav__link--sale" href="collection.html?cat=sale">Sale</a></li>
@@ -139,10 +137,10 @@
                 <div class="bestsellers__header">
                     <div class="bestsellers__heading">
                         <span class="section-label">Our Bestsellers</span>
-                        <h2 class="section-title">On Sale Now</h2>
+                        <h2 class="section-title">Coats &amp; Jackets</h2>
                     </div>
                     <div class="bestsellers__cta">
-                        <a href="collection.html?cat=sale" class="view-all">View All</a>
+                        <a href="collection.html?cat=coats-jackets" class="view-all">View All</a>
                     </div>
                 </div>
 
@@ -150,6 +148,7 @@
                     class="product-grid"
                     data-product-grid
                     data-variant="home"
+                    data-category="coats-jackets"
                     data-limit="4">
                     <!-- Rendered by js/products.js -->
                 </div>
@@ -157,7 +156,7 @@
         </section>
 
         <!-- =================================================================
-             3. LIFESTYLE BANNER — full-width image w/ centered copy
+             3. LIFESTYLE BANNER — full-width image w/ centered copy + CTA
              ================================================================= -->
         <section class="lifestyle">
             <img
@@ -174,55 +173,277 @@
         </section>
 
         <!-- =================================================================
-             4. COLLECTIONS GRID — 3x2 categories w/ hover overlay
+             4. CATEGORY STRIP — horizontal row of square category cards
              ================================================================= -->
-        <section class="collections">
+        <section class="category-strip">
             <div class="container">
                 <div class="section-header section-header--center">
                     <span class="section-label">Browse</span>
-                    <h2 class="section-title section-title--italic">Our Collections</h2>
+                    <h2 class="section-title">Our Collections</h2>
                 </div>
 
-                <div class="collections__grid">
-                    <a href="collection.html?cat=watches" class="collection-card">
-                        <img class="collection-card__img" src="https://picsum.photos/600/750?random=11" alt="Watches collection">
-                        <div class="collection-card__overlay">
-                            <h3 class="collection-card__name">Watches</h3>
+                <div class="category-strip__row">
+                    <a href="collection.html?cat=coats-jackets" class="category-card">
+                        <div class="category-card__media">
+                            <img class="category-card__img" src="https://vintares.com/cdn/shop/files/freepik_change-the-size-of-the-image-into-sqaure.-remove-background-and-change-it-to-solid-efefef-add-applya.-very-light-shadow_0001.jpg?v=1775043831&width=600" alt="Coats &amp; Jackets" loading="lazy">
+                        </div>
+                        <h3 class="category-card__name">Coats &amp; Jackets</h3>
+                    </a>
+
+                    <a href="collection.html?cat=tops" class="category-card">
+                        <div class="category-card__media">
+                            <img class="category-card__img" src="https://vintares.com/cdn/shop/files/freepik_char1-character-identity-reference.-use-only-the-person-from-char1-face.-discard-all-clothing-from-char1-.-img1-primary-clothing-item.-dress-the-person-using-only-the-clothing_8eb5091b-67d7-4760-a688-ae5e15e24893.jpg?v=1774557659&width=600" alt="Tops" loading="lazy">
+                        </div>
+                        <h3 class="category-card__name">Tops</h3>
+                    </a>
+
+                    <a href="collection.html?cat=pants" class="category-card">
+                        <div class="category-card__media">
+                            <img class="category-card__img" src="https://vintares.com/cdn/shop/files/freepik_create-an-image-of-a-caucasian-man-wear-the-cargo-pants-in-img1-.-make-him-wear-a-plain-white-tshirt-and-a-boots-shoes.-cut-off-the-image-from-his-hip-down-to-his-feet.-make-o_2a30b6b6-50ef-480c-8b8a-585e246996c5.jpg?v=1774614265&width=600" alt="Pants" loading="lazy">
+                        </div>
+                        <h3 class="category-card__name">Pants</h3>
+                    </a>
+
+                    <a href="collection.html?cat=shoes" class="category-card">
+                        <div class="category-card__media">
+                            <img class="category-card__img" src="https://vintares.com/cdn/shop/files/freepik_create-an-image-of-a-caucasian-man-wearing-the-shoes-in-img1-cut-off-the-image-from-his-knee-down-to-his-feet.-make-one-of-the-foot-angled-a-bit.-make-him-wear-a-light-beige-p.webp?v=1774979381&width=600" alt="Shoes" loading="lazy">
+                        </div>
+                        <h3 class="category-card__name">Shoes</h3>
+                    </a>
+
+                    <a href="collection.html?cat=outfits" class="category-card">
+                        <div class="category-card__media">
+                            <img class="category-card__img" src="https://vintares.com/cdn/shop/files/freepik__change-the-image-into-square__56249_1.webp?v=1769767893&width=600" alt="Outfits" loading="lazy">
+                        </div>
+                        <h3 class="category-card__name">Outfits</h3>
+                    </a>
+
+                    <a href="collection.html?cat=glasses" class="category-card">
+                        <div class="category-card__media">
+                            <img class="category-card__img" src="https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74161.webp?v=1772649535&width=600" alt="Glasses" loading="lazy">
+                        </div>
+                        <h3 class="category-card__name">Glasses</h3>
+                    </a>
+
+                    <a href="collection.html?cat=accessories" class="category-card">
+                        <div class="category-card__media">
+                            <img class="category-card__img" src="https://vintares.com/cdn/shop/files/main-image-2-Photoroom.jpg?v=1757865933&width=600" alt="Accessories" loading="lazy">
+                        </div>
+                        <h3 class="category-card__name">Accessories</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================================
+             5. LIFETIME — text + two product photos on a soft grey panel
+             ================================================================= -->
+        <section class="lifetime">
+            <div class="container">
+                <div class="lifetime__grid">
+                    <div class="lifetime__text">
+                        <span class="lifetime__label">Designed for a Lifetime</span>
+                        <p class="lifetime__copy">Zarek – Strength in Design. Zarek is more than just a premium brand; it's a philosophy of confidence and sophistication. Our glasses are crafted for the modern man who values not only style but also precision. Designed with timeless aesthetics and uncompromising quality, Zarek is the epitome of lasting elegance and practicality.</p>
+                        <p class="lifetime__tagline">Where Style Meets Precision</p>
+                    </div>
+
+                    <img class="lifetime__img" src="https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74161.webp?v=1772649535&width=600" alt="" loading="lazy">
+
+                    <img class="lifetime__img" src="https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74163.webp?v=1772649535&width=600" alt="" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================================
+             6. FEATURED PRODUCT — gallery + info, identical to product page
+             ================================================================= -->
+        <section class="featured" data-gallery>
+            <div class="container">
+                <div class="featured__grid">
+
+                    <!-- Column 1: thumbnails -->
+                    <ul class="featured__thumbs" role="list">
+                        <li>
+                            <button type="button" class="featured__thumb is-active" data-gallery-thumb data-src="https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74161.webp?v=1772649535&width=600" aria-label="View image 1">
+                                <img src="https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74161.webp?v=1772649535&width=600" alt="">
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="featured__thumb" data-gallery-thumb data-src="https://vintares.com/cdn/shop/files/1_1a81191e-2a51-4c34-8dc9-7d05df484293.webp?v=1772649535&width=600" aria-label="View image 2">
+                                <img src="https://vintares.com/cdn/shop/files/1_1a81191e-2a51-4c34-8dc9-7d05df484293.webp?v=1772649535&width=600" alt="">
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="featured__thumb" data-gallery-thumb data-src="https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74162.webp?v=1772649535&width=600" aria-label="View image 3">
+                                <img src="https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74162.webp?v=1772649535&width=600" alt="">
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="featured__thumb" data-gallery-thumb data-src="https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74163.webp?v=1772649535&width=600" aria-label="View image 4">
+                                <img src="https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74163.webp?v=1772649535&width=600" alt="">
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="featured__thumb" data-gallery-thumb data-src="https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74165.webp?v=1772649535&width=600" aria-label="View image 5">
+                                <img src="https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74165.webp?v=1772649535&width=600" alt="">
+                            </button>
+                        </li>
+                    </ul>
+
+                    <!-- Column 2: main image -->
+                    <div class="featured__main">
+                        <span class="featured__badge">Sale</span>
+                        <img class="featured__main-img" data-gallery-main src="https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74161.webp?v=1772649535&width=600" alt="Zarek Geometric Metal Frame Sunglasses">
+                    </div>
+
+                    <!-- Column 3: product info -->
+                    <div class="featured__info">
+                        <span class="featured__brand">Zarek</span>
+                        <h2 class="featured__name">Zarek | Geometric Metal Frame Sunglasses Double Bridge</h2>
+
+                        <div class="featured__price">
+                            <span class="featured__price-old">$79.90</span>
+                            <span class="featured__price-new">$39.95</span>
+                        </div>
+
+                        <div class="featured__variant" data-variant>
+                            <span class="featured__variant-label">
+                                Band Colour:
+                                <span class="featured__variant-value" data-variant-value>Silver Pink</span>
+                            </span>
+                            <ul class="featured__swatches" role="list">
+                                <li>
+                                    <button type="button" class="featured__swatch is-active" data-variant-option data-color-image="https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74161.webp?v=1772649535&width=600" aria-label="Silver Pink">
+                                        <img src="https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74161.webp?v=1772649535&width=600" alt="">
+                                        <span class="featured__swatch-label">Silver Pink</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="featured__swatch" data-variant-option data-color-image="https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74162.webp?v=1772649535&width=600" aria-label="Silver Blue">
+                                        <img src="https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74162.webp?v=1772649535&width=600" alt="">
+                                        <span class="featured__swatch-label">Silver Blue</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="featured__swatch" data-variant-option data-color-image="https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74163.webp?v=1772649535&width=600" aria-label="Gold Gray">
+                                        <img src="https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74163.webp?v=1772649535&width=600" alt="">
+                                        <span class="featured__swatch-label">Gold Gray</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="featured__swatch" data-variant-option data-color-image="https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74165.webp?v=1772649535&width=600" aria-label="Black Yellow">
+                                        <img src="https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74165.webp?v=1772649535&width=600" alt="">
+                                        <span class="featured__swatch-label">Black Yellow</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="featured__swatch" data-variant-option data-color-image="https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74166.webp?v=1772649535&width=600" aria-label="Gold Pink">
+                                        <img src="https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74166.webp?v=1772649535&width=600" alt="">
+                                        <span class="featured__swatch-label">Gold Pink</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="featured__swatch" data-variant-option data-color-image="https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74167.webp?v=1772649788&width=600" aria-label="Black Blue">
+                                        <img src="https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74167.webp?v=1772649788&width=600" alt="">
+                                        <span class="featured__swatch-label">Black Blue</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="featured__swatch" data-variant-option data-color-image="https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74168.webp?v=1772650890&width=600" aria-label="Gold Brown">
+                                        <img src="https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74168.webp?v=1772650890&width=600" alt="">
+                                        <span class="featured__swatch-label">Gold Brown</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button type="button" class="btn-primary featured__cta">Add to Cart</button>
+                        <a href="product.html?id=geometric-sunglasses" class="featured__details">View Full Details →</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================================
+             7. CTA BANNER — full-width 500px banner with CTA
+             ================================================================= -->
+        <section class="cta-banner">
+            <img
+                class="cta-banner__media"
+                src="https://vintares.com/cdn/shop/files/freepik__ultrapremium-menswear-campaign-closeup-hero-image-__45087.jpg?v=1769526111&width=1400"
+                alt=""
+                loading="lazy"
+            >
+            <div class="cta-banner__overlay" aria-hidden="true"></div>
+            <div class="cta-banner__content">
+                <h2 class="cta-banner__title">Early Spring '26</h2>
+                <p class="cta-banner__subtitle">Limited Edition Glasses</p>
+                <a href="collection.html?cat=glasses" class="cta-banner__cta">Explore Now</a>
+            </div>
+        </section>
+
+        <!-- =================================================================
+             8. WINTER ARRIVALS — Coats & Jackets, 4-product grid
+             ================================================================= -->
+        <section class="bestsellers">
+            <div class="container">
+                <div class="bestsellers__header">
+                    <div class="bestsellers__heading">
+                        <span class="section-label">Winter Arrivals</span>
+                        <h2 class="section-title">Coats &amp; Jackets</h2>
+                    </div>
+                    <div class="bestsellers__cta">
+                        <a href="collection.html?cat=coats-jackets" class="view-all">View All</a>
+                    </div>
+                </div>
+
+                <div class="product-grid">
+                    <a href="product.html?id=quilted-puffer-vest" class="product-card">
+                        <div class="product-card__media">
+                            <span class="product-card__badge">Sale</span>
+                            <img class="product-card__img" src="https://vintares.com/cdn/shop/files/freepik_change-the-size-of-the-image-into-sqaure.-remove-background-and-change-it-to-solid-efefef-add-applya.-very-light-shadow_0001.jpg?v=1775043831&width=600" alt="Zarek Quilted Puffer Vest" loading="lazy">
+                        </div>
+                        <h3 class="product-card__name">Zarek | Quilted Puffer Vest Zip-Up Stand Collar</h3>
+                        <div class="product-card__prices">
+                            <span class="product-card__price--old">$139.90</span>
+                            <span class="product-card__price--new">$69.95</span>
                         </div>
                     </a>
 
-                    <a href="collection.html?cat=coats" class="collection-card">
-                        <img class="collection-card__img" src="https://picsum.photos/600/750?random=12" alt="Coats and jackets collection">
-                        <div class="collection-card__overlay">
-                            <h3 class="collection-card__name">Coats &amp; Jackets</h3>
+                    <a href="product.html?id=up-knit-blazer" class="product-card">
+                        <div class="product-card__media">
+                            <span class="product-card__badge">Sale</span>
+                            <img class="product-card__img" src="https://vintares.com/cdn/shop/files/freepik_change-the-sweater-the-man-is-wear-in-img1-into-the-sweater-in-img2-make-both-hands-on-his-back_0001.webp?v=1774987075&width=600" alt="Zarek Up Knit Blazer" loading="lazy">
+                        </div>
+                        <h3 class="product-card__name">Zarek | Up Knit Blazer Notch Lapel Textured Finish</h3>
+                        <div class="product-card__prices">
+                            <span class="product-card__price--old">$139.90</span>
+                            <span class="product-card__price--new">$69.95</span>
                         </div>
                     </a>
 
-                    <a href="collection.html?cat=tops" class="collection-card">
-                        <img class="collection-card__img" src="https://picsum.photos/600/750?random=13" alt="Tops collection">
-                        <div class="collection-card__overlay">
-                            <h3 class="collection-card__name">Tops</h3>
+                    <a href="product.html?id=zip-up-jacket" class="product-card">
+                        <div class="product-card__media">
+                            <span class="product-card__badge">Sale</span>
+                            <img class="product-card__img" src="https://vintares.com/cdn/shop/files/freepik_char1-character-identity-reference.-use-only-the-person-from-char1-face.-discard-all-clothing-from-char1-.-img1-primary-clothing-item.-dress-the-person-using-only-the-clothing_b60c1ea6-b624-45f1-8fe9-89f67f6fa9ee.jpg?v=1774976582&width=600" alt="Zarek Zip Up Jacket" loading="lazy">
+                        </div>
+                        <h3 class="product-card__name">Zarek | Zip Up Jacket Stand Collar Textured Finish</h3>
+                        <div class="product-card__prices">
+                            <span class="product-card__price--old">$139.90</span>
+                            <span class="product-card__price--new">$69.95</span>
                         </div>
                     </a>
 
-                    <a href="collection.html?cat=pants" class="collection-card">
-                        <img class="collection-card__img" src="https://picsum.photos/600/750?random=14" alt="Pants collection">
-                        <div class="collection-card__overlay">
-                            <h3 class="collection-card__name">Pants</h3>
+                    <a href="product.html?id=button-up-knit-jacket" class="product-card">
+                        <div class="product-card__media">
+                            <span class="product-card__badge">Sale</span>
+                            <img class="product-card__img" src="https://vintares.com/cdn/shop/files/freepik_remove-the-background-and-change-it-to-efefef-apply-light-shadow.-position-is-centered-padding-is-9_0001_1.webp?v=1774619564&width=600" alt="Zarek Button-Up Knit Jacket" loading="lazy">
                         </div>
-                    </a>
-
-                    <a href="collection.html?cat=shoes" class="collection-card">
-                        <img class="collection-card__img" src="https://picsum.photos/600/750?random=15" alt="Shoes collection">
-                        <div class="collection-card__overlay">
-                            <h3 class="collection-card__name">Shoes</h3>
-                        </div>
-                    </a>
-
-                    <a href="collection.html?cat=accessories" class="collection-card">
-                        <img class="collection-card__img" src="https://picsum.photos/600/750?random=16" alt="Accessories collection">
-                        <div class="collection-card__overlay">
-                            <h3 class="collection-card__name">Accessories</h3>
+                        <h3 class="product-card__name">Zarek | Button-Up Knit Jacket Ribbed Collar Elbow Patch</h3>
+                        <div class="product-card__prices">
+                            <span class="product-card__price--old">$139.90</span>
+                            <span class="product-card__price--new">$69.95</span>
                         </div>
                     </a>
                 </div>
@@ -230,7 +451,7 @@
         </section>
 
         <!-- =================================================================
-             5. FAQ ACCORDION
+             9. FAQ ACCORDION
              ================================================================= -->
         <section class="faq">
             <div class="container">
@@ -283,7 +504,7 @@
         </section>
 
         <!-- =================================================================
-             6. TRUST BADGES — 4-up row, light grey background
+             10. TRUST BADGES — 4-up row, light grey background
              ================================================================= -->
         <section class="trust">
             <div class="container">
@@ -347,11 +568,10 @@
                 <div class="footer-col">
                     <h4 class="footer-col__title">Store</h4>
                     <ul class="footer-col__list">
-                        <li><a href="collection.html?cat=coats">Coats &amp; Jackets</a></li>
+                        <li><a href="collection.html?cat=coats-jackets">Coats &amp; Jackets</a></li>
                         <li><a href="collection.html?cat=tops">Tops</a></li>
                         <li><a href="collection.html?cat=pants">Pants</a></li>
                         <li><a href="collection.html?cat=shoes">Shoes</a></li>
-                        <li><a href="collection.html?cat=watches">Watches</a></li>
                         <li><a href="collection.html?cat=glasses">Glasses</a></li>
                         <li><a href="collection.html?cat=accessories">Accessories</a></li>
                         <li><a href="collection.html?cat=sale">Sale</a></li>

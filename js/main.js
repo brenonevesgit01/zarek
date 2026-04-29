@@ -106,6 +106,23 @@
     });
 
     /* ----------------------------------------------------------------------
+       COLOUR-SWATCH IMAGE SWAP — when an element with [data-color-image]
+       is clicked inside a [data-gallery], swap that gallery's main image
+       to the swatch's URL. Used by the homepage featured-product section.
+       The product detail page has its own image-swap logic in products.js
+       scoped to [data-color-block], so no double-firing.
+       ---------------------------------------------------------------------- */
+    document.querySelectorAll('[data-gallery]').forEach((gallery) => {
+        const mainImg = gallery.querySelector('[data-gallery-main]');
+        if (!mainImg) return;
+        gallery.addEventListener('click', (e) => {
+            const opt = e.target.closest('[data-color-image]');
+            if (!opt || !gallery.contains(opt)) return;
+            mainImg.src = opt.getAttribute('data-color-image');
+        });
+    });
+
+    /* ----------------------------------------------------------------------
        QUANTITY STEPPER — +/- buttons w/ clamp to min/max
        ---------------------------------------------------------------------- */
     document.querySelectorAll('[data-quantity]').forEach((wrap) => {
