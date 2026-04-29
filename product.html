@@ -114,8 +114,9 @@
     <main>
         <!-- =================================================================
              1. PRODUCT DETAIL — gallery + info, 2-col layout
+             Hydrated by js/products.js based on ?id= URL param.
              ================================================================= -->
-        <section class="product-detail">
+        <section class="product-detail" data-product-page>
             <div class="container">
                 <div class="product-detail__grid">
 
@@ -124,39 +125,20 @@
                         <div class="gallery__main">
                             <img
                                 class="gallery__main-img"
-                                src="https://picsum.photos/600/600?random=1"
-                                alt="Zarek placeholder premium watch"
+                                src=""
+                                alt=""
                                 data-gallery-main
                             >
                         </div>
-                        <ul class="gallery__thumbs" role="list">
-                            <li>
-                                <button type="button" class="gallery__thumb is-active" data-gallery-thumb data-src="https://picsum.photos/600/600?random=1" aria-label="View image 1">
-                                    <img class="gallery__thumb-img" src="https://picsum.photos/600/600?random=1" alt="">
-                                </button>
-                            </li>
-                            <li>
-                                <button type="button" class="gallery__thumb" data-gallery-thumb data-src="https://picsum.photos/600/600?random=2" aria-label="View image 2">
-                                    <img class="gallery__thumb-img" src="https://picsum.photos/600/600?random=2" alt="">
-                                </button>
-                            </li>
-                            <li>
-                                <button type="button" class="gallery__thumb" data-gallery-thumb data-src="https://picsum.photos/600/600?random=3" aria-label="View image 3">
-                                    <img class="gallery__thumb-img" src="https://picsum.photos/600/600?random=3" alt="">
-                                </button>
-                            </li>
-                            <li>
-                                <button type="button" class="gallery__thumb" data-gallery-thumb data-src="https://picsum.photos/600/600?random=4" aria-label="View image 4">
-                                    <img class="gallery__thumb-img" src="https://picsum.photos/600/600?random=4" alt="">
-                                </button>
-                            </li>
+                        <ul class="gallery__thumbs" role="list" data-gallery-thumbs>
+                            <!-- Rendered by js/products.js -->
                         </ul>
                     </div>
 
                     <!-- ========== PRODUCT INFO ========== -->
                     <div class="product-info">
-                        <span class="product-info__label">Watches</span>
-                        <h1 class="product-info__name">Zarek | Placeholder Premium Watch</h1>
+                        <span class="product-info__label" data-product-label>Category</span>
+                        <h1 class="product-info__name" data-product-name>Loading…</h1>
 
                         <div class="product-rating">
                             <span class="product-rating__stars" aria-label="Rated 5 out of 5">★★★★★</span>
@@ -164,20 +146,30 @@
                         </div>
 
                         <div class="product-price">
-                            <span class="product-price__old">$99.00</span>
-                            <span class="product-price__new">$59.00</span>
-                            <span class="product-price__badge">Sale — 40% Off</span>
+                            <span class="product-price__old" data-product-price-old>$0.00</span>
+                            <span class="product-price__new" data-product-price-new>$0.00</span>
+                            <span class="product-price__badge" data-product-badge>Sale</span>
                         </div>
 
-                        <div class="variant" data-variant>
+                        <!-- COLOUR -->
+                        <div class="variant" data-variant data-color-block>
                             <span class="variant__label">
-                                Band Colour:
-                                <span class="variant__label-value" data-variant-value>Black</span>
+                                Colour:
+                                <span class="variant__label-value" data-variant-value>—</span>
                             </span>
-                            <ul class="variant__options" role="list">
-                                <li><button type="button" class="variant__option is-active" data-variant-option>Black</button></li>
-                                <li><button type="button" class="variant__option" data-variant-option>Brown</button></li>
-                                <li><button type="button" class="variant__option" data-variant-option>Silver</button></li>
+                            <ul class="variant__options" role="list" data-color-options>
+                                <!-- Rendered by js/products.js -->
+                            </ul>
+                        </div>
+
+                        <!-- SIZE -->
+                        <div class="variant" data-variant data-size-block>
+                            <span class="variant__label">
+                                Size:
+                                <span class="variant__label-value" data-variant-value>—</span>
+                            </span>
+                            <ul class="variant__options" role="list" data-size-options>
+                                <!-- Rendered by js/products.js -->
                             </ul>
                         </div>
 
@@ -274,63 +266,14 @@
 
         <!-- =================================================================
              3. RELATED PRODUCTS — "You may also like"
+             Rendered by js/products.js (same category, falls back to others)
              ================================================================= -->
         <section class="related">
             <div class="container">
                 <h2 class="related__title">You May Also Like</h2>
 
-                <div class="related__grid">
-                    <a href="product.html" class="product-card-c">
-                        <div class="product-card-c__media">
-                            <span class="product-card-c__badge">Sale</span>
-                            <img class="product-card-c__img" src="https://picsum.photos/400/400?random=10" alt="Zarek placeholder item">
-                            <button type="button" class="product-card-c__add">Add to Cart</button>
-                        </div>
-                        <h3 class="product-card-c__name">Zarek | Placeholder Item</h3>
-                        <div class="product-card-c__prices">
-                            <span class="product-card-c__price--old">$99.00</span>
-                            <span class="product-card-c__price--new">$59.00</span>
-                        </div>
-                    </a>
-
-                    <a href="product.html" class="product-card-c">
-                        <div class="product-card-c__media">
-                            <span class="product-card-c__badge">Sale</span>
-                            <img class="product-card-c__img" src="https://picsum.photos/400/400?random=11" alt="Zarek placeholder item">
-                            <button type="button" class="product-card-c__add">Add to Cart</button>
-                        </div>
-                        <h3 class="product-card-c__name">Zarek | Placeholder Item</h3>
-                        <div class="product-card-c__prices">
-                            <span class="product-card-c__price--old">$99.00</span>
-                            <span class="product-card-c__price--new">$59.00</span>
-                        </div>
-                    </a>
-
-                    <a href="product.html" class="product-card-c">
-                        <div class="product-card-c__media">
-                            <span class="product-card-c__badge">Sale</span>
-                            <img class="product-card-c__img" src="https://picsum.photos/400/400?random=12" alt="Zarek placeholder item">
-                            <button type="button" class="product-card-c__add">Add to Cart</button>
-                        </div>
-                        <h3 class="product-card-c__name">Zarek | Placeholder Item</h3>
-                        <div class="product-card-c__prices">
-                            <span class="product-card-c__price--old">$99.00</span>
-                            <span class="product-card-c__price--new">$59.00</span>
-                        </div>
-                    </a>
-
-                    <a href="product.html" class="product-card-c">
-                        <div class="product-card-c__media">
-                            <span class="product-card-c__badge">Sale</span>
-                            <img class="product-card-c__img" src="https://picsum.photos/400/400?random=13" alt="Zarek placeholder item">
-                            <button type="button" class="product-card-c__add">Add to Cart</button>
-                        </div>
-                        <h3 class="product-card-c__name">Zarek | Placeholder Item</h3>
-                        <div class="product-card-c__prices">
-                            <span class="product-card-c__price--old">$99.00</span>
-                            <span class="product-card-c__price--new">$59.00</span>
-                        </div>
-                    </a>
+                <div class="related__grid" data-related-grid>
+                    <!-- Rendered by js/products.js -->
                 </div>
             </div>
         </section>
@@ -400,6 +343,7 @@
         </div>
     </footer>
 
+    <script src="js/products.js"></script>
     <script src="js/main.js"></script>
     <script src="js/cart.js"></script>
 </body>

@@ -132,68 +132,26 @@
         </section>
 
         <!-- =================================================================
-             2. BESTSELLERS — WATCHES (4-card product grid)
+             2. BESTSELLERS — featured products from across categories
              ================================================================= -->
         <section class="bestsellers">
             <div class="container">
                 <div class="bestsellers__header">
                     <div class="bestsellers__heading">
                         <span class="section-label">Our Bestsellers</span>
-                        <h2 class="section-title">Watches</h2>
+                        <h2 class="section-title">On Sale Now</h2>
                     </div>
                     <div class="bestsellers__cta">
-                        <a href="collection.html?cat=watches" class="view-all">View All</a>
+                        <a href="collection.html?cat=sale" class="view-all">View All</a>
                     </div>
                 </div>
 
-                <div class="product-grid">
-                    <a href="product.html" class="product-card">
-                        <div class="product-card__media">
-                            <span class="product-card__badge">Sale</span>
-                            <img class="product-card__img" src="https://picsum.photos/400/400?random=1" alt="Zarek placeholder watch">
-                        </div>
-                        <h3 class="product-card__name">Zarek | Placeholder Watch</h3>
-                        <div class="product-card__prices">
-                            <span class="product-card__price--old">$99.00</span>
-                            <span class="product-card__price--new">$59.00</span>
-                        </div>
-                    </a>
-
-                    <a href="product.html" class="product-card">
-                        <div class="product-card__media">
-                            <span class="product-card__badge">Sale</span>
-                            <img class="product-card__img" src="https://picsum.photos/400/400?random=2" alt="Zarek placeholder watch">
-                        </div>
-                        <h3 class="product-card__name">Zarek | Placeholder Watch</h3>
-                        <div class="product-card__prices">
-                            <span class="product-card__price--old">$99.00</span>
-                            <span class="product-card__price--new">$59.00</span>
-                        </div>
-                    </a>
-
-                    <a href="product.html" class="product-card">
-                        <div class="product-card__media">
-                            <span class="product-card__badge">Sale</span>
-                            <img class="product-card__img" src="https://picsum.photos/400/400?random=3" alt="Zarek placeholder watch">
-                        </div>
-                        <h3 class="product-card__name">Zarek | Placeholder Watch</h3>
-                        <div class="product-card__prices">
-                            <span class="product-card__price--old">$99.00</span>
-                            <span class="product-card__price--new">$59.00</span>
-                        </div>
-                    </a>
-
-                    <a href="product.html" class="product-card">
-                        <div class="product-card__media">
-                            <span class="product-card__badge">Sale</span>
-                            <img class="product-card__img" src="https://picsum.photos/400/400?random=4" alt="Zarek placeholder watch">
-                        </div>
-                        <h3 class="product-card__name">Zarek | Placeholder Watch</h3>
-                        <div class="product-card__prices">
-                            <span class="product-card__price--old">$99.00</span>
-                            <span class="product-card__price--new">$59.00</span>
-                        </div>
-                    </a>
+                <div
+                    class="product-grid"
+                    data-product-grid
+                    data-variant="home"
+                    data-limit="4">
+                    <!-- Rendered by js/products.js -->
                 </div>
             </div>
         </section>
@@ -444,6 +402,7 @@
         </div>
     </footer>
 
+    <script src="js/products.js"></script>
     <script src="js/main.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/cart.js"></script>

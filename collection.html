@@ -124,8 +124,8 @@
             >
             <div class="collection-hero__overlay" aria-hidden="true"></div>
             <div class="collection-hero__content">
-                <h1 class="collection-hero__title">Watches</h1>
-                <p class="collection-hero__subtitle">12 products</p>
+                <h1 class="collection-hero__title" data-collection-title>All Products</h1>
+                <p class="collection-hero__subtitle" data-collection-count>12 products</p>
             </div>
         </section>
 
@@ -135,7 +135,7 @@
         <section class="collection-filters">
             <div class="container">
                 <div class="collection-filters__top">
-                    <p class="collection-filters__count">Showing 12 products</p>
+                    <p class="collection-filters__count" data-showing-count>Showing 12 products</p>
 
                     <div class="sort-control">
                         <label class="sort-control__label" for="sort">Sort by:</label>
@@ -150,126 +150,28 @@
                 </div>
 
                 <ul class="filter-chips" role="list">
-                    <li><a href="collection.html" class="filter-chip is-active">All</a></li>
-                    <li><a href="collection.html?cat=watches" class="filter-chip">Watches</a></li>
-                    <li><a href="collection.html?cat=coats" class="filter-chip">Coats &amp; Jackets</a></li>
-                    <li><a href="collection.html?cat=tops" class="filter-chip">Tops</a></li>
-                    <li><a href="collection.html?cat=pants" class="filter-chip">Pants</a></li>
-                    <li><a href="collection.html?cat=shoes" class="filter-chip">Shoes</a></li>
-                    <li><a href="collection.html?cat=accessories" class="filter-chip">Accessories</a></li>
+                    <li><a href="collection.html" class="filter-chip" data-filter-chip="">All</a></li>
+                    <li><a href="collection.html?cat=coats" class="filter-chip" data-filter-chip="coats">Coats &amp; Jackets</a></li>
+                    <li><a href="collection.html?cat=pants" class="filter-chip" data-filter-chip="pants">Pants</a></li>
+                    <li><a href="collection.html?cat=shoes" class="filter-chip" data-filter-chip="shoes">Shoes</a></li>
+                    <li><a href="collection.html?cat=outfits" class="filter-chip" data-filter-chip="outfits">Outfits</a></li>
+                    <li><a href="collection.html?cat=glasses" class="filter-chip" data-filter-chip="glasses">Glasses</a></li>
+                    <li><a href="collection.html?cat=accessories" class="filter-chip" data-filter-chip="accessories">Accessories</a></li>
+                    <li><a href="collection.html?cat=sale" class="filter-chip" data-filter-chip="sale">Sale</a></li>
                 </ul>
             </div>
         </section>
 
         <!-- =================================================================
-             3. PRODUCT GRID — 8 cards, 4 cols desktop / 2 mobile
+             3. PRODUCT GRID — rendered by js/products.js based on ?cat=
              ================================================================= -->
         <section class="collection-products">
             <div class="container">
-                <div class="collection-products__grid">
-                    <a href="product.html" class="product-card-c">
-                        <div class="product-card-c__media">
-                            <span class="product-card-c__badge">Sale</span>
-                            <img class="product-card-c__img" src="https://picsum.photos/400/400?random=1" alt="Zarek placeholder item">
-                            <button type="button" class="product-card-c__add">Add to Cart</button>
-                        </div>
-                        <h3 class="product-card-c__name">Zarek | Placeholder Item</h3>
-                        <div class="product-card-c__prices">
-                            <span class="product-card-c__price--old">$99.00</span>
-                            <span class="product-card-c__price--new">$59.00</span>
-                        </div>
-                    </a>
-
-                    <a href="product.html" class="product-card-c">
-                        <div class="product-card-c__media">
-                            <span class="product-card-c__badge">Sale</span>
-                            <img class="product-card-c__img" src="https://picsum.photos/400/400?random=2" alt="Zarek placeholder item">
-                            <button type="button" class="product-card-c__add">Add to Cart</button>
-                        </div>
-                        <h3 class="product-card-c__name">Zarek | Placeholder Item</h3>
-                        <div class="product-card-c__prices">
-                            <span class="product-card-c__price--old">$99.00</span>
-                            <span class="product-card-c__price--new">$59.00</span>
-                        </div>
-                    </a>
-
-                    <a href="product.html" class="product-card-c">
-                        <div class="product-card-c__media">
-                            <span class="product-card-c__badge">Sale</span>
-                            <img class="product-card-c__img" src="https://picsum.photos/400/400?random=3" alt="Zarek placeholder item">
-                            <button type="button" class="product-card-c__add">Add to Cart</button>
-                        </div>
-                        <h3 class="product-card-c__name">Zarek | Placeholder Item</h3>
-                        <div class="product-card-c__prices">
-                            <span class="product-card-c__price--old">$99.00</span>
-                            <span class="product-card-c__price--new">$59.00</span>
-                        </div>
-                    </a>
-
-                    <a href="product.html" class="product-card-c">
-                        <div class="product-card-c__media">
-                            <span class="product-card-c__badge">Sale</span>
-                            <img class="product-card-c__img" src="https://picsum.photos/400/400?random=4" alt="Zarek placeholder item">
-                            <button type="button" class="product-card-c__add">Add to Cart</button>
-                        </div>
-                        <h3 class="product-card-c__name">Zarek | Placeholder Item</h3>
-                        <div class="product-card-c__prices">
-                            <span class="product-card-c__price--old">$99.00</span>
-                            <span class="product-card-c__price--new">$59.00</span>
-                        </div>
-                    </a>
-
-                    <a href="product.html" class="product-card-c">
-                        <div class="product-card-c__media">
-                            <span class="product-card-c__badge">Sale</span>
-                            <img class="product-card-c__img" src="https://picsum.photos/400/400?random=5" alt="Zarek placeholder item">
-                            <button type="button" class="product-card-c__add">Add to Cart</button>
-                        </div>
-                        <h3 class="product-card-c__name">Zarek | Placeholder Item</h3>
-                        <div class="product-card-c__prices">
-                            <span class="product-card-c__price--old">$99.00</span>
-                            <span class="product-card-c__price--new">$59.00</span>
-                        </div>
-                    </a>
-
-                    <a href="product.html" class="product-card-c">
-                        <div class="product-card-c__media">
-                            <span class="product-card-c__badge">Sale</span>
-                            <img class="product-card-c__img" src="https://picsum.photos/400/400?random=6" alt="Zarek placeholder item">
-                            <button type="button" class="product-card-c__add">Add to Cart</button>
-                        </div>
-                        <h3 class="product-card-c__name">Zarek | Placeholder Item</h3>
-                        <div class="product-card-c__prices">
-                            <span class="product-card-c__price--old">$99.00</span>
-                            <span class="product-card-c__price--new">$59.00</span>
-                        </div>
-                    </a>
-
-                    <a href="product.html" class="product-card-c">
-                        <div class="product-card-c__media">
-                            <span class="product-card-c__badge">Sale</span>
-                            <img class="product-card-c__img" src="https://picsum.photos/400/400?random=7" alt="Zarek placeholder item">
-                            <button type="button" class="product-card-c__add">Add to Cart</button>
-                        </div>
-                        <h3 class="product-card-c__name">Zarek | Placeholder Item</h3>
-                        <div class="product-card-c__prices">
-                            <span class="product-card-c__price--old">$99.00</span>
-                            <span class="product-card-c__price--new">$59.00</span>
-                        </div>
-                    </a>
-
-                    <a href="product.html" class="product-card-c">
-                        <div class="product-card-c__media">
-                            <span class="product-card-c__badge">Sale</span>
-                            <img class="product-card-c__img" src="https://picsum.photos/400/400?random=8" alt="Zarek placeholder item">
-                            <button type="button" class="product-card-c__add">Add to Cart</button>
-                        </div>
-                        <h3 class="product-card-c__name">Zarek | Placeholder Item</h3>
-                        <div class="product-card-c__prices">
-                            <span class="product-card-c__price--old">$99.00</span>
-                            <span class="product-card-c__price--new">$59.00</span>
-                        </div>
-                    </a>
+                <div
+                    class="collection-products__grid"
+                    data-product-grid
+                    data-variant="collection">
+                    <!-- Rendered by js/products.js -->
                 </div>
             </div>
         </section>
@@ -351,6 +253,7 @@
         </div>
     </footer>
 
+    <script src="js/products.js"></script>
     <script src="js/main.js"></script>
     <script src="js/cart.js"></script>
 </body>

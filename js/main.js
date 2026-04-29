@@ -71,34 +71,37 @@
     });
 
     /* ----------------------------------------------------------------------
-       PRODUCT GALLERY — swap main image when a thumb is clicked
+       PRODUCT GALLERY — swap main image when a thumb is clicked.
+       Uses event delegation so it also works for thumbs rendered later
+       by products.js.
        ---------------------------------------------------------------------- */
     document.querySelectorAll('[data-gallery]').forEach((gallery) => {
         const mainImg = gallery.querySelector('[data-gallery-main]');
-        const thumbs = gallery.querySelectorAll('[data-gallery-thumb]');
-        if (!mainImg || !thumbs.length) return;
-        thumbs.forEach((thumb) => {
-            thumb.addEventListener('click', () => {
-                const src = thumb.getAttribute('data-src');
-                if (src) mainImg.src = src;
-                thumbs.forEach((t) => t.classList.remove('is-active'));
-                thumb.classList.add('is-active');
-            });
+        if (!mainImg) return;
+        gallery.addEventListener('click', (e) => {
+            const thumb = e.target.closest('[data-gallery-thumb]');
+            if (!thumb || !gallery.contains(thumb)) return;
+            const src = thumb.getAttribute('data-src');
+            if (src) mainImg.src = src;
+            gallery.querySelectorAll('[data-gallery-thumb]')
+                .forEach((t) => t.classList.remove('is-active'));
+            thumb.classList.add('is-active');
         });
     });
 
     /* ----------------------------------------------------------------------
-       VARIANT PICKER — toggle active option, update label value
+       VARIANT PICKER — toggle active option, update label value.
+       Delegated for the same reason as the gallery above.
        ---------------------------------------------------------------------- */
     document.querySelectorAll('[data-variant]').forEach((variant) => {
         const valueLabel = variant.querySelector('[data-variant-value]');
-        const options = variant.querySelectorAll('[data-variant-option]');
-        options.forEach((option) => {
-            option.addEventListener('click', () => {
-                options.forEach((o) => o.classList.remove('is-active'));
-                option.classList.add('is-active');
-                if (valueLabel) valueLabel.textContent = option.textContent.trim();
-            });
+        variant.addEventListener('click', (e) => {
+            const option = e.target.closest('[data-variant-option]');
+            if (!option || !variant.contains(option)) return;
+            variant.querySelectorAll('[data-variant-option]')
+                .forEach((o) => o.classList.remove('is-active'));
+            option.classList.add('is-active');
+            if (valueLabel) valueLabel.textContent = option.textContent.trim();
         });
     });
 
