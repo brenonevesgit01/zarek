@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart — Zarek</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/pages/cart.css">
+</head>
+<body>
+    <!-- =====================================================================
+         ANNOUNCEMENT BAR
+         ===================================================================== -->
+    <div class="announcement-bar">
+        Use code <span class="announcement-bar__code">ZAREK10</span> for an extra 10% discount
+    </div>
+
+    <!-- =====================================================================
+         HEADER
+         ===================================================================== -->
+    <header class="site-header" role="banner">
+        <div class="site-header__inner">
+            <div class="site-header__top">
+                <div class="site-header__left">
+                    <button class="menu-toggle" type="button" aria-label="Open menu" data-menu-toggle>
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <line x1="3" y1="6" x2="21" y2="6" stroke-linecap="round"/>
+                            <line x1="3" y1="12" x2="21" y2="12" stroke-linecap="round"/>
+                            <line x1="3" y1="18" x2="21" y2="18" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="site-header__center">
+                    <a href="index.html" class="site-logo" aria-label="Zarek — home">ZAREK</a>
+                </div>
+
+                <div class="site-header__actions">
+                    <button class="icon-btn" type="button" aria-label="Search">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="11" cy="11" r="7" stroke-linecap="round"/>
+                            <line x1="20" y1="20" x2="16.5" y2="16.5" stroke-linecap="round"/>
+                        </svg>
+                        <span class="icon-btn__label">Search</span>
+                    </button>
+                    <a href="#" class="icon-btn" aria-label="Account">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="12" cy="8" r="4" stroke-linecap="round"/>
+                            <path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke-linecap="round"/>
+                        </svg>
+                        <span class="icon-btn__label">Account</span>
+                    </a>
+                    <a href="cart.html" class="icon-btn" aria-label="Cart">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M5 7h14l-1.4 11.2a2 2 0 0 1-2 1.8H8.4a2 2 0 0 1-2-1.8L5 7z" stroke-linejoin="round"/>
+                            <path d="M9 7V5a3 3 0 0 1 6 0v2" stroke-linecap="round"/>
+                        </svg>
+                        <span class="cart-count" data-cart-count data-count="0">0</span>
+                        <span class="icon-btn__label">Cart</span>
+                    </a>
+                </div>
+            </div>
+
+            <nav class="site-nav" aria-label="Primary">
+                <ul class="site-nav__list">
+                    <li><a class="site-nav__link" href="index.html" data-nav-link="index.html">Home</a></li>
+                    <li><a class="site-nav__link" href="collection.html?cat=coats" data-nav-link="collection.html">Coats &amp; Jackets</a></li>
+                    <li><a class="site-nav__link" href="collection.html?cat=tops" data-nav-link="collection.html">Tops</a></li>
+                    <li><a class="site-nav__link" href="collection.html?cat=pants" data-nav-link="collection.html">Pants</a></li>
+                    <li><a class="site-nav__link" href="collection.html?cat=shoes" data-nav-link="collection.html">Shoes</a></li>
+                    <li><a class="site-nav__link" href="collection.html?cat=watches" data-nav-link="collection.html">Watches</a></li>
+                    <li><a class="site-nav__link" href="collection.html?cat=glasses" data-nav-link="collection.html">Glasses</a></li>
+                    <li><a class="site-nav__link" href="collection.html?cat=accessories" data-nav-link="collection.html">Accessories</a></li>
+                    <li><a class="site-nav__link site-nav__link--sale" href="collection.html?cat=sale" data-nav-link="collection.html">Sale</a></li>
+                    <li><a class="site-nav__link" href="about.html" data-nav-link="about.html">About</a></li>
+                    <li><a class="site-nav__link" href="contact.html" data-nav-link="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- =====================================================================
+         MOBILE NAV DRAWER + OVERLAY
+         ===================================================================== -->
+    <aside class="mobile-nav" data-mobile-nav aria-label="Mobile navigation">
+        <button class="mobile-nav__close" type="button" aria-label="Close menu" data-mobile-nav-close>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <line x1="6" y1="6" x2="18" y2="18" stroke-linecap="round"/>
+                <line x1="18" y1="6" x2="6" y2="18" stroke-linecap="round"/>
+            </svg>
+        </button>
+        <ul class="mobile-nav__list">
+            <li><a class="mobile-nav__link" href="index.html">Home</a></li>
+            <li><a class="mobile-nav__link" href="collection.html?cat=coats">Coats &amp; Jackets</a></li>
+            <li><a class="mobile-nav__link" href="collection.html?cat=tops">Tops</a></li>
+            <li><a class="mobile-nav__link" href="collection.html?cat=pants">Pants</a></li>
+            <li><a class="mobile-nav__link" href="collection.html?cat=shoes">Shoes</a></li>
+            <li><a class="mobile-nav__link" href="collection.html?cat=watches">Watches</a></li>
+            <li><a class="mobile-nav__link" href="collection.html?cat=glasses">Glasses</a></li>
+            <li><a class="mobile-nav__link" href="collection.html?cat=accessories">Accessories</a></li>
+            <li><a class="mobile-nav__link mobile-nav__link--sale" href="collection.html?cat=sale">Sale</a></li>
+            <li><a class="mobile-nav__link" href="about.html">About</a></li>
+            <li><a class="mobile-nav__link" href="contact.html">Contact</a></li>
+        </ul>
+    </aside>
+    <div class="nav-overlay" data-nav-overlay></div>
+
+    <!-- =====================================================================
+         MAIN CONTENT
+         ===================================================================== -->
+    <main>
+        <section class="cart-page">
+            <div class="container">
+                <h1 class="cart-page__title">Your Cart</h1>
+
+                <div class="cart-grid">
+                    <!-- =================================================
+                         CART ITEMS TABLE
+                         ================================================= -->
+                    <div class="cart-items">
+                        <table class="cart-table" data-cart-table>
+                            <thead class="cart-table__head">
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Quantity</th>
+                                    <th>Price</th>
+                                    <th>Subtotal</th>
+                                </tr>
+                            </thead>
+                            <tbody class="cart-table__body">
+
+                                <tr class="cart-row">
+                                    <td class="cart-row__cell cart-row__cell--item">
+                                        <div class="cart-item">
+                                            <a href="product.html" class="cart-item__media">
+                                                <img class="cart-item__img" src="https://picsum.photos/200/200?random=1" alt="Zarek placeholder watch">
+                                            </a>
+                                            <div class="cart-item__meta">
+                                                <a href="product.html" class="cart-item__name">Zarek | Placeholder Premium Watch</a>
+                                                <span class="cart-item__variant">Band Colour: Black</span>
+                                                <button type="button" class="cart-item__remove">Remove</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="cart-row__cell cart-row__cell--qty cart-row__cell--center">
+                                        <div class="qty-stepper" data-quantity>
+                                            <button type="button" class="qty-stepper__btn" data-quantity-decrement aria-label="Decrease quantity">−</button>
+                                            <input type="number" class="qty-stepper__input" value="1" min="1" max="99" data-quantity-input aria-label="Quantity">
+                                            <button type="button" class="qty-stepper__btn" data-quantity-increment aria-label="Increase quantity">+</button>
+                                        </div>
+                                    </td>
+                                    <td class="cart-row__cell cart-row__cell--price cart-row__cell--right">
+                                        <span class="cart-row__price">$59.00</span>
+                                    </td>
+                                    <td class="cart-row__cell cart-row__cell--subtotal cart-row__cell--right">
+                                        <span class="cart-row__subtotal">$59.00</span>
+                                    </td>
+                                </tr>
+
+                                <tr class="cart-row">
+                                    <td class="cart-row__cell cart-row__cell--item">
+                                        <div class="cart-item">
+                                            <a href="product.html" class="cart-item__media">
+                                                <img class="cart-item__img" src="https://picsum.photos/200/200?random=2" alt="Zarek placeholder coat">
+                                            </a>
+                                            <div class="cart-item__meta">
+                                                <a href="product.html" class="cart-item__name">Zarek | Placeholder Wool Coat</a>
+                                                <span class="cart-item__variant">Size: M · Colour: Charcoal</span>
+                                                <button type="button" class="cart-item__remove">Remove</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="cart-row__cell cart-row__cell--qty cart-row__cell--center">
+                                        <div class="qty-stepper" data-quantity>
+                                            <button type="button" class="qty-stepper__btn" data-quantity-decrement aria-label="Decrease quantity">−</button>
+                                            <input type="number" class="qty-stepper__input" value="2" min="1" max="99" data-quantity-input aria-label="Quantity">
+                                            <button type="button" class="qty-stepper__btn" data-quantity-increment aria-label="Increase quantity">+</button>
+                                        </div>
+                                    </td>
+                                    <td class="cart-row__cell cart-row__cell--price cart-row__cell--right">
+                                        <span class="cart-row__price">$220.00</span>
+                                    </td>
+                                    <td class="cart-row__cell cart-row__cell--subtotal cart-row__cell--right">
+                                        <span class="cart-row__subtotal">$440.00</span>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                        <div class="cart-actions">
+                            <a href="collection.html" class="btn-outline">Continue Shopping</a>
+                        </div>
+                    </div>
+
+                    <!-- =================================================
+                         ORDER SUMMARY
+                         ================================================= -->
+                    <aside class="order-summary" aria-label="Order summary">
+                        <h2 class="order-summary__title">Order Summary</h2>
+
+                        <dl>
+                            <div class="order-summary__row">
+                                <dt>Subtotal</dt>
+                                <dd>$499.00</dd>
+                            </div>
+                            <div class="order-summary__row">
+                                <dt>Shipping</dt>
+                                <dd>Free</dd>
+                            </div>
+
+                            <form class="coupon" onsubmit="return false">
+                                <input type="text" class="coupon__input" placeholder="Coupon code" aria-label="Coupon code">
+                                <button type="submit" class="coupon__btn">Apply</button>
+                            </form>
+
+                            <div class="order-summary__row order-summary__row--total">
+                                <dt>Total</dt>
+                                <dd>$499.00</dd>
+                            </div>
+                        </dl>
+
+                        <button type="button" class="btn-primary order-summary__checkout">Checkout</button>
+
+                        <p class="order-summary__note">Taxes calculated at checkout. Free worldwide shipping included.</p>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- =====================================================================
+         FOOTER
+         ===================================================================== -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="site-footer__inner">
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h4 class="footer-col__title">Store</h4>
+                    <ul class="footer-col__list">
+                        <li><a href="collection.html?cat=coats">Coats &amp; Jackets</a></li>
+                        <li><a href="collection.html?cat=tops">Tops</a></li>
+                        <li><a href="collection.html?cat=pants">Pants</a></li>
+                        <li><a href="collection.html?cat=shoes">Shoes</a></li>
+                        <li><a href="collection.html?cat=watches">Watches</a></li>
+                        <li><a href="collection.html?cat=glasses">Glasses</a></li>
+                        <li><a href="collection.html?cat=accessories">Accessories</a></li>
+                        <li><a href="collection.html?cat=sale">Sale</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-col__title">Customer Support</h4>
+                    <ul class="footer-col__list">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Shipping &amp; Delivery</a></li>
+                        <li><a href="#">Returns &amp; Exchanges</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-col__title">About Zarek</h4>
+                    <p class="footer-col__brand">Modern menswear for the considered man.</p>
+                    <p class="footer-col__text">
+                        Zarek crafts essential, timeless pieces with an obsessive eye on
+                        material, cut, and construction — wardrobes built to be worn for
+                        years, not seasons.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-newsletter">
+                <h3 class="footer-newsletter__heading">Join the Zarek list</h3>
+                <p class="footer-newsletter__copy">New arrivals, private sales, and editorial — direct to your inbox.</p>
+                <input type="email" class="footer-newsletter__field" placeholder="Email address" aria-label="Email address" required>
+                <button type="submit" class="footer-newsletter__submit">Subscribe</button>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; 2026 Zarek. All rights reserved.</p>
+                <div class="footer-payments" aria-label="Accepted payment methods">
+                    <span>Visa</span>
+                    <span>Mastercard</span>
+                    <span>Amex</span>
+                    <span>Apple Pay</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

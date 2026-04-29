@@ -1,0 +1,112 @@
+/* ==========================================================================
+   ZAREK — DESIGN SYSTEM
+   Premium menswear · luxury minimal
+   ========================================================================== */
+
+:root {
+    /* ----------------------------------------------------------------------
+       COLORS
+       ---------------------------------------------------------------------- */
+    --color-bg: #FFFFFF;
+    --color-bg-light: #EFEFEF;
+    --color-text: #1A1A1A;
+    --color-text-muted: #6B6B6B;
+    --color-accent: #C41230;
+    --color-border: #E0E0E0;
+    --color-white: #FFFFFF;
+    --color-black: #1A1A1A;
+
+    /* ----------------------------------------------------------------------
+       TYPOGRAPHY — FONT FAMILIES
+       ---------------------------------------------------------------------- */
+    --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+    --font-sans: 'Jost', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-brand: 'Cormorant Garamond', Georgia, serif;
+
+    /* ----------------------------------------------------------------------
+       TYPOGRAPHY — SIZE SCALE
+       ---------------------------------------------------------------------- */
+    --font-xs: 0.75rem;     /* 12px */
+    --font-sm: 0.875rem;    /* 14px */
+    --font-base: 1rem;      /* 16px */
+    --font-md: 1.25rem;     /* 20px */
+    --font-lg: 1.5rem;      /* 24px */
+    --font-xl: 2rem;        /* 32px */
+    --font-2xl: 3rem;       /* 48px */
+    --font-3xl: 4rem;       /* 64px */
+
+    /* ----------------------------------------------------------------------
+       TYPOGRAPHY — WEIGHTS
+       ---------------------------------------------------------------------- */
+    --weight-light: 300;
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+
+    /* ----------------------------------------------------------------------
+       TYPOGRAPHY — LETTER SPACING
+       ---------------------------------------------------------------------- */
+    --letter-spacing-tight: -0.01em;
+    --letter-spacing-base: 0;
+    --letter-spacing-wide: 0.05em;
+    --letter-spacing-nav: 0.12em;
+    --letter-spacing-label: 0.15em;
+
+    /* ----------------------------------------------------------------------
+       TYPOGRAPHY — LINE HEIGHTS
+       ---------------------------------------------------------------------- */
+    --line-height-tight: 1.1;
+    --line-height-base: 1.5;
+    --line-height-loose: 1.75;
+
+    /* ----------------------------------------------------------------------
+       SPACING SCALE
+       ---------------------------------------------------------------------- */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-2xl: 48px;
+    --space-3xl: 64px;
+    --space-4xl: 96px;
+
+    /* ----------------------------------------------------------------------
+       BORDER RADIUS — minimal, luxury feel
+       ---------------------------------------------------------------------- */
+    --radius-sm: 2px;
+    --radius-md: 4px;
+
+    /* ----------------------------------------------------------------------
+       TRANSITIONS
+       ---------------------------------------------------------------------- */
+    --transition: all 0.3s ease;
+    --transition-fast: all 0.2s ease;
+    --transition-slow: all 0.5s ease;
+
+    /* ----------------------------------------------------------------------
+       SHADOWS — soft and discreet
+       ---------------------------------------------------------------------- */
+    --shadow-sm: 0 1px 2px rgba(26, 26, 26, 0.04), 0 1px 3px rgba(26, 26, 26, 0.06);
+    --shadow-md: 0 4px 12px rgba(26, 26, 26, 0.06), 0 2px 4px rgba(26, 26, 26, 0.04);
+    --shadow-lg: 0 12px 32px rgba(26, 26, 26, 0.08), 0 4px 8px rgba(26, 26, 26, 0.04);
+
+    /* ----------------------------------------------------------------------
+       LAYOUT
+       ---------------------------------------------------------------------- */
+    --container-max: 1280px;
+    --container-padding: 24px;
+    --header-height: 80px;
+    --z-header: 100;
+    --z-overlay: 200;
+    --z-modal: 300;
+
+    /* ----------------------------------------------------------------------
+       BREAKPOINTS (for reference — use in @media queries)
+       ---------------------------------------------------------------------- */
+    --bp-mobile: 480px;
+    --bp-tablet: 768px;
+    --bp-desktop: 1024px;
+    --bp-wide: 1280px;
+}

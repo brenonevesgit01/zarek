@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection — Zarek</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/pages/collection.css">
+</head>
+<body>
+    <!-- =====================================================================
+         ANNOUNCEMENT BAR
+         ===================================================================== -->
+    <div class="announcement-bar">
+        Use code <span class="announcement-bar__code">ZAREK10</span> for an extra 10% discount
+    </div>
+
+    <!-- =====================================================================
+         HEADER
+         ===================================================================== -->
+    <header class="site-header" role="banner">
+        <div class="site-header__inner">
+            <div class="site-header__top">
+                <div class="site-header__left">
+                    <button class="menu-toggle" type="button" aria-label="Open menu" data-menu-toggle>
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <line x1="3" y1="6" x2="21" y2="6" stroke-linecap="round"/>
+                            <line x1="3" y1="12" x2="21" y2="12" stroke-linecap="round"/>
+                            <line x1="3" y1="18" x2="21" y2="18" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="site-header__center">
+                    <a href="index.html" class="site-logo" aria-label="Zarek — home">ZAREK</a>
+                </div>
+
+                <div class="site-header__actions">
+                    <button class="icon-btn" type="button" aria-label="Search">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="11" cy="11" r="7" stroke-linecap="round"/>
+                            <line x1="20" y1="20" x2="16.5" y2="16.5" stroke-linecap="round"/>
+                        </svg>
+                        <span class="icon-btn__label">Search</span>
+                    </button>
+                    <a href="#" class="icon-btn" aria-label="Account">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="12" cy="8" r="4" stroke-linecap="round"/>
+                            <path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke-linecap="round"/>
+                        </svg>
+                        <span class="icon-btn__label">Account</span>
+                    </a>
+                    <a href="cart.html" class="icon-btn" aria-label="Cart">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M5 7h14l-1.4 11.2a2 2 0 0 1-2 1.8H8.4a2 2 0 0 1-2-1.8L5 7z" stroke-linejoin="round"/>
+                            <path d="M9 7V5a3 3 0 0 1 6 0v2" stroke-linecap="round"/>
+                        </svg>
+                        <span class="cart-count" data-cart-count data-count="0">0</span>
+                        <span class="icon-btn__label">Cart</span>
+                    </a>
+                </div>
+            </div>
+
+            <nav class="site-nav" aria-label="Primary">
+                <ul class="site-nav__list">
+                    <li><a class="site-nav__link" href="index.html" data-nav-link="index.html">Home</a></li>
+                    <li><a class="site-nav__link" href="collection.html?cat=coats" data-nav-link="collection.html">Coats &amp; Jackets</a></li>
+                    <li><a class="site-nav__link" href="collection.html?cat=tops" data-nav-link="collection.html">Tops</a></li>
+                    <li><a class="site-nav__link" href="collection.html?cat=pants" data-nav-link="collection.html">Pants</a></li>
+                    <li><a class="site-nav__link" href="collection.html?cat=shoes" data-nav-link="collection.html">Shoes</a></li>
+                    <li><a class="site-nav__link" href="collection.html?cat=watches" data-nav-link="collection.html">Watches</a></li>
+                    <li><a class="site-nav__link" href="collection.html?cat=glasses" data-nav-link="collection.html">Glasses</a></li>
+                    <li><a class="site-nav__link" href="collection.html?cat=accessories" data-nav-link="collection.html">Accessories</a></li>
+                    <li><a class="site-nav__link site-nav__link--sale" href="collection.html?cat=sale" data-nav-link="collection.html">Sale</a></li>
+                    <li><a class="site-nav__link" href="about.html" data-nav-link="about.html">About</a></li>
+                    <li><a class="site-nav__link" href="contact.html" data-nav-link="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- =====================================================================
+         MOBILE NAV DRAWER + OVERLAY
+         ===================================================================== -->
+    <aside class="mobile-nav" data-mobile-nav aria-label="Mobile navigation">
+        <button class="mobile-nav__close" type="button" aria-label="Close menu" data-mobile-nav-close>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <line x1="6" y1="6" x2="18" y2="18" stroke-linecap="round"/>
+                <line x1="18" y1="6" x2="6" y2="18" stroke-linecap="round"/>
+            </svg>
+        </button>
+        <ul class="mobile-nav__list">
+            <li><a class="mobile-nav__link" href="index.html">Home</a></li>
+            <li><a class="mobile-nav__link" href="collection.html?cat=coats">Coats &amp; Jackets</a></li>
+            <li><a class="mobile-nav__link" href="collection.html?cat=tops">Tops</a></li>
+            <li><a class="mobile-nav__link" href="collection.html?cat=pants">Pants</a></li>
+            <li><a class="mobile-nav__link" href="collection.html?cat=shoes">Shoes</a></li>
+            <li><a class="mobile-nav__link" href="collection.html?cat=watches">Watches</a></li>
+            <li><a class="mobile-nav__link" href="collection.html?cat=glasses">Glasses</a></li>
+            <li><a class="mobile-nav__link" href="collection.html?cat=accessories">Accessories</a></li>
+            <li><a class="mobile-nav__link mobile-nav__link--sale" href="collection.html?cat=sale">Sale</a></li>
+            <li><a class="mobile-nav__link" href="about.html">About</a></li>
+            <li><a class="mobile-nav__link" href="contact.html">Contact</a></li>
+        </ul>
+    </aside>
+    <div class="nav-overlay" data-nav-overlay></div>
+
+    <!-- =====================================================================
+         MAIN CONTENT
+         ===================================================================== -->
+    <main>
+        <!-- =================================================================
+             1. COLLECTION HERO — slim banner w/ category title
+             ================================================================= -->
+        <section class="collection-hero">
+            <img
+                class="collection-hero__media"
+                src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1400"
+                alt=""
+                loading="eager"
+            >
+            <div class="collection-hero__overlay" aria-hidden="true"></div>
+            <div class="collection-hero__content">
+                <h1 class="collection-hero__title">Watches</h1>
+                <p class="collection-hero__subtitle">12 products</p>
+            </div>
+        </section>
+
+        <!-- =================================================================
+             2. FILTER BAR — count, sort dropdown, category chips
+             ================================================================= -->
+        <section class="collection-filters">
+            <div class="container">
+                <div class="collection-filters__top">
+                    <p class="collection-filters__count">Showing 12 products</p>
+
+                    <div class="sort-control">
+                        <label class="sort-control__label" for="sort">Sort by:</label>
+                        <select class="sort-control__select" id="sort" name="sort">
+                            <option value="featured">Featured</option>
+                            <option value="newest">Newest</option>
+                            <option value="price-asc">Price: Low to High</option>
+                            <option value="price-desc">Price: High to Low</option>
+                            <option value="bestselling">Best Selling</option>
+                        </select>
+                    </div>
+                </div>
+
+                <ul class="filter-chips" role="list">
+                    <li><a href="collection.html" class="filter-chip is-active">All</a></li>
+                    <li><a href="collection.html?cat=watches" class="filter-chip">Watches</a></li>
+                    <li><a href="collection.html?cat=coats" class="filter-chip">Coats &amp; Jackets</a></li>
+                    <li><a href="collection.html?cat=tops" class="filter-chip">Tops</a></li>
+                    <li><a href="collection.html?cat=pants" class="filter-chip">Pants</a></li>
+                    <li><a href="collection.html?cat=shoes" class="filter-chip">Shoes</a></li>
+                    <li><a href="collection.html?cat=accessories" class="filter-chip">Accessories</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- =================================================================
+             3. PRODUCT GRID — 8 cards, 4 cols desktop / 2 mobile
+             ================================================================= -->
+        <section class="collection-products">
+            <div class="container">
+                <div class="collection-products__grid">
+                    <a href="product.html" class="product-card-c">
+                        <div class="product-card-c__media">
+                            <span class="product-card-c__badge">Sale</span>
+                            <img class="product-card-c__img" src="https://picsum.photos/400/400?random=1" alt="Zarek placeholder item">
+                            <button type="button" class="product-card-c__add">Add to Cart</button>
+                        </div>
+                        <h3 class="product-card-c__name">Zarek | Placeholder Item</h3>
+                        <div class="product-card-c__prices">
+                            <span class="product-card-c__price--old">$99.00</span>
+                            <span class="product-card-c__price--new">$59.00</span>
+                        </div>
+                    </a>
+
+                    <a href="product.html" class="product-card-c">
+                        <div class="product-card-c__media">
+                            <span class="product-card-c__badge">Sale</span>
+                            <img class="product-card-c__img" src="https://picsum.photos/400/400?random=2" alt="Zarek placeholder item">
+                            <button type="button" class="product-card-c__add">Add to Cart</button>
+                        </div>
+                        <h3 class="product-card-c__name">Zarek | Placeholder Item</h3>
+                        <div class="product-card-c__prices">
+                            <span class="product-card-c__price--old">$99.00</span>
+                            <span class="product-card-c__price--new">$59.00</span>
+                        </div>
+                    </a>
+
+                    <a href="product.html" class="product-card-c">
+                        <div class="product-card-c__media">
+                            <span class="product-card-c__badge">Sale</span>
+                            <img class="product-card-c__img" src="https://picsum.photos/400/400?random=3" alt="Zarek placeholder item">
+                            <button type="button" class="product-card-c__add">Add to Cart</button>
+                        </div>
+                        <h3 class="product-card-c__name">Zarek | Placeholder Item</h3>
+                        <div class="product-card-c__prices">
+                            <span class="product-card-c__price--old">$99.00</span>
+                            <span class="product-card-c__price--new">$59.00</span>
+                        </div>
+                    </a>
+
+                    <a href="product.html" class="product-card-c">
+                        <div class="product-card-c__media">
+                            <span class="product-card-c__badge">Sale</span>
+                            <img class="product-card-c__img" src="https://picsum.photos/400/400?random=4" alt="Zarek placeholder item">
+                            <button type="button" class="product-card-c__add">Add to Cart</button>
+                        </div>
+                        <h3 class="product-card-c__name">Zarek | Placeholder Item</h3>
+                        <div class="product-card-c__prices">
+                            <span class="product-card-c__price--old">$99.00</span>
+                            <span class="product-card-c__price--new">$59.00</span>
+                        </div>
+                    </a>
+
+                    <a href="product.html" class="product-card-c">
+                        <div class="product-card-c__media">
+                            <span class="product-card-c__badge">Sale</span>
+                            <img class="product-card-c__img" src="https://picsum.photos/400/400?random=5" alt="Zarek placeholder item">
+                            <button type="button" class="product-card-c__add">Add to Cart</button>
+                        </div>
+                        <h3 class="product-card-c__name">Zarek | Placeholder Item</h3>
+                        <div class="product-card-c__prices">
+                            <span class="product-card-c__price--old">$99.00</span>
+                            <span class="product-card-c__price--new">$59.00</span>
+                        </div>
+                    </a>
+
+                    <a href="product.html" class="product-card-c">
+                        <div class="product-card-c__media">
+                            <span class="product-card-c__badge">Sale</span>
+                            <img class="product-card-c__img" src="https://picsum.photos/400/400?random=6" alt="Zarek placeholder item">
+                            <button type="button" class="product-card-c__add">Add to Cart</button>
+                        </div>
+                        <h3 class="product-card-c__name">Zarek | Placeholder Item</h3>
+                        <div class="product-card-c__prices">
+                            <span class="product-card-c__price--old">$99.00</span>
+                            <span class="product-card-c__price--new">$59.00</span>
+                        </div>
+                    </a>
+
+                    <a href="product.html" class="product-card-c">
+                        <div class="product-card-c__media">
+                            <span class="product-card-c__badge">Sale</span>
+                            <img class="product-card-c__img" src="https://picsum.photos/400/400?random=7" alt="Zarek placeholder item">
+                            <button type="button" class="product-card-c__add">Add to Cart</button>
+                        </div>
+                        <h3 class="product-card-c__name">Zarek | Placeholder Item</h3>
+                        <div class="product-card-c__prices">
+                            <span class="product-card-c__price--old">$99.00</span>
+                            <span class="product-card-c__price--new">$59.00</span>
+                        </div>
+                    </a>
+
+                    <a href="product.html" class="product-card-c">
+                        <div class="product-card-c__media">
+                            <span class="product-card-c__badge">Sale</span>
+                            <img class="product-card-c__img" src="https://picsum.photos/400/400?random=8" alt="Zarek placeholder item">
+                            <button type="button" class="product-card-c__add">Add to Cart</button>
+                        </div>
+                        <h3 class="product-card-c__name">Zarek | Placeholder Item</h3>
+                        <div class="product-card-c__prices">
+                            <span class="product-card-c__price--old">$99.00</span>
+                            <span class="product-card-c__price--new">$59.00</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================================
+             4. PAGINATION
+             ================================================================= -->
+        <nav class="pagination" aria-label="Pagination">
+            <ul class="pagination__list">
+                <li><a href="?page=1" class="pagination__link is-active" aria-current="page">1</a></li>
+                <li><a href="?page=2" class="pagination__link">2</a></li>
+                <li><a href="?page=3" class="pagination__link">3</a></li>
+                <li><a href="?page=2" class="pagination__link pagination__link--next" aria-label="Next page">→</a></li>
+            </ul>
+        </nav>
+    </main>
+
+    <!-- =====================================================================
+         FOOTER
+         ===================================================================== -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="site-footer__inner">
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h4 class="footer-col__title">Store</h4>
+                    <ul class="footer-col__list">
+                        <li><a href="collection.html?cat=coats">Coats &amp; Jackets</a></li>
+                        <li><a href="collection.html?cat=tops">Tops</a></li>
+                        <li><a href="collection.html?cat=pants">Pants</a></li>
+                        <li><a href="collection.html?cat=shoes">Shoes</a></li>
+                        <li><a href="collection.html?cat=watches">Watches</a></li>
+                        <li><a href="collection.html?cat=glasses">Glasses</a></li>
+                        <li><a href="collection.html?cat=accessories">Accessories</a></li>
+                        <li><a href="collection.html?cat=sale">Sale</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-col__title">Customer Support</h4>
+                    <ul class="footer-col__list">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Shipping &amp; Delivery</a></li>
+                        <li><a href="#">Returns &amp; Exchanges</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-col__title">About Zarek</h4>
+                    <p class="footer-col__brand">Modern menswear for the considered man.</p>
+                    <p class="footer-col__text">
+                        Zarek crafts essential, timeless pieces with an obsessive eye on
+                        material, cut, and construction — wardrobes built to be worn for
+                        years, not seasons.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-newsletter">
+                <h3 class="footer-newsletter__heading">Join the Zarek list</h3>
+                <p class="footer-newsletter__copy">New arrivals, private sales, and editorial — direct to your inbox.</p>
+                <input type="email" class="footer-newsletter__field" placeholder="Email address" aria-label="Email address" required>
+                <button type="submit" class="footer-newsletter__submit">Subscribe</button>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; 2026 Zarek. All rights reserved.</p>
+                <div class="footer-payments" aria-label="Accepted payment methods">
+                    <span>Visa</span>
+                    <span>Mastercard</span>
+                    <span>Amex</span>
+                    <span>Apple Pay</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

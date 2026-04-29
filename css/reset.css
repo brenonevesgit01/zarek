@@ -1,0 +1,215 @@
+/* ==========================================================================
+   ZAREK — RESET & BASE
+   Modern CSS reset + Google Fonts import
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   GOOGLE FONTS IMPORT
+   - Cormorant Garamond: 400, 600, 700 italic
+   - Jost: 300, 400, 500, 600
+   -------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Jost:wght@300;400;500;600&display=swap');
+
+/* --------------------------------------------------------------------------
+   BOX SIZING
+   -------------------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* --------------------------------------------------------------------------
+   ROOT
+   -------------------------------------------------------------------------- */
+html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+
+/* --------------------------------------------------------------------------
+   BODY
+   -------------------------------------------------------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Jost', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #1A1A1A;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   RESET MARGINS
+   -------------------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul, figure,
+hr, fieldset, legend {
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------------------------------------------------------------------
+   HEADINGS
+   -------------------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 400;
+    line-height: 1.1;
+    color: inherit;
+}
+
+/* --------------------------------------------------------------------------
+   LISTS
+   -------------------------------------------------------------------------- */
+ul,
+ol {
+    list-style: none;
+}
+
+/* --------------------------------------------------------------------------
+   LINKS
+   -------------------------------------------------------------------------- */
+a {
+    color: inherit;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+/* --------------------------------------------------------------------------
+   MEDIA
+   -------------------------------------------------------------------------- */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+img {
+    -ms-interpolation-mode: bicubic;
+}
+
+/* --------------------------------------------------------------------------
+   FORMS
+   -------------------------------------------------------------------------- */
+button,
+input,
+select,
+textarea {
+    font: inherit;
+    color: inherit;
+    margin: 0;
+    border-radius: 0;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
+
+input,
+textarea,
+select {
+    border: none;
+    background: transparent;
+}
+
+textarea {
+    resize: vertical;
+    overflow: auto;
+}
+
+/* Remove default styling on number input arrows */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+/* --------------------------------------------------------------------------
+   TABLES
+   -------------------------------------------------------------------------- */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   MISC
+   -------------------------------------------------------------------------- */
+hr {
+    box-sizing: content-box;
+    height: 0;
+    border: 0;
+    border-top: 1px solid #E0E0E0;
+    margin: 0;
+    overflow: visible;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+/* Selection */
+::selection {
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+}
+
+/* Focus visible — accessibility for keyboard users */
+:focus-visible {
+    outline: 2px solid #1A1A1A;
+    outline-offset: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   ACCESSIBILITY — REDUCED MOTION
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

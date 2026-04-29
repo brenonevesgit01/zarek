@@ -1,0 +1,451 @@
+/* ==========================================================================
+   ZAREK — CART PAGE
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   PAGE WRAPPER
+   -------------------------------------------------------------------------- */
+.cart-page {
+    padding: var(--space-3xl) 0 var(--space-4xl);
+}
+
+.cart-page__title {
+    font-family: var(--font-serif);
+    font-size: var(--font-2xl);
+    font-weight: var(--weight-regular);
+    line-height: var(--line-height-tight);
+    letter-spacing: var(--letter-spacing-tight);
+    text-transform: uppercase;
+    color: var(--color-text);
+    margin-bottom: var(--space-2xl);
+}
+
+/* --------------------------------------------------------------------------
+   2-COLUMN LAYOUT — items table left, order summary right
+   -------------------------------------------------------------------------- */
+.cart-grid {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: var(--space-3xl);
+    align-items: flex-start;
+}
+
+/* --------------------------------------------------------------------------
+   CART TABLE — header + rows
+   -------------------------------------------------------------------------- */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-table__head {
+    border-bottom: 1px solid var(--color-border);
+}
+
+.cart-table__head th {
+    padding: 0 0 var(--space-md);
+    font-family: var(--font-sans);
+    font-size: var(--font-xs);
+    font-weight: var(--weight-semibold);
+    letter-spacing: var(--letter-spacing-label);
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    text-align: left;
+}
+
+.cart-table__head th:nth-child(2) { text-align: center; }
+.cart-table__head th:nth-child(3),
+.cart-table__head th:nth-child(4) { text-align: right; }
+
+.cart-row {
+    border-bottom: 1px solid var(--color-border);
+}
+
+.cart-row__cell {
+    padding: var(--space-lg) var(--space-sm) var(--space-lg) 0;
+    vertical-align: top;
+}
+
+.cart-row__cell--center { text-align: center; vertical-align: middle; }
+.cart-row__cell--right  { text-align: right;  vertical-align: middle; }
+
+/* --------------------------------------------------------------------------
+   CART ITEM (product cell) — image + meta + remove
+   -------------------------------------------------------------------------- */
+.cart-item {
+    display: flex;
+    gap: var(--space-md);
+    align-items: flex-start;
+}
+
+.cart-item__media {
+    flex: 0 0 96px;
+    width: 96px;
+    height: 96px;
+    overflow: hidden;
+    background-color: var(--color-bg-light);
+}
+
+.cart-item__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cart-item__meta {
+    flex: 1 1 auto;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.cart-item__name {
+    font-family: var(--font-sans);
+    font-size: var(--font-sm);
+    font-weight: var(--weight-medium);
+    color: var(--color-text);
+    line-height: var(--line-height-base);
+}
+
+.cart-item__variant {
+    font-family: var(--font-sans);
+    font-size: var(--font-xs);
+    font-weight: var(--weight-light);
+    color: var(--color-text-muted);
+    letter-spacing: var(--letter-spacing-wide);
+    text-transform: uppercase;
+}
+
+.cart-item__remove {
+    align-self: flex-start;
+    margin-top: var(--space-xs);
+    padding: 0;
+    font-family: var(--font-sans);
+    font-size: var(--font-xs);
+    font-weight: var(--weight-medium);
+    letter-spacing: var(--letter-spacing-wide);
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.cart-item__remove:hover {
+    color: var(--color-accent);
+    border-bottom-color: var(--color-accent);
+}
+
+/* --------------------------------------------------------------------------
+   CELL CONTENT — price, qty, subtotal
+   -------------------------------------------------------------------------- */
+.cart-row__price,
+.cart-row__subtotal {
+    font-family: var(--font-sans);
+    font-size: var(--font-sm);
+    font-weight: var(--weight-regular);
+    color: var(--color-text);
+}
+
+.cart-row__subtotal {
+    font-weight: var(--weight-semibold);
+}
+
+/* Compact qty stepper for table cells */
+.qty-stepper {
+    display: inline-flex;
+    align-items: stretch;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+}
+
+.qty-stepper__btn {
+    width: 32px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-sans);
+    font-size: var(--font-base);
+    font-weight: var(--weight-light);
+    line-height: 1;
+    color: var(--color-text);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.qty-stepper__btn:hover {
+    background-color: var(--color-bg-light);
+}
+
+.qty-stepper__input {
+    width: 40px;
+    height: 36px;
+    padding: 0;
+    text-align: center;
+    font-family: var(--font-sans);
+    font-size: var(--font-sm);
+    font-weight: var(--weight-medium);
+    color: var(--color-text);
+    background: transparent;
+    border: none;
+    border-left: 1px solid var(--color-border);
+    border-right: 1px solid var(--color-border);
+}
+
+/* --------------------------------------------------------------------------
+   CART ACTIONS — continue shopping link below table
+   -------------------------------------------------------------------------- */
+.cart-actions {
+    margin-top: var(--space-xl);
+}
+
+/* --------------------------------------------------------------------------
+   ORDER SUMMARY — sticky right-column card
+   -------------------------------------------------------------------------- */
+.order-summary {
+    position: sticky;
+    top: calc(var(--header-height) + var(--space-md));
+    padding: var(--space-xl);
+    background-color: var(--color-bg-light);
+    border-radius: var(--radius-md);
+}
+
+.order-summary__title {
+    font-family: var(--font-sans);
+    font-size: var(--font-xs);
+    font-weight: var(--weight-semibold);
+    letter-spacing: var(--letter-spacing-label);
+    text-transform: uppercase;
+    color: var(--color-text);
+    margin-bottom: var(--space-lg);
+}
+
+.order-summary__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: var(--space-sm) 0;
+    font-family: var(--font-sans);
+    font-size: var(--font-sm);
+    color: var(--color-text);
+}
+
+.order-summary__row dt {
+    font-weight: var(--weight-light);
+    color: var(--color-text-muted);
+}
+
+.order-summary__row dd {
+    margin: 0;
+    font-weight: var(--weight-medium);
+    color: var(--color-text);
+}
+
+.order-summary__row--total {
+    margin-top: var(--space-md);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--color-border);
+    font-size: var(--font-base);
+}
+
+.order-summary__row--total dt,
+.order-summary__row--total dd {
+    font-weight: var(--weight-semibold);
+    color: var(--color-text);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-wide);
+    font-size: var(--font-sm);
+}
+
+.order-summary__row--total dd {
+    font-size: var(--font-md);
+    letter-spacing: 0;
+}
+
+/* --------------------------------------------------------------------------
+   COUPON FIELD
+   -------------------------------------------------------------------------- */
+.coupon {
+    display: flex;
+    margin: var(--space-lg) 0;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    background-color: var(--color-white);
+}
+
+.coupon__input {
+    flex: 1;
+    height: 44px;
+    padding: 0 var(--space-md);
+    font-family: var(--font-sans);
+    font-size: var(--font-sm);
+    color: var(--color-text);
+    background: transparent;
+    border: none;
+}
+
+.coupon__input::placeholder {
+    color: var(--color-text-muted);
+    letter-spacing: var(--letter-spacing-wide);
+    text-transform: uppercase;
+    font-size: var(--font-xs);
+}
+
+.coupon__btn {
+    padding: 0 var(--space-lg);
+    font-family: var(--font-sans);
+    font-size: var(--font-xs);
+    font-weight: var(--weight-semibold);
+    letter-spacing: var(--letter-spacing-nav);
+    text-transform: uppercase;
+    color: var(--color-white);
+    background-color: var(--color-text);
+    border: none;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.coupon__btn:hover {
+    background-color: #000;
+}
+
+/* --------------------------------------------------------------------------
+   CHECKOUT CTA
+   -------------------------------------------------------------------------- */
+.order-summary__checkout {
+    margin-top: var(--space-md);
+}
+
+.order-summary__note {
+    margin-top: var(--space-md);
+    font-family: var(--font-sans);
+    font-size: var(--font-xs);
+    font-weight: var(--weight-light);
+    line-height: var(--line-height-base);
+    color: var(--color-text-muted);
+    text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   RESPONSIVE
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+    .cart-grid {
+        grid-template-columns: 1fr 320px;
+        gap: var(--space-2xl);
+    }
+}
+
+@media (max-width: 768px) {
+    .cart-page {
+        padding: var(--space-2xl) 0 var(--space-3xl);
+    }
+
+    .cart-page__title {
+        font-size: var(--font-xl);
+        margin-bottom: var(--space-xl);
+    }
+
+    .cart-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+    }
+
+    /* Convert table rows to stacked cards on mobile */
+    .cart-table,
+    .cart-table__head,
+    .cart-table__body,
+    .cart-table tr,
+    .cart-table td,
+    .cart-table th {
+        display: block;
+    }
+
+    .cart-table__head {
+        display: none;
+    }
+
+    .cart-row {
+        display: grid;
+        grid-template-columns: 96px 1fr;
+        gap: var(--space-md);
+        padding: var(--space-lg) 0;
+    }
+
+    .cart-row__cell {
+        padding: 0;
+        text-align: left !important;
+        vertical-align: top;
+    }
+
+    /* Item cell spans both columns by way of internal flex */
+    .cart-row__cell--item {
+        grid-column: 1 / -1;
+    }
+
+    .cart-row__cell--price {
+        display: none; /* combined into subtotal on mobile */
+    }
+
+    .cart-row__cell--qty {
+        grid-column: 1 / -1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .cart-row__cell--qty::before {
+        content: "Quantity";
+        font-family: var(--font-sans);
+        font-size: var(--font-xs);
+        font-weight: var(--weight-medium);
+        letter-spacing: var(--letter-spacing-wide);
+        text-transform: uppercase;
+        color: var(--color-text-muted);
+    }
+
+    .cart-row__cell--subtotal {
+        grid-column: 1 / -1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .cart-row__cell--subtotal::before {
+        content: "Subtotal";
+        font-family: var(--font-sans);
+        font-size: var(--font-xs);
+        font-weight: var(--weight-medium);
+        letter-spacing: var(--letter-spacing-wide);
+        text-transform: uppercase;
+        color: var(--color-text-muted);
+    }
+
+    .order-summary {
+        position: static;
+    }
+}
+
+@media (max-width: 480px) {
+    .order-summary {
+        padding: var(--space-lg);
+    }
+
+    .cart-item__media {
+        flex: 0 0 80px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .cart-row {
+        grid-template-columns: 80px 1fr;
+    }
+}
