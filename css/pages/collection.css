@@ -584,3 +584,10 @@
         display: none !important;
     }
 }
+
+@media (max-width: 768px) {
+    .collection-tabs {
+        overflow-x: hidden;
+        touch-action: pan-y;
+    }
+}
