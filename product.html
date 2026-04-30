@@ -720,6 +720,38 @@
       document.querySelector('.press-logo-description').textContent = img.dataset.description;
     }
 
+    (function() {
+      const mainImg = document.querySelector('[data-gallery-main]');
+      if (!mainImg) return;
+      let startX = 0;
+
+      mainImg.addEventListener('touchstart', function(e) {
+        startX = e.touches[0].clientX;
+      }, { passive: true });
+
+      mainImg.addEventListener('touchend', function(e) {
+        const diff = startX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) < 40) return;
+
+        const thumbs = document.querySelectorAll('[data-gallery-thumbs] img, .gallery__thumbs img');
+        if (!thumbs.length) return;
+
+        let activeIndex = 0;
+        thumbs.forEach((t, i) => {
+          if (t.src === mainImg.src || t.classList.contains('active')) activeIndex = i;
+        });
+
+        let nextIndex;
+        if (diff > 0) {
+          nextIndex = (activeIndex + 1) % thumbs.length;
+        } else {
+          nextIndex = (activeIndex - 1 + thumbs.length) % thumbs.length;
+        }
+
+        thumbs[nextIndex].click();
+      }, { passive: true });
+    })();
+
     </script>
 </body>
 </html>
