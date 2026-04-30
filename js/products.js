@@ -1403,6 +1403,135 @@
             ],
             sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL', '3XL']
         },
+        {
+            id: 'chino-shorts',
+            name: 'Zarek | Chino Shorts Straight Fit Flat Front',
+            category: 'pants',
+            price: 44.94,
+            originalPrice: 59.95,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Olive Green', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__30470.webp?v=1773329566&width=1024',
+                    'https://vintares.com/cdn/shop/files/7_cb2d03e9-2ada-4dde-9fa2-3719dc9cdce5.webp?v=1773329566&width=1024'
+                ] },
+                { name: 'Black', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__30476.webp?v=1773329566&width=1024',
+                    'https://vintares.com/cdn/shop/files/1_200d6410-14b1-4564-b8fe-bf41c97e7c9c.webp?v=1773329566&width=1024'
+                ] },
+                { name: 'Navy Blue', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__30475.webp?v=1773329566&width=1024',
+                    'https://vintares.com/cdn/shop/files/2_7ffa3b18-a31a-4b0c-9405-5324a1277d66.webp?v=1773329566&width=1024'
+                ] },
+                { name: 'Sky Blue', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__30473.webp?v=1773329566&width=1024',
+                    'https://vintares.com/cdn/shop/files/3_7cc382b5-83a1-473c-ad4c-7c840e01ca3b.webp?v=1773329566&width=1024'
+                ] },
+                { name: 'Brown', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__30474.webp?v=1773329566&width=1024',
+                    'https://vintares.com/cdn/shop/files/4_c0bb1d32-2faf-49cb-92be-d8ed4cc7fcd0.webp?v=1773329566&width=1024'
+                ] },
+                { name: 'Light Gray', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__30472.webp?v=1773329566&width=1024',
+                    'https://vintares.com/cdn/shop/files/5_d3b410e2-fd4c-424e-8f04-766c2e28fa47.webp?v=1773329566&width=1024'
+                ] },
+                { name: 'Charcoal Gray', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__30471.webp?v=1773329566&width=1024',
+                    'https://vintares.com/cdn/shop/files/6_336a4329-9b2a-4396-9a25-d1dba0c57cc7.webp?v=1773329566&width=1024'
+                ] },
+                { name: 'Red', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__30468.webp?v=1773329566&width=1024',
+                    'https://vintares.com/cdn/shop/files/9_1276d71d-3566-444e-a470-905c9ef98705.webp?v=1773329566&width=1024'
+                ] },
+                { name: 'Pink', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__30469.webp?v=1773329566&width=1024',
+                    'https://vintares.com/cdn/shop/files/8_2d31b1c0-ceba-4d32-909f-8ec1ee9a9ba3.webp?v=1773329566&width=1024'
+                ] },
+                { name: 'Khaki', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__30466.webp?v=1773329718&width=1024',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-refer-t__30467.webp?v=1773329718&width=1024',
+                    'https://vintares.com/cdn/shop/files/10_68fce2f5-75ab-4d49-82b3-c625eeb042f0.webp?v=1773329718&width=1024'
+                ] }
+            ],
+            sizes: ['30', '32', '34', '36', '38']
+        },
+        {
+            id: 'cargo-shorts-drawstring-relaxed',
+            name: 'Zarek | Cargo Shorts Relaxed Fit Drawstring Elastic Waist',
+            category: 'pants',
+            price: 44.95,
+            originalPrice: 59.95,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Slate Gray', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-of-the-image-into-sqaure__41054.jpg?v=1773247880&width=1024',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side__41056.jpg?v=1773247880&width=1024',
+                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__1313.webp?v=1773247880&width=1024'
+                ] },
+                { name: 'Black', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-of-the-image-into-sqaure__41057.png?v=1773247880&width=1024',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side__41059.webp?v=1773248140&width=1024',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-short-in-img1-into-color-b__41053.webp?v=1773248140&width=1024'
+                ] }
+            ],
+            sizes: ['2XS', 'XS', 'S', 'M', 'L', 'XL']
+        },
+        {
+            id: 'cargo-shorts-button-straight',
+            name: 'Zarek | Cargo Shorts Straight Fit Multi-Pocket Utility',
+            category: 'pants',
+            price: 44.95,
+            originalPrice: 59.95,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Olive Green', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__41075.jpg?v=1773251453&width=1024',
+                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__41067.webp?v=1773251453&width=1024'
+                ] },
+                { name: 'Black', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__41076.jpg?v=1773251453&width=1024',
+                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__41068.webp?v=1773251453&width=1024'
+                ] },
+                { name: 'Brown', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__41077.jpg?v=1773251453&width=1024',
+                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__41069.webp?v=1773251453&width=1024'
+                ] },
+                { name: 'Khaki', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__41078.jpg?v=1773251876&width=1024',
+                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__41070.webp?v=1773251876&width=1024'
+                ] },
+                { name: 'Slate Gray', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__41079.jpg?v=1773251876&width=1024',
+                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__41071.webp?v=1773251876&width=1024'
+                ] },
+                { name: 'Beige', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__41081.jpg?v=1773251876&width=1024',
+                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__41073.webp?v=1773251876&width=1024'
+                ] }
+            ],
+            sizes: ['29', '30', '31', '32', '33', '34', '36', '38', '40', '42', '44']
+        },
+        {
+            id: 'cargo-shorts-elastic-multipocket',
+            name: 'Zarek | Cargo Shorts Elastic Waist Drawstring Multi Pocket',
+            category: 'pants',
+            price: 59.95,
+            originalPrice: 119.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Gray', images: [
+                    'https://vintares.com/cdn/shop/files/freepik_create-an-image-of-a-caucasian-man-wear-the-short-in-img1-make-him-wear-a-plain-white-tshirt-tucked-in-inside-the-short.-cut-off-the-image-from-his-hip-down-to-his-feet-make-h_09d2c3b4-45f1-4db0-9383-a91c191eaee4.png?v=1774469070&width=1024',
+                    'https://vintares.com/cdn/shop/files/freepik_change-the-stance-of-the-model-to-the-right-side.-make-one-foot-forward-one-hand-on-his-pocket.-background-is-solid-efefef-and-apply-soft-shadow_0001.png?v=1774469523&width=1024',
+                    'https://vintares.com/cdn/shop/files/freepik_change-the-size-of-the-image-into-square_0001.webp?v=1774469523&width=1024'
+                ] },
+                { name: 'Black', images: [
+                    'https://vintares.com/cdn/shop/files/freepik_create-an-image-of-a-caucasian-man-wear-the-short-in-img1-make-him-wear-a-plain-white-tshirt-tucked-in-inside-the-short.-cut-off-the-image-from-his-hip-down-to-his-feet-make-h.png?v=1774469523&width=1024',
+                    'https://vintares.com/cdn/shop/files/freepik_change-the-stance-of-the-model-to-the-right-side.-make-one-foot-forward-one-hand-on-his-pocket.-background-is-solid-efefef-and-apply-soft-shadow._0001.png?v=1774469744&width=1024',
+                    'https://vintares.com/cdn/shop/files/freepik_apply-the-color-of-the-short-in-img2-to-the-short-in-img1_0001.webp?v=1774469744&width=1024'
+                ] }
+            ],
+            sizes: ['3XS', '2XS', 'XS', 'S', 'M', 'L', 'XL']
+        },
 
         // ───────────────── SHOES ─────────────────
         {
