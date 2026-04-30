@@ -3501,6 +3501,17 @@
         'sale':          'Sale'
     };
 
+    const categoryDescriptions = {
+      'coats-jackets': 'Engineered for the modern man, this piece blends structured tailoring with everyday wearability. Built from premium materials designed to withstand the elements while keeping your look sharp and intentional.',
+      'tops': 'A refined essential for the considered wardrobe. Clean construction, quality fabric, and a fit designed to move with you — from morning to evening without compromise.',
+      'pants': 'Tailored for comfort without sacrificing structure. Whether dressed up or kept casual, this piece delivers a clean silhouette that works across every occasion.',
+      'shoes': 'Finished at the sole with the same care as the rest of your outfit. Crafted for durability and style, these shoes are built to complement every look in your rotation.',
+      'outfits': 'A complete look, considered from top to bottom. Coordinated in fit, fabric, and tone — so you can dress with intention and step out with confidence.',
+      'glasses': 'The right frame elevates everything. Minimal, precise, and built to last — designed for the man who understands that details define the look.',
+      'accessories': 'The finishing touch that ties the outfit together. Each piece is selected for quality and purpose, adding character without overwhelming the look.',
+      'sale': 'Zarek quality at a reduced price. The same premium materials and considered design — now available for less, for a limited time only.'
+    };
+
     // Header nav still uses ?cat=coats; data uses 'coats-jackets'.
     // Aliases bridge them so old URLs keep working.
     const CATEGORY_ALIASES = {
@@ -3674,6 +3685,12 @@
             setText('[data-product-label]', labelText);
             setText('[data-product-name]', p.name);
 
+            const descEl = document.querySelector('[data-product-description]');
+            if (descEl) {
+              const desc = p.description || categoryDescriptions[p.category] || 'Premium quality crafted for the modern man.';
+              descEl.textContent = desc;
+            }
+
             // Prices — hide old price element when there's no discount
             const oldPriceEl = document.querySelector('[data-product-price-old]');
             const newPriceEl = document.querySelector('[data-product-price-new]');
@@ -3743,15 +3760,12 @@
                             // and c.image (legacy single string).
                             const colorImg = (c.images && c.images.length) ? c.images[0] : c.image;
                             return ''
-                                + '<li>'
-                                +   '<button type="button"'
-                                +     ' class="variant__option' + (i === 0 ? ' is-active' : '') + '"'
-                                +     ' data-variant-option'
-                                +     ' data-color-index="' + i + '"'
-                                +     ' data-color-image="' + colorImg + '">'
-                                +     c.name
-                                +   '</button>'
-                                + '</li>';
+                                + '<img'
+                                +   ' class="color-thumb' + (i === 0 ? ' active' : '') + '"'
+                                +   ' src="' + colorImg + '"'
+                                +   ' alt="' + c.name + '"'
+                                +   ' data-color-index="' + i + '"'
+                                +   ' data-color-image="' + colorImg + '">';
                         }).join('');
                     }
 
@@ -3760,17 +3774,23 @@
                         colorBlock.style.display = 'none';
                     }
 
-                    // When a colour is clicked, refresh the gallery to that
-                    // colour's images. Products with c.images[] get a full
-                    // main + thumbs replacement; legacy products with a
-                    // single c.image fall back to the previous behaviour
-                    // (main-only swap with active-thumb sync).
+                    // When a colour thumbnail is clicked, mark it active,
+                    // update the label, and refresh the gallery.
                     colorBlock.addEventListener('click', (e) => {
-                        const opt = e.target.closest('[data-variant-option]');
+                        const opt = e.target.closest('.color-thumb');
                         if (!opt) return;
                         const idx = parseInt(opt.dataset.colorIndex, 10);
                         const c = p.colorVariants[idx];
                         if (!c) return;
+
+                        // Active thumb sync
+                        colorOptions.querySelectorAll('.color-thumb')
+                            .forEach((t) => t.classList.remove('active'));
+                        opt.classList.add('active');
+
+                        // Label update
+                        const colorValue = colorBlock.querySelector('[data-variant-value]');
+                        if (colorValue) colorValue.textContent = c.name;
 
                         if (c.images && c.images.length) {
                             // New schema — replace the whole gallery
@@ -3804,15 +3824,19 @@
 
                     const sizeOptions = sizeBlock.querySelector('[data-size-options]');
                     if (sizeOptions) {
-                        sizeOptions.innerHTML = p.sizes.map((s, i) => ''
-                            + '<li>'
-                            +   '<button type="button"'
-                            +     ' class="variant__option' + (i === 0 ? ' is-active' : '') + '"'
-                            +     ' data-variant-option>'
-                            +     s
-                            +   '</button>'
-                            + '</li>'
-                        ).join('');
+                        sizeOptions.innerHTML = '<select class="size-select" data-size-select>'
+                            + p.sizes.map((s) =>
+                                '<option value="' + s + '">' + s + '</option>'
+                            ).join('')
+                            + '</select>';
+
+                        const sizeSelect = sizeOptions.querySelector('[data-size-select]');
+                        if (sizeSelect) {
+                            sizeSelect.addEventListener('change', (e) => {
+                                const sizeValue = sizeBlock.querySelector('[data-variant-value]');
+                                if (sizeValue) sizeValue.textContent = e.target.value;
+                            });
+                        }
                     }
                 } else {
                     sizeBlock.style.display = 'none';
@@ -3823,11 +3847,11 @@
             const relatedGrid = document.querySelector('[data-related-grid]');
             if (relatedGrid) {
                 let related = filterProducts({ category: p.category, exclude: p.id });
-                if (related.length < 4) {
+                if (related.length < 8) {
                     const more = PRODUCTS.filter((x) => x.id !== p.id && x.category !== p.category);
                     related = related.concat(more);
                 }
-                related = related.slice(0, 4);
+                related = related.slice(0, 8);
                 relatedGrid.innerHTML = related.map((rp) => cardHTML(rp, 'collection')).join('');
             }
         }

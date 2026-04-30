@@ -145,115 +145,212 @@
                             <span class="product-price__badge" data-product-badge>Sale</span>
                         </div>
 
-                        <!-- COLOUR -->
-                        <div class="variant" data-variant data-color-block>
+                        <!-- COLOR -->
+                        <div class="variant" data-color-block>
                             <span class="variant__label">
-                                Colour:
+                                COLOR:
                                 <span class="variant__label-value" data-variant-value>—</span>
                             </span>
-                            <ul class="variant__options" role="list" data-color-options>
+                            <div class="variant__options" data-color-options>
                                 <!-- Rendered by js/products.js -->
-                            </ul>
+                            </div>
                         </div>
 
                         <!-- SIZE -->
-                        <div class="variant" data-variant data-size-block>
+                        <div class="variant" data-size-block>
                             <span class="variant__label">
-                                Size:
+                                SIZE:
                                 <span class="variant__label-value" data-variant-value>—</span>
                             </span>
-                            <ul class="variant__options" role="list" data-size-options>
+                            <div class="variant__options" data-size-options>
                                 <!-- Rendered by js/products.js -->
-                            </ul>
+                            </div>
                         </div>
 
-                        <div class="quantity">
-                            <label class="quantity__label" for="qty">Quantity</label>
-                            <div class="quantity__control" data-quantity>
-                                <button type="button" class="quantity__btn" data-quantity-decrement aria-label="Decrease quantity">−</button>
-                                <input
-                                    type="number"
-                                    id="qty"
-                                    class="quantity__input"
-                                    name="quantity"
-                                    value="1"
-                                    min="1"
-                                    max="99"
-                                    data-quantity-input
-                                >
-                                <button type="button" class="quantity__btn" data-quantity-increment aria-label="Increase quantity">+</button>
+                        <p class="size-guide-link"><a href="#" id="open-size-guide">What's my size?</a></p>
+
+                        <!-- SIZE GUIDE MODAL -->
+                        <div id="size-guide-modal" style="display:none;">
+                          <div class="size-guide-overlay" id="close-size-guide-overlay"></div>
+                          <div class="size-guide-content">
+                            <div class="size-guide-header">
+                              <h3 id="size-guide-product-name"></h3>
+                              <button id="close-size-guide">&#x2715;</button>
                             </div>
+                            <div class="size-guide-toggle">
+                              <button class="unit-btn active" data-unit="in">IN</button>
+                              <button class="unit-btn" data-unit="cm">CM</button>
+                            </div>
+                            <table class="size-guide-table">
+                              <thead>
+                                <tr>
+                                  <th>Size</th>
+                                  <th class="unit-in">Shoulder (inch)</th>
+                                  <th class="unit-in">Chest (inch)</th>
+                                  <th class="unit-in">Sleeve length (inch)</th>
+                                  <th class="unit-cm" style="display:none">Shoulder (cm)</th>
+                                  <th class="unit-cm" style="display:none">Chest (cm)</th>
+                                  <th class="unit-cm" style="display:none">Sleeve length (cm)</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr><td>XS</td><td class="unit-in">16</td><td class="unit-in">36</td><td class="unit-in">24.5</td><td class="unit-cm" style="display:none">40.6</td><td class="unit-cm" style="display:none">91.4</td><td class="unit-cm" style="display:none">62.2</td></tr>
+                                <tr><td>S</td><td class="unit-in">17</td><td class="unit-in">38</td><td class="unit-in">24</td><td class="unit-cm" style="display:none">43.2</td><td class="unit-cm" style="display:none">96.5</td><td class="unit-cm" style="display:none">61</td></tr>
+                                <tr><td>M</td><td class="unit-in">18</td><td class="unit-in">40</td><td class="unit-in">25</td><td class="unit-cm" style="display:none">45.7</td><td class="unit-cm" style="display:none">101.6</td><td class="unit-cm" style="display:none">63.5</td></tr>
+                                <tr><td>L</td><td class="unit-in">19</td><td class="unit-in">42</td><td class="unit-in">25.5</td><td class="unit-cm" style="display:none">48.3</td><td class="unit-cm" style="display:none">106.7</td><td class="unit-cm" style="display:none">64.8</td></tr>
+                                <tr><td>XL</td><td class="unit-in">20</td><td class="unit-in">44</td><td class="unit-in">26</td><td class="unit-cm" style="display:none">50.8</td><td class="unit-cm" style="display:none">111.8</td><td class="unit-cm" style="display:none">66</td></tr>
+                                <tr><td>2XL</td><td class="unit-in">21</td><td class="unit-in">46</td><td class="unit-in">26.5</td><td class="unit-cm" style="display:none">53.3</td><td class="unit-cm" style="display:none">116.8</td><td class="unit-cm" style="display:none">67.3</td></tr>
+                              </tbody>
+                            </table>
+                            <p class="size-guide-note"><strong>Note:</strong> Measurements are approximate and may vary slightly. If you're between sizes, we recommend sizing up for comfort. All values are provided as a guide, compare with a similar item you already own for the best fit. Feel free to reach out to us if you have any questions.</p>
+                          </div>
+                        </div>
+
+                        <div class="stock-indicator">
+                          <span class="stock-dot"></span>
+                          <span class="stock-label">In stock</span>
+                          <span class="stock-ship">Ready to Ship</span>
                         </div>
 
                         <div class="product-actions">
                             <button type="button" class="btn-primary">Add to Cart</button>
-                            <button type="button" class="btn-outline">Buy Now</button>
                         </div>
 
-                        <div class="product-trust">
-                            <span class="product-trust__item">
-                                <span class="product-trust__check" aria-hidden="true">✓</span>
-                                Free Shipping
-                            </span>
-                            <span class="product-trust__item">
-                                <span class="product-trust__check" aria-hidden="true">✓</span>
-                                30 Day Returns
-                            </span>
-                            <span class="product-trust__item">
-                                <span class="product-trust__check" aria-hidden="true">✓</span>
-                                Secure Payment
-                            </span>
+                        <div class="secure-checkout">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle; margin-right:4px; display:inline;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Secure checkout <a href="#" id="open-payment-modal">with these payment options</a>
                         </div>
-                    </div>
 
-                </div>
-            </div>
-        </section>
+                        <div class="trust-badges">
+                          <div class="trust-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                            <span>Free Shipping</span>
+                          </div>
+                          <div class="trust-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg>
+                            <span>30 Day Easy Returns</span>
+                          </div>
+                          <div class="trust-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            <span>Protected Shipping, Delivered Securely</span>
+                          </div>
+                        </div>
 
-        <!-- =================================================================
-             2. INFO TABS — Description, Size Guide, Shipping & Returns
-             ================================================================= -->
-        <section class="product-tabs">
-            <div class="container">
-                <div data-tabs>
-                    <ul class="tabs__nav" role="tablist">
-                        <li>
-                            <button type="button" class="tabs__btn is-active" data-tab="description" role="tab" aria-selected="true">
-                                Description
+                        <div class="promo-banner">
+                          <span class="promo-banner__tag">EARLY SPRING SALE</span>
+                          <h3 class="promo-banner__title">— UP TO 70% OFF —</h3>
+                          <p class="promo-banner__sub">A new season begins. Refresh your wardrobe with timeless essentials crafted for lighter days and effortless layering.</p>
+                          <p class="promo-banner__highlight">Enjoy up to 70% off selected styles for a limited time.</p>
+                          <p class="promo-banner__note">Limited seasonal stock — once sold out, it will not be restocked.</p>
+                        </div>
+
+                        <div class="product-accordions">
+                          <div class="accordion-item">
+                            <button class="accordion-header">
+                              <span>DESCRIPTION</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                             </button>
-                        </li>
-                        <li>
-                            <button type="button" class="tabs__btn" data-tab="size" role="tab" aria-selected="false">
-                                Size Guide
+                            <div class="accordion-body">
+                              <p data-product-description>Loading...</p>
+                            </div>
+                          </div>
+
+                          <div class="accordion-item">
+                            <button class="accordion-header">
+                              <span>SHIPPING & DELIVERY</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                             </button>
-                        </li>
-                        <li>
-                            <button type="button" class="tabs__btn" data-tab="shipping" role="tab" aria-selected="false">
-                                Shipping &amp; Returns
+                            <div class="accordion-body">
+                              <p>Standard delivery takes 5–8 business days. Express delivery available at checkout. Free shipping on orders over $100. You will receive a tracking number once your order has been dispatched.</p>
+                            </div>
+                          </div>
+
+                          <div class="accordion-item">
+                            <button class="accordion-header">
+                              <span>RETURNS & REFUNDS</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                             </button>
-                        </li>
-                    </ul>
+                            <div class="accordion-body">
+                              <p>We accept returns within 30 days of delivery. Items must be unworn, unwashed, and in original condition with all tags attached. To initiate a return, contact our support team. Refunds are processed within 5–7 business days.</p>
+                            </div>
+                          </div>
 
-                    <div class="tabs__panel is-active" data-panel="description" role="tabpanel">
-                        <p>The Zarek placeholder premium watch is built around a stainless-steel case finished by hand and paired with a sapphire crystal that resists scratches and reflections in equal measure. Designed in our Lisbon studio, it pairs a Swiss automatic movement with a clean, restrained dial — the kind of watch you put on once and reach for every day after.</p>
-                        <p>Each piece is assembled in limited numbers, water resistant to 100 metres, and built to be serviced — not replaced — with a five-year movement guarantee.</p>
+                          <div class="accordion-item">
+                            <button class="accordion-header">
+                              <span>ANY QUESTIONS?</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </button>
+                            <div class="accordion-body">
+                              <p>Our support team is available Monday to Friday, 9am–6pm. Reach us at <a href="mailto:support@zarek.com">support@zarek.com</a> and we'll get back to you within 24 hours.</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="testimonials-section">
+                          <h3 class="testimonials-title">WHAT OUR CUSTOMERS SAY</h3>
+                          <div class="testimonials-slider">
+                            <div class="testimonial-slide active">
+                              <div class="testimonial-stars">★★★★★</div>
+                              <p class="testimonial-text">"Exceptional quality and fast delivery. The fit was perfect straight out of the box — exactly what I was looking for."</p>
+                              <p class="testimonial-author">Marcus L.</p>
+                              <p class="testimonial-location">New York, NY</p>
+                            </div>
+                            <div class="testimonial-slide">
+                              <div class="testimonial-stars">★★★★★</div>
+                              <p class="testimonial-text">"I've ordered from many stores but Zarek stands out. The materials feel premium and the style is exactly on point."</p>
+                              <p class="testimonial-author">Daniel R.</p>
+                              <p class="testimonial-location">Los Angeles, CA</p>
+                            </div>
+                            <div class="testimonial-slide">
+                              <div class="testimonial-stars">★★★★★</div>
+                              <p class="testimonial-text">"Clean design, great quality. Wore it the same day it arrived and got compliments immediately. Will be ordering again."</p>
+                              <p class="testimonial-author">James K.</p>
+                              <p class="testimonial-location">Chicago, IL</p>
+                            </div>
+                            <div class="testimonial-slide">
+                              <div class="testimonial-stars">★★★★★</div>
+                              <p class="testimonial-text">"Solid construction and a great fit. You can tell a lot of thought went into the details. Highly recommend."</p>
+                              <p class="testimonial-author">Thomas W.</p>
+                              <p class="testimonial-location">Miami, FL</p>
+                            </div>
+                            <div class="testimonial-slide">
+                              <div class="testimonial-stars">★★★★★</div>
+                              <p class="testimonial-text">"Best purchase I've made this year. The quality exceeded my expectations and shipping was faster than expected."</p>
+                              <p class="testimonial-author">Oliver S.</p>
+                              <p class="testimonial-location">Austin, TX</p>
+                            </div>
+                          </div>
+                          <div class="testimonials-controls">
+                            <button class="testimonial-prev">&#8249;</button>
+                            <div class="testimonial-dots">
+                              <span class="dot active"></span>
+                              <span class="dot"></span>
+                              <span class="dot"></span>
+                              <span class="dot"></span>
+                              <span class="dot"></span>
+                            </div>
+                            <button class="testimonial-next">&#8250;</button>
+                          </div>
+                        </div>
+
+
+                        <!-- PAYMENT MODAL -->
+                        <div id="payment-modal" style="display:none;">
+                          <div class="payment-overlay" id="close-payment-overlay"></div>
+                          <div class="payment-content">
+                            <p class="payment-title">Secure checkout with these payment options</p>
+                            <div class="payment-icons">
+                              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visa/visa-original.svg" alt="Visa">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" alt="Amex">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/PayPal_Logo_Icon_2014.svg" alt="PayPal">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Pay" style="height:20px;">
+                            </div>
+                            <button class="payment-close" id="close-payment-btn">CLOSE</button>
+                          </div>
+                        </div>
+
                     </div>
 
-                    <div class="tabs__panel" data-panel="size" role="tabpanel">
-                        <p>Standard wrist sizing across the Zarek collection. Measure the circumference of your wrist with a soft tape measure for the most accurate fit.</p>
-                        <ul>
-                            <li>Small — fits 14.5–16.0 cm wrist</li>
-                            <li>Medium — fits 16.0–18.0 cm wrist (most common)</li>
-                            <li>Large — fits 18.0–20.5 cm wrist</li>
-                            <li>X-Large — fits 20.5–22.5 cm wrist</li>
-                        </ul>
-                        <p>All bands ship with extra removable links so the fit can be tailored at home or by your local jeweller.</p>
-                    </div>
-
-                    <div class="tabs__panel" data-panel="shipping" role="tabpanel">
-                        <p>Complimentary standard shipping is included on every order, worldwide. Domestic deliveries arrive within 3–5 business days; international orders within 7–14 business days.</p>
-                        <p>Returns are accepted within 30 days of delivery on unworn items in original packaging. Initiate a return from your account or contact our support team — we will email a prepaid label and process the refund within 5 business days of receipt.</p>
-                    </div>
                 </div>
             </div>
         </section>
@@ -271,6 +368,114 @@
                 </div>
             </div>
         </section>
+
+        <div class="press-section">
+          <div id="press-info-box">
+            <p class="press-logo-name">William C.</p>
+            <p class="press-logo-description">A flawless fit, every time. Zarek blends refined materials with timeless modern design — my first choice for a look that truly stands apart.</p>
+          </div>
+          <div class="press-logo-container">
+            <img src="https://cdn.shopify.com/s/files/1/0693/9387/5134/files/forbes_logo_300x_9c9fa340-cd2f-41bd-9f20-9dfe37311b8a.avif?v=1754728244" alt="Forbes" class="press-logo-img active"
+              data-name="William C."
+              data-description="A flawless fit, every time. Zarek blends refined materials with timeless modern design — my first choice for a look that truly stands apart."
+              onclick="pressShowInfo(event)">
+            <img src="https://cdn.shopify.com/s/files/1/0693/9387/5134/files/1200px-VOGUE_revista_-_logo_300x_d993c682-8abf-4559-b5f3-ca8d435c88a5.avif?v=1754728239" alt="Vogue" class="press-logo-img"
+              data-name="James A."
+              data-description="Clean lines, premium fabrics, and a fit that just works. Zarek has completely elevated my everyday wardrobe."
+              onclick="pressShowInfo(event)">
+            <img src="https://cdn.shopify.com/s/files/1/0693/9387/5134/files/the-business-of-fashion-bof-logo-B19514A78D-seeklogo.com_300x_5c3f66ff-8edd-404e-86af-9b5264a06d68.png?v=1754728297" alt="BOF" class="press-logo-img"
+              data-name="Marcus T."
+              data-description="Unrivalled quality and precise attention to detail. Zarek defines the new standard in modern menswear."
+              onclick="pressShowInfo(event)">
+            <img src="https://cdn.shopify.com/s/files/1/0693/9387/5134/files/gq-logo_300x_8baf593c-ea4f-4322-9cfc-ad55fa296dfb.avif?v=1754728287" alt="GQ" class="press-logo-img"
+              data-name="Daniel R."
+              data-description="Finally, a brand that perfects both style and substance. Zarek pieces are versatile, built to last, and effortlessly sharp."
+              onclick="pressShowInfo(event)">
+          </div>
+        </div>
+
+        <div class="mini-collection-section">
+          <p class="mini-collection-label">OUR PANTS</p>
+          <a href="collection.html?cat=pants" class="mini-collection-view-all">VIEW ALL &rsaquo;</a>
+          <button class="mini-collection-prev">&#8249;</button>
+          <div class="mini-collection-track" id="mini-pants-track"></div>
+          <button class="mini-collection-next">&#8250;</button>
+        </div>
+
+        <a href="collection.html" class="back-to-collection">
+          &larr; BACK TO COLLECTION
+        </a>
+
+        <div class="faq-section">
+          <p class="faq-label">NEED HELP?</p>
+          <h2 class="faq-title">FREQUENTLY ASKED QUESTIONS</h2>
+
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-header">
+                <span>HOW MUCH DOES SHIPPING COST?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="faq-body">
+                <p>We offer free standard shipping on all orders. Express shipping is available at checkout for an additional fee.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-header">
+                <span>HOW LONG WILL IT TAKE TO RECEIVE MY ORDER?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="faq-body">
+                <p>Standard delivery takes 5–8 business days. Express delivery takes 2–3 business days. You will receive a tracking number once your order has been dispatched.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-header">
+                <span>WHERE CAN I FIND MY TRACKING DETAILS?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="faq-body">
+                <p>Once your order ships, you will receive a confirmation email with your tracking number. You can use it to follow your order on our carrier's website.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-header">
+                <span>I ORDERED THE WRONG ITEM, HOW DO I RETURN MY ORDER?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="faq-body">
+                <p>No problem. Contact us at support@zarek.com within 30 days of delivery and we will guide you through the return process. Items must be unworn and in original condition.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-header">
+                <span>ANY OTHER QUESTIONS?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="faq-body">
+                <p>Our support team is available Monday to Friday, 9am–6pm. Reach us at support@zarek.com and we'll get back to you within 24 hours.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trust-strip">
+          <div class="trust-strip-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v3"/><rect x="9" y="11" width="14" height="10" rx="1"/><circle cx="12" cy="20" r="1"/><circle cx="20" cy="20" r="1"/></svg>
+            <p class="trust-strip-title">FREE SHIPPING</p>
+            <p class="trust-strip-text">Fast & free shipping worldwide. Order before <strong>11:00 PM</strong> and we will start processing it today.</p>
+          </div>
+          <div class="trust-strip-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+            <p class="trust-strip-title">SATISFIED OR REFUNDED</p>
+            <p class="trust-strip-text">We want you to be completely satisfied. If not, request a full refund within 30 days, no questions asked.</p>
+          </div>
+          <div class="trust-strip-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            <p class="trust-strip-title">TRUSTED</p>
+            <p class="trust-strip-text">We are committed to offering high-quality products and service to every customer, every time.</p>
+          </div>
+        </div>
     </main>
 
     <!-- =====================================================================
@@ -337,7 +542,162 @@
     </footer>
 
     <script src="js/products.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const track = document.getElementById('mini-pants-track');
+      if (!track) return;
+
+      const interval = setInterval(function() {
+        const products = window.ZAREK_PRODUCTS;
+        if (typeof products === 'undefined' || products.length === 0) return;
+        clearInterval(interval);
+
+        const filtered = products.filter(function(p) { return p.category === 'pants'; }).slice(0, 12);
+        track.innerHTML = '';
+
+        filtered.forEach(function(p) {
+          let imgUrl = '';
+          if (p.colorVariants && p.colorVariants.length > 0) {
+            for (let v = 0; v < p.colorVariants.length; v++) {
+              const variant = p.colorVariants[v];
+              if (variant.images && variant.images.length > 0) {
+                imgUrl = variant.images[0];
+                break;
+              } else if (variant.image) {
+                imgUrl = variant.image;
+                break;
+              }
+            }
+          }
+          if (!imgUrl && p.image) imgUrl = p.image;
+          if (!imgUrl && p.images && p.images.length > 0) imgUrl = p.images[0];
+          const price = p.price ? '$' + p.price.toFixed(2) : '';
+          const card = document.createElement('div');
+          card.className = 'mini-collection-card';
+          const a = document.createElement('a');
+          a.href = 'product.html?id=' + p.id;
+          const img = document.createElement('img');
+          img.src = imgUrl;
+          img.alt = p.name;
+          img.loading = 'lazy';
+          const name = document.createElement('p');
+          name.className = 'mini-collection-card-name';
+          name.textContent = p.name;
+          const priceEl = document.createElement('p');
+          priceEl.className = 'mini-collection-card-price';
+          priceEl.textContent = price;
+          a.appendChild(img);
+          a.appendChild(name);
+          a.appendChild(priceEl);
+          card.appendChild(a);
+          track.appendChild(card);
+        });
+      }, 100);
+
+      document.querySelector('.mini-collection-prev').addEventListener('click', function() {
+        const track = document.getElementById('mini-pants-track');
+        track.scrollBy({ left: -240, behavior: 'smooth' });
+      });
+      document.querySelector('.mini-collection-next').addEventListener('click', function() {
+        const track = document.getElementById('mini-pants-track');
+        track.scrollBy({ left: 240, behavior: 'smooth' });
+      });
+    });
+    </script>
     <script src="js/main.js"></script>
     <script src="js/cart.js"></script>
+
+    <script>
+    document.getElementById('open-size-guide').addEventListener('click', function(e) {
+      e.preventDefault();
+      const productName = document.querySelector('[data-product-name], .product-info__name, h1[class*="name"]');
+      if (productName) {
+        document.getElementById('size-guide-product-name').textContent = productName.textContent;
+      }
+      document.getElementById('size-guide-modal').style.display = 'flex';
+    });
+
+    document.getElementById('close-size-guide').addEventListener('click', function() {
+      document.getElementById('size-guide-modal').style.display = 'none';
+    });
+
+    document.getElementById('close-size-guide-overlay').addEventListener('click', function() {
+      document.getElementById('size-guide-modal').style.display = 'none';
+    });
+
+    document.querySelectorAll('.unit-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.unit-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        const unit = this.dataset.unit;
+        document.querySelectorAll('.unit-in').forEach(el => el.style.display = unit === 'in' ? '' : 'none');
+        document.querySelectorAll('.unit-cm').forEach(el => el.style.display = unit === 'cm' ? '' : 'none');
+      });
+    });
+
+    document.getElementById('open-payment-modal').addEventListener('click', function(e) {
+      e.preventDefault();
+      document.getElementById('payment-modal').style.display = 'flex';
+    });
+    document.getElementById('close-payment-btn').addEventListener('click', function() {
+      document.getElementById('payment-modal').style.display = 'none';
+    });
+    document.getElementById('close-payment-overlay').addEventListener('click', function() {
+      document.getElementById('payment-modal').style.display = 'none';
+    });
+
+    document.querySelectorAll('.accordion-header').forEach(header => {
+      header.addEventListener('click', function() {
+        const body = this.nextElementSibling;
+        const isOpen = body.classList.contains('open');
+        document.querySelectorAll('.accordion-body').forEach(b => b.classList.remove('open'));
+        document.querySelectorAll('.accordion-header').forEach(h => h.classList.remove('open'));
+        if (!isOpen) {
+          body.classList.add('open');
+          this.classList.add('open');
+        }
+      });
+    });
+
+    document.querySelectorAll('.faq-header').forEach(header => {
+      header.addEventListener('click', function() {
+        const body = this.nextElementSibling;
+        const isOpen = body.classList.contains('open');
+        document.querySelectorAll('.faq-body').forEach(b => b.classList.remove('open'));
+        document.querySelectorAll('.faq-header').forEach(h => h.classList.remove('open'));
+        if (!isOpen) {
+          body.classList.add('open');
+          this.classList.add('open');
+        }
+      });
+    });
+
+    (function() {
+      const slides = document.querySelectorAll('.testimonial-slide');
+      const dots = document.querySelectorAll('.testimonial-dots .dot');
+      let current = 0;
+
+      function goTo(index) {
+        slides[current].classList.remove('active');
+        dots[current].classList.remove('active');
+        current = (index + slides.length) % slides.length;
+        slides[current].classList.add('active');
+        dots[current].classList.add('active');
+      }
+
+      document.querySelector('.testimonial-prev').addEventListener('click', () => goTo(current - 1));
+      document.querySelector('.testimonial-next').addEventListener('click', () => goTo(current + 1));
+      dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
+    })();
+
+    function pressShowInfo(e) {
+      const img = e.currentTarget;
+      document.querySelectorAll('.press-logo-img').forEach(i => i.classList.remove('active'));
+      img.classList.add('active');
+      document.querySelector('.press-logo-name').textContent = img.dataset.name;
+      document.querySelector('.press-logo-description').textContent = img.dataset.description;
+    }
+
+    </script>
 </body>
 </html>
