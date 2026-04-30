@@ -308,6 +308,19 @@
         const chip = el.getAttribute('data-filter-chip');
         if (chip === cat) el.classList.add('is-active');
       });
+
+      const activeTab = document.querySelector('.collection-tab.active, .collection-tab[class*="active"]');
+      const tabsContainer = document.querySelector('.collection-tabs, ul[class*="collection-tab"]');
+
+      if (activeTab && tabsContainer) {
+        const tabLeft = activeTab.offsetLeft;
+        const tabWidth = activeTab.offsetWidth;
+        const containerWidth = tabsContainer.offsetWidth;
+        tabsContainer.scrollTo({
+          left: tabLeft - (containerWidth / 4),
+          behavior: 'smooth'
+        });
+      }
     })();
     </script>
 </body>
