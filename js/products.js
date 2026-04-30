@@ -1299,6 +1299,68 @@
             ],
             sizes: ['2XS', 'XS', 'S', 'M', 'L', 'XL']
         },
+        {
+            id: 'polo-contrast-trim',
+            name: 'Zarek | Short Sleeve Polo Shirt Contrast Trim Button-Up',
+            category: 'tops',
+            price: 44.95,
+            originalPrice: 59.95,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Navy', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__11242.webp?v=1771155354&width=1024',
+                    'https://vintares.com/cdn/shop/files/freepik__character-reference-img1-change-the-stance-of-the-__11246.webp?v=1771155354&width=1024',
+                    'https://vintares.com/cdn/shop/files/3_806ec1bb-9f5f-47dc-9a7c-e0c3e977cca7.webp?v=1771155354&width=1024'
+                ] },
+                { name: 'Gray', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__11247.webp?v=1771155354&width=1024',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__11245.webp?v=1771155354&width=1024',
+                    'https://vintares.com/cdn/shop/files/5_3765fa49-f46e-4a48-9331-6f9958f9bc81.webp?v=1771155354&width=1024'
+                ] }
+            ],
+            sizes: ['S', 'M', 'L', 'XL', '2XL']
+        },
+        {
+            id: 'polo-pullover-solid',
+            name: 'Zarek | Short Sleeve Polo Shirt Pullover Solid Color',
+            category: 'tops',
+            price: 44.95,
+            originalPrice: 59.95,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Black', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__11221.webp?v=1771150613&width=1024',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__11224.webp?v=1771150613&width=1024',
+                    'https://vintares.com/cdn/shop/files/1_40f8fc8a-1d99-482d-b1d8-06face64bc5e.webp?v=1771150613&width=1024'
+                ] },
+                { name: 'Mint', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__11223.webp?v=1771150613&width=1024',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__11225.webp?v=1771150613&width=1024',
+                    'https://vintares.com/cdn/shop/files/3_0fb98661-d9d9-47af-a71e-59bf2b1a4e38.webp?v=1771150613&width=1024'
+                ] },
+                { name: 'White', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__remove-the-longsleeve-the-man-is-wearing__11227.webp?v=1771150613&width=1024',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__11232.webp?v=1771150613&width=1024',
+                    'https://vintares.com/cdn/shop/files/5_56127771-51bb-4a45-a156-becc223e5e5c.webp?v=1771150613&width=1024'
+                ] },
+                { name: 'Gray', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__remove-the-long-sleeve__11229.webp?v=1771150613&width=1024',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__11231.webp?v=1771150613&width=1024',
+                    'https://vintares.com/cdn/shop/files/2_b01017d6-bc07-401a-b160-da627a7e83bd.webp?v=1771150613&width=1024'
+                ] },
+                { name: 'Navy Blue', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__remove-the-long-sleeve__11228.webp?v=1771150613&width=1024',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__11235.webp?v=1771150613&width=1024',
+                    'https://vintares.com/cdn/shop/files/6_a605f3de-652c-470a-a4f1-399794a48e4e.webp?v=1771150613&width=1024'
+                ] },
+                { name: 'Burgundy', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__reza-reza-char1-character-identity-referenceuse-on__11233.webp?v=1771150613&width=1024',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__11234.webp?v=1771150613&width=1024',
+                    'https://vintares.com/cdn/shop/files/4_0759c748-350f-49be-9f89-f58712bfaf66.webp?v=1771150613&width=1024'
+                ] }
+            ],
+            sizes: ['S', 'M', 'L', 'XL', '2XL']
+        },
 
         // ───────────────── PANTS ─────────────────
         {
