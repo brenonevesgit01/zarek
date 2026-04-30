@@ -688,6 +688,28 @@
       document.querySelector('.testimonial-prev').addEventListener('click', () => goTo(current - 1));
       document.querySelector('.testimonial-next').addEventListener('click', () => goTo(current + 1));
       dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
+
+      const slider = document.querySelector('.testimonials-slider');
+      let startX = 0;
+      let isDragging = false;
+
+      slider.addEventListener('touchstart', function(e) {
+        startX = e.touches[0].clientX;
+        isDragging = true;
+      }, { passive: true });
+
+      slider.addEventListener('touchend', function(e) {
+        if (!isDragging) return;
+        const diff = startX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 40) {
+          if (diff > 0) {
+            goTo(current + 1);
+          } else {
+            goTo(current - 1);
+          }
+        }
+        isDragging = false;
+      }, { passive: true });
     })();
 
     function pressShowInfo(e) {
