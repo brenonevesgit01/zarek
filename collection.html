@@ -321,6 +321,16 @@
           behavior: 'smooth'
         });
       }
+
+      document.querySelectorAll('.collection-tab a, .collection-tabs a').forEach(tab => {
+        tab.addEventListener('click', function() {
+          const tabsContainer = this.closest('ul, nav, div[class*="collection-tab"]');
+          if (tabsContainer) {
+            const tabLeft = this.parentElement.offsetLeft;
+            tabsContainer.scrollLeft = tabLeft - 16;
+          }
+        });
+      });
     })();
     </script>
 </body>
