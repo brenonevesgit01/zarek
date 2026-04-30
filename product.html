@@ -721,35 +721,51 @@
     }
 
     (function() {
-      const mainImg = document.querySelector('[data-gallery-main]');
-      if (!mainImg) return;
       let startX = 0;
+      let currentImages = [];
+      let currentIndex = 0;
 
-      mainImg.addEventListener('touchstart', function(e) {
-        startX = e.touches[0].clientX;
-      }, { passive: true });
+      function initSwipe() {
+        const mainImg = document.querySelector('.gallery__main-img');
+        if (!mainImg) return;
 
-      mainImg.addEventListener('touchend', function(e) {
-        const diff = startX - e.changedTouches[0].clientX;
-        if (Math.abs(diff) < 40) return;
+        mainImg.style.touchAction = 'pan-y';
 
-        const thumbs = document.querySelectorAll('[data-gallery-thumbs] img, .gallery__thumbs img');
-        if (!thumbs.length) return;
+        mainImg.addEventListener('touchstart', function(e) {
+          startX = e.touches[0].clientX;
+        }, { passive: true });
 
-        let activeIndex = 0;
-        thumbs.forEach((t, i) => {
-          if (t.src === mainImg.src || t.classList.contains('active')) activeIndex = i;
-        });
+        mainImg.addEventListener('touchend', function(e) {
+          const diff = startX - e.changedTouches[0].clientX;
+          if (Math.abs(diff) < 40) return;
 
-        let nextIndex;
-        if (diff > 0) {
-          nextIndex = (activeIndex + 1) % thumbs.length;
-        } else {
-          nextIndex = (activeIndex - 1 + thumbs.length) % thumbs.length;
-        }
+          const thumbs = Array.from(document.querySelectorAll('.gallery__thumbs img'));
+          if (!thumbs.length) return;
 
-        thumbs[nextIndex].click();
-      }, { passive: true });
+          const currentSrc = mainImg.src;
+          let activeIndex = 0;
+          thumbs.forEach((t, i) => {
+            if (currentSrc.includes(t.src.split('/').pop().split('?')[0])) activeIndex = i;
+          });
+
+          let nextIndex;
+          if (diff > 0) {
+            nextIndex = (activeIndex + 1) % thumbs.length;
+          } else {
+            nextIndex = (activeIndex - 1 + thumbs.length) % thumbs.length;
+          }
+
+          mainImg.src = thumbs[nextIndex].src;
+          thumbs.forEach(t => t.classList.remove('active'));
+          thumbs[nextIndex].classList.add('active');
+        }, { passive: true });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initSwipe);
+      } else {
+        setTimeout(initSwipe, 500);
+      }
     })();
 
     </script>
