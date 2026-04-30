@@ -594,3 +594,12 @@
     }
     .collection-tabs::-webkit-scrollbar { display: none; }
 }
+
+body {
+  animation: fadeInPage 0.3s ease forwards;
+}
+
+@keyframes fadeInPage {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
