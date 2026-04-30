@@ -742,10 +742,9 @@
           const thumbs = Array.from(document.querySelectorAll('.gallery__thumbs img'));
           if (!thumbs.length) return;
 
-          const currentSrc = mainImg.src;
           let activeIndex = 0;
           thumbs.forEach((t, i) => {
-            if (currentSrc.includes(t.src.split('/').pop().split('?')[0])) activeIndex = i;
+            if (t.classList.contains('active')) activeIndex = i;
           });
 
           let nextIndex;
@@ -755,9 +754,7 @@
             nextIndex = (activeIndex - 1 + thumbs.length) % thumbs.length;
           }
 
-          mainImg.src = thumbs[nextIndex].src;
-          thumbs.forEach(t => t.classList.remove('active'));
-          thumbs[nextIndex].classList.add('active');
+          thumbs[nextIndex].click();
         }, { passive: true });
       }
 
