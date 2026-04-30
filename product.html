@@ -722,7 +722,6 @@
 
     (function() {
       let startX = 0;
-      let currentImages = [];
       let currentIndex = 0;
 
       function initSwipe() {
@@ -742,20 +741,20 @@
           const thumbs = Array.from(document.querySelectorAll('.gallery__thumbs img'));
           if (!thumbs.length) return;
 
-          let activeIndex = 0;
-          thumbs.forEach((t, i) => {
-            if (t.classList.contains('active')) activeIndex = i;
-          });
-
-          let nextIndex;
-          if (diff > 0) {
-            nextIndex = (activeIndex + 1) % thumbs.length;
+          if (diff < 0) {
+            currentIndex = (currentIndex + 1) % thumbs.length;
           } else {
-            nextIndex = (activeIndex - 1 + thumbs.length) % thumbs.length;
+            currentIndex = (currentIndex - 1 + thumbs.length) % thumbs.length;
           }
 
-          thumbs[nextIndex].click();
+          thumbs[currentIndex].click();
         }, { passive: true });
+
+        document.querySelectorAll('.gallery__thumbs img').forEach((thumb, i) => {
+          thumb.addEventListener('click', function() {
+            currentIndex = i;
+          });
+        });
       }
 
       if (document.readyState === 'loading') {
