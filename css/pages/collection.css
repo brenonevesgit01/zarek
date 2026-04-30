@@ -463,3 +463,124 @@
         font-size: var(--font-xs);
     }
 }
+
+/* COLLECTION TABS */
+.collection-tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid #e5e5e5;
+    gap: 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.collection-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.collection-tab {
+    display: inline-block;
+    padding: 16px 28px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #1a1a1a;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    transition: color 0.2s, border-color 0.2s;
+    white-space: nowrap;
+    background: transparent;
+}
+
+.collection-tab:hover {
+    color: #1a1a1a;
+    border-bottom-color: #888;
+}
+
+.collection-tab.is-active {
+    background: #1a1a1a;
+    color: #fff;
+    border-bottom-color: #1a1a1a;
+}
+
+.collection-tab--sale {
+    color: #c0392b;
+}
+
+.collection-tab--sale.is-active {
+    background: #c0392b;
+    color: #fff;
+    border-bottom-color: #c0392b;
+}
+
+/* COLLECTION DESCRIPTION */
+.collection-description {
+    padding: 56px 0 40px;
+    text-align: center;
+    background: #fafafa;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.collection-description__title {
+    font-size: clamp(20px, 3vw, 28px);
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #1a1a1a;
+    margin: 0 0 20px;
+}
+
+.collection-description__text {
+    font-size: 14px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.75;
+    letter-spacing: 0.01em;
+}
+
+.load-more-spinner {
+    display: none;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.load-more-spinner.is-visible {
+    display: flex;
+}
+
+.load-more-spinner__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #1a1a1a;
+    animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.2; transform: scale(0.8); }
+    50% { opacity: 1; transform: scale(1.2); }
+}
+
+@media (max-width: 768px) {
+    .product-card__cta,
+    .btn-primary.featured__cta,
+    .product-card .btn-primary {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-card .add-to-cart,
+    .product-card button[class*="add"],
+    .product-card .btn-cart,
+    .product-card-c__add {
+        display: none !important;
+    }
+}

@@ -180,3 +180,48 @@
         }
     });
 })();
+
+// INFINITE SCROLL
+(function() {
+    const sentinel = document.querySelector('[data-load-sentinel]');
+    const spinner = document.querySelector('[data-load-spinner]');
+    const grid = document.querySelector('[data-product-grid]');
+    if (!sentinel || !grid) return;
+
+    let loading = false;
+    let page = 1;
+    const PAGE_SIZE = 12;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !loading) {
+                loadMore();
+            }
+        });
+    }, { rootMargin: '200px' });
+
+    observer.observe(sentinel);
+
+    function loadMore() {
+        const allCards = grid.querySelectorAll('.product-card');
+        const hidden = Array.from(allCards).filter(c => c.style.display === 'none' || c.classList.contains('is-hidden-page'));
+        if (hidden.length === 0) {
+            observer.disconnect();
+            return;
+        }
+
+        loading = true;
+        if (spinner) spinner.classList.add('is-visible');
+
+        setTimeout(() => {
+            const toShow = hidden.slice(0, PAGE_SIZE);
+            toShow.forEach(c => {
+                c.classList.remove('is-hidden-page');
+                c.style.display = '';
+            });
+            page++;
+            loading = false;
+            if (spinner) spinner.classList.remove('is-visible');
+        }, 600);
+    }
+})();

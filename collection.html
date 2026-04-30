@@ -119,6 +119,7 @@
                 src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1400"
                 alt=""
                 loading="eager"
+                data-collection-hero-img
             >
             <div class="collection-hero__overlay" aria-hidden="true"></div>
             <div class="collection-hero__content">
@@ -132,31 +133,23 @@
              ================================================================= -->
         <section class="collection-filters">
             <div class="container">
-                <div class="collection-filters__top">
-                    <p class="collection-filters__count" data-showing-count>Showing 12 products</p>
-
-                    <div class="sort-control">
-                        <label class="sort-control__label" for="sort">Sort by:</label>
-                        <select class="sort-control__select" id="sort" name="sort">
-                            <option value="featured">Featured</option>
-                            <option value="newest">Newest</option>
-                            <option value="price-asc">Price: Low to High</option>
-                            <option value="price-desc">Price: High to Low</option>
-                            <option value="bestselling">Best Selling</option>
-                        </select>
-                    </div>
-                </div>
-
-                <ul class="filter-chips" role="list">
-                    <li><a href="collection.html" class="filter-chip" data-filter-chip="">All</a></li>
-                    <li><a href="collection.html?cat=coats-jackets" class="filter-chip" data-filter-chip="coats-jackets">Coats &amp; Jackets</a></li>
-                    <li><a href="collection.html?cat=pants" class="filter-chip" data-filter-chip="pants">Pants</a></li>
-                    <li><a href="collection.html?cat=shoes" class="filter-chip" data-filter-chip="shoes">Shoes</a></li>
-                    <li><a href="collection.html?cat=outfits" class="filter-chip" data-filter-chip="outfits">Outfits</a></li>
-                    <li><a href="collection.html?cat=glasses" class="filter-chip" data-filter-chip="glasses">Glasses</a></li>
-                    <li><a href="collection.html?cat=accessories" class="filter-chip" data-filter-chip="accessories">Accessories</a></li>
-                    <li><a href="collection.html?cat=sale" class="filter-chip" data-filter-chip="sale">Sale</a></li>
+                <ul class="collection-tabs" role="list">
+                    <li><a href="collection.html?cat=coats-jackets" class="collection-tab" data-filter-chip="coats-jackets">Coats &amp; Jackets</a></li>
+                    <li><a href="collection.html?cat=tops" class="collection-tab" data-filter-chip="tops">Tops</a></li>
+                    <li><a href="collection.html?cat=pants" class="collection-tab" data-filter-chip="pants">Pants</a></li>
+                    <li><a href="collection.html?cat=shoes" class="collection-tab" data-filter-chip="shoes">Shoes</a></li>
+                    <li><a href="collection.html?cat=outfits" class="collection-tab" data-filter-chip="outfits">Outfits</a></li>
+                    <li><a href="collection.html?cat=glasses" class="collection-tab" data-filter-chip="glasses">Glasses</a></li>
+                    <li><a href="collection.html?cat=accessories" class="collection-tab" data-filter-chip="accessories">Accessories</a></li>
+                    <li><a href="collection.html?cat=sale" class="collection-tab collection-tab--sale" data-filter-chip="sale">Sale</a></li>
                 </ul>
+            </div>
+        </section>
+
+        <section class="collection-description" data-collection-description>
+            <div class="container">
+                <h2 class="collection-description__title" data-collection-desc-title></h2>
+                <p class="collection-description__text" data-collection-desc-text></p>
             </div>
         </section>
 
@@ -175,16 +168,12 @@
         </section>
 
         <!-- =================================================================
-             4. PAGINATION
+             4. INFINITE SCROLL — sentinel + spinner
              ================================================================= -->
-        <nav class="pagination" aria-label="Pagination">
-            <ul class="pagination__list">
-                <li><a href="?page=1" class="pagination__link is-active" aria-current="page">1</a></li>
-                <li><a href="?page=2" class="pagination__link">2</a></li>
-                <li><a href="?page=3" class="pagination__link">3</a></li>
-                <li><a href="?page=2" class="pagination__link pagination__link--next" aria-label="Next page">→</a></li>
-            </ul>
-        </nav>
+        <div class="load-more-sentinel" data-load-sentinel aria-hidden="true"></div>
+        <div class="load-more-spinner" data-load-spinner aria-hidden="true">
+            <span class="load-more-spinner__dot"></span>
+        </div>
     </main>
 
     <!-- =====================================================================
@@ -253,5 +242,73 @@
     <script src="js/products.js"></script>
     <script src="js/main.js"></script>
     <script src="js/cart.js"></script>
+
+    <script>
+    (function() {
+      const heroData = {
+        'coats-jackets': {
+          img: 'https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=1400',
+          title: 'Coats & Jackets',
+          desc: 'Discover timeless outerwear crafted for the modern man — where sharp tailoring meets everyday versatility. Every piece in the Zarek Coats & Jackets collection is built to last seasons, not trends.'
+        },
+        'tops': {
+          img: 'https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=1400',
+          title: 'Tops',
+          desc: 'Clean lines, refined fabrics, and considered fits. The Zarek Tops collection covers everything from understated basics to statement knitwear — essentials that work harder the more you wear them.'
+        },
+        'pants': {
+          img: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=1400',
+          title: 'Pants',
+          desc: 'From tailored chinos to relaxed cargos, Zarek Pants are cut for men who move with intention. Versatile silhouettes that sit as well in the office as they do on the weekend.'
+        },
+        'shoes': {
+          img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1400',
+          title: 'Shoes',
+          desc: 'Every outfit is finished at the feet. Zarek Shoes pairs considered design with lasting construction — loafers, boots, sneakers, and sandals built for men who dress with purpose.'
+        },
+        'outfits': {
+          img: 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1400',
+          title: 'Outfits',
+          desc: 'Coordinated sets and curated looks, ready to wear. Zarek Outfits takes the guesswork out of getting dressed — matched pieces that look intentional the moment you put them on.'
+        },
+        'glasses': {
+          img: 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=1400',
+          title: 'Glasses',
+          desc: 'The right frame changes everything. Zarek Glasses brings together slim metals, refined acetates, and tinted lenses — eyewear that earns a second look without asking for one.'
+        },
+        'accessories': {
+          img: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=1400',
+          title: 'Accessories',
+          desc: 'The details that complete the look. From watch rolls to small leather goods, Zarek Accessories are made for men who understand that the finishing touches are never an afterthought.'
+        },
+        'sale': {
+          img: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1400',
+          title: 'Sale',
+          desc: 'Zarek quality at reduced prices. A curated selection of essential pieces — same craftsmanship, same considered design, now at a price that makes the decision easier.'
+        },
+      };
+
+      const params = new URLSearchParams(window.location.search);
+      const cat = params.get('cat') || '';
+      const data = heroData[cat];
+
+      if (data) {
+        const imgEl = document.querySelector('[data-collection-hero-img]');
+        if (imgEl) imgEl.src = data.img;
+
+        const titleEl = document.querySelector('[data-collection-desc-title]');
+        if (titleEl) titleEl.textContent = data.title;
+
+        const descEl = document.querySelector('[data-collection-desc-text]');
+        if (descEl) descEl.textContent = data.desc;
+      }
+
+      // Mark active tab
+      document.querySelectorAll('[data-filter-chip]').forEach(el => {
+        const chip = el.getAttribute('data-filter-chip');
+        if (chip === cat) el.classList.add('is-active');
+      });
+    })();
+    </script>
 </body>
 </html>
