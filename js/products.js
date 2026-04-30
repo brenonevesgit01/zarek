@@ -1477,60 +1477,226 @@
             sizes: ['2XS', 'XS', 'S', 'M', 'L', 'XL']
         },
         {
-            id: 'cargo-shorts-button-straight',
-            name: 'Zarek | Cargo Shorts Straight Fit Multi-Pocket Utility',
+            id: 'cargo-shorts-relaxed-fit',
+            name: 'Zarek | Cargo Shorts Relaxed Fit',
             category: 'pants',
             price: 44.95,
             originalPrice: 59.95,
             badge: 'SALE',
             colorVariants: [
-                { name: 'Olive Green', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__41075.jpg?v=1773251453&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__41067.webp?v=1773251453&width=1024'
+                { name: 'Slate Gray', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-of-the-image-into-sqaure__41054.jpg',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side__41056.jpg',
+                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__1313.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__41076.jpg?v=1773251453&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__41068.webp?v=1773251453&width=1024'
-                ] },
-                { name: 'Brown', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__41077.jpg?v=1773251453&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__41069.webp?v=1773251453&width=1024'
-                ] },
-                { name: 'Khaki', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__41078.jpg?v=1773251876&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__41070.webp?v=1773251876&width=1024'
-                ] },
-                { name: 'Slate Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__41079.jpg?v=1773251876&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__41071.webp?v=1773251876&width=1024'
-                ] },
-                { name: 'Beige', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__41081.jpg?v=1773251876&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__41073.webp?v=1773251876&width=1024'
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-of-the-image-into-sqaure__41057.png',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side__41059.webp',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-short-in-img1-into-color-b__41053.webp'
                 ] }
             ],
-            sizes: ['29', '30', '31', '32', '33', '34', '36', '38', '40', '42', '44']
+            sizes: ['2XS', 'XS', 'S', 'M', 'L', 'XL']
         },
         {
-            id: 'cargo-shorts-elastic-multipocket',
-            name: 'Zarek | Cargo Shorts Elastic Waist Drawstring Multi Pocket',
+            id: 'cargo-shorts-twin-flap',
+            name: 'Zarek | Cargo Shorts Twin Flap Pockets',
             category: 'pants',
-            price: 59.95,
-            originalPrice: 119.90,
+            price: 69.95,
+            originalPrice: 139.90,
             badge: 'SALE',
             colorVariants: [
-                { name: 'Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik_create-an-image-of-a-caucasian-man-wear-the-short-in-img1-make-him-wear-a-plain-white-tshirt-tucked-in-inside-the-short.-cut-off-the-image-from-his-hip-down-to-his-feet-make-h_09d2c3b4-45f1-4db0-9383-a91c191eaee4.png?v=1774469070&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_change-the-stance-of-the-model-to-the-right-side.-make-one-foot-forward-one-hand-on-his-pocket.-background-is-solid-efefef-and-apply-soft-shadow_0001.png?v=1774469523&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_change-the-size-of-the-image-into-square_0001.webp?v=1774469523&width=1024'
+                { name: 'Slate Blue', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__create-a-caucasian-man-wearing-the-short-in-img1-c__59377.webp',
+                    'https://vintares.com/cdn/shop/files/freepik__apply-the-color-of-the-short-in-img2-to-the-color-__59380.webp',
+                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__59372.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik_create-an-image-of-a-caucasian-man-wear-the-short-in-img1-make-him-wear-a-plain-white-tshirt-tucked-in-inside-the-short.-cut-off-the-image-from-his-hip-down-to-his-feet-make-h.png?v=1774469523&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_change-the-stance-of-the-model-to-the-right-side.-make-one-foot-forward-one-hand-on-his-pocket.-background-is-solid-efefef-and-apply-soft-shadow._0001.png?v=1774469744&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_apply-the-color-of-the-short-in-img2-to-the-short-in-img1_0001.webp?v=1774469744&width=1024'
+                    'https://vintares.com/cdn/shop/files/freepik__create-a-caucasian-man-wearing-the-short-in-img1-c__59376.webp',
+                    'https://vintares.com/cdn/shop/files/freepik__apply-the-color-of-the-short-in-img2-to-the-color-__59383.webp',
+                    'https://vintares.com/cdn/shop/files/freepik__apply-the-color-of-the-short-in-img2-to-the-color-__44651.webp'
+                ] },
+                { name: 'Light Gray', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__create-a-caucasian-man-wearing-the-short-in-img1-c__44653.webp',
+                    'https://vintares.com/cdn/shop/files/freepik__apply-the-color-of-the-short-in-img2-to-the-color-__59381.webp',
+                    'https://vintares.com/cdn/shop/files/freepik__apply-the-color-of-the-short-in-img2-to-the-color-__44652.webp'
+                ] },
+                { name: 'Olive Green', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__create-a-caucasian-man-wearing-the-short-in-img1-c__44654.webp',
+                    'https://vintares.com/cdn/shop/files/freepik__apply-the-color-of-the-short-in-img2-to-the-color-__59382_39864c0c-3db8-4adc-9d19-aedfb3689e66.webp',
+                    'https://vintares.com/cdn/shop/files/freepik__apply-the-color-of-the-short-in-img2-to-the-color-__59373.webp'
+                ] },
+                { name: 'Warm Khaki', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__create-a-caucasian-man-wearing-the-short-in-img1-c__44655.webp',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-stanc-eof-the-model-to-the-back__59379.webp',
+                    'https://vintares.com/cdn/shop/files/freepik__apply-the-color-of-the-short-in-img2-to-the-color-__59374_f9973fd4-25b6-4770-b8c4-2150f5c82b62.webp'
                 ] }
             ],
-            sizes: ['3XS', '2XS', 'XS', 'S', 'M', 'L', 'XL']
+            sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL']
+        },
+        {
+            id: 'track-pants-straight-leg',
+            name: 'Zarek | Track Pants Straight Leg Fit',
+            category: 'pants',
+            price: 39.95,
+            originalPrice: 79.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Black', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__focus-remove-the-background-and-change-it-to-efefe__80168.jpg',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-make-hi__80171.jpg',
+                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80161.webp'
+                ] },
+                { name: 'Gray', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__focus-remove-the-background-and-change-it-to-efefe__80167.jpg',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-make-hi__80169.jpg',
+                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80160.webp'
+                ] },
+                { name: '2-Piece (Black)', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80164.webp',
+                    'https://vintares.com/cdn/shop/files/freepik__create-a-nice-zoom-in-shot-on-a-plain-background-f__80172.jpg',
+                    'https://vintares.com/cdn/shop/files/freepik__create-a-nice-zoom-in-shot-on-a-plain-background-f__80173.jpg'
+                ] },
+                { name: '2-Piece (Black & Gray)', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80163.webp'
+                ] }
+            ],
+            sizes: ['2XS', 'XS', 'S', 'M', 'L']
+        },
+        {
+            id: 'lounge-pants-straight-leg',
+            name: 'Zarek | Straight Leg Lounge Pants',
+            category: 'pants',
+            price: 44.95,
+            originalPrice: 59.95,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Black', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__62159.jpg',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-pants-into-color-black-dra__62157.webp',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-note-th__80153.jpg'
+                ] },
+                { name: 'Light Gray', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__80154.jpg',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-note-th__80155.jpg',
+                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__62156.webp'
+                ] },
+                { name: 'Dark Blue', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__80156.png',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-note-th__80157.jpg',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-panst-into-color-dark-blue__62158.webp'
+                ] }
+            ],
+            sizes: ['S', 'M', 'L', 'XL', '2XL']
+        },
+        {
+            id: 'tapered-pants-zip-pockets',
+            name: 'Zarek | Athletic Tapered Pants Zip Pockets',
+            category: 'pants',
+            price: 44.95,
+            originalPrice: 59.95,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Navy Blue', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__create-an-image-of-a-caucasian-man-wear-this-pants__62142.jpg',
+                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__62132.webp'
+                ] },
+                { name: 'Black / Blue Waistband', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__create-an-image-of-a-caucasian-man-wear-this-pants__62144.jpg',
+                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__62133.webp'
+                ] },
+                { name: 'Black', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__create-an-image-of-a-caucasian-man-wear-this-pants__62145.jpg',
+                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__62134.webp'
+                ] },
+                { name: 'Light Gray', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__create-an-image-of-a-caucasian-man-wear-this-pants__62147.jpg',
+                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__62135.webp'
+                ] },
+                { name: 'Light Blue', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__create-an-image-of-a-caucasian-man-wear-this-pants__62148.jpg',
+                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__62136.webp'
+                ] },
+                { name: 'Green', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__create-an-image-of-a-caucasian-man-wear-this-pants__62149.webp',
+                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__62137.webp'
+                ] },
+                { name: 'Gray / Blue Waistband', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__create-an-image-of-a-caucasian-man-wear-this-pants__62150.webp',
+                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__62138.webp'
+                ] },
+                { name: 'Red', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__create-an-image-of-a-caucasian-man-wear-this-pants__62151.jpg',
+                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__62139.webp'
+                ] },
+                { name: 'Dark Gray', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__create-an-image-of-a-caucasian-man-wear-this-pants__62152.jpg',
+                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__62140.webp'
+                ] },
+                { name: 'Blue', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__create-an-image-of-a-caucasian-man-wear-this-pants__62153.jpg',
+                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__62141.webp'
+                ] }
+            ],
+            sizes: ['2XS', 'XS', 'S', 'M', 'L']
+        },
+        {
+            id: 'lounge-pants-drawstring-straight',
+            name: 'Zarek | Drawstring Straight Leg Lounge Pants',
+            category: 'pants',
+            price: 59.95,
+            originalPrice: 99.95,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Navy Blue', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__36370.png',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-linen-pants-in-img1-into-c__90186.webp'
+                ] },
+                { name: 'White', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__36369.png',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-of-the-image-into-square__44644.webp'
+                ] },
+                { name: 'Khaki', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__36371.png',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-linen-pants-in-img1-into-c__36359.webp'
+                ] },
+                { name: 'Light Gray', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__36372.png',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-linen-pants-in-img1-into-c__36360.webp'
+                ] },
+                { name: 'Brown', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__36373.png',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-linen-pants-in-img1-into-c__36361.webp'
+                ] },
+                { name: 'Sage Green', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__36374.png',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-linen-pants-in-img1-into-c__36362.webp'
+                ] },
+                { name: 'Olive Green', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__36383.png',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-linen-pants-in-img1-into-c__36363.webp'
+                ] },
+                { name: 'Charcoal Gray', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__36375.jpg',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-linen-pants-in-img1-into-c__36364.webp'
+                ] },
+                { name: 'Sky Blue', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__36376.png',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-linen-pants-in-img1-into-c__36365.webp'
+                ] },
+                { name: 'Mustard', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__36377.png',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-linen-pants-in-img1-into-c__36366.webp'
+                ] },
+                { name: 'Steel Blue', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__36378.jpg',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-linen-pants-in-img1-into-c__36367.webp'
+                ] },
+                { name: 'Black', images: [
+                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__36381.jpg',
+                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-linen-pants-in-img1-into-c__36368.webp'
+                ] }
+            ],
+            sizes: ['2XS', 'XS', 'S', 'M', 'L', 'XL', '3XL']
         },
 
         // ───────────────── SHOES ─────────────────
