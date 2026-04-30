@@ -1698,6 +1698,320 @@
             ],
             sizes: ['2XS', 'XS', 'S', 'M', 'L', 'XL', '3XL']
         },
+        {
+            id: 'chino-trousers-elastic-waist',
+            name: 'Zarek | Chino Trousers Elastic Waist Regular Fit',
+            category: 'pants',
+            price: 39.95,
+            originalPrice: 49.95,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Beige', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/ChatGPT_Image_23_jun_2025_17_49_12_2ce63c56-9f02-40a7-961c-5eab82457f63.png',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/ChatGPT_Image_23_jun_2025_17_55_37_ad67cb42-7fde-46d4-8dca-60c47d1dd575.png',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/ChatGPT_Image_23_jun_2025_18_42_37.png'
+                ] },
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/ChatGPT_Image_23_jun_2025_18_55_53_f7443a01-56a5-4312-906e-b3c1b2a3e648.png',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/ChatGPT_Image_23_jun_2025_18_44_49.png',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/ChatGPT_Image_23_jun_2025_18_47_38.png'
+                ] }
+            ],
+            sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL']
+        },
+        {
+            id: 'drawstring-straight-leg-elastic-waist',
+            name: 'Zarek | Drawstring Straight Leg Pants Elastic Waist',
+            category: 'pants',
+            price: 59.95,
+            colorVariants: [
+                { name: 'Beige', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__do-not-change-anything-just-change-the-size-of-the__88997.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-size-of-the-image-into-square-remove-th__88991.webp'
+                ] },
+                { name: 'Olive Green', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__dont-change-anything-just-change-the-size-of-the-i__89000.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__do-not-change-anything-just-change-the-size-of-the__88994.webp'
+                ] },
+                { name: 'White', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__dont-change-anything-just-change-the-size-of-the-i__89001.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__do-not-change-anything-just-change-the-size-of-the__88995.webp'
+                ] },
+                { name: 'Light Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__dont-change-anything-just-change-the-size-of-the-i__88999.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-size-of-the-image-into-square-remove-th__88993.webp'
+                ] },
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__dont-change-anything-just-change-the-size-of-the-i__88998.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-size-of-the-image-into-square-remove-th__88992.webp'
+                ] },
+                { name: 'Navy', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__dont-change-anything-just-change-the-size-of-the-i__89002.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__do-not-change-anything-just-change-the-size-of-the__88996.webp'
+                ] }
+            ],
+            sizes: ['2XS', 'XS', 'S', 'M', 'L']
+        },
+        {
+            id: 'knit-drawstring-joggers-relaxed',
+            name: 'Zarek | Knit Drawstring Joggers Relaxed Fit',
+            category: 'pants',
+            price: 49.95,
+            colorVariants: [
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-size-into-square__38023.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/1_3.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/8_2_ee873dc6-d655-4f2e-8684-990be3152820.jpg'
+                ] },
+                { name: 'Light Gray', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-size-into-square__38024.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/9_2_e61cf344-227c-4379-a4a6-f68e013c5abb.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/10_1_a36000f9-c097-4b9f-8ed3-903bbbe6d386.jpg'
+                ] },
+                { name: 'Beige', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-size-into-square__38022.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/11_2.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/12_e3a2d4e9-7b86-4f7b-80fd-8cb08d80e946.jpg'
+                ] },
+                { name: 'Dark Gray', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-size-into-square__38021.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/13_1_4d702641-a7cc-4287-b6cf-f5b7b1a24d17.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/14_ac8f1437-53a7-4ac6-8ab1-416b51c83e1b.jpg'
+                ] }
+            ],
+            sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL']
+        },
+        {
+            id: 'knit-drawstring-pants-straight-leg',
+            name: 'Zarek | Knit Drawstring Pants Straight Leg Relaxed Fit',
+            category: 'pants',
+            price: 89.95,
+            originalPrice: 119.95,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__pose-change-must-be-minimalbackground-solid-flat-c__29235.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/1_2.jpg'
+                ] },
+                { name: 'Light Gray', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__pose-change-must-be-minimalbackground-solid-flat-c__29234.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/3_2_9dbe3d41-8b59-4314-9b40-65171c9a5c7a.jpg'
+                ] },
+                { name: 'Dark Gray', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__pose-change-must-be-minimalbackground-solid-flat-c__29233.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/4_2_93e95b90-8464-4765-b308-e98f5a2ca834.jpg'
+                ] },
+                { name: 'Light Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__pose-change-must-be-minimalbackground-solid-flat-c__38013.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/5_07cc4609-d111-4309-b8fc-4aa131e3f1ea.jpg'
+                ] },
+                { name: 'Gray', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__pose-change-must-be-minimalbackground-solid-flat-c__38014.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/6_aefb6f86-60f2-4845-b219-b70140d50a9b.jpg'
+                ] },
+                { name: 'Brown', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__pose-change-must-be-minimalbackground-solid-flat-c__38015.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/7_1_7764be9c-fbb9-46dd-8649-020a4ff2565e.jpg'
+                ] },
+                { name: 'Red', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__pose-change-must-be-minimalbackground-solid-flat-c__38017.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/j4_1.jpg'
+                ] },
+                { name: 'Taupe', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__pose-change-must-be-minimalbackground-solid-flat-c__38018.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/9_1_00c03448-8829-4410-96e2-6fa1d518e5cc.jpg'
+                ] },
+                { name: 'White', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__pose-change-must-be-minimalbackground-solid-flat-c__38019.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/10_cb96c522-de0e-4af1-b512-462e21c74213.jpg'
+                ] },
+                { name: 'Navy Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__pose-change-must-be-minimalbackground-solid-flat-c__38020.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/j5.jpg'
+                ] }
+            ],
+            sizes: ['XS', 'S', 'M', 'L', 'XL']
+        },
+        {
+            id: 'pleated-slim-fit-joggers',
+            name: 'Zarek | Pleated Slim Fit Joggers Stretch Drawstring',
+            category: 'pants',
+            price: 39.95,
+            originalPrice: 49.95,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Navy Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/ChatGPTImage1aug2025_12_42_50-Photoroom.jpg'
+                ] },
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/ChatGPTImage1aug2025_12_57_29.png',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/19-Photoroom_b30b337a-b0a9-43a8-afd4-91f01faf7e0c.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/20-Photoroom_5cb2fdff-3b5f-4668-b72c-7459fe2ff2da.jpg'
+                ] },
+                { name: 'Olive Green', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/ChatGPTImage1aug2025_12_37_02.png'
+                ] },
+                { name: 'Gray', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/ChatGPTImage1aug2025_13_04_31_66bae140-2ea9-4053-8630-a6e568798feb.png',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/43-Photoroom.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/44-Photoroom.jpg'
+                ] },
+                { name: 'Dark Grey', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/ChatGPTImage1aug2025_12_57_20.png',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/59-Photoroom.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/60-Photoroom.jpg'
+                ] },
+                { name: 'Beige', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/ChatGPTImage1aug2025_13_06_35.png'
+                ] }
+            ],
+            sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL']
+        },
+        {
+            id: 'slim-fit-stretch-trousers-tapered',
+            name: 'Zarek | Slim Fit Stretch Trousers Flat Front Tapered',
+            category: 'pants',
+            price: 44.95,
+            originalPrice: 59.95,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Navy Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/2_7cef06d2-7102-4d35-bb39-4f6edbcd0ae3-Photoroom.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/1_11d93436-e7d2-4d70-87cb-d514aa5ca382-Photoroom.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/3_960feaab-81f8-4496-8639-b45c7bf957e4-Photoroom.jpg'
+                ] },
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/5_f2984597-188e-49c0-b60e-ad01463c0c59-Photoroom.jpg'
+                ] },
+                { name: 'Grey', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/7_521d7099-7876-435b-b386-7b6ee2968005-Photoroom.jpg'
+                ] },
+                { name: 'Bordeaux', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/8_c96ba5b1-df0b-4b0e-8770-d7bb343b721d-Photoroom.jpg'
+                ] },
+                { name: 'Beige', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/10_9e3dd651-ec9e-433b-bb47-9bf2bbb0dcaa-Photoroom.jpg'
+                ] }
+            ],
+            sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL']
+        },
+        {
+            id: 'drawstring-tapered-pants-relaxed',
+            name: 'Zarek | Drawstring Tapered Pants Relaxed Fit',
+            category: 'pants',
+            price: 49.95,
+            colorVariants: [
+                { name: 'White', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-a-man-wear-this-but-cut-off-the-image-from-bi__79858.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-man-into-back-give-me-dif__79859_0542ead7-0855-455e-bd84-dbe266d7bc9a.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/2_7.jpg'
+                ] },
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-a-man-wear-this-but-cut-off-the-image-from-bi__79857.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-man-into-back-give-me-dif__79861.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/3_8.jpg'
+                ] },
+                { name: 'Beige', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-a-man-wear-this-but-cut-off-the-image-from-bi__79860.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-man-into-back-give-me-dif__79862.jpg'
+                ] },
+                { name: 'Light Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-a-man-wear-this-but-cut-off-the-image-from-bi__79855.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-man-into-back-give-me-dif__79863.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-image-into-square__19611_1.jpg'
+                ] },
+                { name: 'Dark Gray', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-a-man-wear-this-but-cut-off-the-image-from-bi__19614.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-man-into-back-give-me-dif__79864.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-image-into-square__19612_1.jpg'
+                ] },
+                { name: 'Navy Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-a-man-wear-this-but-cut-off-the-image-from-bi__19615.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-man-into-back-give-me-dif__79865.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-image-into-square__19613.jpg'
+                ] }
+            ],
+            sizes: ['S', 'M', 'L', 'XL', '2XL', '3XL']
+        },
+        {
+            id: 'wide-leg-trousers-stretch',
+            name: 'Zarek | Trousers Wide Leg Stretch',
+            category: 'pants',
+            price: 39.95,
+            originalPrice: 49.95,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Khaki', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/Sbcef6e1d8eb04dda92d8ea5c654ee291b-Photoroom-Photoroom.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/S3028322035f04460a1b84ff4321a947dh-Photoroom-Photoroom.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/Sbaadfc6eb8fc45e2839027cf3c784091U-Photoroom-Photoroom.jpg'
+                ] },
+                { name: 'Grey', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/S0510565947cb49b9b28dd7c6ebf6e4d4o-Photoroom-Photoroom.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/S5cd73ee87d4441bc8dc5f7edaf0a918ds-Photoroom-Photoroom.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/Sb9e1792ed32e4783975063860aeec653d-Photoroom-Photoroom.jpg'
+                ] },
+                { name: 'White', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/S410cfdb70c104ec3ae233bb89b9dd7cdi-Photoroom-Photoroom.jpg'
+                ] },
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/Sc3af1ac8a0414424aa59c70e1efdcc09d-Photoroom-Photoroom.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/S3ac46c98bb9b40fe804e9d23132656b6s-Photoroom-Photoroom.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/S58a5c601bf6d424cba6f3e761ddb565cZ-Photoroom-Photoroom.jpg'
+                ] }
+            ],
+            sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL']
+        },
+        {
+            id: 'wool-blend-pleated-trousers',
+            name: 'Zarek | Trousers Wool-Blend Pleated',
+            category: 'pants',
+            price: 59.95,
+            originalPrice: 79.95,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Brown', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/fc984f98-32bf-4d78-9938-8cad98b3604f-Photoroom.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/2440f75c-1c68-4ff1-94f1-e73e5113ce38-Photoroom.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/efd8f824-4ca6-4a4b-965a-6d15533be677-Photoroom.jpg'
+                ] },
+                { name: 'Grey', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/8fd67fbb-2d52-4f5f-8bb0-cee205a4a4a6-Photoroom.jpg'
+                ] }
+            ],
+            sizes: ['S', 'M', 'L', 'XL', '2XL']
+        },
+        {
+            id: 'straight-leg-denim-jeans',
+            name: 'Zarek | Jeans Straight Leg Denim',
+            category: 'pants',
+            price: 59.95,
+            originalPrice: 119.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Dark Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-size-into-square-remove-the-background-__75898.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-in-to-the-back-no-w__88981.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/Screenshot2026-02-20at6.39.48PM.webp'
+                ] },
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-size-into-square-remove-the-background-__88983.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-in-to-the-back-left__88979.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/Screenshot2026-02-20at6.39.28PM.webp'
+                ] },
+                { name: 'Light Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-size-into-square-remove-the-background-__75896.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-in-to-the-back-feet__88980.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/Screenshot2026-02-20at6.39.40PM.webp'
+                ] },
+                { name: 'Washed Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-size-into-square-remove-the-background-__75899.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-in-to-the-back-show__88982.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/Screenshot2026-02-20at6.39.58PM.webp'
+                ] }
+            ],
+            sizes: ['S', 'M', 'L', 'XL', '2XL']
+        },
 
         // ───────────────── SHOES ─────────────────
         {
@@ -1740,6 +2054,424 @@
             ],
             sizes: ['37', '38', '38.5', '39.5', '40', '41', '41.5', '42.5', '43', '44', '44.5', '45.5']
         },
+        {
+            id: 'wingtip-brogue-dress-shoes',
+            name: 'Zarek | Shoes Wingtip Brogue',
+            category: 'shoes',
+            price: 79.95,
+            originalPrice: 159.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'White', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_use-img1-as-the-reference-product.-generate-a-clean-ecommerce-flatlay-topdown-view-perfectly-straight-alignment-centered-composition-solid-efefef-background.-remove-hanger-and_6e29e20f-c150-44a8-9ff7-01b5cc71c5e7.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_create-an-image-of-a-caucasian-man-wearing-the-shoes-in-img1-make-him-wear-a-black-slack-pants-but-make-the-pants-not-reaching-the-shoes.-cut-off-the-image-from-his-mid-thigh_1ee8bfa7-b4d2-4fdf-8473-0f4dc31631f0.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_create-an-image-of-a-caucasian-man-wearing-the-shoes-in-img1-make-him-wear-a-black-slack-pants-but-make-the-pants-not-reaching-the-shoes.-cut-off-the-image-from-his-mid-thigh.webp'
+                ] },
+                { name: 'Navy Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_use-img1-as-the-reference-product.-generate-a-clean-ecommerce-flatlay-topdown-view-perfectly-straight-alignment-centered-composition-solid-efefef-background.-remove-hanger-and_28d9103b-5076-4a7a-a909-6c0435584d00.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_apply-the-color-of-the-shoes-in-img2-to-the-shoes-in-img1-.-make-one-foot-angled-a-bit.-make-the-model-facing-forward_0001.png',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_change-the-stance-of-the-model-in-img1-to-the-leftside.-img2-is-the-side-detail-of-the-shoe.-make-one-foot-forward.-cut-off-the-image-in-mid-knee-down-to-feet.-background-shou.png'
+                ] },
+                { name: 'Brown', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_use-img1-as-the-reference-product.-generate-a-clean-ecommerce-flatlay-topdown-view-perfectly-straight-alignment-centered-composition-solid-efefef-background.-remove-hanger-and_564a8c12-58f0-4ac6-8d24-69218a37e49a.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_create-an-image-of-a-caucasian-man-wearing-the-shoes-in-img1-make-him-wear-a-black-slack-pants-but-make-the-pants-not-reaching-the-shoes.-cut-off-the-image-from-his-mid-thigh_11c02c14-32cf-4fed-804f-7e59c319daa0.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_change-the-stance-of-the-model-in-img1-to-the-side.-img2-is-the-side-detail-of-the-shoe.-make-one-foot-forward.-cut-off-the-image-in-mid-knee-down-to-feet_0001_fb3c65b7-4268-4c5e-be49-8b7f54710a30.png'
+                ] },
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_use-img1-as-the-reference-product.-generate-a-clean-ecommerce-flatlay-topdown-view-perfectly-straight-alignment-centered-composition-solid-efefef-background.-remove-hanger-and_aa4060e1-15b6-4b26-bab1-4c165768c9fd.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_apply-the-color-of-the-shoes-in-img2-to-the-shoes-in-img1-.-make-one-foot-forward.-make-the-model-facing-forward_0001.png',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_change-the-stance-of-the-model-in-img1-to-the-side.-img2-is-the-side-detail-of-the-shoe.-make-one-foot-forward.-cut-off-the-image-in-mid-knee-down-to-feet_0001_1.png'
+                ] }
+            ],
+            sizes: ['38', '39', '40', '41', '42', '43', '44', '45', '46', '47']
+        },
+        {
+            id: 'suede-ankle-boots-lace-up',
+            name: 'Zarek | Boots Suede Ankle Lace-Up',
+            category: 'shoes',
+            price: 89.95,
+            originalPrice: 179.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Taupe Brown', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_use-img1-as-the-reference-product.-generate-a-clean-ecommerce-flatlay-topdown-view-perfectly-straight-alignment-centered-composition-solid-efefef-background.-remove-hanger-and.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_create-an-image-of-a-caucasian-man-wearing-black-denim-pants-wear-the-shoes-in-img1-make-the-pants-not-reached-the-boots.-img2-is-the-side-detail-of-the-shoes.-make-the-man-fa.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_create-a-nice-zoom-in-shot-on-a-white-plain-background.-focus-on-the-heel-pull-tab-only.-make-it-slighly-angled.-one-shoes-only_0001.webp'
+                ] },
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_apply-the-color-of-the-shoe-in-img2-into-the-shoes-in-img1_0001.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_create-an-image-of-a-caucasian-man-wearing-black-denim-pants-wear-the-shoes-in-img1-make-the-pants-not-reached-the-boots.-img2-is-the-side-detail-of-the-shoes.-make-the-man-fa_1fcced7c-5666-4c6d-bba6-a5aecbf8a946.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_change-the-stance-of-the-model-to-the-side.-the-img2-is-the-side-details-of-the-shoes_0001.webp'
+                ] }
+            ],
+            sizes: ['39', '40', '41', '42', '43', '44']
+        },
+        {
+            id: 'low-top-sneakers-textured',
+            name: 'Zarek | Sneakers Low Top Textured',
+            category: 'shoes',
+            price: 69.95,
+            originalPrice: 139.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_create-an-image-of-a-caucasian-man-wearing-the-shoes-in-img1-cut-off-the-image-from-his-knee-down-to-his-feet.-make-one-of-the-foot-angled-a-bit.-make-him-wear-a-light-beige-p.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_change-the-stance-of-the-model-in-img1-to-the-right-side.-refer-to-img2-for-the-side-profile-detail-of-the-shoes_0001.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_use-img1-as-the-reference-product.-generate-a-clean-ecommerce-flatlay-topdown-view-perfectly-straight-alignment-centered-composition-solid-efefef-background.-remove-hanger-and_5e993af0-40a3-45f2-8bac-d4935d60696c.webp'
+                ] },
+                { name: 'Brown', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_create-an-image-of-a-caucasian-man-wearing-the-shoes-in-img1-cut-off-the-image-from-his-knee-down-to-his-feet.-make-one-of-the-foot-angled-a-bit.-make-him-wear-a-light-beige-p_3f9dffa5-c918-44ef-aa83-87d5248de0f7.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_change-the-stance-of-the-model-in-img1-to-the-side.-refer-to-img2-for-the-side-profile-detail-of-the-shoes_0001.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_apply-the-color-of-the-shoes-in-img2-to-the-shoes-in-img1_0001.webp'
+                ] }
+            ],
+            sizes: ['38.5', '39.5', '40', '41', '41.5', '42.5', '43', '44', '44.5', '45.5']
+        },
+        {
+            id: 'penny-loafers-slip-on',
+            name: 'Zarek | Loafers Penny Slip-On',
+            category: 'shoes',
+            price: 59.95,
+            originalPrice: 119.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__52065_1.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__create-a-nice-zoom-in-shot-on-a-plain-background-m__52071.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-a-caucasian-man-wear-the-shoes-in-img1-img1-m__52073.webp'
+                ] }
+            ],
+            sizes: ['38.5', '39.5', '40', '41', '41.5', '42.5', '43', '44']
+        },
+        {
+            id: 'running-sneakers-knit-upper',
+            name: 'Zarek | Sneakers Running Knit',
+            category: 'shoes',
+            price: 64.95,
+            originalPrice: 129.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'White', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-color-of-the-shoes-into-color-white__80175.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-a-caucasian-man-wear-the-shoes-in-img1-img2-m__80180.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__create-a-nice-zoom-in-shot-on-a-plain-background-f__80183.webp'
+                ] },
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-color-of-the-shoes-into-color-black__80176.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-a-caucasian-man-wear-the-shoes-in-img1-img2-m__80182.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-a-caucasian-man-wear-the-shoes-in-img1-make-t__80181.webp'
+                ] }
+            ],
+            sizes: ['36.5', '37', '38', '38.5', '39.5', '40', '41', '41.5', '42.5', '45']
+        },
+        {
+            id: 'slide-sandals-double-strap',
+            name: 'Zarek | Sandals Slide Double Strap',
+            category: 'shoes',
+            price: 89.95,
+            originalPrice: 179.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Tan', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/4_3ea6ce21-efc5-4b36-9e73-caa57907baf1.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-a-caucasian-man-wear-the-sandals-in-img1-cut-__41793.webp'
+                ] },
+                { name: 'Olive Green', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/2_742e162b-e983-4998-aa86-6edd2666c39b.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-a-caucasian-man-wear-the-sandals-in-img1-cut-__41791.webp'
+                ] },
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/3_206a8dc6-487f-4972-ba4e-9f4d6fb7a011.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-a-caucasian-man-wear-the-sandals-in-img1-cut-__41792.webp'
+                ] },
+                { name: 'Navy Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/1_27364b87-4659-40e7-b614-f4d29f05876c.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-a-caucasian-man-wear-the-sandals-in-img1-cut-__41790.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__create-a-nice-zoom-in-shot-on-a-plain-background-f__41795.webp'
+                ] }
+            ],
+            sizes: ['40', '41.5', '42.5', '43', '44', '45.5', '46']
+        },
+        {
+            id: 'sport-sandals-dual-buckle',
+            name: 'Zarek | Sandals Sport Dual Buckle',
+            category: 'shoes',
+            price: 79.95,
+            originalPrice: 159.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Beige', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__41783.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-a-caucasian-man-wear-the-sandals-in-img1-cut-__41786.webp'
+                ] },
+                { name: 'Olive Green', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__41784.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-a-caucasian-man-wear-the-sandals-in-img1-cut-__41787.webp'
+                ] },
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__41788.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-a-caucasian-man-wear-the-sandals-in-img1-cut-__41789.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/13_390873b5-b603-49b1-8c2a-72ede82bb3ea.webp'
+                ] }
+            ],
+            sizes: ['38.5', '39.5', '40', '41', '41.5', '42.5', '43']
+        },
+        {
+            id: 'moc-toe-casual-shoes-grain',
+            name: 'Zarek | Shoes Moc Toe Grain',
+            category: 'shoes',
+            price: 79.95,
+            originalPrice: 159.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Brown', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/1_1193cc0c-1186-42c1-ae99-8b86d6b0f08e.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-a-caucasian-man-wear-the-shoes-img1-refer-to-__41776.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__create-another-piece-of-the-shoe-in-img1-to-make-i__41777.webp'
+                ] },
+                { name: 'Light Brown', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/2_9e8c4223-4344-4fca-8184-7ba8d2fe2ae2.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__create-another-piece-of-the-shoe-in-img1-to-make-i__41778.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-size-of-the-image-into-sqaure__41779.webp'
+                ] }
+            ],
+            sizes: ['38.5', '39.5', '40', '41', '41.5', '42.5', '43', '44']
+        },
+        {
+            id: 'tassel-loafer-slip-on-dress',
+            name: 'Zarek | Loafers Tassel Slip-On',
+            category: 'shoes',
+            price: 99.95,
+            originalPrice: 124.95,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/33_d5abb663-21e0-461a-97ca-051990eaf2fb.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-a-caucasian-man-wear-the-shoes-img1-make-him-__91350.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-szi-eof-the-image-into-square-scale-ima__3407.webp'
+                ] },
+                { name: 'Brown', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/19_4cb21743-1b25-436e-ae63-18190476ee35.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-a-caucasian-man-wear-the-pair-of-shoes-in-img__91344.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-wear-the-pair-of-shoes-in-img1-sit-profile-po__91347.webp'
+                ] },
+                { name: 'Gray', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/22_da111e5e-439f-4b4e-b135-477554e05208.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-wear-the-pair-of-shoes-in-img1-stand-profile-__91349.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-a-caucasian-man-wear-the-shoes-img1-make-him-__91348.webp'
+                ] }
+            ],
+            sizes: ['36', '37', '38', '39', '40', '41', '42', '43', '44', '45']
+        },
+        {
+            id: 'suede-loafers-moc-toe-laceless',
+            name: 'Zarek | Loafers Suede Moc Toe',
+            category: 'shoes',
+            price: 89.95,
+            originalPrice: 119.95,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Beige', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__turn-it-around-make-it-upside-beige-loafers-rotate__44714.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-a-caucasian-man-wear-the-shoe-img1-cropped-mi__44715.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-pof-the-model-to-the-side-make-h__44724.webp'
+                ] },
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__44709.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-a-caucasian-man-wear-the-shoe-img1-cropped-mi__44717.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__44718.webp'
+                ] },
+                { name: 'Gray', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__44710.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-a-caucasian-man-wear-the-shoe-img1-cropped-mi__44719.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-pof-the-model-to-the-side-make-h__44720.webp'
+                ] },
+                { name: 'Light Gray', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__44713.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-a-caucasian-man-wear-the-shoe-img1-cropped-mi__44721.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-pof-the-model-to-the-side-make-h__44722.webp'
+                ] }
+            ],
+            sizes: ['38.5', '39.5', '40', '41', '41.5', '42.5', '43']
+        },
+        {
+            id: 'derby-dress-shoes-smooth-toe',
+            name: 'Zarek | Shoes Derby Dress Smooth',
+            category: 'shoes',
+            price: 89.95,
+            originalPrice: 119.95,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__89017.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__img1-make-a-man-wear-the-shoes-man-sitting-cut-ima__89022.webp'
+                ] },
+                { name: 'Light Brown', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__89018.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__reference-image-img1-make-a-man-wear-the-shoes-mak__89023.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-size-into-square-remove-the-background-__89029.webp'
+                ] },
+                { name: 'Dark Brown', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__89019.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__img1-make-a-man-wear-the-shoes-seated-cropped-knee__89028.webp'
+                ] },
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__89020.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__img1-make-a-man-wear-the-shoes-sit-with-knees-cut-__89026.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-size-into-square-remove-the-background-__89030.webp'
+                ] }
+            ],
+            sizes: ['36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46']
+        },
+        {
+            id: 'derby-dress-shoes-rounded-toe',
+            name: 'Zarek | Shoes Derby Dress Rounded',
+            category: 'shoes',
+            price: 139.95,
+            colorVariants: [
+                { name: 'Brown', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/2_da47eadf-1943-443b-8b83-04989085f71d.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__photo-reference-img1-cropped-midknee-caucasian-man__89004.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/8_4a9fd1cb-96f3-4904-8005-e7a6ddb5d726.webp'
+                ] },
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/1_8b51be5b-1995-484c-9197-faa18cb07b05.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__photo-reference-img1-standing-adult-male-tiptoed-b__89005.webp'
+                ] }
+            ],
+            sizes: ['38', '38.5', '39.5', '40', '41', '41.5', '42.5', '43', '44']
+        },
+        {
+            id: 'slide-sandals-double-buckle',
+            name: 'Zarek | Sandals Slide Double Buckle',
+            category: 'shoes',
+            price: 89.95,
+            originalPrice: 119.95,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-size-into-sqaure__76734.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/Screenshot2026-02-02at10.39.32PM.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/Screenshot2026-02-02at10.45.52PM.webp'
+                ] },
+                { name: 'Dark Brown', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-size-into-sqaure__76735.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-size-into-sqaure__76737.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/Screenshot2026-02-02at10.39.43PM.webp'
+                ] }
+            ],
+            sizes: ['39', '40', '41', '42', '43', '44', '45', '46']
+        },
+        {
+            id: 'loafers-metal-bit-patterned',
+            name: 'Zarek | Loafers Metal Bit Patterned',
+            category: 'shoes',
+            price: 119.95,
+            originalPrice: 199.95,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Green', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/1_3_76010771-9976-4023-9fa4-4b9f6177479c.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__photorealistic-studio-image-of-a-standing-adult-ma__51006.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-wearing-the-shoes-o__51007.webp'
+                ] }
+            ],
+            sizes: ['36', '37', '38', '39', '40', '41', '42', '43', '44']
+        },
+        {
+            id: 'loafers-chunky-sole-vamp-strap',
+            name: 'Zarek | Loafers Chunky Sole Vamp Strap',
+            category: 'shoes',
+            price: 109.95,
+            originalPrice: 219.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/1_3.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-a-man-wear-this-shoes-cut-off-the-image-from-__56275_1.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-it-face-front-one-is-a-bit-angled-to-the-left__56278_2.webp'
+                ] },
+                { name: 'Glossy Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/2_1_ed90343d-0c1c-475b-997f-6e76d40047db.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-a-man-wear-this-shoes-cut-off-the-image-from-__56277_1.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-it-face-front-one-is-a-bit-angled-to-the-left__56279_1.webp'
+                ] }
+            ],
+            sizes: ['38', '39', '40', '41', '42', '43', '44', '45', '46']
+        },
+        {
+            id: 'dress-shoes-textured-upper-sleek',
+            name: 'Zarek | Shoes Dress Textured Sleek',
+            category: 'shoes',
+            price: 89.95,
+            originalPrice: 179.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/1_2_1.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-size-of-the-image-into-square__56266_1.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-the-backgrounf__56273.webp'
+                ] },
+                { name: 'Navy Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/2_28725956-b200-4284-bf56-0270ed16ba6d_1.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-size-of-the-image-into-square__56267_2.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-to-the-front-to-sho__56269_1.webp'
+                ] },
+                { name: 'Gray', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/3_2_debe4bf6-e111-4994-bfa9-a2bf2a51bf50_1.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-size-of-the-image-into-square__56271_1.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-to-the-front-to-sho__56272_1.webp'
+                ] }
+            ],
+            sizes: ['40', '41', '42', '43', '44', '45', '46', '47', '48']
+        },
+        {
+            id: 'bit-loafers-polished-almond-toe',
+            name: 'Zarek | Loafers Bit Polished Almond',
+            category: 'shoes',
+            price: 129.95,
+            originalPrice: 199.95,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/3_2_d0f87de2-98ef-407e-abb9-5aeea5c626ef.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-image-into-square__16816.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/1_4_c164505b-0205-4ab7-aae5-0d6a81fcb644.jpg'
+                ] },
+                { name: 'Brown', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/4_6aa4b7ea-37e3-4332-83cd-c46d7d1d38a0.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-image-into-square__16817.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/6_1_9797e0c5-49bb-4fd7-9061-fb6bfe037ae9.jpg'
+                ] }
+            ],
+            sizes: ['37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48']
+        },
+        {
+            id: 'low-top-sneakers-smooth-slim',
+            name: 'Zarek | Sneakers Low Top Smooth Slim',
+            category: 'shoes',
+            price: 79.95,
+            originalPrice: 159.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/1_1_bc72ec22-6161-4324-b13e-3bde05e4cc48.png',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__reza-character-identity-referenceuse-only-the-pers__69077.png',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__background-solid-flat-color-efefeflighting-neutral__69078_1.png'
+                ] },
+                { name: 'Navy Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/2_1_c4d9c6dc-d927-40e3-8039-72680b5bf0dd.png',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__-character-identity-referenceuse-only-the-person-f__69079.png',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__background-solid-flat-color-efefeflighting-neutral__69080_1.png'
+                ] },
+                { name: 'White', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/3_1_9aeea033-6e6c-4f05-a7fb-0751c1791db6.png',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__-character-identity-referenceuse-only-the-person-f__69081.png',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__background-solid-flat-color-efefeflighting-neutral__69082_1_3aebe1ef-a438-4036-a5fa-c518af226ab1.png'
+                ] }
+            ],
+            sizes: ['37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48']
+        },
 
         // ───────────────── OUTFITS ─────────────────
         {
@@ -1781,6 +2513,633 @@
                 { name: 'Bordeaux',  image: 'https://vintares.com/cdn/shop/files/variant-image-3-Photoroom_ab0021a2-cadd-4925-8d28-dfe3c87d0635.jpg?v=1760731053&width=1024' }
             ],
             sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL']
+        },
+        {
+            id: 'tracksuit-set-zip-polyester',
+            name: 'Zarek | Set Tracksuit Zip',
+            category: 'outfits',
+            price: 79.95,
+            originalPrice: 159.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/7-Photoroom_a26f5672-9097-4b4a-a90f-78fabbb7b5fe.jpg'
+                ] },
+                { name: 'Navy Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/8-Photoroom_25260e51-7480-4a89-8e2e-8f489fe7c482.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/9-Photoroom_ec3e7cd0-0daa-4dd6-91a0-1280b37dcede.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/11-Photoroom_5079c74e-7030-410d-8fb2-72b852c9c04b.jpg'
+                ] }
+            ],
+            sizes: ['S', 'M', 'L', '2XL']
+        },
+        {
+            id: 'tracksuit-set-zip-up-stretch',
+            name: 'Zarek | Set Tracksuit Zip-Up',
+            category: 'outfits',
+            price: 89.95,
+            originalPrice: 179.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/4-Photoroom_12df3da7-e9d1-4790-ad56-9ef5422a9cb0.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/178d23f4-5259-42fd-985b-4f4cb53a55d8.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/5-Photoroom_c887a2ab-0036-41c3-9d9d-e36304f6f2cf.jpg'
+                ] },
+                { name: 'Olive Green', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/3-Photoroom_3ef206c5-5595-44d9-8b51-229ac3029cf1.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/7-Photoroom_f9e4d040-c1fa-4ebe-85b8-a23a0c2041c0.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/10-Photoroom_fb9c3f18-b525-490d-a1be-576077079862.jpg'
+                ] },
+                { name: 'Brown', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/1-Photoroom_de12b84b-6f49-4fc5-8605-d54b6b0a2aef.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/6-Photoroom_4f1182e2-ba95-4aca-b3c2-53e0d3b9feed.jpg'
+                ] },
+                { name: 'White', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/2-Photoroom_ffb20efa-8ee7-448c-848e-a3e660125627.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/8-Photoroom_dc15a955-611e-413b-8c7a-449d21cc40b1.jpg'
+                ] }
+            ],
+            sizes: ['S', 'M', 'L', 'XL', '2XL']
+        },
+        {
+            id: 'suit-2piece-slim-notch-lapel',
+            name: 'Zarek | Suit 2-Piece Slim Notch',
+            category: 'outfits',
+            price: 99.95,
+            originalPrice: 199.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Navy Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/variant-image-7-Photoroom_1ed27636-c301-4cc8-91bd-d018be81ab4f.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/ChatGPTImage22okt2025_22_01_49-Photoroom.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/7-Photoroom_5f4ea7a8-7bbf-4d71-a17d-a8016b165d15.jpg'
+                ] },
+                { name: 'Grey', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/variant-image-1-Photoroom_2c9ab310-e506-44d2-9f23-50ec3121d494.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/ChatGPTImage22okt2025_22_01_33-Photoroom.jpg'
+                ] },
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/variant-image-8-Photoroom_7076395e-b67f-4e4e-92f9-d8a88f0f146d.jpg'
+                ] }
+            ],
+            sizes: ['S', 'M', 'L', 'XL', '2XL', '3XL']
+        },
+        {
+            id: 'suit-blazer-single-button-tailored',
+            name: 'Zarek | Suit Blazer Single Button',
+            category: 'outfits',
+            price: 219.95,
+            originalPrice: 439.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Burgundy', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__80218.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80217.webp'
+                ] },
+                { name: 'Royal Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__80220.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80216.webp'
+                ] },
+                { name: 'Navy', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__80221.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80215.webp'
+                ] },
+                { name: 'Tan', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__80223.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80213.webp'
+                ] },
+                { name: 'Yellow', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__80222.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80214.webp'
+                ] },
+                { name: 'Red', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__4521.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80212.webp'
+                ] },
+                { name: 'Purple', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__4522.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80211.webp'
+                ] },
+                { name: 'Pink', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__4533.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80210.webp'
+                ] },
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__4524.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80200.webp'
+                ] },
+                { name: 'Mustard', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__4525.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80209.webp'
+                ] },
+                { name: 'Brown', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__4526.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80208.webp'
+                ] },
+                { name: 'Light Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__4527.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80202.webp'
+                ] },
+                { name: 'Dark Gray', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__4529.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80204.webp'
+                ] },
+                { name: 'Teal', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__4530.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80201_3af42bc5-6800-4cc2-a2bd-cc48eec3736f.webp'
+                ] },
+                { name: 'Green', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__4531.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80205.webp'
+                ] },
+                { name: 'Hot Pink', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__4534.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80203.webp'
+                ] },
+                { name: 'Mint', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__4535.jpg'
+                ] },
+                { name: 'Lavender', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__4536.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80207.webp'
+                ] }
+            ],
+            sizes: ['3XS', '2XS', 'XS', 'S', 'M', 'L', 'XL', '2XL', '3XL']
+        },
+        {
+            id: 'suit-double-breasted-pinstripe',
+            name: 'Zarek | Suit Double Breasted Pinstripe',
+            category: 'outfits',
+            price: 219.95,
+            originalPrice: 439.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Gray', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__character-reference-char1-use-the-exact-product-sh__80193.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80187.webp'
+                ] },
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__character-reference-char1-use-the-exact-product-sh__80194.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__create-a-nice-zoom-in-shot-on-a-plain-background-f__80197.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80186.webp'
+                ] },
+                { name: 'Red', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__character-reference-char1-use-the-exact-product-sh__80190.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80189.webp'
+                ] },
+                { name: 'Brown', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__character-reference-char1-use-the-exact-product-sh__80196.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80184.webp'
+                ] },
+                { name: 'White', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-the-background-and-change-it-to-efefef-add-__80191.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80188.webp'
+                ] },
+                { name: 'Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__character-reference-char1-use-the-exact-product-sh__80195.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80185.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__create-a-nice-zoom-in-shot-on-a-plain-background-f__80199.jpg'
+                ] }
+            ],
+            sizes: ['3XS', '2XS', 'XS', 'S', 'M', 'L', 'XL', '2XL']
+        },
+        {
+            id: 'set-shirt-pants-two-piece',
+            name: 'Zarek | Set Shirt Pants Two-Piece',
+            category: 'outfits',
+            price: 59.95,
+            colorVariants: [
+                { name: 'White', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__50777.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-to-the-side-do-not-__50779.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-as-the-reference-product-generate-a-clean-ecom__50763.webp'
+                ] },
+                { name: 'Beige', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__50768.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-to-the-back-do-not-__50781.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-as-the-reference-product-generate-a-clean-ecom__50762.webp'
+                ] },
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__character-reference-char1-use-the-exact-product-sh__50765.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__chaneg-the-whole-outfit-into-color-balck-except-th__50773_1.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__50755.webp'
+                ] },
+                { name: 'Green', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__50769.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-to-the-back-do-not-__50774.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-as-the-reference-product-generate-a-clean-ecom__50761.webp'
+                ] },
+                { name: 'Red', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__character-reference-char1-use-the-exact-product-sh__50757.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-to-the-side-do-not-__50776.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__50756.webp'
+                ] },
+                { name: 'Brown', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__50770.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-to-the-side-do-not-__50775.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-as-the-reference-product-generate-a-clean-ecom__50760.webp'
+                ] },
+                { name: 'Light Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__character-reference-char1-use-the-exact-product-sh__50783.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-to-the-back-make-hi__50772.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-as-the-reference-product-generate-a-clean-ecom__50764.webp'
+                ] },
+                { name: 'Light Beige', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__50771.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-to-the-back-do-not-__50778.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-as-the-reference-product-generate-a-clean-ecom__50758.webp'
+                ] }
+            ],
+            sizes: ['2XS', 'XS', 'S', 'M', 'L']
+        },
+        {
+            id: 'tracksuit-set-tech-zip-jogger',
+            name: 'Zarek | Set Tracksuit Tech Zip',
+            category: 'outfits',
+            price: 79.95,
+            originalPrice: 133.25,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Navy Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/7-Photoroom_b5650b78-63df-4ece-9689-43bbf983547e.jpg'
+                ] },
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/9-Photoroom_9287018d-a60a-429b-91bb-02a272701040.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/8-Photoroom_858d1aae-9a0d-4e91-9c81-1b41625980ad.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/2037ff98-6ec2-40d1-b66c-759926c9e675.jpg'
+                ] }
+            ],
+            sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL']
+        },
+        {
+            id: 'tracksuit-set-textured-zip-drawstring',
+            name: 'Zarek | Set Tracksuit Textured Zip',
+            category: 'outfits',
+            price: 99.95,
+            originalPrice: 199.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Charcoal Gray', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_char1-character-identity-reference.-use-only-the-person-from-char1-face.-discard-all-clothing-from-char1-.-img1-primary-clothing-item.-dress-the-person-using-only-the-clothing_34a41c4a-b3e2-489f-a771-d64f4492d4cc.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_change-the-stance-of-the-model-in-img1-refer-to-img2-for-the-details-of-the-back-of-both-jacket-and-pants.-put-one-hand-on-hip-and-one-foot-forward_0001.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_use-img1-as-the-reference-product.-generate-a-clean-ecommerce-flatlay-topdown-view-perfectly-straight-alignment-centered-composition-solid-efefef-background.-remove-hanger-and_73364060-5c0c-4e94-bfe3-8d931c23b7a9.webp'
+                ] },
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_char1-character-identity-reference.-use-only-the-person-from-char1-face.-discard-all-clothing-from-char1-.-img1-primary-clothing-item.-dress-the-person-using-only-the-clothing_9f6f18c5-4a26-4a1a-b5ad-7efeafc1163f.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_change-the-stance-of-the-model-in-img1-refer-to-img2-tfor-the-details-of-the-back-of-both-jacket-and-pants_0001.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_apply-the-color-of-both-jacket-and-pants-in-img2-to-the-jacket-and-pants-in-img2-no-hanegr-and-white-shirt-included_0001.webp'
+                ] }
+            ],
+            sizes: ['M', 'L', 'XL', '2XL', '3XL', '4XL']
+        },
+        {
+            id: 'set-button-up-stand-collar',
+            name: 'Zarek | Set Button-Up Stand Collar',
+            category: 'outfits',
+            price: 99.95,
+            originalPrice: 199.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Brown', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_char1-character-identity-reference.-use-only-the-person-from-char1-face.-discard-all-clothing-from-char1-.-img1-primary-clothing-item.-dress-the-person-using-only-the-clothing_3f9e7b49-b419-4ad5-bcd1-5eba5a112ac8.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_change-the-stace-of-the-model-to-side-.-amke-him-oblivious-of-the-camera_0001_2.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_apply-the-color-of-the-outfit-set-in-img2-to-the-outfit-set-in-img1_0001_2.webp'
+                ] },
+                { name: 'Light Gray', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_char1-character-identity-reference.-use-only-the-person-from-char1-face.-discard-all-clothing-from-char1-.-img1-primary-clothing-item.-dress-the-person-using-only-the-clothing_310a8a0b-57c0-4db0-92ce-4167bbbccd92.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_change-the-stace-of-the-model-to-back-.-amke-him-oblivious-of-the-camera_0001.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_apply-the-color-of-the-outfit-set-in-img2-to-the-outfit-set-in-img1_0001_1.webp'
+                ] },
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_char1-character-identity-reference.-use-only-the-person-from-char1-face.-discard-all-clothing-from-char1-.-img1-primary-clothing-item.-dress-the-person-using-only-the-clothing_fc235c7e-33d6-44ae-8b76-70f77168b0b2.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_change-the-stace-of-the-model-to-side-.-amke-him-oblivious-of-the-camera_0001_1.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_apply-the-color-of-the-outfit-set-in-img2-to-the-outfit-set-in-img1_0001.webp'
+                ] },
+                { name: 'Beige', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_char1-character-identity-reference.-use-only-the-person-from-char1-face.-discard-all-clothing-from-char1-.-img1-primary-clothing-item.-dress-the-person-using-only-the-clothing_abe7ce3a-996f-47a2-94eb-1ef61d8f7186.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_change-the-stace-of-the-model-to-side-.-amke-him-oblivious-of-the-camera_0001.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_use-img1-as-the-reference-product.-generate-a-clean-ecommerce-flatlay-topdown-view-perfectly-straight-alignment-centered-composition-solid-efefef-background.-remove-hanger-and_7eb48e31-c509-4585-83f2-caab9695ca9b.webp'
+                ] },
+                { name: 'White', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_char1-character-identity-reference.-use-only-the-person-from-char1-face.-discard-all-clothing-from-char1-.-img1-primary-clothing-item.-dress-the-person-using-only-the-clothing_29971b12-5b1b-45ff-add8-285214c28920.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_change-the-stace-of-the-model-to-side-.-amke-him-oblivious-of-the-camera_0001.png',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_apply-the-color-of-the-outfit-set-in-img2-to-the-outfit-set-in-img1_0001_3.jpg'
+                ] }
+            ],
+            sizes: ['2XS', 'XS', 'S', 'M', 'L', 'XL']
+        },
+        {
+            id: 'set-polo-shirt-shorts-textured',
+            name: 'Zarek | Set Polo Shirt Shorts Textured',
+            category: 'outfits',
+            price: 59.95,
+            originalPrice: 119.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_remove-the-background-and-change-it-to-efefef-and-apply-soft-shadow._0001_c6e1d7bd-5e54-4689-8d39-2274007b9e85.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_change-the-stance-of-the-model-to-the-right-side.-make-him-oblivious-of-the-camera_0001.png',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_apply-the-color-of-the-outfit-in-img2-to-the-outfit-in-img1_0001.webp'
+                ] },
+                { name: 'Light Gray', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_remove-the-background-and-change-it-to-efefef-and-apply-light-shadow._0001.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_change-the-stance-of-the-model-to-the-right-side.-make-him-oblivious-of-the-camera_0001_2.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_apply-the-color-of-the-outfit-in-img2-to-the-outfit-in-img1_00012.webp'
+                ] },
+                { name: 'Navy', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_remove-the-background-and-change-it-to-efefef-and-apply-light-shadow._0001_3.png',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_change-the-stance-of-the-model-to-the-side.-make-him-oblivious-of-the-camera_0001.png',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_apply-the-color-of-the-outfit-in-img2-to-the-outfit-in-img1_0001_1_2.webp'
+                ] },
+                { name: 'Red', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_remove-the-background-and-change-it-to-efefef-and-apply-light-shadow._0001_2.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_change-the-stance-of-the-model-to-the-side.-make-him-oblivious-of-the-camera_0001.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_apply-the-color-of-the-outfit-in-img2-to-the-outfit-in-img1_0001_1.webp'
+                ] },
+                { name: 'Sky Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_remove-the-background-and-change-it-to-efefef-and-apply-light-shadow._0001_4.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_change-the-stance-of-the-model-to-the-left-side.-make-him-oblivious-of-the-camera_0001.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_apply-the-color-of-the-outfit-in-img2-to-the-outfit-in-img1_0001_2_2.webp'
+                ] },
+                { name: 'Orange', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_remove-the-background-and-change-it-to-efefef-and-apply-light-shadow._0001_5.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_change-the-stance-of-the-model-to-the-right-side.-make-him-oblivious-of-the-camera_0001.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_change-the-siz-eof-the-image-into-square_0001.webp'
+                ] },
+                { name: 'Dark Gray', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_remove-the-background-and-change-it-to-efefef-and-apply-light-shadow._0001_1.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_change-the-stance-of-the-model-to-the-side.-make-him-oblivious-of-the-camera_0001_1_12cdcfe0-25cb-4f6b-b5df-0d3e42c2519b.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_apply-the-color-of-the-outfit-in-img2-to-the-outfit-in-img1_0001_3.webp'
+                ] },
+                { name: 'White', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_remove-the-background-and-change-it-to-efefef-and-apply-light-shadow._0001_12dcdd52-e288-4e42-b61c-e0383750fa22.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_change-the-stance-of-the-model-to-the-right-side.-make-him-oblivious-of-the-camera_0001_1.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik_apply-the-color-of-the-outfit-in-img2-to-the-outfit-in-img1_0001_2.webp'
+                ] }
+            ],
+            sizes: ['S', 'M', 'L', 'XL', '2XL', '3XL']
+        },
+        {
+            id: 'set-hoodie-sweater-matching',
+            name: 'Zarek | Set Hoodie Sweater Matching',
+            category: 'outfits',
+            price: 89.95,
+            originalPrice: 179.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__59389.png',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__78578.png',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-background__59386.webp'
+                ] },
+                { name: 'Dusty Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__59387.png',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-background__44657.webp'
+                ] },
+                { name: 'Light Gray', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__59388.png',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__78579.png',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-background__59385.webp'
+                ] }
+            ],
+            sizes: ['S', 'M', 'L', 'XL', '2XL', '3XL', '4XL']
+        },
+        {
+            id: 'set-waffle-polo-shorts',
+            name: 'Zarek | Set Waffle Polo Shorts',
+            category: 'outfits',
+            price: 79.95,
+            originalPrice: 159.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Cream / Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__62079.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__62078.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__70709_1.webp'
+                ] },
+                { name: 'Burgundy / Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__62075.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-rthe-stance-of-the-model-to-the-right-side-__62082.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__70712.webp'
+                ] },
+                { name: 'Forest Green / Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__62076.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-rthe-stance-of-the-model-to-the-right-side-__62081.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__70711.webp'
+                ] },
+                { name: 'Light Gray / Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__62077_31223c70-3de8-47f2-b868-b2e37c130082.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-rthe-stance-of-the-model-to-the-side-make-h__62080.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__70710.webp'
+                ] }
+            ],
+            sizes: ['S', 'M', 'L', 'XL', '2XL', '3XL']
+        },
+        {
+            id: 'set-waffle-knit-colorblock-polo-pants',
+            name: 'Zarek | Set Waffle Polo Pants Color Block',
+            category: 'outfits',
+            price: 79.95,
+            originalPrice: 159.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Black / Light Gray', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__50432.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-img1-to-the-side-ma__50441.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__34751.webp'
+                ] },
+                { name: 'Forest Green / Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__50433.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-img1-to-the-side-ma__50440.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__34752.webp'
+                ] },
+                { name: 'Light Gray / Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__50434.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-img1-to-the-side-ma__50439.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__34754.webp'
+                ] },
+                { name: 'Cream / Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__50435.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-img1-to-the-side-ma__50437.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__34755.webp'
+                ] },
+                { name: 'Burgundy / Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__50436.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__34757.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__create-a-nice-zoom-in-shot-on-a-plain-background-f__50442.webp'
+                ] }
+            ],
+            sizes: ['S', 'M', 'L', 'XL', '2XL', '3XL']
+        },
+        {
+            id: 'set-ribbed-button-up-shirt-pants',
+            name: 'Zarek | Set Ribbed Button-Up Shirt Pants',
+            category: 'outfits',
+            price: 79.95,
+            originalPrice: 159.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Light Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__50420.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-img1-to-the-side-ma__50426.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__61084.webp'
+                ] },
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__50418.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-img1-to-the-left-si__50430.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__61086.webp'
+                ] },
+                { name: 'Dark Green', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__57187.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-img1-to-the-side-ma__50424.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__61088.webp'
+                ] },
+                { name: 'Gray', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__50417.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-img1-to-the-right-s__50427.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__61087.webp'
+                ] },
+                { name: 'Beige', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__50419.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-img1-to-the-left-si__50428.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__61085.webp'
+                ] },
+                { name: 'Brown', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__50421.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-img1-to-the-side-ma__50431.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__61083.webp'
+                ] }
+            ],
+            sizes: ['S', 'M', 'L', 'XL', '2XL']
+        },
+        {
+            id: 'set-tee-shorts-lounge-crew',
+            name: 'Zarek | Set Tee Shorts Lounge',
+            category: 'outfits',
+            price: 59.95,
+            originalPrice: 119.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Light Gray', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-the-background-and-change-it-to-efefef-add-__30481.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__30485.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-color-of-the-outfit-set-in-img1-into-th__30493.webp'
+                ] },
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-the-background-and-change-it-to-efefef-add-__30482.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__30487.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-color-of-the-outfit-set-into-color-blac__30492.webp'
+                ] },
+                { name: 'Brown', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-the-background-and-change-it-to-efefef-add-__30483.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__30488.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-size-of-the-image-into-sqaure__30494.webp'
+                ] },
+                { name: 'White', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-the-background-and-change-it-to-efefef-add-__30478.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__30484.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-img1-as-the-reference-product-generate-a-clean__30489.webp'
+                ] }
+            ],
+            sizes: ['S', 'M', 'L', 'XL', '2XL', '3XL', '4XL']
+        },
+        {
+            id: 'set-athletic-tshirt-shorts',
+            name: 'Zarek | Set Athletic Tee Shorts',
+            category: 'outfits',
+            price: 39.95,
+            colorVariants: [
+                { name: 'White', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__62062.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__62068.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-as-the-reference-product-generate-a-clean-ecom__62053.webp'
+                ] },
+                { name: 'Black / White', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__62057.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-to-the-side__62064.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-as-the-reference-product-generate-a-clean-ecom__62048.webp'
+                ] },
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__62058.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-to-the-right-side-n__62070.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-as-the-reference-product-generate-a-clean-ecom__62049.webp'
+                ] },
+                { name: 'Black / Gray', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__62059.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-to-the-side__62065.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-as-the-reference-product-generate-a-clean-ecom__62050.webp'
+                ] },
+                { name: 'Black / Navy Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__62060.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-to-the-side-make-bo__62066.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-as-the-reference-product-generate-a-clean-ecom__62051.webp'
+                ] },
+                { name: 'Black / Orange', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__62061.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-to-the-side-one-han__62067.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-as-the-reference-product-generate-a-clean-ecom__62052.webp'
+                ] },
+                { name: 'Navy Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-character-identity-referenceuse-only-the-per__62063.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-to-the-side-no-pock__62069.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-as-the-reference-product-generate-a-clean-ecom__62054.webp'
+                ] }
+            ],
+            sizes: ['2XS', 'XS', 'S', 'M', 'L']
+        },
+        {
+            id: 'set-athletic-tshirt-layered-shorts',
+            name: 'Zarek | Set Athletic Tee Layered Shorts',
+            category: 'outfits',
+            price: 69.95,
+            colorVariants: [
+                { name: 'Black / White', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-as-the-reference-product-generate-a-clean-ecom__62048.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-as-the-reference-product-generate-a-clean-ecom__62053.webp'
+                ] },
+                { name: 'Black / Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-as-the-reference-product-generate-a-clean-ecom__62049.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-as-the-reference-product-generate-a-clean-ecom__62054.webp'
+                ] },
+                { name: 'Black / Gray', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-as-the-reference-product-generate-a-clean-ecom__62050.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-as-the-reference-product-generate-a-clean-ecom__62051.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__use-as-the-reference-product-generate-a-clean-ecom__62052.webp'
+                ] }
+            ],
+            sizes: ['S', 'M', 'L', 'XL']
+        },
+        {
+            id: 'set-shirt-shorts-button-up-drawstring',
+            name: 'Zarek | Set Shirt Shorts Button-Up',
+            category: 'outfits',
+            price: 79.95,
+            originalPrice: 159.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Olive Green', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-siz-eof-the-image-into-square__92786.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-to-the-back-keep-sh__92791.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/24_4e3dea50-b5ba-447a-a6a8-947de6c87716.webp'
+                ] },
+                { name: 'Beige', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__char1-wear-the-exact-product-from-img1-neutral-gre__61076.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-to-the-back-keep-sh__92790.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/11_1f9bcd55-b50d-4c2f-83cb-c437d1c2aa46.webp'
+                ] },
+                { name: 'Navy', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-size-of-the-image-into-square-maintain-__92787.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-to-the-back-make-hi__92789.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/20_c01c95af-5a64-4edb-a445-8f4d9344db5e.webp'
+                ] },
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-size-of-the-image-into-square-crop-to-c__61075.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-to-the-back-keep-sh__92792.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/7_8786569b-ae96-4ea4-adba-befbc2fc0f29.webp'
+                ] }
+            ],
+            sizes: ['2XS', 'XS', 'S', 'M', 'L', 'XL']
         },
 
         // ───────────────── GLASSES ─────────────────
@@ -1828,6 +3187,212 @@
             ],
             sizes: ['One Size']
         },
+        {
+            id: 'sunglasses-round-frame-dark-tinted',
+            name: 'Zarek | Sunglasses Round Frame',
+            category: 'glasses',
+            price: 39.95,
+            originalPrice: 79.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__character-reference-char1-make-him-wear-the-sungla__74159.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-stance-of-the-model-to-the-side-zoom-ou__74160.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-the-background-and-change-it-to-efefef-add-__74158.webp'
+                ] }
+            ],
+            sizes: ['One Size']
+        },
+        {
+            id: 'sunglasses-square-frame-gold-detail',
+            name: 'Zarek | Sunglasses Square Gold',
+            category: 'glasses',
+            price: 39.95,
+            originalPrice: 79.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Blue Marble', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-the-background-and-change-it-to-efefef-add-__68339.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__character-reference-char1-make-char1-wear-the-sung__55852.webp'
+                ] },
+                { name: 'Classic Tortoiseshell', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-the-background-and-change-it-to-efefef-add-__55840.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__character-reference-char1-make-char1-wear-the-sung__55848.webp'
+                ] },
+                { name: 'Matte Black Smoke', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-the-background-and-change-it-to-efefef-add-__68338.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__character-reference-char1-make-char1-wear-the-sung__55850.webp'
+                ] },
+                { name: 'Black Gray Gradient', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-the-background-and-change-it-to-efefef-add-__68340.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__character-reference-char1-make-char1-wear-the-sung__74132.webp'
+                ] },
+                { name: 'Black Gold Smoke', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-the-background-and-change-it-to-efefef-add-__68337.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__character-reference-char1-make-char1-wear-the-sung__55854.webp'
+                ] },
+                { name: 'Black Clear Lens', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-the-background-and-change-it-to-efefef-add-__55844.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__character-reference-char1-make-char1-wear-the-sung__55847.jpg'
+                ] },
+                { name: 'Transparent Gray', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-the-background-and-change-it-to-efefef-add-__55843.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__character-reference-char1-make-char1-wear-the-sung__55849.webp'
+                ] },
+                { name: 'Black Ice Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-the-background-and-change-it-to-efefef-add-__55842.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__character-reference-char1-make-char1-wear-the-sung__55855.jpg'
+                ] }
+            ],
+            sizes: ['One Size']
+        },
+        {
+            id: 'sunglasses-square-frame-tinted-lens',
+            name: 'Zarek | Sunglasses Square Tinted',
+            category: 'glasses',
+            price: 29.95,
+            originalPrice: 59.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Black Smoke', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-the-background-and-change-it-to-efefef-add-__68314.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-the-background-and-change-it-to-efefef-add-__68336.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-everything-into-color-balck__68326.webp'
+                ] },
+                { name: 'Black Blue Tint', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-the-background-and-change-it-to-efefef-add-__68327.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-the-background-and-change-it-to-efefef-add-__68334.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-the-background-and-change-it-to-efefef-add-__68320.webp'
+                ] },
+                { name: 'Black Green Tint', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-the-background-and-change-it-to-efefef-add-__68325.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-the-background-and-change-it-to-efefef-add-__68333.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-the-background-and-change-it-to-efefef-add-__68321.webp'
+                ] },
+                { name: 'Crystal Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-the-background-and-change-it-to-efefef-add-__68324.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-the-background-and-change-it-to-efefef-add-__68335.jpg',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-the-background-and-change-it-to-efefef-add-__68322.webp'
+                ] }
+            ],
+            sizes: ['One Size']
+        },
+        {
+            id: 'sunglasses-square-full-rim-tinted',
+            name: 'Zarek | Sunglasses Square Full-Rim',
+            category: 'glasses',
+            price: 39.95,
+            originalPrice: 59.95,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Silver / Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/11_452e6d61-911f-4988-bf20-60b36f5cad47.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-all-the-text__9712.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-size-of-the-image-into-square__83693.webp'
+                ] },
+                { name: 'Olive Green / Dark Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/2_c49c762b-d253-4f1a-bd28-9778d0efe9a6.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__do-not-remove-the-glasses-the-box-and-any-material__9715.webp'
+                ] },
+                { name: 'Gray / Dark Gray', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/3_bf41f23a-49d3-400f-a2e2-0aa2a0a16099.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__do-not-remove-the-glasses-the-box-and-any-material__9716.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-size-of-the-image-into-square__9727.webp'
+                ] },
+                { name: 'Black / Dark Gray', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/1_41def3ca-cac0-442f-ae66-e54b66c4d0a4.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-all-the-text__9714.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-size-of-the-image-into-square__83694.webp'
+                ] },
+                { name: 'Clear / Green', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/j2Untitleddesign.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-any-letters-messages-and-texts__9720.webp'
+                ] },
+                { name: 'Amber Brown / Brown', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/6_c32a061d-97ec-42cd-bb99-41a994ac96ef.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-any-letters-messages-and-texts__9721.webp'
+                ] },
+                { name: 'Sage Green / Brown', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/7_d207641a-2f39-423a-a280-ebe7326c2566.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-any-letters-messages-and-texts__9722.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-the-man-char1-wear-the-sunglass-in-img1-photo__50991.webp'
+                ] },
+                { name: 'Amber / Teal', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/8_4f3fe39d-978d-43e2-a9ae-536220944d04.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__make-the-background-efefef-and-put-soft-shadow__9725.png',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__change-the-size-of-the-image-into-square__83695.webp'
+                ] },
+                { name: 'Blue / Rose', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/9_1441db7b-6a23-477c-ae09-6721b1fe24a3.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__remove-any-letters-messages-and-texts__9724.webp'
+                ] }
+            ],
+            sizes: ['One Size']
+        },
+        {
+            id: 'sunglasses-geometric-metal-double-bridge',
+            name: 'Zarek | Sunglasses Geometric Double Bridge',
+            category: 'glasses',
+            price: 39.95,
+            originalPrice: 79.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Silver Pink', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74161.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/1_1a81191e-2a51-4c34-8dc9-7d05df484293.webp'
+                ] },
+                { name: 'Silver Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74162.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/2_40157372-b5ff-4178-98c7-3dc0d7d14701.webp'
+                ] },
+                { name: 'Gold Gray', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74163.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/3_af52d309-eda8-4b52-908b-1486017d3182.webp'
+                ] },
+                { name: 'Black Yellow', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74165.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/4_f051f39e-dd86-4ece-8980-a7473c4a4133.webp'
+                ] },
+                { name: 'Gold Pink', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74166.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/5_ce10f1cb-bcbc-4679-8193-899dacd53527.webp'
+                ] },
+                { name: 'Black Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74167.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/6_3a7e027e-1f09-499e-bfca-f9164061516b.webp'
+                ] },
+                { name: 'Gold Brown', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74168.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/7_d90faf68-f755-419e-8144-92e07a43f85a.webp'
+                ] }
+            ],
+            sizes: ['One Size']
+        },
+        {
+            id: 'sunglasses-rectangular-slim-metal-frame',
+            name: 'Zarek | Sunglasses Rectangular Slim',
+            category: 'glasses',
+            price: 39.95,
+            originalPrice: 79.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Sliver Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/Screenshot2026-03-05at3.03.29AM.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/Screenshot2026-03-05at3.19.52AM.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__character-reference-zoom-ou-t-the-image-cut-off-th__74169.webp'
+                ] },
+                { name: 'Gold Brown', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/Screenshot2026-03-05at3.02.33AM.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/Screenshot2026-03-05at3.20.12AM.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74171.webp'
+                ] },
+                { name: 'Gold Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/Screenshot2026-03-05at3.03.49AM.webp',
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/Screenshot2026-03-05at3.20.18AM.webp'
+                ] }
+            ],
+            sizes: ['One Size']
+        },
 
         // ───────────────── ACCESSORIES ─────────────────
         {
@@ -1866,6 +3431,52 @@
                 { name: 'Brown',         image: 'https://vintares.com/cdn/shop/files/variant-image-4-Photoroom_b578d81c-536a-4f04-b71a-c84ab566685c.jpg?v=1755163900&width=1024' },
                 { name: 'Black',         image: 'https://vintares.com/cdn/shop/files/variant-image-7-Photoroom_26fb493e-688e-491f-a54e-15f80662f549.jpg?v=1755163900&width=1024' },
                 { name: 'Emerald Green', image: 'https://vintares.com/cdn/shop/files/variant-image-2-Photoroom_70866a6e-ec9c-471e-883c-9d44a2dcd819.jpg?v=1756465315&width=1024' }
+            ],
+            sizes: ['One Size']
+        },
+        {
+            id: 'watch-roll-leather-single',
+            name: 'Zarek | Watch Roll Leather Single',
+            category: 'accessories',
+            price: 29.95,
+            originalPrice: 59.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Navy Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/variant-image-1-Photoroom_41b46ae8-a03f-423c-a4ef-44e63678ce1d.jpg'
+                ] },
+                { name: 'Brown', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/variant-image-2-Photoroom_ed585635-adee-4b6b-9890-001f71d4d771.jpg'
+                ] },
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/variant-image-5-Photoroom_b26942a0-91c8-48e8-90ae-4255c9095ee8.jpg'
+                ] },
+                { name: 'Emerald Green', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/variant-image-1-Photoroom_f76a146a-735c-4cf2-b208-60a4302e916a.jpg'
+                ] }
+            ],
+            sizes: ['One Size']
+        },
+        {
+            id: 'watch-roll-leather-double',
+            name: 'Zarek | Watch Roll Leather Double',
+            category: 'accessories',
+            price: 47.95,
+            originalPrice: 95.90,
+            badge: 'SALE',
+            colorVariants: [
+                { name: 'Navy Blue', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/variant-image-8-Photoroom_2dcc7169-f572-465f-b31e-377b863b66e2.jpg'
+                ] },
+                { name: 'Brown', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/variant-image-3-Photoroom_85f31943-838f-4973-a8f7-e29ed5bc4c1c.jpg'
+                ] },
+                { name: 'Black', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/variant-image-6-Photoroom_dc797eeb-5c4d-4af6-b5a0-82de71a24e0b.jpg'
+                ] },
+                { name: 'Emerald Green', images: [
+                    'https://cdn.shopify.com/s/files/1/0693/9387/5134/files/variant-image-3-Photoroom_7402cfb4-5bd0-4277-b3e8-1bef99d33c5e.jpg'
+                ] }
             ],
             sizes: ['One Size']
         }
