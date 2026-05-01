@@ -11,12 +11,6 @@
     <link rel="stylesheet" href="css/pages/collection.css">
 </head>
 <body>
-    <!-- =====================================================================
-         ANNOUNCEMENT BAR
-         ===================================================================== -->
-    <div class="announcement-bar">
-        Use code <span class="announcement-bar__code">ZAREK10</span> for an extra 10% discount
-    </div>
 
     <!-- =====================================================================
          HEADER
@@ -110,23 +104,30 @@
          MAIN CONTENT
          ===================================================================== -->
     <main>
-        <!-- =================================================================
-             1. COLLECTION HERO — slim banner w/ category title
-             ================================================================= -->
-        <section class="collection-hero">
-            <img
-                class="collection-hero__media"
-                src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1400"
-                alt=""
-                loading="eager"
-                data-collection-hero-img
-            >
-            <div class="collection-hero__overlay" aria-hidden="true"></div>
-            <div class="collection-hero__content">
-                <h1 class="collection-hero__title" data-collection-title>All Products</h1>
-                <p class="collection-hero__subtitle" data-collection-count>12 products</p>
+        <div class="announcement-bar">
+          <div class="announcement-bar__top">
+            SPRING SALE | UP TO 70% OFF
+          </div>
+          <div class="announcement-bar__bottom">
+            <div class="announcement-bar__item">
+              <span class="announcement-bar__qty">2 ITEMS</span>
+              <span class="announcement-bar__pct">-10%</span>
+              <span class="announcement-bar__label">ON ENTIRE ORDER</span>
             </div>
-        </section>
+            <div class="announcement-bar__divider"></div>
+            <div class="announcement-bar__item">
+              <span class="announcement-bar__qty">3 ITEMS</span>
+              <span class="announcement-bar__pct">-15%</span>
+              <span class="announcement-bar__label">ON ENTIRE ORDER</span>
+            </div>
+            <div class="announcement-bar__divider"></div>
+            <div class="announcement-bar__item">
+              <span class="announcement-bar__qty">4 ITEMS</span>
+              <span class="announcement-bar__pct">-20%</span>
+              <span class="announcement-bar__label">ON ENTIRE ORDER</span>
+            </div>
+          </div>
+        </div>
 
         <!-- =================================================================
              2. FILTER BAR — count, sort dropdown, category chips
