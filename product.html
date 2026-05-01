@@ -880,6 +880,10 @@
       document.getElementById('cart-close').addEventListener('click', closeCart);
       document.getElementById('cart-overlay').addEventListener('click', closeCart);
 
+      document.getElementById('cart-checkout-btn').addEventListener('click', function() {
+        window.location.href = 'checkout.html';
+      });
+
       document.getElementById('cart-discount-apply').addEventListener('click', function() {
         const code = document.getElementById('cart-discount-input').value.trim().toUpperCase();
         if (code === 'ZAREK10') {
