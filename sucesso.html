@@ -3,25 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart — Zarek</title>
+    <title>Order Confirmed — Zarek</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/pages/cart.css">
+    <link rel="stylesheet" href="css/pages/home.css">
     <script async defer src="https://js.whop.com/static/checkout/loader.js"></script>
 </head>
 <body>
-    <!-- =====================================================================
-         ANNOUNCEMENT BAR
-         ===================================================================== -->
-    <div class="announcement-bar">
-        Use code <span class="announcement-bar__code">ZAREK10</span> for an extra 10% discount
+<div class="announcement-bar">
+  <div class="announcement-bar__top">
+    SPRING SALE | UP TO 70% OFF
+  </div>
+  <div class="announcement-bar__bottom">
+    <div class="announcement-bar__item">
+      <span class="announcement-bar__qty">2 ITEMS</span>
+      <span class="announcement-bar__pct">-10%</span>
+      <span class="announcement-bar__label">ON ENTIRE ORDER</span>
     </div>
+    <div class="announcement-bar__divider"></div>
+    <div class="announcement-bar__item">
+      <span class="announcement-bar__qty">3 ITEMS</span>
+      <span class="announcement-bar__pct">-15%</span>
+      <span class="announcement-bar__label">ON ENTIRE ORDER</span>
+    </div>
+    <div class="announcement-bar__divider"></div>
+    <div class="announcement-bar__item">
+      <span class="announcement-bar__qty">4 ITEMS</span>
+      <span class="announcement-bar__pct">-20%</span>
+      <span class="announcement-bar__label">ON ENTIRE ORDER</span>
+    </div>
+  </div>
+</div>
 
-    <!-- =====================================================================
-         HEADER
-         ===================================================================== -->
     <header class="site-header" role="banner">
         <div class="site-header__inner">
             <div class="site-header__top">
@@ -82,9 +97,6 @@
         </div>
     </header>
 
-    <!-- =====================================================================
-         MOBILE NAV DRAWER + OVERLAY
-         ===================================================================== -->
     <aside class="mobile-nav" data-mobile-nav aria-label="Mobile navigation">
         <button class="mobile-nav__close" type="button" aria-label="Close menu" data-mobile-nav-close>
             <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -107,139 +119,18 @@
     </aside>
     <div class="nav-overlay" data-nav-overlay></div>
 
-    <!-- =====================================================================
-         MAIN CONTENT
-         ===================================================================== -->
     <main>
-        <section class="cart-page">
-            <div class="container">
-                <h1 class="cart-page__title">Your Cart</h1>
-
-                <div class="cart-grid">
-                    <!-- =================================================
-                         CART ITEMS TABLE
-                         ================================================= -->
-                    <div class="cart-items">
-                        <table class="cart-table" data-cart-table>
-                            <thead class="cart-table__head">
-                                <tr>
-                                    <th>Product</th>
-                                    <th>Quantity</th>
-                                    <th>Price</th>
-                                    <th>Subtotal</th>
-                                </tr>
-                            </thead>
-                            <tbody class="cart-table__body">
-
-                                <tr class="cart-row">
-                                    <td class="cart-row__cell cart-row__cell--item">
-                                        <div class="cart-item">
-                                            <a href="product.html" class="cart-item__media">
-                                                <img class="cart-item__img" src="https://picsum.photos/200/200?random=1" alt="Zarek placeholder watch">
-                                            </a>
-                                            <div class="cart-item__meta">
-                                                <a href="product.html" class="cart-item__name">Zarek | Placeholder Premium Watch</a>
-                                                <span class="cart-item__variant">Band Colour: Black</span>
-                                                <button type="button" class="cart-item__remove">Remove</button>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="cart-row__cell cart-row__cell--qty cart-row__cell--center">
-                                        <div class="qty-stepper" data-quantity>
-                                            <button type="button" class="qty-stepper__btn" data-quantity-decrement aria-label="Decrease quantity">−</button>
-                                            <input type="number" class="qty-stepper__input" value="1" min="1" max="99" data-quantity-input aria-label="Quantity">
-                                            <button type="button" class="qty-stepper__btn" data-quantity-increment aria-label="Increase quantity">+</button>
-                                        </div>
-                                    </td>
-                                    <td class="cart-row__cell cart-row__cell--price cart-row__cell--right">
-                                        <span class="cart-row__price">$59.00</span>
-                                    </td>
-                                    <td class="cart-row__cell cart-row__cell--subtotal cart-row__cell--right">
-                                        <span class="cart-row__subtotal">$59.00</span>
-                                    </td>
-                                </tr>
-
-                                <tr class="cart-row">
-                                    <td class="cart-row__cell cart-row__cell--item">
-                                        <div class="cart-item">
-                                            <a href="product.html" class="cart-item__media">
-                                                <img class="cart-item__img" src="https://picsum.photos/200/200?random=2" alt="Zarek placeholder coat">
-                                            </a>
-                                            <div class="cart-item__meta">
-                                                <a href="product.html" class="cart-item__name">Zarek | Placeholder Wool Coat</a>
-                                                <span class="cart-item__variant">Size: M · Colour: Charcoal</span>
-                                                <button type="button" class="cart-item__remove">Remove</button>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="cart-row__cell cart-row__cell--qty cart-row__cell--center">
-                                        <div class="qty-stepper" data-quantity>
-                                            <button type="button" class="qty-stepper__btn" data-quantity-decrement aria-label="Decrease quantity">−</button>
-                                            <input type="number" class="qty-stepper__input" value="2" min="1" max="99" data-quantity-input aria-label="Quantity">
-                                            <button type="button" class="qty-stepper__btn" data-quantity-increment aria-label="Increase quantity">+</button>
-                                        </div>
-                                    </td>
-                                    <td class="cart-row__cell cart-row__cell--price cart-row__cell--right">
-                                        <span class="cart-row__price">$220.00</span>
-                                    </td>
-                                    <td class="cart-row__cell cart-row__cell--subtotal cart-row__cell--right">
-                                        <span class="cart-row__subtotal">$440.00</span>
-                                    </td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-
-                        <div class="cart-actions">
-                            <a href="collection.html" class="btn-outline">Continue Shopping</a>
-                        </div>
-                    </div>
-
-                    <!-- =================================================
-                         ORDER SUMMARY
-                         ================================================= -->
-                    <aside class="order-summary" aria-label="Order summary">
-                        <h2 class="order-summary__title">Order Summary</h2>
-
-                        <dl>
-                            <div class="order-summary__row">
-                                <dt>Subtotal</dt>
-                                <dd>$499.00</dd>
-                            </div>
-                            <div class="order-summary__row">
-                                <dt>Shipping</dt>
-                                <dd>Free</dd>
-                            </div>
-
-                            <form class="coupon" onsubmit="return false">
-                                <input type="text" class="coupon__input" placeholder="Coupon code" aria-label="Coupon code">
-                                <button type="submit" class="coupon__btn">Apply</button>
-                            </form>
-
-                            <div class="order-summary__row order-summary__row--total">
-                                <dt>Total</dt>
-                                <dd>$499.00</dd>
-                            </div>
-                        </dl>
-
-                        <button type="button" class="btn-primary order-summary__checkout">Checkout</button>
-
-                        <div
-                          data-whop-checkout-plan-id="plan_1DZiQomwPyAKJ"
-                          data-whop-checkout-return-url="https://zarek.vercel.app/sucesso.html"
-                          data-whop-checkout-theme="light"
-                        ></div>
-
-                        <p class="order-summary__note">Taxes calculated at checkout. Free worldwide shipping included.</p>
-                    </aside>
-                </div>
-            </div>
+        <section style="padding:80px 24px;text-align:center;min-height:60vh;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+            <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:24px;">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="9 12 11 14 15 10"/>
+            </svg>
+            <h1 style="font-size:clamp(24px,4vw,36px);font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#111;margin-bottom:16px;">Order Confirmed!</h1>
+            <p style="font-size:14px;color:#555;line-height:1.7;max-width:480px;margin:0 auto 32px;">Thank you for your purchase. You'll receive a confirmation email shortly.</p>
+            <a href="index.html" style="display:inline-block;background:#111;color:#fff;text-decoration:none;padding:14px 40px;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;">Back to Store</a>
         </section>
     </main>
 
-    <!-- =====================================================================
-         FOOTER
-         ===================================================================== -->
     <footer class="site-footer" role="contentinfo">
         <div class="site-footer__inner">
             <div class="footer-columns">
@@ -300,6 +191,7 @@
         </div>
     </footer>
 
+    <script src="js/products.js"></script>
     <script src="js/main.js"></script>
     <script src="js/cart.js"></script>
 </body>

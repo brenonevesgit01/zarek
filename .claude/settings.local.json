@@ -3,7 +3,8 @@
     "allow": [
       "Bash(git add *)",
       "Bash(git commit *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(awk 'NR==11 { print FILENAME\": \"$0 }' c:/Users/PC/zarek/index.html c:/Users/PC/zarek/collection.html c:/Users/PC/zarek/product.html c:/Users/PC/zarek/cart.html)"
     ]
   }
 }
