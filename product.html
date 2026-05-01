@@ -720,6 +720,204 @@
       document.querySelector('.press-logo-description').textContent = img.dataset.description;
     }
 
+    document.addEventListener('DOMContentLoaded', function() {
+    (function() {
+      let cart = JSON.parse(localStorage.getItem('zarek-cart') || '[]');
+      let timerInterval;
+      let timerSeconds = 600;
+      const DISCOUNTS = [
+        { threshold: 100, pct: 10 },
+        { threshold: 200, pct: 15 },
+        { threshold: 300, pct: 20 }
+      ];
+
+      function saveCart() { localStorage.setItem('zarek-cart', JSON.stringify(cart)); }
+
+      function getSubtotal() {
+        return cart.reduce((sum, item) => sum + item.price * item.qty, 0);
+      }
+
+      function getDiscount() {
+        const sub = getSubtotal();
+        let pct = 0;
+        DISCOUNTS.forEach(d => { if (sub >= d.threshold) pct = d.pct; });
+        return pct;
+      }
+
+      function formatPrice(n) { return '$' + n.toFixed(2); }
+
+      function renderCart() {
+        const count = cart.reduce((s, i) => s + i.qty, 0);
+        document.getElementById('cart-count').textContent = count;
+
+        const itemsEl = document.getElementById('cart-items');
+        itemsEl.innerHTML = '';
+        cart.forEach((item, idx) => {
+          const div = document.createElement('div');
+          div.className = 'cart-item';
+          div.innerHTML = `
+            <img class="cart-item__img" src="${item.img}" alt="${item.name}">
+            <div class="cart-item__info">
+              <p class="cart-item__name">${item.name}</p>
+              <p class="cart-item__meta">Color: ${item.color || '-'} &nbsp;|&nbsp; Size: ${item.size || '-'}</p>
+              <div class="cart-item__qty">
+                <button data-idx="${idx}" data-action="dec">-</button>
+                <span>${item.qty}</span>
+                <button data-idx="${idx}" data-action="inc">+</button>
+              </div>
+              <p><span class="cart-item__old-price">${formatPrice(item.originalPrice)}</span><span class="cart-item__price">${formatPrice(item.price * item.qty)}</span></p>
+            </div>
+            <button class="cart-item__remove" data-idx="${idx}">&#x2715;</button>`;
+          itemsEl.appendChild(div);
+        });
+
+        itemsEl.querySelectorAll('button[data-action]').forEach(btn => {
+          btn.addEventListener('click', function() {
+            const idx = parseInt(this.dataset.idx);
+            if (this.dataset.action === 'inc') cart[idx].qty++;
+            else { cart[idx].qty--; if (cart[idx].qty <= 0) cart.splice(idx, 1); }
+            saveCart(); renderCart();
+          });
+        });
+        itemsEl.querySelectorAll('.cart-item__remove').forEach(btn => {
+          btn.addEventListener('click', function() {
+            cart.splice(parseInt(this.dataset.idx), 1);
+            saveCart(); renderCart();
+          });
+        });
+
+        const sub = getSubtotal();
+        const pct = getDiscount();
+        const discountAmt = sub * pct / 100;
+        const total = sub - discountAmt;
+
+        const fill = document.getElementById('cart-progress-fill');
+        const maxThreshold = 300;
+        const progress = Math.min(sub / maxThreshold * 100, 100);
+        fill.style.width = progress + '%';
+        document.querySelectorAll('.cart-progress-dot').forEach((dot, i) => {
+          dot.classList.toggle('reached', sub >= DISCOUNTS[i].threshold);
+        });
+
+        if (pct > 0) {
+          document.getElementById('cart-discount-label').textContent = 'All savings unlocked!';
+          document.getElementById('cart-discount-row').style.display = 'flex';
+          document.getElementById('cart-discount-tag').textContent = pct + '% OFF';
+          document.getElementById('cart-discount-amount').textContent = '-' + formatPrice(discountAmt);
+        } else {
+          const next = DISCOUNTS.find(d => sub < d.threshold);
+          document.getElementById('cart-discount-label').textContent = next ? `Add ${formatPrice(next.threshold - sub)} more for ${next.pct}% OFF` : '';
+          document.getElementById('cart-discount-row').style.display = 'none';
+        }
+
+        document.getElementById('cart-total').textContent = formatPrice(total);
+        document.getElementById('cart-checkout-total').textContent = formatPrice(total);
+
+        renderYouLove();
+      }
+
+      function renderYouLove() {
+        const track = document.getElementById('cart-you-love-track');
+        track.innerHTML = '';
+        const products = window.ZAREK_PRODUCTS;
+        if (typeof products === 'undefined') return;
+        const cartIds = cart.map(i => i.id);
+        const suggestions = products.filter(p => !cartIds.includes(p.id)).slice(0, 6);
+        suggestions.forEach(p => {
+          const img = p.colorVariants?.[0]?.images?.[0] || p.colorVariants?.[0]?.image || '';
+          const card = document.createElement('div');
+          card.className = 'cart-love-card';
+          card.innerHTML = `<a href="product.html?id=${p.id}"><img src="${img}" alt="${p.name}"><p>${p.name}</p><p class="cart-love-price">${formatPrice(p.price)}</p></a>`;
+          track.appendChild(card);
+        });
+      }
+
+      function startTimer() {
+        if (timerInterval) return;
+        timerInterval = setInterval(() => {
+          timerSeconds--;
+          if (timerSeconds <= 0) { timerSeconds = 600; }
+          const m = Math.floor(timerSeconds / 60).toString().padStart(2,'0');
+          const s = (timerSeconds % 60).toString().padStart(2,'0');
+          const el = document.getElementById('cart-timer');
+          if (el) el.textContent = m + ':' + s;
+        }, 1000);
+      }
+
+      function openCart() {
+        document.getElementById('cart-drawer').classList.add('active');
+        document.getElementById('cart-overlay').classList.add('active');
+        document.body.style.overflow = 'hidden';
+        startTimer();
+        renderCart();
+      }
+
+      function closeCart() {
+        document.getElementById('cart-drawer').classList.remove('active');
+        document.getElementById('cart-overlay').classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      document.getElementById('cart-close').addEventListener('click', closeCart);
+      document.getElementById('cart-overlay').addEventListener('click', closeCart);
+
+      document.getElementById('cart-discount-apply').addEventListener('click', function() {
+        const code = document.getElementById('cart-discount-input').value.trim().toUpperCase();
+        if (code === 'ZAREK10') {
+          alert('Code applied: extra 10% OFF!');
+        } else {
+          alert('Invalid code.');
+        }
+      });
+
+      const addToCartBtn = document.querySelector('button.btn-primary');
+      if (addToCartBtn) {
+        addToCartBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          const name = document.querySelector('[data-product-name]')?.textContent || '';
+          const price = parseFloat(document.querySelector('[data-product-price-new]')?.textContent?.replace(/[^0-9.]/g,'')) || 0;
+          const originalPrice = parseFloat(document.querySelector('[data-product-price-old]')?.textContent?.replace(/[^0-9.]/g,'')) || price;
+          const color = document.querySelector('[data-variant-value]')?.textContent || '';
+          const size = document.querySelector('select.size-select')?.value || '';
+          const img = document.querySelector('.gallery__main-img')?.src || '';
+          const id = new URLSearchParams(window.location.search).get('id') || name;
+
+          const existing = cart.find(i => i.id === id && i.color === color && i.size === size);
+          if (existing) { existing.qty++; }
+          else { cart.push({ id, name, price, originalPrice, color, size, img, qty: 1 }); }
+
+          saveCart();
+          openCart();
+        });
+      }
+
+      if (!addToCartBtn) {
+        const allBtns = Array.from(document.querySelectorAll('button'));
+        const cartBtn = allBtns.find(b => b.textContent.trim().toUpperCase().includes('ADD TO CART'));
+        if (cartBtn) {
+          cartBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            const name = document.querySelector('[data-product-name]')?.textContent || '';
+            const price = parseFloat(document.querySelector('[data-product-price-new]')?.textContent?.replace(/[^0-9.]/g,'')) || 0;
+            const originalPrice = parseFloat(document.querySelector('[data-product-price-old]')?.textContent?.replace(/[^0-9.]/g,'')) || price;
+            const color = document.querySelector('[data-variant-value]')?.textContent || '';
+            const size = document.querySelector('select.size-select')?.value || '';
+            const img = document.querySelector('.gallery__main-img')?.src || '';
+            const id = new URLSearchParams(window.location.search).get('id') || name;
+            const existing = cart.find(i => i.id === id && i.color === color && i.size === size);
+            if (existing) { existing.qty++; }
+            else { cart.push({ id, name, price, originalPrice, color, size, img, qty: 1 }); }
+            saveCart();
+            openCart();
+          });
+        }
+      }
+
+      window.openCartDrawer = openCart;
+      renderCart();
+    })();
+    });
+
     (function() {
       let startX = 0;
       let currentIndex = 0;
@@ -765,5 +963,52 @@
     })();
 
     </script>
+
+<div id="cart-overlay" class="cart-overlay"></div>
+<div id="cart-drawer" class="cart-drawer">
+  <div class="cart-drawer__header">
+    <span class="cart-drawer__title">YOUR CART • <span id="cart-count">0</span></span>
+    <button id="cart-close" class="cart-drawer__close">&#x2715;</button>
+  </div>
+
+  <div class="cart-timer-bar">
+    <span>Your cart is reserved for <strong id="cart-timer">10:00</strong>!</span>
+  </div>
+
+  <div class="cart-discount-bar">
+    <p class="cart-discount-label" id="cart-discount-label">Add more to unlock savings!</p>
+    <div class="cart-progress-track">
+      <div class="cart-progress-fill" id="cart-progress-fill"></div>
+      <span class="cart-progress-dot" style="left:33%"><span>10% OFF</span></span>
+      <span class="cart-progress-dot" style="left:66%"><span>15% OFF</span></span>
+      <span class="cart-progress-dot" style="left:100%"><span>20% OFF</span></span>
+    </div>
+  </div>
+
+  <div class="cart-items" id="cart-items"></div>
+
+  <div class="cart-you-love">
+    <p class="cart-you-love__title">YOU'LL LOVE THESE</p>
+    <div class="cart-you-love__track" id="cart-you-love-track"></div>
+  </div>
+
+  <div class="cart-footer">
+    <div class="cart-discount-code">
+      <input type="text" id="cart-discount-input" placeholder="Discount code">
+      <button id="cart-discount-apply">Apply</button>
+    </div>
+    <div class="cart-totals">
+      <div class="cart-totals__row" id="cart-discount-row" style="display:none">
+        <span>Discounts <span class="cart-discount-tag" id="cart-discount-tag"></span></span>
+        <span id="cart-discount-amount"></span>
+      </div>
+      <div class="cart-totals__row cart-totals__total">
+        <span>Total</span>
+        <span id="cart-total">$0.00</span>
+      </div>
+    </div>
+    <button class="cart-checkout-btn" id="cart-checkout-btn">Checkout • <span id="cart-checkout-total">$0.00</span></button>
+  </div>
+</div>
 </body>
 </html>
