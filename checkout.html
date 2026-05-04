@@ -6,203 +6,70 @@
     <title>Checkout — Zarek</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/pages/home.css">
+    <script async defer src="https://js.whop.com/static/checkout/loader.js"></script>
     <style>
-      .ck-wrap{max-width:1100px;margin:0 auto;padding:48px 24px;min-height:60vh;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start;}
-      @media (max-width:900px){.ck-wrap{grid-template-columns:1fr;}}
-      .ck-card{border:1px solid #e5e5e5;padding:32px;background:#fff;}
-      .ck-title{font-size:14px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:24px;color:#111;}
-      .ck-line{display:flex;justify-content:space-between;font-size:13px;color:#444;padding:10px 0;border-bottom:1px solid #f0f0f0;gap:12px;}
-      .ck-line:last-of-type{border-bottom:none;}
-      .ck-meta{font-size:11px;color:#888;margin-top:2px;}
-      .ck-totals{margin-top:16px;padding-top:16px;border-top:2px solid #111;}
-      .ck-total-row{display:flex;justify-content:space-between;font-size:13px;color:#111;padding:6px 0;}
-      .ck-total-row--final{font-size:16px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-top:8px;}
-      .ck-discount{color:#c1121f;}
-      .ck-status{text-align:center;font-size:12px;color:#666;padding:80px 24px;letter-spacing:1px;}
+      *,*::before,*::after{box-sizing:border-box;}
+      html,body{margin:0;padding:0;background:#f7f7f7;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#111;min-height:100vh;}
+      .ck-topbar{background:#fff;border-bottom:1px solid #e5e5e5;padding:18px 32px;display:flex;align-items:center;justify-content:space-between;}
+      .ck-brand{font-size:20px;font-weight:700;letter-spacing:6px;text-decoration:none;color:#111;font-family:Georgia,serif;}
+      .ck-back{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#666;text-decoration:none;display:flex;align-items:center;gap:6px;}
+      .ck-back:hover{color:#111;}
+      .ck-back svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2;}
+      .ck-page{display:flex;justify-content:center;padding:48px 24px 80px;}
+      .ck-frame{width:100%;max-width:560px;background:#fff;border:1px solid #e5e5e5;padding:24px;min-height:520px;}
+      .ck-status{text-align:center;font-size:12px;color:#666;padding:120px 24px;letter-spacing:1px;}
       .ck-spinner{display:inline-block;width:14px;height:14px;border:2px solid #ccc;border-top-color:#111;border-radius:50%;animation:cks .8s linear infinite;vertical-align:middle;margin-right:8px;}
       @keyframes cks{to{transform:rotate(360deg);}}
-      .ck-error{background:#fff0f0;border:1px solid #c1121f;color:#c1121f;padding:16px;font-size:12px;}
-      .ck-empty{text-align:center;color:#666;font-size:13px;padding:40px 0;grid-column:1/-1;}
+      .ck-error{background:#fff0f0;border:1px solid #c1121f;color:#c1121f;padding:16px;font-size:12px;margin:24px 0;}
+      .ck-empty{text-align:center;color:#666;font-size:13px;padding:80px 24px;}
       .ck-empty a{color:#111;font-weight:700;text-decoration:underline;}
-      #ck-payment-mount > div{min-height:520px;}
+      .ck-secure{text-align:center;font-size:10px;color:#999;letter-spacing:2px;text-transform:uppercase;margin-top:24px;}
+      .ck-secure svg{width:12px;height:12px;vertical-align:middle;margin-right:4px;}
     </style>
 </head>
 <body>
-<div class="announcement-bar">
-  <div class="announcement-bar__top">
-    SPRING SALE | UP TO 70% OFF
-  </div>
-  <div class="announcement-bar__bottom">
-    <div class="announcement-bar__item">
-      <span class="announcement-bar__qty">2 ITEMS</span>
-      <span class="announcement-bar__pct">-10%</span>
-      <span class="announcement-bar__label">ON ENTIRE ORDER</span>
+    <div class="ck-topbar">
+        <a href="index.html" class="ck-brand">ZAREK</a>
+        <a href="cart.html" class="ck-back">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Back to cart
+        </a>
     </div>
-    <div class="announcement-bar__divider"></div>
-    <div class="announcement-bar__item">
-      <span class="announcement-bar__qty">3 ITEMS</span>
-      <span class="announcement-bar__pct">-15%</span>
-      <span class="announcement-bar__label">ON ENTIRE ORDER</span>
-    </div>
-    <div class="announcement-bar__divider"></div>
-    <div class="announcement-bar__item">
-      <span class="announcement-bar__qty">4 ITEMS</span>
-      <span class="announcement-bar__pct">-20%</span>
-      <span class="announcement-bar__label">ON ENTIRE ORDER</span>
-    </div>
-  </div>
-</div>
 
-    <header class="site-header" role="banner">
-        <div class="site-header__inner">
-            <div class="site-header__top">
-                <div class="site-header__left">
-                    <button class="menu-toggle" type="button" aria-label="Open menu" data-menu-toggle>
-                        <svg viewBox="0 0 24 24" aria-hidden="true">
-                            <line x1="3" y1="6" x2="21" y2="6" stroke-linecap="round"/>
-                            <line x1="3" y1="12" x2="21" y2="12" stroke-linecap="round"/>
-                            <line x1="3" y1="18" x2="21" y2="18" stroke-linecap="round"/>
-                        </svg>
-                    </button>
-                </div>
-
-                <div class="site-header__center">
-                    <a href="index.html" class="site-logo" aria-label="Zarek — home">ZAREK</a>
-                </div>
-
-                <div class="site-header__actions">
-                    <button class="icon-btn" type="button" aria-label="Search">
-                        <svg viewBox="0 0 24 24" aria-hidden="true">
-                            <circle cx="11" cy="11" r="7" stroke-linecap="round"/>
-                            <line x1="20" y1="20" x2="16.5" y2="16.5" stroke-linecap="round"/>
-                        </svg>
-                        <span class="icon-btn__label">Search</span>
-                    </button>
-                    <a href="#" class="icon-btn" aria-label="Account">
-                        <svg viewBox="0 0 24 24" aria-hidden="true">
-                            <circle cx="12" cy="8" r="4" stroke-linecap="round"/>
-                            <path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke-linecap="round"/>
-                        </svg>
-                        <span class="icon-btn__label">Account</span>
-                    </a>
-                    <a href="cart.html" class="icon-btn" aria-label="Cart">
-                        <svg viewBox="0 0 24 24" aria-hidden="true">
-                            <path d="M5 7h14l-1.4 11.2a2 2 0 0 1-2 1.8H8.4a2 2 0 0 1-2-1.8L5 7z" stroke-linejoin="round"/>
-                            <path d="M9 7V5a3 3 0 0 1 6 0v2" stroke-linecap="round"/>
-                        </svg>
-                        <span class="cart-count" data-cart-count data-count="0">0</span>
-                        <span class="icon-btn__label">Cart</span>
-                    </a>
-                </div>
-            </div>
-
-            <nav class="site-nav" aria-label="Primary">
-                <ul class="site-nav__list">
-                    <li><a class="site-nav__link" href="index.html" data-nav-link="index.html">Home</a></li>
-                    <li><a class="site-nav__link" href="collection.html?cat=coats-jackets" data-nav-link="collection.html">Coats &amp; Jackets</a></li>
-                    <li><a class="site-nav__link" href="collection.html?cat=tops" data-nav-link="collection.html">Tops</a></li>
-                    <li><a class="site-nav__link" href="collection.html?cat=pants" data-nav-link="collection.html">Pants</a></li>
-                    <li><a class="site-nav__link" href="collection.html?cat=shoes" data-nav-link="collection.html">Shoes</a></li>
-                    <li><a class="site-nav__link" href="collection.html?cat=glasses" data-nav-link="collection.html">Glasses</a></li>
-                    <li><a class="site-nav__link" href="collection.html?cat=accessories" data-nav-link="collection.html">Accessories</a></li>
-                    <li><a class="site-nav__link site-nav__link--sale" href="collection.html?cat=sale" data-nav-link="collection.html">Sale</a></li>
-                    <li><a class="site-nav__link" href="about.html" data-nav-link="about.html">About</a></li>
-                    <li><a class="site-nav__link" href="contact.html" data-nav-link="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+    <div class="ck-page">
+        <div class="ck-frame" id="ck-frame">
+            <div class="ck-status"><span class="ck-spinner"></span>Preparing secure checkout…</div>
         </div>
-    </header>
+    </div>
 
-    <aside class="mobile-nav" data-mobile-nav aria-label="Mobile navigation">
-        <button class="mobile-nav__close" type="button" aria-label="Close menu" data-mobile-nav-close>
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-                <line x1="6" y1="6" x2="18" y2="18" stroke-linecap="round"/>
-                <line x1="18" y1="6" x2="6" y2="18" stroke-linecap="round"/>
-            </svg>
-        </button>
-        <ul class="mobile-nav__list">
-            <li><a class="mobile-nav__link" href="index.html">Home</a></li>
-            <li><a class="mobile-nav__link" href="collection.html?cat=coats-jackets">Coats &amp; Jackets</a></li>
-            <li><a class="mobile-nav__link" href="collection.html?cat=tops">Tops</a></li>
-            <li><a class="mobile-nav__link" href="collection.html?cat=pants">Pants</a></li>
-            <li><a class="mobile-nav__link" href="collection.html?cat=shoes">Shoes</a></li>
-            <li><a class="mobile-nav__link" href="collection.html?cat=glasses">Glasses</a></li>
-            <li><a class="mobile-nav__link" href="collection.html?cat=accessories">Accessories</a></li>
-            <li><a class="mobile-nav__link mobile-nav__link--sale" href="collection.html?cat=sale">Sale</a></li>
-            <li><a class="mobile-nav__link" href="about.html">About</a></li>
-            <li><a class="mobile-nav__link" href="contact.html">Contact</a></li>
-        </ul>
-    </aside>
-    <div class="nav-overlay" data-nav-overlay></div>
-
-    <main>
-        <div class="ck-wrap" id="ck-wrap">
-            <div class="ck-card">
-                <h1 class="ck-title">Order Summary</h1>
-                <div id="ck-summary"></div>
-            </div>
-            <div class="ck-card">
-                <h1 class="ck-title">Payment</h1>
-                <div id="ck-payment-mount">
-                    <div class="ck-status"><span class="ck-spinner"></span>Preparing secure checkout…</div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <script src="js/products.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/cart.js"></script>
     <script>
       (function(){
-        const DISCOUNTS = [
-          { threshold: 100, pct: 10 },
-          { threshold: 200, pct: 15 },
-          { threshold: 300, pct: 20 }
-        ];
-        const fmt = n => '$' + Number(n).toFixed(2);
         const cart = JSON.parse(localStorage.getItem('zarek-cart') || '[]');
-        const wrap = document.getElementById('ck-wrap');
-        const summaryEl = document.getElementById('ck-summary');
-        const mountEl = document.getElementById('ck-payment-mount');
+        const frame = document.getElementById('ck-frame');
 
         if (!cart.length) {
-          wrap.innerHTML = '<div class="ck-empty">Your cart is empty.<br><br><a href="collection.html?cat=coats-jackets">Continue shopping</a></div>';
+          frame.innerHTML = '<div class="ck-empty">Your cart is empty.<br><br><a href="collection.html?cat=coats-jackets">Continue shopping</a></div>';
           return;
         }
 
-        const subtotal = cart.reduce((s, i) => s + Number(i.price) * Number(i.qty || 1), 0);
-        let pct = 0;
-        DISCOUNTS.forEach(d => { if (subtotal >= d.threshold) pct = d.pct; });
-        const discountAmount = subtotal * pct / 100;
-        const total = subtotal - discountAmount;
-
-        let html = '';
-        cart.forEach(it => {
-          const lineTotal = Number(it.price) * Number(it.qty || 1);
-          html += `<div class="ck-line">
-            <div>
-              <div>${it.name} × ${it.qty || 1}</div>
-              <div class="ck-meta">${[it.color, it.size].filter(Boolean).join(' · ')}</div>
-            </div>
-            <div>${fmt(lineTotal)}</div>
-          </div>`;
-        });
-        html += '<div class="ck-totals">';
-        html += `<div class="ck-total-row"><span>Subtotal</span><span>${fmt(subtotal)}</span></div>`;
-        if (pct > 0) {
-          html += `<div class="ck-total-row ck-discount"><span>Discount (${pct}% OFF)</span><span>-${fmt(discountAmount)}</span></div>`;
-        }
-        html += '<div class="ck-total-row"><span>Shipping</span><span>Free</span></div>';
-        html += `<div class="ck-total-row ck-total-row--final"><span>Total</span><span>${fmt(total)}</span></div>`;
-        html += '</div>';
-        summaryEl.innerHTML = html;
-
         function showError(msg) {
-          mountEl.innerHTML = `<div class="ck-error">${msg}</div>`;
+          frame.innerHTML = `<div class="ck-error">${msg}</div>`;
+        }
+
+        function mountWidget(planId, sessionId) {
+          frame.innerHTML = '';
+          const widget = document.createElement('div');
+          widget.setAttribute('data-whop-checkout-plan-id', planId);
+          widget.setAttribute('data-whop-checkout-session', sessionId);
+          widget.setAttribute('data-whop-checkout-return-url', window.location.origin + '/sucesso.html');
+          widget.setAttribute('data-whop-checkout-theme', 'light');
+          widget.style.minHeight = '520px';
+          frame.appendChild(widget);
+
+          const secure = document.createElement('div');
+          secure.className = 'ck-secure';
+          secure.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="1"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Secure checkout protected by Whop';
+          frame.appendChild(secure);
         }
 
         (async function initPayment() {
@@ -227,18 +94,23 @@
             if (!resp.ok) throw new Error(data.error || 'Checkout request failed');
             if (!data.plan_id || !data.session_id) throw new Error('Missing plan or session id');
 
-            mountEl.innerHTML = '';
-            const widget = document.createElement('div');
-            widget.setAttribute('data-whop-checkout-plan-id', data.plan_id);
-            widget.setAttribute('data-whop-checkout-session', data.session_id);
-            widget.setAttribute('data-whop-checkout-return-url', window.location.origin + '/sucesso.html');
-            widget.setAttribute('data-whop-checkout-theme', 'light');
-            mountEl.appendChild(widget);
+            mountWidget(data.plan_id, data.session_id);
 
-            const loader = document.createElement('script');
-            loader.src = 'https://js.whop.com/static/checkout/loader.js?v=' + Date.now();
-            loader.async = true;
-            document.head.appendChild(loader);
+            // Force re-scan: re-append loader so the Whop main script attaches the widget
+            const reloader = document.createElement('script');
+            reloader.src = 'https://js.whop.com/static/checkout/loader.js?v=' + Date.now();
+            reloader.async = true;
+            document.head.appendChild(reloader);
+
+            // Fallback: if widget hasn't been replaced by an iframe within 4s,
+            // redirect to the hosted Whop checkout instead so the customer
+            // always reaches a payment screen.
+            setTimeout(function() {
+              const iframe = frame.querySelector('iframe');
+              if (!iframe) {
+                window.location.href = data.checkout_url;
+              }
+            }, 4000);
           } catch (err) {
             console.error(err);
             showError('Could not start checkout: ' + err.message + '. Please refresh the page to try again.');
