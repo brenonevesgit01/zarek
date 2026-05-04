@@ -36,37 +36,63 @@ function buildSecretCandidates(secret) {
   return out;
 }
 
+function parseStructuredSig(headerValue) {
+  const out = { t: null, sigs: [] };
+  String(headerValue).split(',').forEach(part => {
+    const eq = part.indexOf('=');
+    if (eq < 0) return;
+    const k = part.slice(0, eq).trim();
+    const v = part.slice(eq + 1).trim();
+    if (k === 't') out.t = v;
+    else out.sigs.push({ scheme: k, value: v });
+  });
+  return out;
+}
+
 function verifySignature(rawBody, headers, secret) {
   if (!secret) return false;
   const sigHeaders = [
-    headers['whop-signature'],
     headers['x-whop-signature'],
+    headers['whop-signature'],
     headers['svix-signature'],
     headers['webhook-signature']
   ].filter(Boolean);
   if (sigHeaders.length === 0) return false;
 
-  const id = headers['webhook-id'] || headers['svix-id'] || '';
-  const ts = headers['webhook-timestamp'] || headers['svix-timestamp'] || '';
+  const secretCandidates = buildSecretCandidates(secret);
   const bodyStr = rawBody.toString('utf8');
 
-  const contents = [
+  for (const sigHeader of sigHeaders) {
+    const parsed = parseStructuredSig(sigHeader);
+    if (parsed.t && parsed.sigs.length > 0) {
+      const signedPayload = `${parsed.t}.${bodyStr}`;
+      for (const secretBuf of secretCandidates) {
+        const hex = crypto.createHmac('sha256', secretBuf).update(signedPayload).digest('hex');
+        const b64 = crypto.createHmac('sha256', secretBuf).update(signedPayload).digest('base64');
+        for (const sig of parsed.sigs) {
+          if (safeStrEqual(sig.value.toLowerCase(), hex)) return true;
+          if (safeStrEqual(sig.value, b64)) return true;
+        }
+      }
+    }
+  }
+
+  const id = headers['webhook-id'] || headers['svix-id'] || '';
+  const ts = headers['webhook-timestamp'] || headers['svix-timestamp'] || '';
+  const fallbackContents = [
     rawBody,
     Buffer.from(`${id}.${ts}.${bodyStr}`, 'utf8'),
     Buffer.from(`${ts}.${bodyStr}`, 'utf8'),
     Buffer.from(`${id}.${bodyStr}`, 'utf8')
   ];
-  const secretCandidates = buildSecretCandidates(secret);
-  const encodings = ['hex', 'base64', 'base64url'];
-
   for (const sigHeader of sigHeaders) {
     const parts = String(sigHeader).split(/[,\s]+/).map(s => s.trim()).filter(Boolean);
     for (const part of parts) {
       const eq = part.indexOf('=');
       const provided = eq >= 0 ? part.slice(eq + 1) : part;
-      for (const content of contents) {
+      for (const content of fallbackContents) {
         for (const secretBuf of secretCandidates) {
-          for (const enc of encodings) {
+          for (const enc of ['hex', 'base64', 'base64url']) {
             const computed = crypto.createHmac('sha256', secretBuf).update(content).digest(enc);
             if (safeStrEqual(provided, computed)) return true;
             if (enc === 'hex' && safeStrEqual(provided.toLowerCase(), computed)) return true;
