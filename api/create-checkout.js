@@ -52,9 +52,10 @@ module.exports = async function handler(req, res) {
   }
 
   const itemCount = items.reduce((s, i) => s + Number(i.qty || 1), 0);
-  const planTitle = items.length === 1
+  let planTitle = items.length === 1
     ? `Zarek — ${items[0].name}`
     : `Zarek Order — ${itemCount} item${itemCount > 1 ? 's' : ''}`;
+  if (planTitle.length > 30) planTitle = planTitle.slice(0, 30);
 
   const returnUrl = body.return_url || 'https://zarekk.shop/sucesso.html';
 
