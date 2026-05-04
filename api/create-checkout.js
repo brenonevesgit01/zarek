@@ -63,7 +63,7 @@ module.exports = async function handler(req, res) {
     plan: {
       company_id: COMPANY_ID,
       initial_price: totals.total,
-      currency: 'usd',
+      currency: 'gbp',
       plan_type: 'one_time',
       title: planTitle,
       visibility: 'hidden',

@@ -147,7 +147,7 @@ module.exports = async function handler(req, res) {
   }
 
   const amount = Number(data.total ?? data.amount ?? 0);
-  const currency = (data.currency || 'usd').toLowerCase();
+  const currency = (data.currency || 'gbp').toLowerCase();
   const email = data.user?.email || data.email || data.metadata?.email || '';
   const name = data.user?.name || data.user?.username || '';
   const productName = data.metadata?.product_name || data.product?.title || data.plan?.title || '';

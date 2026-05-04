@@ -159,8 +159,8 @@
                         <hr class="product-info__divider">
 
                         <div class="product-price">
-                            <span class="product-price__new" data-product-price-new>$0.00</span>
-                            <span class="product-price__old" data-product-price-old>$0.00</span>
+                            <span class="product-price__new" data-product-price-new>£0.00</span>
+                            <span class="product-price__old" data-product-price-old>£0.00</span>
                             <span class="product-price__badge" data-product-badge>Sale</span>
                         </div>
 
@@ -279,7 +279,7 @@
                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                             </button>
                             <div class="accordion-body">
-                              <p>Standard delivery takes 5–8 business days. Express delivery available at checkout. Free shipping on orders over $100. You will receive a tracking number once your order has been dispatched.</p>
+                              <p>Standard delivery takes 5–8 business days. Express delivery available at checkout. Free shipping on orders over £100. You will receive a tracking number once your order has been dispatched.</p>
                             </div>
                           </div>
 
@@ -590,7 +590,7 @@
           }
           if (!imgUrl && p.image) imgUrl = p.image;
           if (!imgUrl && p.images && p.images.length > 0) imgUrl = p.images[0];
-          const price = p.price ? '$' + p.price.toFixed(2) : '';
+          const price = p.price ? '£' + p.price.toFixed(2) : '';
           const card = document.createElement('div');
           card.className = 'mini-collection-card';
           const a = document.createElement('a');
@@ -763,7 +763,7 @@
         return pct;
       }
 
-      function formatPrice(n) { return '$' + n.toFixed(2); }
+      function formatPrice(n) { return '£' + n.toFixed(2); }
 
       function renderCart() {
         const count = cart.reduce((s, i) => s + i.qty, 0);
@@ -1027,10 +1027,10 @@
       </div>
       <div class="cart-totals__row cart-totals__total">
         <span>Total</span>
-        <span id="cart-total">$0.00</span>
+        <span id="cart-total">£0.00</span>
       </div>
     </div>
-    <button class="cart-checkout-btn" id="cart-checkout-btn">Checkout • <span id="cart-checkout-total">$0.00</span></button>
+    <button class="cart-checkout-btn" id="cart-checkout-btn">Checkout • <span id="cart-checkout-total">£0.00</span></button>
   </div>
 </div>
 </body>

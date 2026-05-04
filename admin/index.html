@@ -139,7 +139,8 @@
              ' ' + d.toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' });
     }
     function fmtMoney(n, c) {
-      const sym = (c || 'usd').toLowerCase() === 'usd' ? '$' : (c || 'usd').toUpperCase() + ' ';
+      const code = (c || 'gbp').toLowerCase();
+      const sym = { gbp: '£', usd: '$', eur: '€' }[code] || code.toUpperCase() + ' ';
       return sym + Number(n).toFixed(2);
     }
     function escapeHtml(s) {
