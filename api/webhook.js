@@ -146,16 +146,45 @@ module.exports = async function handler(req, res) {
     return res.status(200).json({ ok: true, skipped: 'missing payment_id' });
   }
 
-  const amount = Number(data.total ?? data.amount ?? 0);
-  const currency = (data.currency || 'gbp').toLowerCase();
-  const email = data.user?.email || data.email || data.metadata?.email || '';
-  const name = data.user?.name || data.user?.username || '';
-  const productName = data.metadata?.product_name || data.product?.title || data.plan?.title || '';
-  const sku = data.metadata?.sku || null;
-  let itemsJson = null;
-  if (data.metadata?.items) {
-    try { itemsJson = JSON.parse(data.metadata.items); } catch { itemsJson = data.metadata.items; }
+  let enriched = null;
+  const apiKey = process.env.WHOP_API_KEY;
+  if (apiKey) {
+    try {
+      const r = await fetch(`https://api.whop.com/api/v1/payments/${paymentId}`, {
+        headers: { 'Authorization': `Bearer ${apiKey}`, 'Accept': 'application/json' }
+      });
+      if (r.ok) {
+        enriched = await r.json();
+      } else {
+        console.warn('Could not enrich payment', paymentId, '-> HTTP', r.status);
+      }
+    } catch (err) {
+      console.error('Failed to fetch payment details:', err);
+    }
   }
+
+  const src = enriched || data;
+  const pick = (...vals) => vals.find(v => v != null && v !== '' && v !== 0) ?? null;
+
+  const amount = Number(pick(src.total, src.subtotal, src.amount_after_fees, data.total, data.amount) || 0);
+  const currency = (pick(src.currency, data.currency, 'gbp') || 'gbp').toString().toLowerCase();
+  const email = pick(src.user?.email, data.user?.email, data.email, data.metadata?.email) || '';
+  const name = pick(src.user?.name, src.user?.username, data.user?.name, data.user?.username) || '';
+  const productName = pick(
+    src.product?.title,
+    src.plan?.title,
+    src.plan?.internal_notes,
+    data.metadata?.product_name,
+    data.product?.title,
+    data.plan?.title
+  ) || '';
+  const sku = pick(src.metadata?.sku, data.metadata?.sku);
+  let itemsJson = null;
+  const itemsRaw = src.metadata?.items || data.metadata?.items;
+  if (itemsRaw) {
+    try { itemsJson = typeof itemsRaw === 'string' ? JSON.parse(itemsRaw) : itemsRaw; } catch { itemsJson = itemsRaw; }
+  }
+  const rawPayload = { webhook: body, enriched };
 
   try {
     await withDb(async (sql) => {
@@ -165,11 +194,11 @@ module.exports = async function handler(req, res) {
       }
       await sql`INSERT INTO orders (
         payment_id, webhook_id, customer_email, customer_name,
-        product_name, sku, items_json, amount, currency, status
+        product_name, sku, items_json, amount, currency, status, raw_payload
       ) VALUES (
         ${paymentId}, ${webhookId}, ${email}, ${name},
         ${productName}, ${sku}, ${itemsJson ? JSON.stringify(itemsJson) : null},
-        ${amount}, ${currency}, 'pending'
+        ${amount}, ${currency}, 'pending', ${JSON.stringify(rawPayload)}
       )
       ON CONFLICT (payment_id) DO NOTHING`;
     });
