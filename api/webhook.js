@@ -1,5 +1,6 @@
 const crypto = require('crypto');
 const { withDb } = require('../lib/db.js');
+const { extractOrderFields } = require('../lib/order-mapper.js');
 
 module.exports.config = { api: { bodyParser: false } };
 
@@ -163,27 +164,9 @@ module.exports = async function handler(req, res) {
     }
   }
 
-  const src = enriched || data;
-  const pick = (...vals) => vals.find(v => v != null && v !== '' && v !== 0) ?? null;
-
-  const amount = Number(pick(src.total, src.subtotal, src.amount_after_fees, data.total, data.amount) || 0);
-  const currency = (pick(src.currency, data.currency, 'gbp') || 'gbp').toString().toLowerCase();
-  const email = pick(src.user?.email, data.user?.email, data.email, data.metadata?.email) || '';
-  const name = pick(src.user?.name, src.user?.username, data.user?.name, data.user?.username) || '';
-  const productName = pick(
-    src.product?.title,
-    src.plan?.title,
-    src.plan?.internal_notes,
-    data.metadata?.product_name,
-    data.product?.title,
-    data.plan?.title
-  ) || '';
-  const sku = pick(src.metadata?.sku, data.metadata?.sku);
-  let itemsJson = null;
-  const itemsRaw = src.metadata?.items || data.metadata?.items;
-  if (itemsRaw) {
-    try { itemsJson = typeof itemsRaw === 'string' ? JSON.parse(itemsRaw) : itemsRaw; } catch { itemsJson = itemsRaw; }
-  }
+  const fields = extractOrderFields(enriched, data);
+  const { amount, currency, email, name, productName, sku, items } = fields;
+  const itemsJson = items;
   const rawPayload = { webhook: body, enriched };
 
   try {
