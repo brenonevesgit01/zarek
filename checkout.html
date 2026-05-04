@@ -10,25 +10,24 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/pages/home.css">
     <style>
-      .ck-wrap{max-width:560px;margin:0 auto;padding:48px 24px;min-height:60vh;}
+      .ck-wrap{max-width:1100px;margin:0 auto;padding:48px 24px;min-height:60vh;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start;}
+      @media (max-width:900px){.ck-wrap{grid-template-columns:1fr;}}
       .ck-card{border:1px solid #e5e5e5;padding:32px;background:#fff;}
       .ck-title{font-size:14px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:24px;color:#111;}
-      .ck-line{display:flex;justify-content:space-between;font-size:13px;color:#444;padding:10px 0;border-bottom:1px solid #f0f0f0;}
+      .ck-line{display:flex;justify-content:space-between;font-size:13px;color:#444;padding:10px 0;border-bottom:1px solid #f0f0f0;gap:12px;}
       .ck-line:last-of-type{border-bottom:none;}
       .ck-meta{font-size:11px;color:#888;margin-top:2px;}
       .ck-totals{margin-top:16px;padding-top:16px;border-top:2px solid #111;}
       .ck-total-row{display:flex;justify-content:space-between;font-size:13px;color:#111;padding:6px 0;}
       .ck-total-row--final{font-size:16px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-top:8px;}
       .ck-discount{color:#c1121f;}
-      .ck-btn{width:100%;background:#111;color:#fff;border:none;padding:16px;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;cursor:pointer;margin-top:24px;transition:opacity .2s;}
-      .ck-btn:hover{opacity:.85;}
-      .ck-btn:disabled{opacity:.5;cursor:not-allowed;}
-      .ck-status{text-align:center;font-size:12px;color:#666;margin-top:16px;letter-spacing:1px;}
+      .ck-status{text-align:center;font-size:12px;color:#666;padding:80px 24px;letter-spacing:1px;}
       .ck-spinner{display:inline-block;width:14px;height:14px;border:2px solid #ccc;border-top-color:#111;border-radius:50%;animation:cks .8s linear infinite;vertical-align:middle;margin-right:8px;}
       @keyframes cks{to{transform:rotate(360deg);}}
-      .ck-error{background:#fff0f0;border:1px solid #c1121f;color:#c1121f;padding:12px;font-size:12px;margin-top:16px;}
-      .ck-empty{text-align:center;color:#666;font-size:13px;padding:40px 0;}
+      .ck-error{background:#fff0f0;border:1px solid #c1121f;color:#c1121f;padding:16px;font-size:12px;}
+      .ck-empty{text-align:center;color:#666;font-size:13px;padding:40px 0;grid-column:1/-1;}
       .ck-empty a{color:#111;font-weight:700;text-decoration:underline;}
+      #ck-payment-mount > div{min-height:520px;}
     </style>
 </head>
 <body>
@@ -140,10 +139,16 @@
     <div class="nav-overlay" data-nav-overlay></div>
 
     <main>
-        <div class="ck-wrap">
-            <div class="ck-card" id="ck-card">
+        <div class="ck-wrap" id="ck-wrap">
+            <div class="ck-card">
                 <h1 class="ck-title">Order Summary</h1>
-                <div id="ck-content"></div>
+                <div id="ck-summary"></div>
+            </div>
+            <div class="ck-card">
+                <h1 class="ck-title">Payment</h1>
+                <div id="ck-payment-mount">
+                    <div class="ck-status"><span class="ck-spinner"></span>Preparing secure checkout…</div>
+                </div>
             </div>
         </div>
     </main>
@@ -160,10 +165,12 @@
         ];
         const fmt = n => '$' + Number(n).toFixed(2);
         const cart = JSON.parse(localStorage.getItem('zarek-cart') || '[]');
-        const content = document.getElementById('ck-content');
+        const wrap = document.getElementById('ck-wrap');
+        const summaryEl = document.getElementById('ck-summary');
+        const mountEl = document.getElementById('ck-payment-mount');
 
         if (!cart.length) {
-          content.innerHTML = '<div class="ck-empty">Your cart is empty.<br><br><a href="collection.html?cat=coats-jackets">Continue shopping</a></div>';
+          wrap.innerHTML = '<div class="ck-empty">Your cart is empty.<br><br><a href="collection.html?cat=coats-jackets">Continue shopping</a></div>';
           return;
         }
 
@@ -184,7 +191,6 @@
             <div>${fmt(lineTotal)}</div>
           </div>`;
         });
-
         html += '<div class="ck-totals">';
         html += `<div class="ck-total-row"><span>Subtotal</span><span>${fmt(subtotal)}</span></div>`;
         if (pct > 0) {
@@ -193,22 +199,13 @@
         html += '<div class="ck-total-row"><span>Shipping</span><span>Free</span></div>';
         html += `<div class="ck-total-row ck-total-row--final"><span>Total</span><span>${fmt(total)}</span></div>`;
         html += '</div>';
-        html += '<button class="ck-btn" id="ck-pay-btn">Pay Now • ' + fmt(total) + '</button>';
-        html += '<div id="ck-status" class="ck-status" style="display:none;"></div>';
-        html += '<div id="ck-error" class="ck-error" style="display:none;"></div>';
+        summaryEl.innerHTML = html;
 
-        content.innerHTML = html;
+        function showError(msg) {
+          mountEl.innerHTML = `<div class="ck-error">${msg}</div>`;
+        }
 
-        const btn = document.getElementById('ck-pay-btn');
-        const statusEl = document.getElementById('ck-status');
-        const errorEl = document.getElementById('ck-error');
-
-        btn.addEventListener('click', async function() {
-          btn.disabled = true;
-          errorEl.style.display = 'none';
-          statusEl.style.display = 'block';
-          statusEl.innerHTML = '<span class="ck-spinner"></span>Preparing secure checkout…';
-
+        (async function initPayment() {
           try {
             const resp = await fetch('/api/create-checkout', {
               method: 'POST',
@@ -228,17 +225,25 @@
             });
             const data = await resp.json();
             if (!resp.ok) throw new Error(data.error || 'Checkout request failed');
-            if (!data.checkout_url) throw new Error('No checkout URL returned');
-            statusEl.innerHTML = '<span class="ck-spinner"></span>Redirecting to payment…';
-            window.location.href = data.checkout_url;
+            if (!data.plan_id || !data.session_id) throw new Error('Missing plan or session id');
+
+            mountEl.innerHTML = '';
+            const widget = document.createElement('div');
+            widget.setAttribute('data-whop-checkout-plan-id', data.plan_id);
+            widget.setAttribute('data-whop-checkout-session', data.session_id);
+            widget.setAttribute('data-whop-checkout-return-url', window.location.origin + '/sucesso.html');
+            widget.setAttribute('data-whop-checkout-theme', 'light');
+            mountEl.appendChild(widget);
+
+            const loader = document.createElement('script');
+            loader.src = 'https://js.whop.com/static/checkout/loader.js?v=' + Date.now();
+            loader.async = true;
+            document.head.appendChild(loader);
           } catch (err) {
             console.error(err);
-            statusEl.style.display = 'none';
-            errorEl.style.display = 'block';
-            errorEl.textContent = 'Could not start checkout: ' + err.message + '. Please try again.';
-            btn.disabled = false;
+            showError('Could not start checkout: ' + err.message + '. Please refresh the page to try again.');
           }
-        });
+        })();
       })();
     </script>
 </body>

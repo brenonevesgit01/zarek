@@ -119,13 +119,17 @@ module.exports = async function handler(req, res) {
   }
 
   const checkoutUrl = whopJson.purchase_url || whopJson.checkout_url || whopJson.url;
-  if (!checkoutUrl) {
-    console.error('Whop response missing purchase_url:', whopJson);
-    return res.status(502).json({ error: 'Whop response missing checkout URL', details: whopJson });
+  const planId = whopJson.plan?.id || null;
+  const sessionId = whopJson.id || null;
+  if (!checkoutUrl || !planId || !sessionId) {
+    console.error('Whop response missing required fields:', whopJson);
+    return res.status(502).json({ error: 'Whop response missing required fields', details: whopJson });
   }
 
   return res.status(200).json({
     checkout_url: checkoutUrl,
+    plan_id: planId,
+    session_id: sessionId,
     total: totals.total,
     subtotal: totals.subtotal,
     discount_pct: totals.discountPct,
