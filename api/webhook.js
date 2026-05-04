@@ -12,10 +12,10 @@ function readRawBody(req) {
   });
 }
 
-function constantTimeHexEqual(a, b) {
+function safeStrEqual(a, b) {
   try {
-    const bufA = Buffer.from(a, 'hex');
-    const bufB = Buffer.from(b, 'hex');
+    const bufA = Buffer.from(String(a), 'utf8');
+    const bufB = Buffer.from(String(b), 'utf8');
     if (bufA.length !== bufB.length || bufA.length === 0) return false;
     return crypto.timingSafeEqual(bufA, bufB);
   } catch {
@@ -23,23 +23,56 @@ function constantTimeHexEqual(a, b) {
   }
 }
 
+function buildSecretCandidates(secret) {
+  const out = [Buffer.from(secret, 'utf8')];
+  const prefixHex = secret.match(/^[a-z]+_([a-f0-9]+)$/i);
+  if (prefixHex && prefixHex[1].length % 2 === 0) {
+    try { out.push(Buffer.from(prefixHex[1], 'hex')); } catch {}
+  }
+  const whsec = secret.match(/^whsec_(.+)$/);
+  if (whsec) {
+    try { out.push(Buffer.from(whsec[1], 'base64')); } catch {}
+  }
+  return out;
+}
+
 function verifySignature(rawBody, headers, secret) {
   if (!secret) return false;
-  const candidates = [
+  const sigHeaders = [
     headers['whop-signature'],
     headers['x-whop-signature'],
     headers['svix-signature'],
     headers['webhook-signature']
   ].filter(Boolean);
-  if (candidates.length === 0) return false;
+  if (sigHeaders.length === 0) return false;
 
-  const computed = crypto.createHmac('sha256', secret).update(rawBody).digest('hex');
-  for (const header of candidates) {
-    const parts = String(header).split(',').map(s => s.trim());
+  const id = headers['webhook-id'] || headers['svix-id'] || '';
+  const ts = headers['webhook-timestamp'] || headers['svix-timestamp'] || '';
+  const bodyStr = rawBody.toString('utf8');
+
+  const contents = [
+    rawBody,
+    Buffer.from(`${id}.${ts}.${bodyStr}`, 'utf8'),
+    Buffer.from(`${ts}.${bodyStr}`, 'utf8'),
+    Buffer.from(`${id}.${bodyStr}`, 'utf8')
+  ];
+  const secretCandidates = buildSecretCandidates(secret);
+  const encodings = ['hex', 'base64', 'base64url'];
+
+  for (const sigHeader of sigHeaders) {
+    const parts = String(sigHeader).split(/[,\s]+/).map(s => s.trim()).filter(Boolean);
     for (const part of parts) {
       const eq = part.indexOf('=');
       const provided = eq >= 0 ? part.slice(eq + 1) : part;
-      if (constantTimeHexEqual(provided, computed)) return true;
+      for (const content of contents) {
+        for (const secretBuf of secretCandidates) {
+          for (const enc of encodings) {
+            const computed = crypto.createHmac('sha256', secretBuf).update(content).digest(enc);
+            if (safeStrEqual(provided, computed)) return true;
+            if (enc === 'hex' && safeStrEqual(provided.toLowerCase(), computed)) return true;
+          }
+        }
+      }
     }
   }
   return false;
@@ -62,7 +95,11 @@ module.exports = async function handler(req, res) {
   const secret = process.env.WHOP_WEBHOOK_SECRET;
   const valid = verifySignature(rawBody, req.headers, secret);
   if (!valid) {
-    console.warn('Webhook signature invalid or missing. Header webhook-id:', req.headers['webhook-id']);
+    const headerKeys = Object.keys(req.headers).filter(k =>
+      k.includes('whop') || k.includes('webhook') || k.includes('svix') || k.includes('signature')
+    );
+    console.warn('Webhook signature INVALID. Relevant headers received:',
+      Object.fromEntries(headerKeys.map(k => [k, req.headers[k]])));
     return res.status(401).json({ error: 'Invalid signature' });
   }
 
