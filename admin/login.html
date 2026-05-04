@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Admin Login — Zarek</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:#0d0d0d;color:#fff;font-family:'Inter',-apple-system,sans-serif;min-height:100vh;}
+  body{display:flex;align-items:center;justify-content:center;padding:24px;}
+  .card{background:#1a1a1a;border:1px solid #2a2a2a;width:100%;max-width:380px;padding:40px 32px;border-radius:8px;}
+  .brand{font-family:Georgia,serif;font-size:24px;letter-spacing:6px;text-align:center;margin:0 0 8px;color:#fff;}
+  .sub{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#666;text-align:center;margin:0 0 32px;}
+  label{display:block;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#888;margin:18px 0 8px;}
+  input{width:100%;background:#0d0d0d;border:1px solid #2a2a2a;color:#fff;padding:12px 14px;font-size:14px;font-family:inherit;border-radius:4px;outline:none;transition:border-color .15s;}
+  input:focus{border-color:#666;}
+  button{width:100%;background:#fff;color:#0d0d0d;border:none;padding:14px;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;cursor:pointer;margin-top:24px;border-radius:4px;transition:opacity .15s;font-family:inherit;}
+  button:hover{opacity:.85;}
+  button:disabled{opacity:.5;cursor:not-allowed;}
+  .error{background:#2a0d0d;border:1px solid #c1121f;color:#ff8888;padding:10px 12px;font-size:12px;border-radius:4px;margin-top:16px;display:none;}
+</style>
+</head>
+<body>
+  <form class="card" id="login-form">
+    <h1 class="brand">ZAREK</h1>
+    <p class="sub">Admin Panel</p>
+    <label for="user">Username</label>
+    <input id="user" name="user" autocomplete="username" required>
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password" autocomplete="current-password" required>
+    <button type="submit" id="submit-btn">Sign In</button>
+    <div class="error" id="err"></div>
+  </form>
+  <script>
+    const form = document.getElementById('login-form');
+    const errEl = document.getElementById('err');
+    const btn = document.getElementById('submit-btn');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      errEl.style.display = 'none';
+      btn.disabled = true;
+      btn.textContent = 'Signing in…';
+      try {
+        const resp = await fetch('/api/admin-login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            user: document.getElementById('user').value,
+            password: document.getElementById('password').value
+          })
+        });
+        const data = await resp.json();
+        if (!resp.ok) throw new Error(data.error || 'Login failed');
+        window.location.href = '/admin/';
+      } catch (err) {
+        errEl.textContent = err.message;
+        errEl.style.display = 'block';
+        btn.disabled = false;
+        btn.textContent = 'Sign In';
+      }
+    });
+  </script>
+</body>
+</html>

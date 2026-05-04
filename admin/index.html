@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Orders — Zarek Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:#0d0d0d;color:#fff;font-family:'Inter',-apple-system,sans-serif;min-height:100vh;}
+  .topbar{background:#1a1a1a;border-bottom:1px solid #2a2a2a;padding:18px 32px;display:flex;align-items:center;justify-content:space-between;}
+  .brand{font-family:Georgia,serif;font-size:20px;letter-spacing:5px;color:#fff;}
+  .topbar-actions{display:flex;gap:18px;align-items:center;}
+  .logout{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#888;text-decoration:none;}
+  .logout:hover{color:#fff;}
+  .container{max-width:1200px;margin:0 auto;padding:32px;}
+  h1{font-size:24px;font-weight:700;margin:0 0 24px;letter-spacing:.5px;}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:32px;}
+  @media (max-width:700px){.stats{grid-template-columns:repeat(2,1fr);}}
+  .stat{background:#1a1a1a;border:1px solid #2a2a2a;padding:18px 20px;border-radius:6px;cursor:pointer;transition:border-color .15s;}
+  .stat:hover{border-color:#444;}
+  .stat.active{border-color:#fff;}
+  .stat-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#666;margin-bottom:8px;}
+  .stat-val{font-size:28px;font-weight:700;}
+  .stat-val.pending{color:#facc15;}
+  .stat-val.shipped{color:#60a5fa;}
+  .stat-val.delivered{color:#4ade80;}
+  .table-wrap{background:#1a1a1a;border:1px solid #2a2a2a;border-radius:6px;overflow:hidden;}
+  table{width:100%;border-collapse:collapse;}
+  th{text-align:left;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#666;padding:14px 18px;border-bottom:1px solid #2a2a2a;background:#141414;font-weight:600;}
+  td{padding:16px 18px;border-bottom:1px solid #222;font-size:13px;color:#ddd;vertical-align:middle;}
+  tr:last-child td{border-bottom:none;}
+  tr:hover td{background:#171717;}
+  .customer-name{color:#fff;font-weight:500;}
+  .customer-email{font-size:11px;color:#777;margin-top:2px;}
+  .badge{display:inline-block;padding:4px 10px;border-radius:999px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;}
+  .badge.pending{background:#3a2e0d;color:#facc15;}
+  .badge.shipped{background:#0d2a3a;color:#60a5fa;}
+  .badge.delivered{background:#0d3a1f;color:#4ade80;}
+  .add-btn{background:#fff;color:#0d0d0d;border:none;padding:8px 14px;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;border-radius:4px;font-family:inherit;}
+  .add-btn:hover{opacity:.85;}
+  .tracking{font-family:'SF Mono',Monaco,monospace;font-size:12px;color:#aaa;}
+  .empty{padding:60px 20px;text-align:center;color:#666;font-size:13px;}
+  .loading{padding:80px 20px;text-align:center;color:#666;font-size:12px;letter-spacing:2px;text-transform:uppercase;}
+  .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.7);display:none;align-items:center;justify-content:center;z-index:100;padding:24px;}
+  .modal-overlay.show{display:flex;}
+  .modal{background:#1a1a1a;border:1px solid #2a2a2a;border-radius:8px;padding:28px;width:100%;max-width:420px;}
+  .modal h3{margin:0 0 6px;font-size:16px;font-weight:600;}
+  .modal-sub{font-size:12px;color:#888;margin-bottom:20px;}
+  .modal label{display:block;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#888;margin:18px 0 8px;}
+  .modal input{width:100%;background:#0d0d0d;border:1px solid #2a2a2a;color:#fff;padding:12px 14px;font-size:14px;font-family:inherit;border-radius:4px;outline:none;}
+  .modal input:focus{border-color:#666;}
+  .modal-actions{display:flex;gap:10px;margin-top:24px;}
+  .modal-cancel{flex:1;background:transparent;color:#fff;border:1px solid #2a2a2a;padding:12px;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;border-radius:4px;font-family:inherit;}
+  .modal-submit{flex:1;background:#fff;color:#0d0d0d;border:none;padding:12px;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;border-radius:4px;font-family:inherit;}
+  .modal-submit:disabled{opacity:.5;cursor:not-allowed;}
+  .modal-error{color:#ff8888;font-size:12px;margin-top:12px;display:none;}
+  .toast{position:fixed;bottom:24px;right:24px;background:#1a1a1a;border:1px solid #2a2a2a;padding:14px 20px;border-radius:6px;font-size:13px;display:none;z-index:200;}
+  .toast.error{border-color:#c1121f;color:#ff8888;}
+  .toast.success{border-color:#16a34a;color:#4ade80;}
+  .toast.show{display:block;}
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <span class="brand">ZAREK</span>
+    <div class="topbar-actions">
+      <span style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#666;">Admin</span>
+      <a class="logout" href="/api/admin-logout">Logout</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Orders</h1>
+    <div class="stats">
+      <div class="stat active" data-filter="">
+        <div class="stat-label">Total</div>
+        <div class="stat-val" id="stat-total">0</div>
+      </div>
+      <div class="stat" data-filter="pending">
+        <div class="stat-label">Pending</div>
+        <div class="stat-val pending" id="stat-pending">0</div>
+      </div>
+      <div class="stat" data-filter="shipped">
+        <div class="stat-label">Shipped</div>
+        <div class="stat-val shipped" id="stat-shipped">0</div>
+      </div>
+      <div class="stat" data-filter="delivered">
+        <div class="stat-label">Delivered</div>
+        <div class="stat-val delivered" id="stat-delivered">0</div>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Date</th>
+            <th>Customer</th>
+            <th>Product</th>
+            <th>Amount</th>
+            <th>Status</th>
+            <th>Tracking</th>
+          </tr>
+        </thead>
+        <tbody id="orders-body">
+          <tr><td colspan="7" class="loading">Loading…</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal">
+    <div class="modal">
+      <h3>Add tracking</h3>
+      <p class="modal-sub" id="modal-order-info"></p>
+      <label>Tracking code</label>
+      <input id="tracking-input" placeholder="e.g. BR123456789BR" autocomplete="off">
+      <div class="modal-error" id="modal-error"></div>
+      <div class="modal-actions">
+        <button class="modal-cancel" id="modal-cancel">Cancel</button>
+        <button class="modal-submit" id="modal-submit">Save & Notify Whop</button>
+      </div>
+    </div>
+  </div>
+  <div class="toast" id="toast"></div>
+
+  <script>
+    let currentFilter = '';
+    let currentOrderId = null;
+
+    function fmtDate(s) {
+      if (!s) return '';
+      const d = new Date(s);
+      return d.toLocaleDateString(undefined, { day: '2-digit', month: 'short', year: 'numeric' }) +
+             ' ' + d.toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' });
+    }
+    function fmtMoney(n, c) {
+      const sym = (c || 'usd').toLowerCase() === 'usd' ? '$' : (c || 'usd').toUpperCase() + ' ';
+      return sym + Number(n).toFixed(2);
+    }
+    function escapeHtml(s) {
+      return String(s == null ? '' : s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+    }
+
+    function showToast(msg, type) {
+      const t = document.getElementById('toast');
+      t.className = 'toast ' + (type || '') + ' show';
+      t.textContent = msg;
+      setTimeout(() => t.classList.remove('show'), 3500);
+    }
+
+    async function loadOrders() {
+      const body = document.getElementById('orders-body');
+      body.innerHTML = '<tr><td colspan="7" class="loading">Loading…</td></tr>';
+      const url = '/api/admin-orders' + (currentFilter ? '?status=' + currentFilter : '');
+      try {
+        const resp = await fetch(url);
+        if (resp.status === 401) { window.location.href = '/admin/login.html'; return; }
+        const data = await resp.json();
+        if (!resp.ok) throw new Error(data.error || 'Failed to load');
+
+        document.getElementById('stat-total').textContent = data.counts.total;
+        document.getElementById('stat-pending').textContent = data.counts.pending;
+        document.getElementById('stat-shipped').textContent = data.counts.shipped;
+        document.getElementById('stat-delivered').textContent = data.counts.delivered;
+
+        if (!data.orders.length) {
+          body.innerHTML = '<tr><td colspan="7" class="empty">No orders yet.</td></tr>';
+          return;
+        }
+
+        body.innerHTML = data.orders.map(o => `
+          <tr>
+            <td>#${o.id}</td>
+            <td>${fmtDate(o.created_at)}</td>
+            <td>
+              <div class="customer-name">${escapeHtml(o.customer_name || '—')}</div>
+              <div class="customer-email">${escapeHtml(o.customer_email)}</div>
+            </td>
+            <td>${escapeHtml(o.product_name || '—')}</td>
+            <td>${fmtMoney(o.amount, o.currency)}</td>
+            <td><span class="badge ${o.status}">${o.status}</span></td>
+            <td>
+              ${o.tracking_code
+                ? `<span class="tracking">${escapeHtml(o.tracking_code)}</span>${o.carrier ? ' <span style="font-size:10px;color:#666;">('+escapeHtml(o.carrier)+')</span>' : ''}`
+                : `<button class="add-btn" data-id="${o.id}" data-name="${escapeHtml(o.customer_name||o.customer_email)}">Add tracking</button>`}
+            </td>
+          </tr>
+        `).join('');
+
+        body.querySelectorAll('.add-btn').forEach(btn => {
+          btn.addEventListener('click', () => openModal(btn.dataset.id, btn.dataset.name));
+        });
+      } catch (err) {
+        body.innerHTML = '<tr><td colspan="7" class="empty">Error: ' + escapeHtml(err.message) + '</td></tr>';
+      }
+    }
+
+    document.querySelectorAll('.stat').forEach(s => {
+      s.addEventListener('click', () => {
+        document.querySelectorAll('.stat').forEach(x => x.classList.remove('active'));
+        s.classList.add('active');
+        currentFilter = s.dataset.filter;
+        loadOrders();
+      });
+    });
+
+    function openModal(id, name) {
+      currentOrderId = id;
+      document.getElementById('modal-order-info').textContent = 'Order #' + id + ' — ' + name;
+      document.getElementById('tracking-input').value = '';
+      document.getElementById('modal-error').style.display = 'none';
+      document.getElementById('modal').classList.add('show');
+      setTimeout(() => document.getElementById('tracking-input').focus(), 50);
+    }
+    function closeModal() {
+      document.getElementById('modal').classList.remove('show');
+      currentOrderId = null;
+    }
+    document.getElementById('modal-cancel').addEventListener('click', closeModal);
+    document.getElementById('modal').addEventListener('click', e => {
+      if (e.target.id === 'modal') closeModal();
+    });
+
+    document.getElementById('modal-submit').addEventListener('click', async () => {
+      const code = document.getElementById('tracking-input').value.trim();
+      const errEl = document.getElementById('modal-error');
+      errEl.style.display = 'none';
+      if (!code) { errEl.textContent = 'Tracking code is required'; errEl.style.display = 'block'; return; }
+      const btn = document.getElementById('modal-submit');
+      btn.disabled = true;
+      btn.textContent = 'Saving…';
+      try {
+        const resp = await fetch('/api/add-tracking', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ order_id: Number(currentOrderId), tracking_code: code })
+        });
+        const data = await resp.json();
+        if (!resp.ok) throw new Error(data.error || 'Failed to add tracking');
+        closeModal();
+        showToast('Tracking saved' + (data.carrier ? ' — carrier: ' + data.carrier : ''), 'success');
+        loadOrders();
+      } catch (err) {
+        errEl.textContent = err.message;
+        errEl.style.display = 'block';
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Save & Notify Whop';
+      }
+    });
+
+    loadOrders();
+  </script>
+</body>
+</html>
