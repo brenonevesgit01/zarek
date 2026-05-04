@@ -1,4 +1,4 @@
-const WHOP_API = 'https://api.whop.com/api/v5/checkout_configurations';
+const WHOP_API = 'https://api.whop.com/api/v1/checkout_configurations';
 const COMPANY_ID = 'biz_zPgX8VzCxGKblf';
 const DISCOUNT_TIERS = [
   { threshold: 100, pct: 10 },
