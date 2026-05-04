@@ -3250,7 +3250,7 @@
             id: 'sunglasses-square-frame-tinted-lens',
             name: 'Zarek | Sunglasses Square Tinted',
             category: 'glasses',
-            price: 29.95,
+            price: 11.99,
             originalPrice: 59.90,
             badge: 'SALE',
             colorVariants: [
