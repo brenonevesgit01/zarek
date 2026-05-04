@@ -121,21 +121,7 @@ module.exports = async function handler(req, res) {
   const secret = process.env.WHOP_WEBHOOK_SECRET;
   const valid = verifySignature(rawBody, req.headers, secret);
   if (!valid) {
-    const headerKeys = Object.keys(req.headers).filter(k =>
-      k.includes('whop') || k.includes('webhook') || k.includes('svix') || k.includes('signature')
-    );
-    const relevantHeaders = Object.fromEntries(headerKeys.map(k => [k, req.headers[k]]));
-    console.warn('Webhook signature INVALID. Relevant headers received:', relevantHeaders);
-    if (process.env.WHOP_WEBHOOK_DEBUG === '1') {
-      return res.status(401).json({
-        error: 'Invalid signature',
-        debug: {
-          headers: relevantHeaders,
-          body_first_200: rawBody.toString('utf8').slice(0, 200),
-          body_length: rawBody.length
-        }
-      });
-    }
+    console.warn('Webhook signature INVALID. webhook-id:', req.headers['webhook-id'] || req.headers['x-whop-signature']);
     return res.status(401).json({ error: 'Invalid signature' });
   }
 
