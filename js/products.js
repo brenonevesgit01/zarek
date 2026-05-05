@@ -2072,7 +2072,21 @@
                     ]
                 }
             ],
-            sizes: ['39', '40', '41', '42', '43', '44', '45', '46']
+            sizes: ['39', '40', '41', '42', '43', '44', '45', '46'],
+            bundle: {
+                title: '🎁 LIMITED TIME OFFER',
+                tiers: [
+                    { qty: 1, title: '1 Unit',  subtitle: 'Total price', total: 69.95, default: true },
+                    { qty: 2, title: '2 Units (2x1 Deal)', subtitle: 'Best value — buy one get one free', total: 69.95, was: 139.90, badge: 'SAVE £69.95' }
+                ]
+            },
+            notice: 'Due to the high volume of orders, our stock is dwindling. To not lose your spot, "Add to Cart" — only a few units left.',
+            features: [
+                { title: 'Premium leather upper', text: 'Soft, durable and crafted for daily use.' },
+                { title: 'Reinforced stitching', text: 'Strengthens the structure for a longer-lasting trainer.' },
+                { title: 'Cushioned insole', text: 'Comfort all day long with subtle, supportive padding.' },
+                { title: 'Low-cut silhouette', text: 'Versatile timeless shape that pairs with any outfit.' }
+            ]
         },
         {
             id: 'wallabee-shoes',

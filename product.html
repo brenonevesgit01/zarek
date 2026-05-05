@@ -10,6 +10,44 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/pages/product.css">
     <script async defer src="https://js.whop.com/static/checkout/loader.js"></script>
+    <style>
+      /* Bundle / quantity-break widget — shown only when product has a bundle */
+      .bundle{margin:24px 0 8px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;}
+      .bundle__title{background:#000;color:#fff;font-size:11px;font-weight:700;letter-spacing:2px;padding:14px 16px;text-align:center;text-transform:uppercase;}
+      .bundle__tiers{display:flex;flex-direction:column;border:1px solid #000;border-top:none;}
+      .bundle__tier{display:flex;align-items:center;padding:18px 16px;border-bottom:1px solid #e5e5e5;cursor:pointer;background:#fff;transition:background .15s;}
+      .bundle__tier:last-child{border-bottom:none;}
+      .bundle__tier:hover{background:#fafafa;}
+      .bundle__tier.is-active{background:#f5f5f5;}
+      .bundle__tier-radio{width:20px;height:20px;border:2px solid #bbb;border-radius:50%;margin-right:14px;flex-shrink:0;position:relative;background:#fff;}
+      .bundle__tier.is-active .bundle__tier-radio{border-color:#000;background:#000;}
+      .bundle__tier.is-active .bundle__tier-radio::after{content:'';position:absolute;top:3px;left:3px;width:10px;height:10px;background:#fff;border-radius:50%;}
+      .bundle__tier-info{flex:1;min-width:0;}
+      .bundle__tier-title{font-size:14px;font-weight:600;color:#111;line-height:1.2;}
+      .bundle__tier-subtitle{font-size:10px;color:#888;margin-top:3px;letter-spacing:1.5px;text-transform:uppercase;}
+      .bundle__tier-right{text-align:right;flex-shrink:0;display:flex;flex-direction:column;align-items:flex-end;gap:4px;}
+      .bundle__tier-badge{display:inline-block;font-size:9px;font-weight:700;color:#fff;background:#c1121f;padding:3px 8px;letter-spacing:1.2px;text-transform:uppercase;border-radius:2px;}
+      .bundle__tier-price{font-size:15px;font-weight:700;color:#111;}
+      .bundle__tier-price-was{font-size:11px;color:#888;text-decoration:line-through;display:block;}
+      @media (max-width:600px){.bundle__tier{padding:14px 12px;}}
+
+      /* Update notice (¡ACTUALIZACIÓN! style) */
+      .update-notice{margin:16px 0;padding:14px 16px;background:#fff8e1;border-left:3px solid #f59e0b;font-size:12px;color:#444;line-height:1.5;}
+      .update-notice strong{color:#111;display:block;margin-bottom:4px;font-size:11px;letter-spacing:1px;text-transform:uppercase;}
+
+      /* Customer satisfaction banner */
+      .satisfaction-banner{background:#111;color:#fff;text-align:center;padding:36px 24px;margin:48px 0;}
+      .satisfaction-banner__num{font-size:32px;font-weight:700;letter-spacing:1px;}
+      .satisfaction-banner__num span{color:#4ade80;}
+      .satisfaction-banner__label{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#aaa;margin-top:6px;}
+
+      /* Product features list (Piel de primera, Costuras reforzadas, etc) */
+      .features-list{margin:24px 0;padding:0;list-style:none;}
+      .features-list li{padding:14px 0;border-bottom:1px solid #eee;font-size:13px;line-height:1.5;color:#444;display:flex;align-items:flex-start;gap:12px;}
+      .features-list li:last-child{border-bottom:none;}
+      .features-list li svg{flex-shrink:0;margin-top:2px;}
+      .features-list li strong{color:#111;font-weight:700;display:block;font-size:13px;margin-bottom:2px;}
+    </style>
 </head>
 <body>
 <div class="announcement-bar">
@@ -187,6 +225,15 @@
                         </div>
 
                         <p class="size-guide-link"><a href="#" id="open-size-guide">What's my size?</a></p>
+
+                        <!-- BUNDLE / QUANTITY-BREAK WIDGET (only renders if product has p.bundle) -->
+                        <div class="bundle" data-bundle hidden>
+                            <div class="bundle__title" data-bundle-title>LIMITED TIME OFFER</div>
+                            <div class="bundle__tiers" data-bundle-tiers></div>
+                        </div>
+
+                        <!-- UPDATE NOTICE (only renders if product has p.notice) -->
+                        <div class="update-notice" data-update-notice hidden></div>
 
                         <!-- SIZE GUIDE MODAL -->
                         <div id="size-guide-modal" style="display:none;">
@@ -371,6 +418,25 @@
                     </div>
 
                 </div>
+            </div>
+        </section>
+
+        <!-- =================================================================
+             FEATURES LIST — only renders if product.features defined
+             ================================================================= -->
+        <section class="container" data-features-section hidden style="margin:48px auto;max-width:820px;">
+            <h2 style="font-size:18px;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-align:center;margin:0 0 8px;color:#111;">Timeless Design &amp; All-Day Comfort</h2>
+            <p style="text-align:center;font-size:13px;color:#666;line-height:1.7;max-width:600px;margin:0 auto 24px;">Crafted in premium leather with reinforced stitching, the Harrington Leather Trainers deliver lightweight comfort and great durability. Their cushioned insole provides gentle support, while the elegant low-cut design adds a versatile touch suited even for elegant casual outfits.</p>
+            <ul class="features-list" data-features-list></ul>
+        </section>
+
+        <!-- =================================================================
+             SATISFACTION BANNER — only renders if product.satisfactionBanner = true
+             ================================================================= -->
+        <section data-satisfaction-banner hidden>
+            <div class="satisfaction-banner">
+                <div class="satisfaction-banner__num">+10,000 <span>✓</span></div>
+                <div class="satisfaction-banner__label">Satisfied Customers</div>
             </div>
         </section>
 
@@ -893,21 +959,130 @@
         }
       });
 
+      // ---- Bundle widget rendering + state ----
+      let activeBundleTier = null; // null = no bundle / use single qty
+      function renderBundleWidget() {
+        const widget = document.querySelector('[data-bundle]');
+        const noticeEl = document.querySelector('[data-update-notice]');
+        const products = window.ZAREK_PRODUCTS;
+        if (!widget || !products) return;
+        const id = new URLSearchParams(window.location.search).get('id');
+        const product = products.find(p => p.id === id);
+        if (!product) return;
+
+        // Update notice (if defined)
+        if (noticeEl && product.notice) {
+          noticeEl.innerHTML = '<strong>UPDATE!</strong>' + product.notice;
+          noticeEl.hidden = false;
+        }
+
+        // Features list (if defined)
+        const featuresSection = document.querySelector('[data-features-section]');
+        const featuresList = document.querySelector('[data-features-list]');
+        if (featuresSection && featuresList && product.features && product.features.length) {
+          featuresList.innerHTML = product.features.map(f => (
+            '<li>' +
+              '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>' +
+              '<div><strong>' + f.title + '</strong>' + f.text + '</div>' +
+            '</li>'
+          )).join('');
+          featuresSection.hidden = false;
+        }
+
+        // Satisfaction banner (always show on products with bundle since it's a value-add)
+        const satisfactionEl = document.querySelector('[data-satisfaction-banner]');
+        if (satisfactionEl && product.bundle) {
+          satisfactionEl.hidden = false;
+        }
+
+        // Bundle widget (if defined)
+        if (!product.bundle || !product.bundle.tiers) return;
+        const titleEl = widget.querySelector('[data-bundle-title]');
+        const tiersEl = widget.querySelector('[data-bundle-tiers]');
+        if (titleEl) titleEl.textContent = product.bundle.title || 'LIMITED TIME OFFER';
+
+        const fmt = n => '£' + Number(n).toFixed(2);
+        let activeIdx = product.bundle.tiers.findIndex(t => t.default) || 0;
+        if (activeIdx < 0) activeIdx = 0;
+
+        function paint() {
+          tiersEl.innerHTML = product.bundle.tiers.map((tier, i) => {
+            const active = i === activeIdx ? ' is-active' : '';
+            const badge = tier.badge ? '<div class="bundle__tier-badge">' + tier.badge + '</div>' : '';
+            const wasPrice = tier.was ? '<div class="bundle__tier-price-was">' + fmt(tier.was) + '</div>' : '';
+            return '<div class="bundle__tier' + active + '" data-tier-idx="' + i + '">' +
+              '<div class="bundle__tier-radio"></div>' +
+              '<div class="bundle__tier-info">' +
+                '<div class="bundle__tier-title">' + tier.title + '</div>' +
+                '<div class="bundle__tier-subtitle">' + (tier.subtitle || '') + '</div>' +
+              '</div>' +
+              '<div class="bundle__tier-right">' + badge + wasPrice +
+                '<div class="bundle__tier-price">' + fmt(tier.total) + '</div>' +
+              '</div>' +
+            '</div>';
+          }).join('');
+          tiersEl.querySelectorAll('.bundle__tier').forEach(el => {
+            el.addEventListener('click', () => {
+              activeIdx = parseInt(el.dataset.tierIdx);
+              activeBundleTier = product.bundle.tiers[activeIdx];
+              paint();
+              updateAddToCartLabel();
+            });
+          });
+          activeBundleTier = product.bundle.tiers[activeIdx];
+        }
+        widget.hidden = false;
+        paint();
+        updateAddToCartLabel();
+      }
+
+      function updateAddToCartLabel() {
+        const btn = document.querySelector('button.btn-primary');
+        if (!btn || !activeBundleTier) return;
+        const fmt = n => '£' + Number(n).toFixed(2);
+        if (activeBundleTier.qty > 1) {
+          btn.textContent = 'Add to Cart — ' + activeBundleTier.qty + ' for ' + fmt(activeBundleTier.total);
+        } else {
+          btn.textContent = 'Add to Cart';
+        }
+      }
+
+      // Wait for products to load then render bundle
+      (function waitForProducts() {
+        if (window.ZAREK_PRODUCTS) {
+          setTimeout(renderBundleWidget, 100);
+        } else {
+          setTimeout(waitForProducts, 200);
+        }
+      })();
+
       const addToCartBtn = document.querySelector('button.btn-primary');
       if (addToCartBtn) {
         addToCartBtn.addEventListener('click', function(e) {
           e.preventDefault();
           const name = document.querySelector('[data-product-name]')?.textContent || '';
-          const price = parseFloat(document.querySelector('[data-product-price-new]')?.textContent?.replace(/[^0-9.]/g,'')) || 0;
-          const originalPrice = parseFloat(document.querySelector('[data-product-price-old]')?.textContent?.replace(/[^0-9.]/g,'')) || price;
+          const priceText = document.querySelector('[data-product-price-new]')?.textContent || '';
+          const unitPrice = parseFloat(priceText.replace(/[^0-9.]/g,'')) || 0;
+          const originalPrice = parseFloat(document.querySelector('[data-product-price-old]')?.textContent?.replace(/[^0-9.]/g,'')) || unitPrice;
           const color = document.querySelector('[data-variant-value]')?.textContent || '';
           const size = document.querySelector('select.size-select')?.value || '';
           const img = document.querySelector('.gallery__main-img')?.src || '';
           const id = new URLSearchParams(window.location.search).get('id') || name;
 
-          const existing = cart.find(i => i.id === id && i.color === color && i.size === size);
-          if (existing) { existing.qty++; }
-          else { cart.push({ id, name, price, originalPrice, color, size, img, qty: 1 }); }
+          // If a bundle tier is active and qty > 1, add as single line with bundled qty + price
+          let qty = 1;
+          let effectivePrice = unitPrice;
+          let lineName = name;
+          if (activeBundleTier && activeBundleTier.qty > 1) {
+            qty = activeBundleTier.qty;
+            effectivePrice = activeBundleTier.total / activeBundleTier.qty;
+            lineName = name + ' — ' + activeBundleTier.title;
+          }
+
+          const lineId = id + (qty > 1 ? '__bundle' + qty : '');
+          const existing = cart.find(i => i.id === lineId && i.color === color && i.size === size);
+          if (existing) { existing.qty += qty; }
+          else { cart.push({ id: lineId, name: lineName, price: effectivePrice, originalPrice, color, size, img, qty }); }
 
           saveCart();
           openCart();
