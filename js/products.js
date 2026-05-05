@@ -2041,16 +2041,16 @@
             originalPrice: 139.90,
             badge: 'SALE',
             images: [
-                'assets/products/c95b49d3b5b5.webp',
                 'assets/products/ae7e797f777b.webp',
-                'assets/products/c761a756be18.webp',
                 'assets/products/f723e4c28c97.webp',
+                'assets/products/c95b49d3b5b5.webp',
+                'assets/products/c761a756be18.webp',
                 'assets/products/6fe840cdbfd3.webp',
                 'assets/products/b70ce05ca89f.webp'
             ],
             colorVariants: [
-                { name: 'Obsidian Black',      image: 'assets/products/c95b49d3b5b5.webp' },
-                { name: 'Crystal White',       image: 'assets/products/c761a756be18.webp' },
+                { name: 'Obsidian Black',      image: 'assets/products/ae7e797f777b.webp' },
+                { name: 'Crystal White',       image: 'assets/products/f723e4c28c97.webp' },
                 { name: 'Crystal White & Gray', image: 'assets/products/6fe840cdbfd3.webp' }
             ],
             sizes: ['39', '40', '41', '42', '43', '44', '45', '46']
