@@ -2034,6 +2034,26 @@
             sizes: ['38.5', '39.5', '40', '41', '41.5', '42.5', '43', '44', '44.5', '45.5']
         },
         {
+            id: 'harrington-leather-trainers',
+            name: 'Zarek | Harrington Leather Trainers',
+            category: 'shoes',
+            price: 69.95,
+            originalPrice: 139.90,
+            badge: 'SALE',
+            images: [
+                'assets/products/c95b49d3b5b5.webp',
+                'assets/products/ae7e797f777b.webp',
+                'assets/products/c761a756be18.webp',
+                'assets/products/f723e4c28c97.webp',
+                'assets/products/b70ce05ca89f.webp'
+            ],
+            colorVariants: [
+                { name: 'Obsidian Black', image: 'assets/products/c95b49d3b5b5.webp' },
+                { name: 'Crystal White',  image: 'assets/products/c761a756be18.webp' }
+            ],
+            sizes: ['39', '40', '41', '42', '43', '44', '45', '46']
+        },
+        {
             id: 'wallabee-shoes',
             name: 'Zarek | Moc Toe Wallabee Shoes Lace-Up Crepe Sole',
             category: 'shoes',
