@@ -21,14 +21,14 @@
             originalPrice: 139.90,
             badge: 'SALE',
             images: [
-                'https://vintares.com/cdn/shop/files/freepik_change-the-size-of-the-image-into-sqaure.-remove-background-and-change-it-to-solid-efefef-add-applya.-very-light-shadow_0001.jpg?v=1775043831&width=1024',
-                'https://vintares.com/cdn/shop/files/freepik_change-the-stance-of-the-model-to-the-back.-make-him-look-at-his-left-side_0001.jpg?v=1775044078&width=1024',
-                'https://vintares.com/cdn/shop/files/freepik_use-img1-as-the-reference-product.-generate-a-clean-ecommerce-flatlay-topdown-view-perfectly-straight-alignment-centered-composition-solid-efefef-background.-remove-hanger-and_fcd6cd1d-1759-4794-8425-d954b2a3b485.webp?v=1775044078&width=1024',
-                'https://vintares.com/cdn/shop/files/freepik_change-the-size-of-the-image-into-sqaure.-remove-background-and-change-it-to-solid-efefef-add-applya.-very-light-shadow_0002.png?v=1775044078&width=1024'
+                'assets/products/aca45da14c8f.webp',
+                'assets/products/cbc965a7c3e9.webp',
+                'assets/products/48b258a6068e.webp',
+                'assets/products/a6e44df43fbc.webp'
             ],
             colorVariants: [
-                { name: 'Black', image: 'https://vintares.com/cdn/shop/files/freepik_change-the-size-of-the-image-into-sqaure.-remove-background-and-change-it-to-solid-efefef-add-applya.-very-light-shadow_0001.jpg?v=1775043831&width=1024' },
-                { name: 'Navy',  image: 'https://vintares.com/cdn/shop/files/freepik_change-the-size-of-the-image-into-sqaure.-remove-background-and-change-it-to-solid-efefef-add-applya.-very-light-shadow_0002.png?v=1775044078&width=1024' }
+                { name: 'Black', image: 'assets/products/aca45da14c8f.webp' },
+                { name: 'Navy',  image: 'assets/products/a6e44df43fbc.webp' }
             ],
             sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL']
         },
@@ -40,17 +40,17 @@
             originalPrice: 139.90,
             badge: 'SALE',
             images: [
-                'https://vintares.com/cdn/shop/files/freepik_change-the-sweater-the-man-is-wear-in-img1-into-the-sweater-in-img2-make-both-hands-on-his-back_0001.webp?v=1774987075&width=1024',
-                'https://vintares.com/cdn/shop/files/freepik_change-the-stance-of-the-model-to-the-side.-make-him-oblivious-of-the-camera_0001_8.webp?v=1774987075&width=1024',
-                'https://vintares.com/cdn/shop/files/freepik_change-the-stance-of-the-model-to-the-back_0001_973fd899-e440-402f-92a3-cb51bb426590.webp?v=1774987075&width=1024',
-                'https://vintares.com/cdn/shop/files/freepik_creqate-nice-zoom-image-on-a-whiyte-abckground-fopcus-on-the-front-detail-make-it-flatlay-and-make-it-slightly-angled_0001.webp?v=1774987685&width=1024'
+                'assets/products/d734eec4fed8.webp',
+                'assets/products/0753b94bb937.webp',
+                'assets/products/ffc2de1646d3.webp',
+                'assets/products/8454c8fa391b.webp'
             ],
             colorVariants: [
-                { name: 'Light Gray', image: 'https://vintares.com/cdn/shop/files/freepik_change-the-sweater-the-man-is-wear-in-img1-into-the-sweater-in-img2-make-both-hands-on-his-back_0001.webp?v=1774987075&width=1024' },
-                { name: 'Navy Blue',  image: 'https://vintares.com/cdn/shop/files/freepik_change-the-siz-epf-the-image-into-square_0039.webp?v=1774987075&width=1024' },
-                { name: 'Gray',       image: 'https://vintares.com/cdn/shop/files/freepik_change-the-sweater-the-man-is-wear-in-img1-into-the-sweater-in-img2-change-the-hand-pose-put-both-hands-togetehr-in-front-of-him_0001.webp?v=1774987641&width=1024' },
-                { name: 'Dark Brown', image: 'https://vintares.com/cdn/shop/files/freepik_change-the-sweater-the-man-is-wear-in-img1-into-the-sweater-in-img2_0001.webp?v=1774987075&width=1024' },
-                { name: 'Black',      image: 'https://vintares.com/cdn/shop/files/freepik_change-the-siz-epf-the-image-into-square_0038.webp?v=1774987075&width=1024' }
+                { name: 'Light Gray', image: 'assets/products/d734eec4fed8.webp' },
+                { name: 'Navy Blue',  image: 'assets/products/b1ca186d773b.webp' },
+                { name: 'Gray',       image: 'assets/products/58e3a3be10f5.webp' },
+                { name: 'Dark Brown', image: 'assets/products/bfb4d0d0d9e6.webp' },
+                { name: 'Black',      image: 'assets/products/8656e7792270.webp' }
             ],
             sizes: ['2XS', 'XS', 'S', 'M', 'L', 'XL', '2XL']
         },
@@ -63,24 +63,24 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Dark Navy', images: [
-                    'https://vintares.com/cdn/shop/files/freepik_char1-character-identity-reference.-use-only-the-person-from-char1-face.-discard-all-clothing-from-char1-.-img1-primary-clothing-item.-dress-the-person-using-only-the-clothing_b60c1ea6-b624-45f1-8fe9-89f67f6fa9ee.jpg?v=1774976582&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_use-img1-as-the-reference-product.-generate-a-clean-ecommerce-flatlay-topdown-view-perfectly-straight-alignment-centered-composition-solid-efefef-background.-remove-hanger-and_b5fc2b45-1be9-426d-9b83-13cdf5dd9219.webp?v=1774976582&width=1024'
+                    'assets/products/0558b6bd302f.webp',
+                    'assets/products/7ee22a60bd4b.webp'
                 ] },
                 { name: 'Navy Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik_apply-the-color-of-the-jacket-in-img2-into-the-jacke-tin-img1_0001_3.webp?v=1774976582&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_use-img1-as-the-reference-product.-generate-a-clean-ecommerce-flatlay-topdown-view-perfectly-straight-alignment-centered-composition-solid-efefef-background.-remove-hanger-and_b5fc2b45-1be9-426d-9b83-13cdf5dd9219.webp?v=1774976582&width=1024'
+                    'assets/products/6c152fbaee82.webp',
+                    'assets/products/7ee22a60bd4b.webp'
                 ] },
                 { name: 'Olive Green', images: [
-                    'https://vintares.com/cdn/shop/files/freepik_apply-the-color-of-the-jacket-in-img2-into-the-jacke-tin-img1_0001_1.webp?v=1774976582&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_use-img1-as-the-reference-product.-generate-a-clean-ecommerce-flatlay-topdown-view-perfectly-straight-alignment-centered-composition-solid-efefef-background.-remove-hanger-and_b5fc2b45-1be9-426d-9b83-13cdf5dd9219.webp?v=1774976582&width=1024'
+                    'assets/products/b99cfe1d4364.webp',
+                    'assets/products/7ee22a60bd4b.webp'
                 ] },
                 { name: 'Burgundy', images: [
-                    'https://vintares.com/cdn/shop/files/freepik_apply-the-color-of-the-jacket-in-img2-into-the-jacke-tin-img1_0001_2.webp?v=1774976582&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_use-img1-as-the-reference-product.-generate-a-clean-ecommerce-flatlay-topdown-view-perfectly-straight-alignment-centered-composition-solid-efefef-background.-remove-hanger-and_b5fc2b45-1be9-426d-9b83-13cdf5dd9219.webp?v=1774976582&width=1024'
+                    'assets/products/574b697be1da.webp',
+                    'assets/products/7ee22a60bd4b.webp'
                 ] },
                 { name: 'Slate Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik_apply-the-color-of-the-jacket-in-img2-into-the-jacke-tin-img1_0001.webp?v=1774976582&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_use-img1-as-the-reference-product.-generate-a-clean-ecommerce-flatlay-topdown-view-perfectly-straight-alignment-centered-composition-solid-efefef-background.-remove-hanger-and_b5fc2b45-1be9-426d-9b83-13cdf5dd9219.webp?v=1774976582&width=1024'
+                    'assets/products/b8bac8396c3e.webp',
+                    'assets/products/7ee22a60bd4b.webp'
                 ] }
             ],
             sizes: ['S', 'M', 'L', 'XL', '2XL', '3XL']
@@ -94,24 +94,24 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik_remove-the-background-and-change-it-to-efefef-apply-light-shadow.-position-is-centered-padding-is-9_0001_1.webp?v=1774619564&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_change-the-stance-of-the-model-to-the-left-side-make-him-oblivious-of-the-camera_0001_1.jpg?v=1774620190&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_apply-the-color-of-the-coat-sweater-in-img2-to-the-coat-sweater-in-img1_0001_2fe2afd6-3369-44ae-a237-1498c81a2fad.webp?v=1774620190&width=1024'
+                    'assets/products/79361d7c3bcf.webp',
+                    'assets/products/aed26e8cf102.webp',
+                    'assets/products/47a8fd9a9be3.webp'
                 ] },
                 { name: 'Navy Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik_remove-the-background-and-change-it-to-efefef-apply-light-shadow.-position-is-centered-padding-is-9_0001_1_1.webp?v=1774620190&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_change-the-stance-of-the-model-to-the-side-make-him-oblivious-of-the-camera_0001_1.jpg?v=1774620190&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_apply-the-color-of-the-coat-sweater-in-img2-to-the-coat-sweater-in-img1_00012_8cf6a04f-bbf5-4a52-bef5-c1a6a10f204a.webp?v=1774620190&width=1024'
+                    'assets/products/ceb6365bcaf9.webp',
+                    'assets/products/f630127eca46.webp',
+                    'assets/products/0a2c74075e1b.webp'
                 ] },
                 { name: 'Olive Green', images: [
-                    'https://vintares.com/cdn/shop/files/freepik_remove-the-background-and-change-it-to-efefef-apply-light-shadow.-position-is-centered-padding-is-9_0001.webp?v=1774620190&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_change-the-stance-of-the-model-to-the-left-side-make-him-oblivious-of-the-camera_0001.jpg?v=1774620190&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_apply-the-color-of-the-coat-sweater-in-img2-to-the-coat-sweater-img1_0001_e04e335f-a1e5-47be-a4df-0ff4aaf3b890.webp?v=1774620190&width=1024'
+                    'assets/products/acceeb3276dc.webp',
+                    'assets/products/c49e98a136b4.webp',
+                    'assets/products/f6c982cf46d6.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik_remove-the-background-and-change-it-to-efefef-apply-light-shadow.-position-is-centered-padding-is-9_0001_2.webp?v=1774620190&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_change-the-stance-of-the-model-to-the-side-make-him-oblivious-of-the-camera_0001.webp?v=1774620190&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_use-img1-as-the-reference-product.-generate-a-clean-ecommerce-flatlay-topdown-view-perfectly-straight-alignment-centered-composition-solid-efefef-background.-remove-hanger-and_b310aa5a-a4d8-4089-88fb-8a11beabb35a.webp?v=1774620190&width=1024'
+                    'assets/products/3a3c1e7b1222.webp',
+                    'assets/products/f66b4fd681f1.webp',
+                    'assets/products/4762f28d8950.webp'
                 ] }
             ],
             sizes: ['2XS', 'XS', 'S', 'M', 'XL', '2XL', '3XL']
@@ -125,24 +125,24 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Navy Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik_char1char1-character-identity-reference.-use-only-the-person-from-char1-face.-discard-all-clothing-from-char1-.-img1-primary-clothing-item.-dress-the-person-using-only-the-clo.jpg?v=1774534589&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_change-the-stance-of-the-model-to-the-back.-make-the-padding-9.-background-should-be-efefef-and-apply-soft-shadow_0001_2.jpg?v=1774536241&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_change-the-size-opf-the-image-into-square_0001_1.webp?v=1774536241&width=1024'
+                    'assets/products/519d28b0296f.webp',
+                    'assets/products/d41239a024a7.webp',
+                    'assets/products/75f6e9feb866.webp'
                 ] },
                 { name: 'Sand Beige', images: [
-                    'https://vintares.com/cdn/shop/files/freepik_char1-char1-character-identity-reference.-use-only-the-person-from-char1-face.-discard-all-clothing-from-char1-.-img1-primary-clothing-item.-dress-the-person-using-only-the-cl.jpg?v=1774536241&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_change-the-stance-of-the-model-to-the-back.-make-the-padding-9.-background-should-be-efefef-and-apply-soft-shadow_0001_1.jpg?v=1774536241&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_change-the-size-opf-the-image-into-square_0001.webp?v=1774536241&width=1024'
+                    'assets/products/3bf73e58ec9d.webp',
+                    'assets/products/567d042cf856.webp',
+                    'assets/products/432064bbcd52.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik_char1-char1-character-identity-reference.-use-only-the-person-from-char1-body-shape.-discard-all-clothing-from-char1-.-img1-primary-clothing-item.-dress-the-person-using-only.jpg?v=1774536241&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_change-the-stance-of-the-model-to-the-back.-make-the-padding-9.-background-should-be-efefef-and-apply-soft-shadow_0001_4.jpg?v=1774536378&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_change-the-size-opf-the-image-into-square_0001_2.webp?v=1774536378&width=1024'
+                    'assets/products/02b704970a3f.webp',
+                    'assets/products/0e5ce06d5742.webp',
+                    'assets/products/75c47a24c786.webp'
                 ] },
                 { name: 'Olive Green', images: [
-                    'https://vintares.com/cdn/shop/files/freepik_char1-char1-character-identity-reference.-use-only-the-person-from-char1-body-shape.-discard-all-clothing-from-char1-.-img1-primary-clothing-item.-dress-the-person-using-only.png?v=1774536378&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_change-the-stance-of-the-model-to-the-back.-make-the-padding-9.-background-should-be-efefef-and-apply-soft-shadow_0001.png?v=1774536378&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_change-the-size-opf-the-image-into-square_0001_3.webp?v=1774536378&width=1024'
+                    'assets/products/02b94678fe80.webp',
+                    'assets/products/f899eb9009b4.webp',
+                    'assets/products/147ff9b9176a.webp'
                 ] }
             ],
             sizes: ['XS', 'S', 'M', 'L', 'XL']
@@ -156,19 +156,19 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Beige', images: [
-                    'https://vintares.com/cdn/shop/files/freepik_remove-the-background-and-change-it-to-efefef.-apply-a-soft-shadow_0001.webp?v=1774455279&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_change-the-stance-of-the-model-to-the-side.-make-him-oblivious-of-the-camera_0001_1.webp?v=1774455279&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_use-img1-as-the-reference-product.-generate-a-clean-ecommerce-flatlay-topdown-view-perfectly-straight-alignment-centered-composition-solid-efefef-background.-remove-hanger-and_ed454ba6-7186-4760-82cc-6204567638e9.webp?v=1774455279&width=1024'
+                    'assets/products/1087caa3fe38.webp',
+                    'assets/products/811138a8e7ad.webp',
+                    'assets/products/675a277a36eb.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik_remove-the-background-and-change-it-to-efefef.-apply-a-light-shadow_0001.webp?v=1774455279&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_change-the-stance-of-the-model-to-the-side.-make-him-oblivious-of-the-camera_0001_0d875320-5c6a-4a16-8003-f28d0a3f157f.webp?v=1774455396&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_apply-the-color-of-the-jacket-in-img2-to-the-jacket-in-img1_0001.webp?v=1774455396&width=1024'
+                    'assets/products/23a34f2d9581.webp',
+                    'assets/products/ed6826c15959.webp',
+                    'assets/products/3d0a6fc52a8a.webp'
                 ] },
                 { name: 'Navy Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik_remove-the-background_0001.webp?v=1774455279&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_change-the-stance-of-the-model-to-the-left-side-downward-a-bit.make-him-oblivious-of-the-camera_0001.webp?v=1774455279&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_apply-the-color-of-the-jacket-in-img2-to-the-jacket-in-img1_0001_1.webp?v=1774455279&width=1024'
+                    'assets/products/39a4ea7fd827.webp',
+                    'assets/products/b9eca78ea8c2.webp',
+                    'assets/products/c1d5cddf4c87.webp'
                 ] }
             ],
             sizes: ['M', 'L', 'XL', '2XL', '3XL', '4XL']
@@ -182,29 +182,29 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Olive Green', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__hchange-the-size-of-the-image-into-sqaure__50076.webp?v=1774388033&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-apply-b__50077.webp?v=1774442449&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__apply-the-color-of-the-jacket-in-img2-to-the-color__78583.webp?v=1774442449&width=1024'
+                    'assets/products/680b50e9f06a.webp',
+                    'assets/products/f68b492bea11.webp',
+                    'assets/products/6a985ccf280b.webp'
                 ] },
                 { name: 'Khaki', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__50072.webp?v=1774442449&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-apply-b__50084.webp?v=1774442449&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__apply-the-color-of-the-jacket-in-img2-to-the-color__78584.webp?v=1774442449&width=1024'
+                    'assets/products/405bb5cc0793.webp',
+                    'assets/products/bfc4467912fb.webp',
+                    'assets/products/a31a472a0891.webp'
                 ] },
                 { name: 'Burgundy', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__50073.webp?v=1774442449&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-apply-b__50082.webp?v=1774442449&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__apply-the-color-of-the-jacket-in-img2-to-the-color__78585.webp?v=1774442449&width=1024'
+                    'assets/products/c897f5b0b9ab.webp',
+                    'assets/products/ae1efaacfd0f.webp',
+                    'assets/products/544e22971fd1.webp'
                 ] },
                 { name: 'Navy Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__hchange-the-size-of-the-image-into-sqaure__50074.webp?v=1774442449&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-apply-b__50081.webp?v=1774442449&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__chaneg-the-color-of-the-jacket-into-color-dark-nav__44659.webp?v=1774442449&width=1024'
+                    'assets/products/51a735354987.webp',
+                    'assets/products/60fb9c332a87.webp',
+                    'assets/products/c5543937304c.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__hchange-the-size-of-the-image-into-sqaure__50075.webp?v=1774442449&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-apply-b__50080.webp?v=1774442449&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__remove-background__44658.webp?v=1774442329&width=1024'
+                    'assets/products/70bf0988d55a.webp',
+                    'assets/products/bf97f792352b.webp',
+                    'assets/products/dfc9e49bd96d.webp'
                 ] }
             ],
             sizes: ['M', 'L', 'XL', '2XL', '3XL', '4XL', '5XL', '6XL']
@@ -218,29 +218,29 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-cardigan-the-man-is-wearin__44642.webp?v=1774370365&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__chaneg-the-stance-of-the-model-to-the-side__44645.webp?v=1774370365&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__remove-background__44641.webp?v=1774370365&width=1024'
+                    'assets/products/88fd7b246676.webp',
+                    'assets/products/7644ea8f16be.webp',
+                    'assets/products/5100f3371e0d.webp'
                 ] },
                 { name: 'Orange', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__44639.webp?v=1774370365&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__chaneg-the-stance-of-the-model-to-the-back__59359.webp?v=1774370365&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__remove-background__44633.webp?v=1774370365&width=1024'
+                    'assets/products/6a912f96a438.webp',
+                    'assets/products/c93c28d34216.webp',
+                    'assets/products/6409ef8499d9.webp'
                 ] },
                 { name: 'Navy Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-cardigan-the-man-is-wearin__44638.webp?v=1774370365&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__chaneg-the-stance-of-the-model-to-the-side__59360.webp?v=1774370365&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__remove-background__44630.webp?v=1774370365&width=1024'
+                    'assets/products/0a554176eaf6.webp',
+                    'assets/products/1cfe836fd837.webp',
+                    'assets/products/33d95c0d71b8.webp'
                 ] },
                 { name: 'Heather Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-cardigan-the-man-is-wearin__44643.webp?v=1774370365&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__chaneg-the-stance-of-the-model-to-the-side__44644.webp?v=1774370365&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__remove-background__44631.webp?v=1774370365&width=1024'
+                    'assets/products/9ab9dbe3dfef.webp',
+                    'assets/products/c90e4f305e5d.webp',
+                    'assets/products/c15705c8c309.webp'
                 ] },
                 { name: 'Light Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-cardigan-the-man-is-wearin__44640.webp?v=1774370365&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__chaneg-the-stance-of-the-model-to-the-back__44646.webp?v=1774370365&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__remove-background__44634.webp?v=1774370365&width=1024'
+                    'assets/products/3564414a15fa.webp',
+                    'assets/products/53a0ae1216c9.webp',
+                    'assets/products/9badfb0157cc.webp'
                 ] }
             ],
             sizes: ['2XS', 'XS', 'S', 'M', 'L', 'XL', '2XL']
@@ -254,34 +254,34 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Olive Green', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__chaneg-the-size-of-the-image-into-square__34513.webp?v=1774302650&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-make-hi__34515.webp?v=1774302650&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-of-the-image-into-square__34506.webp?v=1774302650&width=1024'
+                    'assets/products/1fabdcfbb8bb.webp',
+                    'assets/products/ee7bec37a955.webp',
+                    'assets/products/3ca153517dc1.webp'
                 ] },
                 { name: 'Red', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__chaneg-the-size-of-the-image-into-square__34523.webp?v=1774302650&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-make-hi__34518.webp?v=1774302650&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-of-the-image-into-square__34507.webp?v=1774302650&width=1024'
+                    'assets/products/51e4761d086b.webp',
+                    'assets/products/80ee28e1e787.webp',
+                    'assets/products/70f438f0d4d3.webp'
                 ] },
                 { name: 'Navy Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__34514.webp?v=1774302650&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-make-hi__34517.webp?v=1774302650&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-of-the-image-into-square__34508.webp?v=1774302650&width=1024'
+                    'assets/products/74aac99413d5.webp',
+                    'assets/products/5e9991d0bc10.webp',
+                    'assets/products/68dac1f4a50b.webp'
                 ] },
                 { name: 'Burgundy', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__chaneg-the-size-of-the-image-into-square__34511.webp?v=1774302650&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-make-hi__34526.webp?v=1774302719&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-extra-zipper-in-the-opening-only-do-not__34522.webp?v=1774302719&width=1024'
+                    'assets/products/6a2924a3b7fb.webp',
+                    'assets/products/d534ba1b9a61.webp',
+                    'assets/products/dbe5e8b790d7.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__34524.webp?v=1774302719&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-make-hi__34525.webp?v=1774302719&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-of-the-image-into-square__34504.webp?v=1774302719&width=1024'
+                    'assets/products/b98138f03a8f.webp',
+                    'assets/products/b84998097ffb.webp',
+                    'assets/products/7a91df286c88.webp'
                 ] },
                 { name: 'Royal Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__chaneg-the-size-of-the-image-into-square__34512.webp?v=1774302650&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-make-hi__34516.webp?v=1774302650&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-of-the-image-into-square__34505.webp?v=1774302650&width=1024'
+                    'assets/products/4e030d7d95b8.webp',
+                    'assets/products/5f313433de3a.webp',
+                    'assets/products/ed85b09ee03e.webp'
                 ] }
             ],
             sizes: ['2XS', 'XS', 'S', 'M', 'L', 'XL']
@@ -295,19 +295,19 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Khaki', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__52058.webp?v=1773233626&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__52061.webp?v=1773233626&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-as-the-reference-product-generate-a-clean-ecom__52055.webp?v=1773233626&width=1024'
+                    'assets/products/0144d1cd0454.webp',
+                    'assets/products/088141004355.webp',
+                    'assets/products/48a7432f204b.webp'
                 ] },
                 { name: 'Charcoal Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__52060.webp?v=1773233626&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__52063.webp?v=1773233626&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-jacket-in-img1-into-the-co__52057.webp?v=1773233626&width=1024'
+                    'assets/products/4f638e210326.webp',
+                    'assets/products/f8fe83865b97.webp',
+                    'assets/products/81535a7f44b9.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__52059.webp?v=1773233626&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__52062.webp?v=1773233626&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-jacket-in-img1-into-the-co__52056.webp?v=1773233626&width=1024'
+                    'assets/products/4520a3aec584.webp',
+                    'assets/products/3caa69322af3.webp',
+                    'assets/products/5d50b99da57a.webp'
                 ] }
             ],
             sizes: ['M', 'L', 'XL', '2XL', '3XL', '4XL', '5XL']
@@ -321,24 +321,24 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Charcoal Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__88772.webp?v=1773172667&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-make-hi__88776.webp?v=1773173481&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__88768.webp?v=1773173481&width=1024'
+                    'assets/products/f3de64b3b93a.webp',
+                    'assets/products/f8265a33856b.webp',
+                    'assets/products/faf8f6cfdaf3.webp'
                 ] },
                 { name: 'Light Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__88774.webp?v=1773173481&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__88778.webp?v=1773173481&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__88769.webp?v=1773173481&width=1024'
+                    'assets/products/61977c19f97f.webp',
+                    'assets/products/1cf69a522289.webp',
+                    'assets/products/270750f5a2f1.webp'
                 ] },
                 { name: 'Navy', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__88773.webp?v=1773173481&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__88779.webp?v=1773173481&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__88770.webp?v=1773173481&width=1024'
+                    'assets/products/c21fa150a5a8.webp',
+                    'assets/products/1f8cdccc9714.webp',
+                    'assets/products/a9466827db0c.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__88775.webp?v=1773173481&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-make-hi__88780.webp?v=1773173481&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__88771.webp?v=1773173481&width=1024'
+                    'assets/products/0ae5d4bd2adc.webp',
+                    'assets/products/24bef1561c5c.webp',
+                    'assets/products/686d5138aa66.webp'
                 ] }
             ],
             sizes: ['S', 'M', 'L', 'XL', '2XL', '3XL']
@@ -352,14 +352,14 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Brown', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__4566.jpg?v=1773150216&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__4569.jpg?v=1773150413&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__4563.webp?v=1773150413&width=1024'
+                    'assets/products/a504fe482c7f.webp',
+                    'assets/products/f90166c0bc42.webp',
+                    'assets/products/8f0556797b21.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__4567.jpg?v=1773150413&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__4568.jpg?v=1773150413&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__4564.webp?v=1773150413&width=1024'
+                    'assets/products/b6571eba4055.webp',
+                    'assets/products/4ae36abb3559.webp',
+                    'assets/products/e3a755ae0cf8.webp'
                 ] }
             ],
             sizes: ['XS', 'S', 'M', 'L', 'XL']
@@ -373,14 +373,14 @@
             badge: null,
             colorVariants: [
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__4557.webp?v=1773147843&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-mnake-h__4558.webp?v=1773147843&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__4555.webp?v=1773147843&width=1024'
+                    'assets/products/6eb93cb875e7.webp',
+                    'assets/products/7fe6ba1a9a71.webp',
+                    'assets/products/731dfebf6e77.webp'
                 ] },
                 { name: 'Brown', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__4559.webp?v=1773147843&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back__4560.webp?v=1773147843&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__4556.webp?v=1773147843&width=1024'
+                    'assets/products/3eaa35dacfb1.webp',
+                    'assets/products/02a40f065b24.webp',
+                    'assets/products/130d77e02542.webp'
                 ] }
             ],
             sizes: ['4XS', '3XS', '2XS', 'XS', 'S', 'M', 'L', 'XL', '2XL']
@@ -394,19 +394,19 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Army Green', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__6785.webp?v=1770822669&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-img1-g1-to-the-s__6786.webp?v=1770822669&width=1024',
-                    'https://vintares.com/cdn/shop/files/8_0fc604ca-4cbe-468b-adb3-d2dbde1f09f9.webp?v=1770822689&width=1024'
+                    'assets/products/bdc31ac9b400.webp',
+                    'assets/products/3543a0e42619.webp',
+                    'assets/products/cf20971b8d8e.webp'
                 ] },
                 { name: 'Navy Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__6780.webp?v=1770822689&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-img1-g1-to-the-s__6784.webp?v=1770822689&width=1024',
-                    'https://vintares.com/cdn/shop/files/6_5c720567-6fd6-49eb-ad35-431bd06aacdc.webp?v=1770822901&width=1024'
+                    'assets/products/14f2ab9aa60c.webp',
+                    'assets/products/a868c784b894.webp',
+                    'assets/products/c168a891c221.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__6782.webp?v=1770822901&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-img1-g1-to-the-s__6783.webp?v=1770822901&width=1024',
-                    'https://vintares.com/cdn/shop/files/7_629eaa02-7514-468e-bba7-6fcfb4628154.webp?v=1770822901&width=1024'
+                    'assets/products/4689b32f9881.webp',
+                    'assets/products/ba0b67162984.webp',
+                    'assets/products/9de0ca73864f.webp'
                 ] }
             ],
             sizes: ['S', 'M', 'L', 'XL', '2XL', '3XL']
@@ -420,34 +420,34 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Gray / Light Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__6769.webp?v=1770819896&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-img1-g1-to-the-s__6774.webp?v=1770819896&width=1024',
-                    'https://vintares.com/cdn/shop/files/2_638863b6-0a1d-4e2a-afd7-18228ed351e5.webp?v=1770819896&width=1024'
+                    'assets/products/be4769c5fb07.webp',
+                    'assets/products/9fc4b1fc21ef.webp',
+                    'assets/products/2442446a5fff.webp'
                 ] },
                 { name: 'Black / Graphite Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__6772.webp?v=1770819896&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-img1-g1-to-the-s__6778.webp?v=1770819896&width=1024',
-                    'https://vintares.com/cdn/shop/files/6_c7e039eb-c364-4b95-afbc-d88ae23bbdef.webp?v=1770819896&width=1024'
+                    'assets/products/4a925ff502a3.webp',
+                    'assets/products/99489b07bb91.webp',
+                    'assets/products/1537afd0a482.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__6771.webp?v=1770819896&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-img1-g1-to-the-s__6777.webp?v=1770819896&width=1024',
-                    'https://vintares.com/cdn/shop/files/5_57d74db9-312a-4a33-a427-cc1579212158.webp?v=1770819896&width=1024'
+                    'assets/products/3ceb9d98c61e.webp',
+                    'assets/products/09d7f009427b.webp',
+                    'assets/products/7a89917783a1.webp'
                 ] },
                 { name: 'Green / Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__6768.webp?v=1770819896&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-img1-g1-to-the-s__6775.webp?v=1770819896&width=1024',
-                    'https://vintares.com/cdn/shop/files/3_a83b396c-c0b8-4b8d-a8eb-fe4fd4fa483c.webp?v=1770819896&width=1024'
+                    'assets/products/b81b4f7b1517.webp',
+                    'assets/products/545d993c6e49.webp',
+                    'assets/products/88c2ec4613c4.webp'
                 ] },
                 { name: 'Dark Navy', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__6773.webp?v=1770820610&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-img1-g1-to-the-s__6779.webp?v=1770820610&width=1024',
-                    'https://vintares.com/cdn/shop/files/7_1436013b-7a51-40f2-af74-d38cffdd9b91.webp?v=1770820610&width=1024'
+                    'assets/products/a37b11f2227c.webp',
+                    'assets/products/c21b9fb10a14.webp',
+                    'assets/products/4e992436eb5e.webp'
                 ] },
                 { name: 'Olive', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__6770.webp?v=1770820610&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-img1-g1-to-the-s__6776.webp?v=1770820610&width=1024',
-                    'https://vintares.com/cdn/shop/files/4_4521cf80-73a2-4b31-8324-8682d6f0d186.webp?v=1770820610&width=1024'
+                    'assets/products/66e677776a1b.webp',
+                    'assets/products/da91efc98561.webp',
+                    'assets/products/f45a0d894138.webp'
                 ] }
             ],
             sizes: ['S', 'M', 'L', 'XL', '2XL', '3XL']
@@ -461,24 +461,24 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__58652.webp?v=1770814068&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-img1-to-the-side__58654.webp?v=1770814068&width=1024',
-                    'https://vintares.com/cdn/shop/files/1_2504b10f-2ff6-43bd-8763-166dd5caba3b.webp?v=1770814068&width=1024'
+                    'assets/products/1a979c1c83be.webp',
+                    'assets/products/693d43078708.webp',
+                    'assets/products/8f8540f646aa.webp'
                 ] },
                 { name: 'Slate Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__58653.webp?v=1770814068&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-img1-to-the-side__6761.webp?v=1770814068&width=1024',
-                    'https://vintares.com/cdn/shop/files/2_378c87bb-d9c2-49ab-873a-466369a51541.webp?v=1770814068&width=1024'
+                    'assets/products/5f5e1715b149.webp',
+                    'assets/products/84834005c978.webp',
+                    'assets/products/1cc9214b3b2e.webp'
                 ] },
                 { name: 'Red', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__6762.webp?v=1770814068&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-img1-to-the-side__58655.webp?v=1770814068&width=1024',
-                    'https://vintares.com/cdn/shop/files/3_c1d887ec-e002-49be-9e16-ef0bcf45faba.webp?v=1770814068&width=1024'
+                    'assets/products/f07c59ec5d15.webp',
+                    'assets/products/abb8e5b4f017.webp',
+                    'assets/products/a15c04eb2eb1.webp'
                 ] },
                 { name: 'Navy', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__6765.webp?v=1770814068&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-img1-to-the-back__6764.webp?v=1770814068&width=1024',
-                    'https://vintares.com/cdn/shop/files/4_d85e69de-2fb9-402d-a1b1-2ffc950ddc09.webp?v=1770814068&width=1024'
+                    'assets/products/bc6296e2cf89.webp',
+                    'assets/products/d0b233eb2949.webp',
+                    'assets/products/96057b9d5a21.webp'
                 ] }
             ],
             sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL', '3XL']
@@ -492,24 +492,24 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__18893.webp?v=1770756868&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-img1-to-the-back__18901.webp?v=1770756974&width=1024',
-                    'https://vintares.com/cdn/shop/files/10_a0aaa22f-c234-4b5d-b008-0b2c90e6e51a.webp?v=1770756974&width=1024'
+                    'assets/products/704ed30f4565.webp',
+                    'assets/products/3ceefb08d3e8.webp',
+                    'assets/products/f0f52445fb1e.webp'
                 ] },
                 { name: 'Navy', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__18895.webp?v=1770756991&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-img1-to-the-back__18898.webp?v=1770756991&width=1024',
-                    'https://vintares.com/cdn/shop/files/12_4867f86e-f05f-4596-bcd8-bb0b63003a45.webp?v=1770756991&width=1024'
+                    'assets/products/6132b0391980.webp',
+                    'assets/products/e0fcd1c9991f.webp',
+                    'assets/products/26b119b7fac8.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__18894.webp?v=1770756974&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-img1-to-the-back__18900.webp?v=1770756974&width=1024',
-                    'https://vintares.com/cdn/shop/files/13_2fc38464-3083-426a-b27e-bd3063b24258.webp?v=1770756974&width=1024'
+                    'assets/products/206d1c34962a.webp',
+                    'assets/products/256592984b05.webp',
+                    'assets/products/618ecae0f4ce.webp'
                 ] },
                 { name: 'Burgundy', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__18896.webp?v=1770756974&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-img1-to-the-back__18899.webp?v=1770756974&width=1024',
-                    'https://vintares.com/cdn/shop/files/14_d7e4cec8-a85b-4e52-8a71-0ff1a2b6791f.webp?v=1770756974&width=1024'
+                    'assets/products/0d78545e5c12.webp',
+                    'assets/products/6fe3636af2d0.webp',
+                    'assets/products/ce051d16efee.webp'
                 ] }
             ],
             sizes: ['3XS', '2XS', 'XS', 'S', 'M', 'L', 'XL', '2XL', '3XL', '4XL', '5XL']
@@ -523,24 +523,24 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__18881.webp?v=1770753823&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-img1-to-the-side__18882.webp?v=1770753823&width=1024',
-                    'https://vintares.com/cdn/shop/files/3_918e49a0-e1f4-41ee-989e-747e41f20797.webp?v=1770753823&width=1024'
+                    'assets/products/34c3f5ec8b51.webp',
+                    'assets/products/b4db0ab87b07.webp',
+                    'assets/products/323442552e94.webp'
                 ] },
                 { name: 'Taupe', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__18883.webp?v=1770753823&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-img1-to-the-side__18884.webp?v=1770753823&width=1024',
-                    'https://vintares.com/cdn/shop/files/41.webp?v=1770753823&width=1024'
+                    'assets/products/c5379e0570eb.webp',
+                    'assets/products/2ac7aed50e2b.webp',
+                    'assets/products/b783adaf2642.webp'
                 ] },
                 { name: 'Navy Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__18886.webp?v=1770753823&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-img1-to-the-side__18885.webp?v=1770753823&width=1024',
-                    'https://vintares.com/cdn/shop/files/1_64516544-2c4b-403e-99d3-760e8badf866.webp?v=1770753823&width=1024'
+                    'assets/products/bc8c3d363705.webp',
+                    'assets/products/ccffefab0974.webp',
+                    'assets/products/767a5e3a0006.webp'
                 ] },
                 { name: 'Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__18887.webp?v=1770753823&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-img1-to-the-side__18888.webp?v=1770753823&width=1024',
-                    'https://vintares.com/cdn/shop/files/42.webp?v=1770753823&width=1024'
+                    'assets/products/e6bba3f718c5.webp',
+                    'assets/products/5b547dec1265.webp',
+                    'assets/products/582b27cca3e2.webp'
                 ] }
             ],
             sizes: ['M', 'L', 'XL', '2XL', '3XL', '4XL']
@@ -554,14 +554,14 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__18878.webp?v=1770749867&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-change-the-stance-of-the__18879.webp?v=1770749868&width=1024',
-                    'https://vintares.com/cdn/shop/files/2_d7c65a36-a4d0-43ce-a078-29c53288d220.webp?v=1770749868&width=1024'
+                    'assets/products/b77942ac54f4.webp',
+                    'assets/products/89ad7d76efe4.webp',
+                    'assets/products/02d23455167e.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__18877.webp?v=1770749867&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-change-the-stance-of-the__18880.webp?v=1770749868&width=1024',
-                    'https://vintares.com/cdn/shop/files/5_a11f287c-dc10-4a09-884e-dd63784ff48c.webp?v=1770749868&width=1024'
+                    'assets/products/dced278c3a60.webp',
+                    'assets/products/2ee9116bd5d4.webp',
+                    'assets/products/84aacf9aff47.webp'
                 ] }
             ],
             sizes: ['4XS', '3XS', '2XS', 'XS', 'S', 'M', 'L', 'XL']
@@ -575,19 +575,19 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Navy Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__18872.webp?v=1770747999&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-img1-to-the-back__18875.webp?v=1770747999&width=1024',
-                    'https://vintares.com/cdn/shop/files/2_f73548dd-38cb-4b71-8e8a-c8bc63fc65e1.webp?v=1770747999&width=1024'
+                    'assets/products/5d6e705a8347.webp',
+                    'assets/products/e353f183823f.webp',
+                    'assets/products/2682f70352b6.webp'
                 ] },
                 { name: 'Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__18869.webp?v=1770747999&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-img1-to-the-back__18873.webp?v=1770747999&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-tshirt-underneath__18867.webp?v=1770748393&width=1024'
+                    'assets/products/16ad75376a73.webp',
+                    'assets/products/6f988b745fe9.webp',
+                    'assets/products/72d6cb464eeb.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__18871.webp?v=1770748393&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-img1-to-the-back__18874.webp?v=1770748393&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-tshirt-underneath__18866.webp?v=1770748393&width=1024'
+                    'assets/products/93d6e034d0ce.webp',
+                    'assets/products/540b01f83798.webp',
+                    'assets/products/a3e690706e2e.webp'
                 ] }
             ],
             sizes: ['S', 'M', 'L', 'XL', '2XL', '3XL']
@@ -601,14 +601,14 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Navy', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__18860.webp?v=1770743953&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-img1-to-the-side__18862.webp?v=1770743953&width=1024',
-                    'https://vintares.com/cdn/shop/files/2_bfd7fa7d-e9c9-4928-8b8f-faaf8c76f252.webp?v=1770743953&width=1024'
+                    'assets/products/639bab229c4b.webp',
+                    'assets/products/dd4df25b3ff1.webp',
+                    'assets/products/1a7aca98e252.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__18863.webp?v=1770743953&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-img1-to-the-side__18865.webp?v=1770743953&width=1024',
-                    'https://vintares.com/cdn/shop/files/4_727419ef-8efc-49c1-b194-50c2b6d5b51b.webp?v=1770743953&width=1024'
+                    'assets/products/f143132f3adf.webp',
+                    'assets/products/a7f021fb6c8a.webp',
+                    'assets/products/745e542e78bb.webp'
                 ] }
             ],
             sizes: ['2XS', 'XS', 'S', 'M', 'L', 'XL', '2XL', '3XL', '4XL', '5XL', '6XL']
@@ -622,9 +622,9 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Checkered', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__cahnge-the-size-f-the-image-into-square__910_1.webp?v=1770295987&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-image-img1to-the-side-mak__912.webp?v=1770295987&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-image-img1to-the-back-mak__913.webp?v=1770295987&width=1024'
+                    'assets/products/e71d67fe2751.webp',
+                    'assets/products/a8c761b56232.webp',
+                    'assets/products/1c72307da095.webp'
                 ] }
             ],
             sizes: ['2XS', 'XS', 'S', 'M']
@@ -638,14 +638,14 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__37288.webp?v=1768663710&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-give-me__37293.webp?v=1768664561&width=1024',
-                    'https://vintares.com/cdn/shop/files/6_7ef5ee75-3d1c-4eef-96e9-e8b98b0bc1ca.webp?v=1768664561&width=1024'
+                    'assets/products/51011f1d3e7d.webp',
+                    'assets/products/3e555688b701.webp',
+                    'assets/products/199f3c016831.webp'
                 ] },
                 { name: 'Brown', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__37290.webp?v=1768664561&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-give-me__37292.webp?v=1768664561&width=1024',
-                    'https://vintares.com/cdn/shop/files/9_c1c87703-3513-4a7e-89e4-dfd8fa2131c8.webp?v=1768664561&width=1024'
+                    'assets/products/1679547b1873.webp',
+                    'assets/products/c3a1c0315ded.webp',
+                    'assets/products/553b20825252.webp'
                 ] }
             ],
             sizes: ['M', 'L', 'XL', '2XL', '3XL', '4XL']
@@ -659,19 +659,19 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Dark Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__make-the-image-square__74574.webp?v=1768588315&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__the-img1-is-the-back-profile-of-a-jacket-make-char__74576.webp?v=1768588593&width=1024',
-                    'https://vintares.com/cdn/shop/files/7_1.webp?v=1768588593&width=1024'
+                    'assets/products/48a8eef2e89f.webp',
+                    'assets/products/d87e187e51b0.webp',
+                    'assets/products/36e2c42cb01b.webp'
                 ] },
                 { name: 'Dark Brown', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__make-the-image-square__74577.webp?v=1768588763&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__the-img1-is-the-back-profile-of-a-jacket-make-char__74578.webp?v=1768588763&width=1024',
-                    'https://vintares.com/cdn/shop/files/2_1.webp?v=1768588763&width=1024'
+                    'assets/products/450a467e29dd.webp',
+                    'assets/products/99951188ee67.webp',
+                    'assets/products/bad1e93510c0.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__make-the-image-square__74572.webp?v=1768588876&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-sidemake-him__74575.webp?v=1768588876&width=1024',
-                    'https://vintares.com/cdn/shop/files/4_0e79f641-66c4-4214-bb80-a31aec3fd3cf.webp?v=1768588745&width=1024'
+                    'assets/products/2e4335a99b42.webp',
+                    'assets/products/79c6ffc532f9.webp',
+                    'assets/products/b23c7719a05e.webp'
                 ] }
             ],
             sizes: ['S', 'M', 'L', 'XL', '2XL', '3XL']
@@ -687,28 +687,28 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Khaki', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__22812.jpg?v=1773420954&width=1024',
-                    'https://vintares.com/cdn/shop/files/4_c4f22412-feb8-4a91-9ebe-ace469ba9aab.webp?v=1773420954&width=1024'
+                    'assets/products/ba7cb73393d8.webp',
+                    'assets/products/550c6002c9c4.webp'
                 ] },
                 { name: 'Slate Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__22813.jpg?v=1773421798&width=1024',
-                    'https://vintares.com/cdn/shop/files/6_63772bd6-1a14-4d9f-aeac-54c5b2ee7ca0.webp?v=1773421798&width=1024'
+                    'assets/products/cb35c5ffef9e.webp',
+                    'assets/products/5e89e46e6f62.webp'
                 ] },
                 { name: 'Dark Navy', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__22814.jpg?v=1773422188&width=1024',
-                    'https://vintares.com/cdn/shop/files/8_530f3dfa-d762-4368-9d4a-fa9a85a04183.webp?v=1773422188&width=1024'
+                    'assets/products/fe13792306a5.webp',
+                    'assets/products/f0d510c243ad.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__22815.jpg?v=1773422188&width=1024',
-                    'https://vintares.com/cdn/shop/files/10_87a8e853-213c-48c1-b16b-46290c93d889.webp?v=1773422188&width=1024'
+                    'assets/products/aff1871d79ef.webp',
+                    'assets/products/8bc92a88269e.webp'
                 ] },
                 { name: 'Dark Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__22816.jpg?v=1773422231&width=1024',
-                    'https://vintares.com/cdn/shop/files/12_a1a7569e-4e70-4d8b-a2ea-4388516c3d2d.webp?v=1773422231&width=1024'
+                    'assets/products/f320ac0e69a3.webp',
+                    'assets/products/d9015bf644a9.webp'
                 ] },
                 { name: 'Burgundy', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__22817.jpg?v=1773422231&width=1024',
-                    'https://vintares.com/cdn/shop/files/14_08aed894-0f59-408a-9a9a-2957a1f9457d.webp?v=1773422231&width=1024'
+                    'assets/products/a7935619c384.webp',
+                    'assets/products/152846acf5a0.webp'
                 ] }
             ],
             sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL']
@@ -722,19 +722,19 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'White', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__chaneg-the-size-of-the-image-into-square__22807.webp?v=1773419831&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-refer-t__22808.webp?v=1773419831&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__22804.webp?v=1773419831&width=1024'
+                    'assets/products/2450cdef7816.webp',
+                    'assets/products/048f9a3397ba.webp',
+                    'assets/products/d2a9659701c9.webp'
                 ] },
                 { name: 'Dark Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__chaneg-the-size-of-the-image-into-square__22805.webp?v=1773419831&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-refer-t__22810.webp?v=1773419831&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__22802.webp?v=1773419831&width=1024'
+                    'assets/products/8702c7f09d06.webp',
+                    'assets/products/14e5d608734b.webp',
+                    'assets/products/0e16cb425622.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__chaneg-the-size-of-the-image-into-square__22806.webp?v=1773419831&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-refer-t__22809.webp?v=1773419831&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__22803.webp?v=1773419831&width=1024'
+                    'assets/products/0d3ccfd2a3ae.webp',
+                    'assets/products/7f95ee5301f4.webp',
+                    'assets/products/e2d686fa28d2.webp'
                 ] }
             ],
             sizes: ['2XS', 'XS', 'S', 'M', 'L', 'XL']
@@ -748,19 +748,19 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Light Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__22772.jpg?v=1773412019&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-refer-t__22776_f0263a07-b620-4156-8cc3-15df0e72b7f9.jpg?v=1773412019&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__22771.webp?v=1773412019&width=1024'
+                    'assets/products/1952068358e9.webp',
+                    'assets/products/a7b6292f0c1f.webp',
+                    'assets/products/a42515689d28.webp'
                 ] },
                 { name: 'Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__22774.jpg?v=1773412748&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-refer-t__22775.jpg?v=1773412748&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__22770.webp?v=1773412748&width=1024'
+                    'assets/products/8d77955de84f.webp',
+                    'assets/products/97e255c65bdc.webp',
+                    'assets/products/1d218e4f43f8.webp'
                 ] },
                 { name: 'Sage Green', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__22773.jpg?v=1773412019&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-refer-t__22777.jpg?v=1773412748&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__22769.webp?v=1773412748&width=1024'
+                    'assets/products/802b306da875.webp',
+                    'assets/products/8a0bc6986213.webp',
+                    'assets/products/8915220a0cb3.webp'
                 ] }
             ],
             sizes: ['XS', 'S', 'M', 'L', 'XL']
@@ -774,38 +774,38 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__22818.webp?v=1773424676&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__22828.jpg?v=1773425176&width=1024',
-                    'https://vintares.com/cdn/shop/files/1_3672fb0d-a479-4591-b0c9-e3f5aac01426.webp?v=1773425176&width=1024'
+                    'assets/products/f08a79259fe1.webp',
+                    'assets/products/1283536d119a.webp',
+                    'assets/products/566ba7a6b7d4.webp'
                 ] },
                 { name: 'Light Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__22825.webp?v=1773425176&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__22829.jpg?v=1773425375&width=1024',
-                    'https://vintares.com/cdn/shop/files/2_5b032be7-fa0d-4b39-866e-a301ab788bd9.webp?v=1773425375&width=1024'
+                    'assets/products/de49982e740f.webp',
+                    'assets/products/74f90d1ae833.webp',
+                    'assets/products/4feefa857beb.webp'
                 ] },
                 { name: 'Dark Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__chaneg-the-size-of-the-image-into-square__22820.webp?v=1773425375&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-make-hi__22830.jpg?v=1773425645&width=1024',
-                    'https://vintares.com/cdn/shop/files/3_f308a957-5df3-4836-879b-e79f6ca6c06e.webp?v=1773425645&width=1024'
+                    'assets/products/f08a238a4b52.webp',
+                    'assets/products/62bda4523e30.webp',
+                    'assets/products/1e4ac2e10e4e.webp'
                 ] },
                 { name: 'Brown', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__22821.webp?v=1773425645&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-make-hi__22831.jpg?v=1773425645&width=1024',
-                    'https://vintares.com/cdn/shop/files/4_547c6650-754a-4c32-8094-621274069c9c.webp?v=1773425645&width=1024'
+                    'assets/products/0c6149f146f2.webp',
+                    'assets/products/e5cc1724ce48.webp',
+                    'assets/products/64d13bad551c.webp'
                 ] },
                 { name: 'Red', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__22822.webp?v=1773425645&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-make-hi__22833.jpg?v=1773425828&width=1024',
-                    'https://vintares.com/cdn/shop/files/5_df4f70cf-d040-42c5-bd63-c3e09ce33143.webp?v=1773425828&width=1024'
+                    'assets/products/dc0390a4e986.webp',
+                    'assets/products/976240a91110.webp',
+                    'assets/products/32f16b59942c.webp'
                 ] },
                 { name: 'White', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__22823.webp?v=1773425828&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-make-hi__22832.jpg?v=1773425828&width=1024',
-                    'https://vintares.com/cdn/shop/files/6_00a03953-b4eb-4075-904c-aa18da24f990.webp?v=1773425828&width=1024'
+                    'assets/products/c73dcb746fdd.webp',
+                    'assets/products/ba6a75ea5aff.webp',
+                    'assets/products/0267e9a9654a.webp'
                 ] },
                 { name: 'Navy', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__22824.webp?v=1773425828&width=1024',
-                    'https://vintares.com/cdn/shop/files/7_c3cd2e80-00eb-4139-9d30-ac5218dc887f.webp?v=1773425828&width=1024'
+                    'assets/products/f9b77768a3dc.webp',
+                    'assets/products/68e7eb7fdd2b.webp'
                 ] }
             ],
             sizes: ['2XS', 'XS', 'S', 'M', 'L', 'XL']
@@ -819,24 +819,24 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'White', images: [
-                    'https://vintares.com/cdn/shop/files/freepik_char1-character-identity-reference.-use-only-the-person-from-char1-face.-discard-all-clothing-from-char1-.-img1-primary-clothing-item.-dress-the-person-using-only-the-clothing_127e1054-bea0-4e3f-850c-7233261b8e52.jpg?v=1774546212&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_background-is-solid-efefef-and-apply-soft-shadow.-change-the-stance-of-the-model-to-the-back_0001.jpg?v=1774547008&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_use-img1-as-the-reference-product.-generate-a-clean-ecommerce-flatlay-topdown-view-perfectly-straight-alignment-centered-composition-solid-efefef-background.-remove-hanger-and_e64691e5-b725-4270-8c40-72175a54f9f2.webp?v=1774547008&width=1024'
+                    'assets/products/9637591ba4c3.webp',
+                    'assets/products/8bc738a1646e.webp',
+                    'assets/products/9513479cc556.webp'
                 ] },
                 { name: 'Olive Green', images: [
-                    'https://vintares.com/cdn/shop/files/freepik_char1-character-identity-reference.-use-only-the-person-from-char1-face.-discard-all-clothing-from-char1-.-img1-primary-clothing-item.-dress-the-person-using-only-the-clothing_3460ee9c-82f6-4cf3-a5b1-e2c1e0753705.jpg?v=1774547008&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_background-is-solid-efefef-and-apply-soft-shadow.-change-the-stance-of-the-model-to-the-back._0001_1.jpg?v=1774547008&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_use-img1-as-the-reference-product.-generate-a-clean-ecommerce-flatlay-topdown-view-perfectly-straight-alignment-centered-composition-solid-efefef-background.-remove-hanger-and_7211760d-9208-41e3-805d-727bf6030567.webp?v=1774547008&width=1024'
+                    'assets/products/002b5eb59b1b.webp',
+                    'assets/products/cbc111599c6e.webp',
+                    'assets/products/fd4a594f3f86.webp'
                 ] },
                 { name: 'Brown', images: [
-                    'https://vintares.com/cdn/shop/files/freepik_char1-character-identity-reference.-use-only-the-person-from-char1-face.-discard-all-clothing-from-char1-.-img1-primary-clothing-item.-dress-the-person-using-only-the-clothing_a23b294d-ce98-401c-b36d-3787c4db5451.jpg?v=1774547008&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_background-is-solid-efefef-and-apply-soft-shadow.-change-the-stance-of-the-model-to-the-back.-one-foot-forward.-one-hand-on-the-side-pocket_0001_1_1.jpg?v=1774547008&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_use-img1-as-the-reference-product.-generate-a-clean-ecommerce-flatlay-topdown-view-perfectly-straight-alignment-centered-composition-solid-efefef-background.-remove-hanger-and_86ff6b2b-07d5-4659-8eeb-21467cdc8085.webp?v=1774547008&width=1024'
+                    'assets/products/3983d4e4b58e.webp',
+                    'assets/products/54a4964c5aa0.webp',
+                    'assets/products/5be2fb85a740.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik_char1-character-identity-reference.-use-only-the-person-from-char1-face.-discard-all-clothing-from-char1-.-img1-primary-clothing-item.-dress-the-person-using-only-the-clothing_e90862f2-fa50-4132-936d-29092c55e763.jpg?v=1774547008&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_background-is-solid-efefef-and-apply-soft-shadow.-change-the-stance-of-the-model-to-the-back.-one-foot-forward.-one-hand-on-the-side-pocket_0001_1.jpg?v=1774547008&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_use-img1-as-the-reference-product.-generate-a-clean-ecommerce-flatlay-topdown-view-perfectly-straight-alignment-centered-composition-solid-efefef-background.-remove-hanger-and_42bc3d25-aafb-4b98-b5fd-d02fc05ded22.webp?v=1774547008&width=1024'
+                    'assets/products/f1066e1fa885.webp',
+                    'assets/products/28c9597e3204.webp',
+                    'assets/products/4e333e670a1f.webp'
                 ] }
             ],
             sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL']
@@ -850,14 +850,14 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'White', images: [
-                    'https://vintares.com/cdn/shop/files/freepik_char1-character-identity-reference.-use-only-the-person-from-char1-face.-discard-all-clothing-from-char1-.-img1-primary-clothing-item.-dress-the-person-using-only-the-clothing_153fa78f-df3a-453f-8d83-65ed1654363d.webp?v=1774543279&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_background-is-solid-efefef-and-apply-soft-shadow.-change-the-stance-of-the-model-to-the-back._0001.webp?v=1774543922&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_use-img1-as-the-reference-product.-generate-a-clean-ecommerce-flatlay-topdown-view-perfectly-straight-alignment-centered-composition-solid-efefef-background.-remove-hanger-and_e8280104-8849-4f1f-820b-362fe9565d12.webp?v=1774543922&width=1024'
+                    'assets/products/b9a10127d8f1.webp',
+                    'assets/products/d21d26dc6fe7.webp',
+                    'assets/products/10192a34680c.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik_char1-character-identity-reference.-use-only-the-person-from-char1-face.-discard-all-clothing-from-char1-.-img1-primary-clothing-item.-dress-the-person-using-only-the-clothing_3e1d26ad-7b99-4f82-96d3-db3bbb597ed8.jpg?v=1774543922&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_background-is-solid-efefef-and-apply-soft-shadow.-change-the-stance-of-the-model-to-the-right-side-make-him-oblivious-of-the-camera_0001.jpg?v=1774543928&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik_use-img1-as-the-reference-product.-generate-a-clean-ecommerce-flatlay-topdown-view-perfectly-straight-alignment-centered-composition-solid-efefef-background.-remove-hanger-and_e113bfd3-04e0-450e-9d93-2d8e2266b438.webp?v=1774543928&width=1024'
+                    'assets/products/292bedf3b4b8.webp',
+                    'assets/products/4381bea82317.webp',
+                    'assets/products/a0e74a7a31da.webp'
                 ] }
             ],
             sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL']
@@ -871,24 +871,24 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Brown', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__22740.webp?v=1773405867&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__22749.webp?v=1773407407&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__22746.webp?v=1773407407&width=1024'
+                    'assets/products/f4fcd26b85c5.webp',
+                    'assets/products/8ddccbbf307b.webp',
+                    'assets/products/0849ce5d9801.webp'
                 ] },
                 { name: 'Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__22741.webp?v=1773407407&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__22750.webp?v=1773407407&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-shirt-in-img1-into-the-col__22744.webp?v=1773407407&width=1024'
+                    'assets/products/bada3f9dd640.webp',
+                    'assets/products/e52613ddbe91.webp',
+                    'assets/products/6599651a8430.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__22742.webp?v=1773407407&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__22752.webp?v=1773407407&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-shirt-into-color-black__22747.webp?v=1773407407&width=1024'
+                    'assets/products/0d8b43817d4d.webp',
+                    'assets/products/254b14576aad.webp',
+                    'assets/products/f4295fe5449a.webp'
                 ] },
                 { name: 'White', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__22743.webp?v=1773407407&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__22751.webp?v=1773407407&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-shirt-into-color-white__22748.webp?v=1773407407&width=1024'
+                    'assets/products/30ac072e2788.webp',
+                    'assets/products/f1176689d9e3.webp',
+                    'assets/products/37b3d02a03c7.webp'
                 ] }
             ],
             sizes: ['XS', 'S', 'M', 'L', 'XL']
@@ -902,29 +902,29 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__22725.jpg?v=1773402676&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__22732.jpg?v=1773403798&width=1024',
-                    'https://vintares.com/cdn/shop/files/1_1a2790f8-c925-4909-9cdb-e479a9913131.webp?v=1773403798&width=1024'
+                    'assets/products/9c1da7f63a4b.webp',
+                    'assets/products/706714c9c646.webp',
+                    'assets/products/871a4f4f18a4.webp'
                 ] },
                 { name: 'Red', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__22728.jpg?v=1773403798&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__22736.jpg?v=1773403798&width=1024',
-                    'https://vintares.com/cdn/shop/files/3_da2aef0a-f9b7-4498-b7bb-d87c8dab3fed.webp?v=1773403798&width=1024'
+                    'assets/products/76061feed8c2.webp',
+                    'assets/products/2b07fb6d6d6e.webp',
+                    'assets/products/259e8a0703ef.webp'
                 ] },
                 { name: 'White', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__22729.jpg?v=1773403798&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__22733.jpg?v=1773403798&width=1024',
-                    'https://vintares.com/cdn/shop/files/4_a469428d-ad35-4216-9768-b8d9ca435030.webp?v=1773403798&width=1024'
+                    'assets/products/07f2cda362df.webp',
+                    'assets/products/4015fe8dabff.webp',
+                    'assets/products/d6e5383ea4ef.webp'
                 ] },
                 { name: 'Navy', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__22730.jpg?v=1773403798&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__22731.jpg?v=1773403798&width=1024',
-                    'https://vintares.com/cdn/shop/files/5_0481d4a3-f2f5-4c62-b430-c7475c9150ac.webp?v=1773403798&width=1024'
+                    'assets/products/88452bc397ad.webp',
+                    'assets/products/a4f51debdb0d.webp',
+                    'assets/products/b157d4788615.webp'
                 ] },
                 { name: 'Khaki', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__22727.jpg?v=1773403798&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__22734.jpg?v=1773403798&width=1024',
-                    'https://vintares.com/cdn/shop/files/2_dfcd26f4-6e87-4529-9430-8754fe00f5f2.webp?v=1773403798&width=1024'
+                    'assets/products/95e358448f6f.webp',
+                    'assets/products/3ac9ebdc92c2.webp',
+                    'assets/products/7a4c96fe7ddf.webp'
                 ] }
             ],
             sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL']
@@ -938,40 +938,40 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__41140.webp?v=1773312732&width=1024',
-                    'https://vintares.com/cdn/shop/files/6_37fe96e2-26ec-4061-8ad3-9e63d3f95b6f.webp?v=1773312732&width=1024'
+                    'assets/products/395da749a925.webp',
+                    'assets/products/704379a74c58.webp'
                 ] },
                 { name: 'Green', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__41144.webp?v=1773312732&width=1024',
-                    'https://vintares.com/cdn/shop/files/8_0b406677-ec05-4a0a-b8e8-0b897fbb5300.webp?v=1773312732&width=1024'
+                    'assets/products/bc78d03ea1df.webp',
+                    'assets/products/aa904e9a5db2.webp'
                 ] },
                 { name: 'Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__41139.webp?v=1773312732&width=1024',
-                    'https://vintares.com/cdn/shop/files/5_0087d447-130d-443c-8000-7417a2ceed6e.webp?v=1773312732&width=1024'
+                    'assets/products/8451d41ee097.webp',
+                    'assets/products/d6e3a8020218.webp'
                 ] },
                 { name: 'Purple', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__41138_076d9b68-0533-4023-8d43-027047a12e2e.webp?v=1773313339&width=1024',
-                    'https://vintares.com/cdn/shop/files/4_b8203c15-e374-4d05-a72d-91efeda9e019.webp?v=1773313339&width=1024'
+                    'assets/products/b541d2376d7f.webp',
+                    'assets/products/2853127b5579.webp'
                 ] },
                 { name: 'Yellow', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__41135.webp?v=1773313339&width=1024',
-                    'https://vintares.com/cdn/shop/files/2_ea9ab9db-8086-44a6-915c-26d9b01f2122.webp?v=1773313339&width=1024'
+                    'assets/products/c63f3022067f.webp',
+                    'assets/products/255f71ab73fa.webp'
                 ] },
                 { name: 'Teal', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__41142.webp?v=1773313339&width=1024',
-                    'https://vintares.com/cdn/shop/files/1_06c868cc-6681-43e5-bd3f-b484fa96dbba.webp?v=1773313339&width=1024'
+                    'assets/products/b969a5012040.webp',
+                    'assets/products/c11a853d36c4.webp'
                 ] },
                 { name: 'Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__41137.webp?v=1773313339&width=1024',
-                    'https://vintares.com/cdn/shop/files/3_0088ff41-8fd4-4a53-a4c4-1df5f41719ff.webp?v=1773313339&width=1024'
+                    'assets/products/d23f72aee319.webp',
+                    'assets/products/33253a654b6d.webp'
                 ] },
                 { name: 'Red', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__41143.webp?v=1773313339&width=1024',
-                    'https://vintares.com/cdn/shop/files/9_ff865494-8c1b-4567-a890-74589505af3b.webp?v=1773313339&width=1024'
+                    'assets/products/4abaabf14e20.webp',
+                    'assets/products/7307d9553b6c.webp'
                 ] },
                 { name: 'Orange', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__91280.webp?v=1773313339&width=1024',
-                    'https://vintares.com/cdn/shop/files/7_742ae64c-220a-4e27-9809-e577155747e8.webp?v=1773313339&width=1024'
+                    'assets/products/7b2d66f681f4.webp',
+                    'assets/products/aa6f344373f1.webp'
                 ] }
             ],
             sizes: ['3XS', '2XS', 'XS', 'S', 'M', 'L', 'XL', '2XL', '3XL']
@@ -985,34 +985,34 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Sky Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-of-the-image-into-square__41118.webp?v=1773263586&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__41133.webp?v=1773263586&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-shirt-in-img1-into-the-col__41112.webp?v=1773263586&width=1024'
+                    'assets/products/ca12aff96deb.webp',
+                    'assets/products/405ba0eca925.webp',
+                    'assets/products/33d02745ed38.webp'
                 ] },
                 { name: 'Olive Green', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-of-the-image-into-square__41121.webp?v=1773263586&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__41127.webp?v=1773263586&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-shirt-in-img1-into-the-col__41116.webp?v=1773263586&width=1024'
+                    'assets/products/965fed59957e.webp',
+                    'assets/products/17e1b68ef9a1.webp',
+                    'assets/products/6e31a5f1e186.webp'
                 ] },
                 { name: 'White', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-of-the-image-into-square__41119.webp?v=1773263586&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__41132.webp?v=1773263586&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-shirt-in-img1-into-the-col__41115.webp?v=1773263586&width=1024'
+                    'assets/products/9a747bdee73b.webp',
+                    'assets/products/9dbf3e16bf63.webp',
+                    'assets/products/49ab40bbabc3.webp'
                 ] },
                 { name: 'Khaki', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__make-the-model-wear-the-shirt-in-the-second-photo-__41126.webp?v=1773263586&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__41125.webp?v=1773263586&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-shirt-in-img1-into-the-col__41113.webp?v=1773263586&width=1024'
+                    'assets/products/ddeea044c0d8.webp',
+                    'assets/products/92ddb845529d.webp',
+                    'assets/products/521abe521cc1.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-shirt-inb-img1-into-color-__41128.webp?v=1773263586&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__41129.webp?v=1773263586&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__41111.webp?v=1773263586&width=1024'
+                    'assets/products/1a03b6236f03.webp',
+                    'assets/products/e75c6b67339f.webp',
+                    'assets/products/a4967dbfec80.webp'
                 ] },
                 { name: 'Navy', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-shirt-inb-img1-into-color-__41130.webp?v=1773263586&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__41131.webp?v=1773263586&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-shirt-in-img1-into-the-col__41117.webp?v=1773263586&width=1024'
+                    'assets/products/4ed35717f6f6.webp',
+                    'assets/products/75b7350e9927.webp',
+                    'assets/products/4fd6c9820be4.webp'
                 ] }
             ],
             sizes: ['S', 'M', 'L', 'XL']
@@ -1026,14 +1026,14 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'White', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__41105.webp?v=1773257822&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-abck-amke-hi__41106.webp?v=1773257822&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-shirt-into-color-white__41110.webp?v=1773258392&width=1024'
+                    'assets/products/32236473d63e.webp',
+                    'assets/products/868b06df81ef.webp',
+                    'assets/products/f9b7a13d3d1e.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__41103.webp?v=1773953460&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-abck-amke-hi__41104.webp?v=1773953460&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__41109.webp?v=1773258392&width=1024'
+                    'assets/products/d2139b6ace5a.webp',
+                    'assets/products/1969cedaf7fd.webp',
+                    'assets/products/36bd8a13a485.webp'
                 ] }
             ],
             sizes: ['2XS', 'XS', 'S', 'M', 'L']
@@ -1047,29 +1047,29 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__41089.webp?v=1773256115&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-image-to-the-back-make-hi__41098.webp?v=1773256115&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__41085.webp?v=1773256115&width=1024'
+                    'assets/products/61b0c3fe903f.webp',
+                    'assets/products/c4573994ad19.webp',
+                    'assets/products/d2eff3fbfa05.webp'
                 ] },
                 { name: 'Light Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__41093.webp?v=1773256115&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-image-to-the-back-make-hi__41095.webp?v=1773256115&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__41086.webp?v=1773256115&width=1024'
+                    'assets/products/6e756a2823af.webp',
+                    'assets/products/96e32ecedfeb.webp',
+                    'assets/products/0144bb8d0c05.webp'
                 ] },
                 { name: 'White', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__41090.webp?v=1773256115&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-image-to-the-back-make-hi__41094.webp?v=1773256115&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__41084.webp?v=1773256115&width=1024'
+                    'assets/products/0b0ccedd6188.webp',
+                    'assets/products/c3ca0fa87958.webp',
+                    'assets/products/232f046abe07.webp'
                 ] },
                 { name: 'Light Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__41092.webp?v=1773256115&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-image-to-the-back-make-hi__41096.webp?v=1773256115&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__41087.webp?v=1773256115&width=1024'
+                    'assets/products/9d03b9cbee79.webp',
+                    'assets/products/b64d4f64af7f.webp',
+                    'assets/products/83637c3363d6.webp'
                 ] },
                 { name: 'Teal', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__41091.webp?v=1773256115&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-image-to-the-back-make-hi__41097.webp?v=1773256115&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__41088.webp?v=1773256115&width=1024'
+                    'assets/products/2eb11cefb2a7.webp',
+                    'assets/products/c4bbe538f0b2.webp',
+                    'assets/products/f68eb92f47fa.webp'
                 ] }
             ],
             sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL', '3XL']
@@ -1083,49 +1083,49 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Light Beige', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-wearing-identical-produc__91308.webp?v=1772275355&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-torso-t__91314.webp?v=1772275355&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-reference-product-topdown-flatlay-perf__31904_96638d5e-a694-40d6-bf05-f104395fa4ff.webp?v=1772275823&width=1024'
+                    'assets/products/5fbfa00baf94.webp',
+                    'assets/products/5e7a7c28d6d0.webp',
+                    'assets/products/e172fbd66d17.webp'
                 ] },
                 { name: 'Light Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__use-the-exact-product-from-img1-worn-by-model-cent__31910.webp?v=1772275823&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-the-exact-product-from-img1-worn-by-model-squa__31911.webp?v=1772275823&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__31900_d249abae-a9c2-4c03-bfce-ba47d696ab20.webp?v=1772275823&width=1024'
+                    'assets/products/ed2cea214843.webp',
+                    'assets/products/53f244b67d0d.webp',
+                    'assets/products/11b47f4d6e88.webp'
                 ] },
                 { name: 'Dusty Pink', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__use-identical-product-from-reference-held-by-model__31907.webp?v=1772275823&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-left-fo__91309.webp?v=1772275823&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__31903_2c0d0c3e-5129-47ba-9066-9173a5017b3b.webp?v=1772275823&width=1024'
+                    'assets/products/628348be60fe.webp',
+                    'assets/products/7304f1c2c42e.webp',
+                    'assets/products/b32f320c65c5.webp'
                 ] },
                 { name: 'Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__use-the-exact-product-shown-in-the-reference-image__31913.webp?v=1772275823&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-the-exact-product-from-img1-worn-by-model-squa__31912.webp?v=1772275823&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__31898_afa779f5-ab46-4c7c-84da-c9de5c943562.webp?v=1772275823&width=1024'
+                    'assets/products/dc7bbe2677f3.webp',
+                    'assets/products/6c58e5aba2ef.webp',
+                    'assets/products/55bb63d9cfb4.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__use-the-exact-product-shown-zoomed-out-composition__31909.webp?v=1772275823&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-torso-t__91311.webp?v=1772275823&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__31901_d264310a-5440-417b-bc67-87d526284126.webp?v=1772275823&width=1024'
+                    'assets/products/164d021234dd.webp',
+                    'assets/products/5cd8143e97e6.webp',
+                    'assets/products/4eb214fb45af.webp'
                 ] },
                 { name: 'Light Green', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__use-the-exact-product-from-img1-worn-by-a-male-mod__31908.webp?v=1772275823&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-torso-t__91312.webp?v=1772275823&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__31902_7e51da13-524d-487a-b182-3ae90c0b3304.webp?v=1772275823&width=1024'
+                    'assets/products/1541aec29da4.webp',
+                    'assets/products/e7eb68e26c92.webp',
+                    'assets/products/3a9bfc39924d.webp'
                 ] },
                 { name: 'Sage Green', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__replicate-product-exactly-from-reference-model-wit__31906.webp?v=1772275823&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-full-pr__91310.webp?v=1772275823&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__31905_54ebf202-b15f-41a3-a150-d98878cac1d6.webp?v=1772275823&width=1024'
+                    'assets/products/7f25fae3f16c.webp',
+                    'assets/products/0a13776340b8.webp',
+                    'assets/products/cbcabfd5d098.webp'
                 ] },
                 { name: 'Dark Navy', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__produce-a-studioshot-with-the-identical-product-fr__22985.webp?v=1772275823&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-the-exact-product-from-reference-worn-by-a-mal__22986.webp?v=1772275823&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__31895_eedb2465-4c80-4808-a90c-d0dda5c14b6c.webp?v=1772275886&width=1024'
+                    'assets/products/488428ce1a10.webp',
+                    'assets/products/e4f02036afe3.webp',
+                    'assets/products/fd6af7b594b2.webp'
                 ] },
                 { name: 'White', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoomed-out-face-forward-__91307.webp?v=1772275886&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-torso-t__91313.webp?v=1772275886&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__31894_e9d5a05b-1306-4c7c-a995-855b2cc25a08.webp?v=1772275823&width=1024'
+                    'assets/products/72887c4862c6.webp',
+                    'assets/products/9d91bbdba3dd.webp',
+                    'assets/products/a257ab7ac890.webp'
                 ] }
             ],
             sizes: ['2XS', 'XS', 'S', 'M', 'L', 'XL']
@@ -1139,19 +1139,19 @@
             badge: null,
             colorVariants: [
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__14353.webp?v=1772733974&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__14359.webp?v=1772733974&width=1024',
-                    'https://vintares.com/cdn/shop/files/6_db32af78-f7ef-44d2-af35-e6fa272ceeff.webp?v=1772733974&width=1024'
+                    'assets/products/1e0f3348fd48.webp',
+                    'assets/products/e2745d1e7e12.webp',
+                    'assets/products/cbab7bd754b4.webp'
                 ] },
                 { name: 'Beige', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__14354.webp?v=1772733974&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__14357.webp?v=1772733974&width=1024',
-                    'https://vintares.com/cdn/shop/files/7_e7f4ef89-aa01-4d18-a898-0c3bd4ae8fab.webp?v=1772733974&width=1024'
+                    'assets/products/15ba424501f0.webp',
+                    'assets/products/8886cafbbf0a.webp',
+                    'assets/products/df207465a803.webp'
                 ] },
                 { name: 'White', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__14355.webp?v=1772733974&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__14356.webp?v=1772733974&width=1024',
-                    'https://vintares.com/cdn/shop/files/5_f77b29ed-c4a7-4438-950a-309cf9eb87e4.webp?v=1772733974&width=1024'
+                    'assets/products/6c7d34a03de3.webp',
+                    'assets/products/d5ff80e786a1.webp',
+                    'assets/products/89f21c725db0.webp'
                 ] }
             ],
             sizes: ['2XS', 'XS', 'S', 'M', 'L', 'XL']
@@ -1165,24 +1165,24 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Light Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-of-the-image-into-square__61065.webp?v=1772201394&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-note-th__61071.webp?v=1772201394&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__61060.webp?v=1772201394&width=1024'
+                    'assets/products/6b26917f3285.webp',
+                    'assets/products/8c1e469da093.webp',
+                    'assets/products/55e44d945e8e.webp'
                 ] },
                 { name: 'White', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-of-the-image-into-square__61067.webp?v=1772201394&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-note-th__61069.webp?v=1772201394&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__61061.webp?v=1772201394&width=1024'
+                    'assets/products/5bc349624f78.webp',
+                    'assets/products/bcf1b2501337.webp',
+                    'assets/products/7fc77291f89f.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-of-the-image-into-square__61064.webp?v=1772201394&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-note-th__61070.webp?v=1772201394&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-top-into-color-black__61063.webp?v=1772201394&width=1024'
+                    'assets/products/dc1b6e7ea21b.webp',
+                    'assets/products/9b2993be99d5.webp',
+                    'assets/products/c66890389866.webp'
                 ] },
                 { name: 'Dark Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-of-the-image-into-square__61068.webp?v=1772201394&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-note-th__61072.webp?v=1772201394&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__61062.webp?v=1772201394&width=1024'
+                    'assets/products/523981740275.webp',
+                    'assets/products/671f7c196d8b.webp',
+                    'assets/products/882bedfd3143.webp'
                 ] }
             ],
             sizes: ['XS', 'S', 'M', 'L', 'XL']
@@ -1196,29 +1196,29 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__61047.webp?v=1772197954&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-make-hi__61056.webp?v=1772197955&width=1024',
-                    'https://vintares.com/cdn/shop/files/2_216fd845-d5ea-4c78-85ad-70e9f7efc7e7.webp?v=1772196295&width=1024'
+                    'assets/products/b26bcc9b7690.webp',
+                    'assets/products/750d3b59c395.webp',
+                    'assets/products/ab09ad0e354f.webp'
                 ] },
                 { name: 'Burgundy', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__61049.webp?v=1772197954&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-make-hi__61053.webp?v=1772197954&width=1024',
-                    'https://vintares.com/cdn/shop/files/1_056b9c69-bfed-4047-8ba7-ee2568502977.webp?v=1772196295&width=1024'
+                    'assets/products/d57484cad453.webp',
+                    'assets/products/f0daf2f01cb2.webp',
+                    'assets/products/1d7bc305ff7b.webp'
                 ] },
                 { name: 'Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__61058.webp?v=1772198472&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-make-hi__61057.webp?v=1772198472&width=1024',
-                    'https://vintares.com/cdn/shop/files/3_6a5c396f-43d2-4eaa-a08d-62a1896f1056.webp?v=1772198472&width=1024'
+                    'assets/products/47306c3e734e.webp',
+                    'assets/products/dda377e1807d.webp',
+                    'assets/products/bdb7353c1737.webp'
                 ] },
                 { name: 'White', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__61050.webp?v=1772198472&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-make-hi__61054.webp?v=1772198472&width=1024',
-                    'https://vintares.com/cdn/shop/files/4_22049eab-b6f0-4bd1-9092-43d22df118cc.webp?v=1772198472&width=1024'
+                    'assets/products/5028891a7ad5.webp',
+                    'assets/products/3db476b255e0.webp',
+                    'assets/products/6d522f729bc1.webp'
                 ] },
                 { name: 'Olive Green', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-use-the-exact-product-sh__61051.webp?v=1772198472&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-make-hi__61055.webp?v=1772198472&width=1024',
-                    'https://vintares.com/cdn/shop/files/5_259d57f0-cacc-44b0-bb80-41319aea7dcb.webp?v=1772198472&width=1024'
+                    'assets/products/b53b7ff62c43.webp',
+                    'assets/products/1f20ec38d9e7.webp',
+                    'assets/products/f912b9575451.webp'
                 ] }
             ],
             sizes: ['XS', 'S', 'M', 'L']
@@ -1232,28 +1232,28 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__23817.webp?v=1771526186&width=1024',
-                    'https://vintares.com/cdn/shop/files/1_711d955c-1785-4f8a-8a0f-724c9090913b.webp?v=1771526186&width=1024'
+                    'assets/products/d8a54213c04a.webp',
+                    'assets/products/8ebd6bf6333d.webp'
                 ] },
                 { name: 'Light Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__23819.webp?v=1771526186&width=1024',
-                    'https://vintares.com/cdn/shop/files/2_4c4193fe-53ac-4edf-b187-a8b5f1fdd2b1.webp?v=1771526186&width=1024'
+                    'assets/products/d2de5b9edac8.webp',
+                    'assets/products/10d8704321a6.webp'
                 ] },
                 { name: 'Green', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__23821.webp?v=1771526186&width=1024',
-                    'https://vintares.com/cdn/shop/files/4_e812c1c5-508e-4d44-8869-ae790b73c139.webp?v=1771526186&width=1024'
+                    'assets/products/2c71f013780d.webp',
+                    'assets/products/19b38d7d7be8.webp'
                 ] },
                 { name: 'Yellow', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__23824.webp?v=1771526186&width=1024',
-                    'https://vintares.com/cdn/shop/files/5_aca867d4-790f-4887-85ff-cdcf08ef324a.webp?v=1771526186&width=1024'
+                    'assets/products/0fdc5833eec7.webp',
+                    'assets/products/d54136c60739.webp'
                 ] },
                 { name: 'Red', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__23822.webp?v=1771526186&width=1024',
-                    'https://vintares.com/cdn/shop/files/6_bddeeed8-6bf8-4077-a7c2-90d36c1a16d1.webp?v=1771526186&width=1024'
+                    'assets/products/c64975f76ef0.webp',
+                    'assets/products/ed9e9f1496db.webp'
                 ] },
                 { name: 'Navy', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__23823.webp?v=1771526186&width=1024',
-                    'https://vintares.com/cdn/shop/files/7_663d0666-6907-4cb3-9d9a-8190f5f69e8e.webp?v=1771526186&width=1024'
+                    'assets/products/6f685539a2a9.webp',
+                    'assets/products/dc98a13ef953.webp'
                 ] }
             ],
             sizes: ['2XS', 'XS', 'S', 'M', 'L', 'XL']
@@ -1267,34 +1267,34 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Red', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__73193.webp?v=1771520490&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-to-the-side-no-w__73200.webp?v=1771520490&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__73186.webp?v=1771520490&width=1024'
+                    'assets/products/ddb6145d26c0.webp',
+                    'assets/products/69110facb7e0.webp',
+                    'assets/products/03f3573dff8a.webp'
                 ] },
                 { name: 'Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__73192.webp?v=1771520490&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-to-the-side-no-w__73199.webp?v=1771520490&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__73185.webp?v=1771520490&width=1024'
+                    'assets/products/7917d6b62a33.webp',
+                    'assets/products/077c0e988504.webp',
+                    'assets/products/0e1bbd2ede00.webp'
                 ] },
                 { name: 'Yellow', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__73194.webp?v=1771520490&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-to-the-side-no-w__73202.webp?v=1771520490&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__73188.webp?v=1771520490&width=1024'
+                    'assets/products/d0dffcc1623e.webp',
+                    'assets/products/e42607dce78f.webp',
+                    'assets/products/532699ee7d15.webp'
                 ] },
                 { name: 'Light Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__73195.webp?v=1771520490&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-to-the-side-no-w__73201.webp?v=1771520490&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__73189.webp?v=1771520490&width=1024'
+                    'assets/products/172b52f9749a.webp',
+                    'assets/products/b2b8157b4e46.webp',
+                    'assets/products/2e9be9e6ec26.webp'
                 ] },
                 { name: 'Green', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__73197.webp?v=1771520490&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-to-the-side-no-w__73203.webp?v=1771520490&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__73190.webp?v=1771520490&width=1024'
+                    'assets/products/20dbc7a113ff.webp',
+                    'assets/products/a85c568dbdb1.webp',
+                    'assets/products/7f5a2d72a068.webp'
                 ] },
                 { name: 'Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__73198.webp?v=1771520490&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-in-to-the-side-no-w__73204.webp?v=1771520490&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__73191.webp?v=1771520490&width=1024'
+                    'assets/products/6adc817eee14.webp',
+                    'assets/products/f0eb93e35ed3.webp',
+                    'assets/products/53b38d4f2dae.webp'
                 ] }
             ],
             sizes: ['2XS', 'XS', 'S', 'M', 'L', 'XL']
@@ -1308,14 +1308,14 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Navy', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__11242.webp?v=1771155354&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__character-reference-img1-change-the-stance-of-the-__11246.webp?v=1771155354&width=1024',
-                    'https://vintares.com/cdn/shop/files/3_806ec1bb-9f5f-47dc-9a7c-e0c3e977cca7.webp?v=1771155354&width=1024'
+                    'assets/products/3dc8cbc7925c.webp',
+                    'assets/products/cc1d8fe6cf8e.webp',
+                    'assets/products/06494d2d9183.webp'
                 ] },
                 { name: 'Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__11247.webp?v=1771155354&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__11245.webp?v=1771155354&width=1024',
-                    'https://vintares.com/cdn/shop/files/5_3765fa49-f46e-4a48-9331-6f9958f9bc81.webp?v=1771155354&width=1024'
+                    'assets/products/58a298897469.webp',
+                    'assets/products/c8202fa9d828.webp',
+                    'assets/products/94df3caf3ab6.webp'
                 ] }
             ],
             sizes: ['S', 'M', 'L', 'XL', '2XL']
@@ -1329,34 +1329,34 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-into-square-remove-the-background-__11221.webp?v=1771150613&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__11224.webp?v=1771150613&width=1024',
-                    'https://vintares.com/cdn/shop/files/1_40f8fc8a-1d99-482d-b1d8-06face64bc5e.webp?v=1771150613&width=1024'
+                    'assets/products/38db6be6d395.webp',
+                    'assets/products/b9892f40f9a5.webp',
+                    'assets/products/5b4f6762d59f.webp'
                 ] },
                 { name: 'Mint', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__11223.webp?v=1771150613&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__11225.webp?v=1771150613&width=1024',
-                    'https://vintares.com/cdn/shop/files/3_0fb98661-d9d9-47af-a71e-59bf2b1a4e38.webp?v=1771150613&width=1024'
+                    'assets/products/5e2069b0526b.webp',
+                    'assets/products/9d8e4e4c968e.webp',
+                    'assets/products/adfcc49ee415.webp'
                 ] },
                 { name: 'White', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-longsleeve-the-man-is-wearing__11227.webp?v=1771150613&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__11232.webp?v=1771150613&width=1024',
-                    'https://vintares.com/cdn/shop/files/5_56127771-51bb-4a45-a156-becc223e5e5c.webp?v=1771150613&width=1024'
+                    'assets/products/9a63d343b0af.webp',
+                    'assets/products/9fb597150dba.webp',
+                    'assets/products/b9f403ef55ad.webp'
                 ] },
                 { name: 'Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-long-sleeve__11229.webp?v=1771150613&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__11231.webp?v=1771150613&width=1024',
-                    'https://vintares.com/cdn/shop/files/2_b01017d6-bc07-401a-b160-da627a7e83bd.webp?v=1771150613&width=1024'
+                    'assets/products/443d6fde05b2.webp',
+                    'assets/products/9021b1076e4c.webp',
+                    'assets/products/9e095be6fae0.webp'
                 ] },
                 { name: 'Navy Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-long-sleeve__11228.webp?v=1771150613&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__11235.webp?v=1771150613&width=1024',
-                    'https://vintares.com/cdn/shop/files/6_a605f3de-652c-470a-a4f1-399794a48e4e.webp?v=1771150613&width=1024'
+                    'assets/products/39f88a3f1c90.webp',
+                    'assets/products/3fe9bee7b7d0.webp',
+                    'assets/products/f089f3cb8735.webp'
                 ] },
                 { name: 'Burgundy', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__reza-reza-char1-character-identity-referenceuse-on__11233.webp?v=1771150613&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__11234.webp?v=1771150613&width=1024',
-                    'https://vintares.com/cdn/shop/files/4_0759c748-350f-49be-9f89-f58712bfaf66.webp?v=1771150613&width=1024'
+                    'assets/products/9357b320be12.webp',
+                    'assets/products/7098ac2c54f9.webp',
+                    'assets/products/80aa96817ad1.webp'
                 ] }
             ],
             sizes: ['S', 'M', 'L', 'XL', '2XL']
@@ -1371,14 +1371,14 @@
             originalPrice: 139.90,
             badge: 'SALE',
             images: [
-                'https://vintares.com/cdn/shop/files/freepik_create-an-image-of-a-caucasian-man-wear-the-cargo-pants-in-img1-.-make-him-wear-a-plain-white-tshirt-and-a-boots-shoes.-cut-off-the-image-from-his-hip-down-to-his-feet.-make-o_2a30b6b6-50ef-480c-8b8a-585e246996c5.jpg?v=1774614265&width=1024',
-                'https://vintares.com/cdn/shop/files/freepik_chnge-the-stance-of-the-model-in-img1-to-the-back.-refer-to-img2-for-the-details-of-the-nack-of-the-pants._0001.jpg?v=1774614856&width=1024',
-                'https://vintares.com/cdn/shop/files/freepik_use-img1-as-the-reference-product.-generate-a-clean-ecommerce-flatlay-topdown-view-perfectly-straight-alignment-centered-composition-solid-efefef-background.-remove-hanger-and_e5db12dc-c6f6-480a-9a51-1ce3dcfa3750.webp?v=1774614856&width=1024',
-                'https://vintares.com/cdn/shop/files/freepik_create-an-image-of-a-caucasian-man-wear-the-cargo-pants-in-img1-.-make-him-wear-a-plain-white-tshirt-and-a-boots-shoes.-cut-off-the-image-from-his-hip-down-to-his-feet.-make-o_faf899c2-f94d-4f3c-ade8-3640bc8ea8a1.jpg?v=1774614856&width=1024'
+                'assets/products/883f74ba553e.webp',
+                'assets/products/d2127ec76775.webp',
+                'assets/products/34ca880bb93f.webp',
+                'assets/products/673798f15630.webp'
             ],
             colorVariants: [
-                { name: 'Olive Gray',    image: 'https://vintares.com/cdn/shop/files/freepik_create-an-image-of-a-caucasian-man-wear-the-cargo-pants-in-img1-.-make-him-wear-a-plain-white-tshirt-and-a-boots-shoes.-cut-off-the-image-from-his-hip-down-to-his-feet.-make-o_2a30b6b6-50ef-480c-8b8a-585e246996c5.jpg?v=1774614265&width=1024' },
-                { name: 'Charcoal Gray', image: 'https://vintares.com/cdn/shop/files/freepik_create-an-image-of-a-caucasian-man-wear-the-cargo-pants-in-img1-.-make-him-wear-a-plain-white-tshirt-and-a-boots-shoes.-cut-off-the-image-from-his-hip-down-to-his-feet.-make-o_faf899c2-f94d-4f3c-ade8-3640bc8ea8a1.jpg?v=1774614856&width=1024' }
+                { name: 'Olive Gray',    image: 'assets/products/883f74ba553e.webp' },
+                { name: 'Charcoal Gray', image: 'assets/products/673798f15630.webp' }
             ],
             sizes: ['XS', 'S', 'M', 'L', 'XL']
         },
@@ -1390,16 +1390,16 @@
             originalPrice: 119.90,
             badge: 'SALE',
             images: [
-                'https://vintares.com/cdn/shop/files/freepik_create-an-image-of-a-caucasian-man-wear-the-pants-in-img1-make-him-wear-a-plain-white-tshirt-tucked-in-inside-the-pants.-cut-off-the-image-from-his-hip-down-to-his-feet-make-h_ff8eddba-d951-4333-a467-4c3301d39502.png?v=1774471122&width=1024',
-                'https://vintares.com/cdn/shop/files/freepik_change-the-stance-of-the-model-in-img1-to-the-back.-refer-to-img2-fro-the-detsail-of-the-back-of-the-pants-background-should-be-efefef-and-apply-a-soft-shadow._0001.jpg?v=1774471655&width=1024',
-                'https://vintares.com/cdn/shop/files/freepik_create-an-image-of-a-caucasian-man-wear-the-pants-in-img1-make-him-wear-a-plain-white-tshirt-tucked-in-inside-the-pants.-cut-off-the-image-from-his-hip-down-to-his-feet-make-h_f302667f-a762-49d3-b4ae-a13497a50153.png?v=1774471655&width=1024',
-                'https://vintares.com/cdn/shop/files/freepik_create-an-image-of-a-caucasian-man-wear-the-pants-in-img1-make-him-wear-a-plain-white-tshirt-tucked-in-inside-the-pants.-cut-off-the-image-from-his-hip-down-to-his-feet-make-h_2d4740e9-4e2e-4513-923d-d809ddc1dc7b.png?v=1774472044&width=1024'
+                'assets/products/00309f2d060e.webp',
+                'assets/products/942e065d0f22.webp',
+                'assets/products/127e6a473be8.webp',
+                'assets/products/057abddc53d5.webp'
             ],
             colorVariants: [
-                { name: 'Khaki Beige', image: 'https://vintares.com/cdn/shop/files/freepik_create-an-image-of-a-caucasian-man-wear-the-pants-in-img1-make-him-wear-a-plain-white-tshirt-tucked-in-inside-the-pants.-cut-off-the-image-from-his-hip-down-to-his-feet-make-h_ff8eddba-d951-4333-a467-4c3301d39502.png?v=1774471122&width=1024' },
-                { name: 'Navy Blue',   image: 'https://vintares.com/cdn/shop/files/freepik_create-an-image-of-a-caucasian-man-wear-the-pants-in-img1-make-him-wear-a-plain-white-tshirt-tucked-in-inside-the-pants.-cut-off-the-image-from-his-hip-down-to-his-feet-make-h_f302667f-a762-49d3-b4ae-a13497a50153.png?v=1774471655&width=1024' },
-                { name: 'Olive Green', image: 'https://vintares.com/cdn/shop/files/freepik_create-an-image-of-a-caucasian-man-wear-the-pants-in-img1-make-him-wear-a-plain-white-tshirt-tucked-in-inside-the-pants.-cut-off-the-image-from-his-hip-down-to-his-feet-make-h_2d4740e9-4e2e-4513-923d-d809ddc1dc7b.png?v=1774472044&width=1024' },
-                { name: 'Black',       image: 'https://vintares.com/cdn/shop/files/freepik_create-an-image-of-a-caucasian-man-wear-the-pants-in-img1-make-him-wear-a-plain-white-tshirt-tucked-in-inside-the-pants.-cut-off-the-image-from-his-hip-down-to-his-feet-make-h.jpg?v=1774472044&width=1024' }
+                { name: 'Khaki Beige', image: 'assets/products/00309f2d060e.webp' },
+                { name: 'Navy Blue',   image: 'assets/products/127e6a473be8.webp' },
+                { name: 'Olive Green', image: 'assets/products/057abddc53d5.webp' },
+                { name: 'Black',       image: 'assets/products/1867093e957b.webp' }
             ],
             sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL', '3XL']
         },
@@ -1412,45 +1412,45 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Olive Green', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__30470.webp?v=1773329566&width=1024',
-                    'https://vintares.com/cdn/shop/files/7_cb2d03e9-2ada-4dde-9fa2-3719dc9cdce5.webp?v=1773329566&width=1024'
+                    'assets/products/9238fe40c458.webp',
+                    'assets/products/f1e27b3d67c8.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__30476.webp?v=1773329566&width=1024',
-                    'https://vintares.com/cdn/shop/files/1_200d6410-14b1-4564-b8fe-bf41c97e7c9c.webp?v=1773329566&width=1024'
+                    'assets/products/e3779d38bc81.webp',
+                    'assets/products/d968b65adb71.webp'
                 ] },
                 { name: 'Navy Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__30475.webp?v=1773329566&width=1024',
-                    'https://vintares.com/cdn/shop/files/2_7ffa3b18-a31a-4b0c-9405-5324a1277d66.webp?v=1773329566&width=1024'
+                    'assets/products/d7fd1ef037ed.webp',
+                    'assets/products/5483eba78107.webp'
                 ] },
                 { name: 'Sky Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__30473.webp?v=1773329566&width=1024',
-                    'https://vintares.com/cdn/shop/files/3_7cc382b5-83a1-473c-ad4c-7c840e01ca3b.webp?v=1773329566&width=1024'
+                    'assets/products/ec5f062cc313.webp',
+                    'assets/products/a84b8e73940c.webp'
                 ] },
                 { name: 'Brown', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__30474.webp?v=1773329566&width=1024',
-                    'https://vintares.com/cdn/shop/files/4_c0bb1d32-2faf-49cb-92be-d8ed4cc7fcd0.webp?v=1773329566&width=1024'
+                    'assets/products/eabfe1ebdca6.webp',
+                    'assets/products/28f610e99dd3.webp'
                 ] },
                 { name: 'Light Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__30472.webp?v=1773329566&width=1024',
-                    'https://vintares.com/cdn/shop/files/5_d3b410e2-fd4c-424e-8f04-766c2e28fa47.webp?v=1773329566&width=1024'
+                    'assets/products/4476d55cdd54.webp',
+                    'assets/products/46f43cef6e8d.webp'
                 ] },
                 { name: 'Charcoal Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__30471.webp?v=1773329566&width=1024',
-                    'https://vintares.com/cdn/shop/files/6_336a4329-9b2a-4396-9a25-d1dba0c57cc7.webp?v=1773329566&width=1024'
+                    'assets/products/d8538e2d6c10.webp',
+                    'assets/products/4cf559bd525f.webp'
                 ] },
                 { name: 'Red', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__30468.webp?v=1773329566&width=1024',
-                    'https://vintares.com/cdn/shop/files/9_1276d71d-3566-444e-a470-905c9ef98705.webp?v=1773329566&width=1024'
+                    'assets/products/7c11be22fc6d.webp',
+                    'assets/products/1709898e1ec4.webp'
                 ] },
                 { name: 'Pink', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__30469.webp?v=1773329566&width=1024',
-                    'https://vintares.com/cdn/shop/files/8_2d31b1c0-ceba-4d32-909f-8ec1ee9a9ba3.webp?v=1773329566&width=1024'
+                    'assets/products/de5470818a49.webp',
+                    'assets/products/f8f770c37c33.webp'
                 ] },
                 { name: 'Khaki', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__char1-character-identity-referenceuse-only-the-per__30466.webp?v=1773329718&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-refer-t__30467.webp?v=1773329718&width=1024',
-                    'https://vintares.com/cdn/shop/files/10_68fce2f5-75ab-4d49-82b3-c625eeb042f0.webp?v=1773329718&width=1024'
+                    'assets/products/1638ab2cc128.webp',
+                    'assets/products/e7b079690dc9.webp',
+                    'assets/products/385a7bc94875.webp'
                 ] }
             ],
             sizes: ['30', '32', '34', '36', '38']
@@ -1464,14 +1464,14 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Slate Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-of-the-image-into-sqaure__41054.jpg?v=1773247880&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side__41056.jpg?v=1773247880&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__1313.webp?v=1773247880&width=1024'
+                    'assets/products/d015b59ab44f.webp?v=1773247880&width=1024',
+                    'assets/products/73480f6789de.webp?v=1773247880&width=1024',
+                    'assets/products/d2622b4fb7ec.webp?v=1773247880&width=1024'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-of-the-image-into-sqaure__41057.png?v=1773247880&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side__41059.webp?v=1773248140&width=1024',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-short-in-img1-into-color-b__41053.webp?v=1773248140&width=1024'
+                    'assets/products/e3316ac816b5.webp?v=1773247880&width=1024',
+                    'assets/products/86c5039a031a.webp?v=1773248140&width=1024',
+                    'assets/products/fdaa03adc88b.webp?v=1773248140&width=1024'
                 ] }
             ],
             sizes: ['2XS', 'XS', 'S', 'M', 'L', 'XL']
@@ -1485,14 +1485,14 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Slate Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-of-the-image-into-sqaure__41054.jpg',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side__41056.jpg',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__1313.webp'
+                    'assets/products/d015b59ab44f.webp',
+                    'assets/products/73480f6789de.webp',
+                    'assets/products/d2622b4fb7ec.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-of-the-image-into-sqaure__41057.png',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side__41059.webp',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-short-in-img1-into-color-b__41053.webp'
+                    'assets/products/e3316ac816b5.webp',
+                    'assets/products/86c5039a031a.webp',
+                    'assets/products/fdaa03adc88b.webp'
                 ] }
             ],
             sizes: ['2XS', 'XS', 'S', 'M', 'L', 'XL']
@@ -1506,29 +1506,29 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Slate Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__create-a-caucasian-man-wearing-the-short-in-img1-c__59377.webp',
-                    'https://vintares.com/cdn/shop/files/freepik__apply-the-color-of-the-short-in-img2-to-the-color-__59380.webp',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__59372.webp'
+                    'assets/products/78144c30a649.webp',
+                    'assets/products/46bbda579437.webp',
+                    'assets/products/1ad79d0133a5.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__create-a-caucasian-man-wearing-the-short-in-img1-c__59376.webp',
-                    'https://vintares.com/cdn/shop/files/freepik__apply-the-color-of-the-short-in-img2-to-the-color-__59383.webp',
-                    'https://vintares.com/cdn/shop/files/freepik__apply-the-color-of-the-short-in-img2-to-the-color-__44651.webp'
+                    'assets/products/f8f4ff93cbfd.webp',
+                    'assets/products/72cdf683fc45.webp',
+                    'assets/products/18ba8ba4731e.webp'
                 ] },
                 { name: 'Light Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__create-a-caucasian-man-wearing-the-short-in-img1-c__44653.webp',
-                    'https://vintares.com/cdn/shop/files/freepik__apply-the-color-of-the-short-in-img2-to-the-color-__59381.webp',
-                    'https://vintares.com/cdn/shop/files/freepik__apply-the-color-of-the-short-in-img2-to-the-color-__44652.webp'
+                    'assets/products/ad3894442296.webp',
+                    'assets/products/ff782dd15c0e.webp',
+                    'assets/products/1f4eab64270c.webp'
                 ] },
                 { name: 'Olive Green', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__create-a-caucasian-man-wearing-the-short-in-img1-c__44654.webp',
-                    'https://vintares.com/cdn/shop/files/freepik__apply-the-color-of-the-short-in-img2-to-the-color-__59382_39864c0c-3db8-4adc-9d19-aedfb3689e66.webp',
-                    'https://vintares.com/cdn/shop/files/freepik__apply-the-color-of-the-short-in-img2-to-the-color-__59373.webp'
+                    'assets/products/e97533cae877.webp',
+                    'assets/products/3642e49302e9.webp',
+                    'assets/products/13afa3e75bc8.webp'
                 ] },
                 { name: 'Warm Khaki', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__create-a-caucasian-man-wearing-the-short-in-img1-c__44655.webp',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stanc-eof-the-model-to-the-back__59379.webp',
-                    'https://vintares.com/cdn/shop/files/freepik__apply-the-color-of-the-short-in-img2-to-the-color-__59374_f9973fd4-25b6-4770-b8c4-2150f5c82b62.webp'
+                    'assets/products/8999d92b98a6.webp',
+                    'assets/products/d351eff8d7dc.webp',
+                    'assets/products/6d40283e6794.webp'
                 ] }
             ],
             sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL']
@@ -1542,22 +1542,22 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__focus-remove-the-background-and-change-it-to-efefe__80168.jpg',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-make-hi__80171.jpg',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80161.webp'
+                    'assets/products/385a2f6323a0.webp',
+                    'assets/products/1e215a2acb3d.webp',
+                    'assets/products/c6759166026a.webp'
                 ] },
                 { name: 'Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__focus-remove-the-background-and-change-it-to-efefe__80167.jpg',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-back-make-hi__80169.jpg',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80160.webp'
+                    'assets/products/f221e2120a8a.webp',
+                    'assets/products/f801c5486bf6.webp',
+                    'assets/products/a3306e28bfe1.webp'
                 ] },
                 { name: '2-Piece (Black)', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80164.webp',
-                    'https://vintares.com/cdn/shop/files/freepik__create-a-nice-zoom-in-shot-on-a-plain-background-f__80172.jpg',
-                    'https://vintares.com/cdn/shop/files/freepik__create-a-nice-zoom-in-shot-on-a-plain-background-f__80173.jpg'
+                    'assets/products/e8cfca868e4a.webp',
+                    'assets/products/d87e651529b2.webp',
+                    'assets/products/f37cf33a45f8.webp'
                 ] },
                 { name: '2-Piece (Black & Gray)', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__80163.webp'
+                    'assets/products/41a0e0666fdc.webp'
                 ] }
             ],
             sizes: ['2XS', 'XS', 'S', 'M', 'L']
@@ -1571,19 +1571,19 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__62159.jpg',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-pants-into-color-black-dra__62157.webp',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-note-th__80153.jpg'
+                    'assets/products/621edc76571f.webp',
+                    'assets/products/fe9fb86d611c.webp',
+                    'assets/products/08b092261a9b.webp'
                 ] },
                 { name: 'Light Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__80154.jpg',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-note-th__80155.jpg',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__62156.webp'
+                    'assets/products/9e0c7ef87796.webp',
+                    'assets/products/96097493dff9.webp',
+                    'assets/products/07eae8330730.webp'
                 ] },
                 { name: 'Dark Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__80156.png',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-note-th__80157.jpg',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-panst-into-color-dark-blue__62158.webp'
+                    'assets/products/95dcadd0ad69.webp',
+                    'assets/products/90b236bbba02.webp',
+                    'assets/products/d6b788a70beb.webp'
                 ] }
             ],
             sizes: ['S', 'M', 'L', 'XL', '2XL']
@@ -1597,44 +1597,44 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Navy Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__create-an-image-of-a-caucasian-man-wear-this-pants__62142.jpg',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__62132.webp'
+                    'assets/products/c937f884a74b.webp',
+                    'assets/products/f68f5f092389.webp'
                 ] },
                 { name: 'Black / Blue Waistband', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__create-an-image-of-a-caucasian-man-wear-this-pants__62144.jpg',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__62133.webp'
+                    'assets/products/77b27ff1eb88.webp',
+                    'assets/products/3eb01c0289fb.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__create-an-image-of-a-caucasian-man-wear-this-pants__62145.jpg',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__62134.webp'
+                    'assets/products/36adcbf2d681.webp',
+                    'assets/products/ed6bc195ab30.webp'
                 ] },
                 { name: 'Light Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__create-an-image-of-a-caucasian-man-wear-this-pants__62147.jpg',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__62135.webp'
+                    'assets/products/33ef162d7b86.webp',
+                    'assets/products/1c3defe38121.webp'
                 ] },
                 { name: 'Light Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__create-an-image-of-a-caucasian-man-wear-this-pants__62148.jpg',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__62136.webp'
+                    'assets/products/099580d2c38c.webp',
+                    'assets/products/016f5c78747d.webp'
                 ] },
                 { name: 'Green', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__create-an-image-of-a-caucasian-man-wear-this-pants__62149.webp',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__62137.webp'
+                    'assets/products/cc6b0b4830f5.webp',
+                    'assets/products/5e9bb262738d.webp'
                 ] },
                 { name: 'Gray / Blue Waistband', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__create-an-image-of-a-caucasian-man-wear-this-pants__62150.webp',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__62138.webp'
+                    'assets/products/c6899736192b.webp',
+                    'assets/products/5c96c974517a.webp'
                 ] },
                 { name: 'Red', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__create-an-image-of-a-caucasian-man-wear-this-pants__62151.jpg',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__62139.webp'
+                    'assets/products/9b55f93a2273.webp',
+                    'assets/products/20c9ad11e3a5.webp'
                 ] },
                 { name: 'Dark Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__create-an-image-of-a-caucasian-man-wear-this-pants__62152.jpg',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__62140.webp'
+                    'assets/products/29154b4c7103.webp',
+                    'assets/products/91d87094c3dd.webp'
                 ] },
                 { name: 'Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__create-an-image-of-a-caucasian-man-wear-this-pants__62153.jpg',
-                    'https://vintares.com/cdn/shop/files/freepik__use-img1-as-the-reference-product-generate-a-clean__62141.webp'
+                    'assets/products/565e95927d78.webp',
+                    'assets/products/6337d8e3b958.webp'
                 ] }
             ],
             sizes: ['2XS', 'XS', 'S', 'M', 'L']
@@ -1648,52 +1648,52 @@
             badge: 'SALE',
             colorVariants: [
                 { name: 'Navy Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__36370.png',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-linen-pants-in-img1-into-c__90186.webp'
+                    'assets/products/84b1ea6fb08e.webp',
+                    'assets/products/803612bd2833.webp'
                 ] },
                 { name: 'White', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__36369.png',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-size-of-the-image-into-square__44644.webp'
+                    'assets/products/8d43a1b627ed.webp',
+                    'assets/products/9d6f2b18503d.webp'
                 ] },
                 { name: 'Khaki', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__36371.png',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-linen-pants-in-img1-into-c__36359.webp'
+                    'assets/products/2c183ff3fcc5.webp',
+                    'assets/products/b46d23cdc5de.webp'
                 ] },
                 { name: 'Light Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__36372.png',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-linen-pants-in-img1-into-c__36360.webp'
+                    'assets/products/cd6dc4281bd1.webp',
+                    'assets/products/ee23ff5a19e0.webp'
                 ] },
                 { name: 'Brown', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__36373.png',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-linen-pants-in-img1-into-c__36361.webp'
+                    'assets/products/7193fe06fb87.webp',
+                    'assets/products/cbd4e856c984.webp'
                 ] },
                 { name: 'Sage Green', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__36374.png',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-linen-pants-in-img1-into-c__36362.webp'
+                    'assets/products/2206e91a5759.webp',
+                    'assets/products/061fdc8eabeb.webp'
                 ] },
                 { name: 'Olive Green', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__36383.png',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-linen-pants-in-img1-into-c__36363.webp'
+                    'assets/products/8f2449004ee9.webp',
+                    'assets/products/703215b85c6a.webp'
                 ] },
                 { name: 'Charcoal Gray', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__36375.jpg',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-linen-pants-in-img1-into-c__36364.webp'
+                    'assets/products/2ce2d0955730.webp',
+                    'assets/products/d1333a08f850.webp'
                 ] },
                 { name: 'Sky Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__36376.png',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-linen-pants-in-img1-into-c__36365.webp'
+                    'assets/products/e1755841f487.webp',
+                    'assets/products/38a2040284b3.webp'
                 ] },
                 { name: 'Mustard', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__36377.png',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-linen-pants-in-img1-into-c__36366.webp'
+                    'assets/products/a176798d0583.webp',
+                    'assets/products/7f5638a01bfc.webp'
                 ] },
                 { name: 'Steel Blue', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__36378.jpg',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-linen-pants-in-img1-into-c__36367.webp'
+                    'assets/products/84ece4dad19f.webp',
+                    'assets/products/96239e5142a0.webp'
                 ] },
                 { name: 'Black', images: [
-                    'https://vintares.com/cdn/shop/files/freepik__remove-the-background-and-change-it-to-efefef-add-__36381.jpg',
-                    'https://vintares.com/cdn/shop/files/freepik__change-the-color-of-the-linen-pants-in-img1-into-c__36368.webp'
+                    'assets/products/fd3cf828c69d.webp',
+                    'assets/products/197fb95bd1ef.webp'
                 ] }
             ],
             sizes: ['2XS', 'XS', 'S', 'M', 'L', 'XL', '3XL']
@@ -2022,14 +2022,14 @@
             originalPrice: 139.90,
             badge: 'SALE',
             images: [
-                'https://vintares.com/cdn/shop/files/freepik_create-an-image-of-a-caucasian-man-wearing-the-shoes-in-img1-cut-off-the-image-from-his-knee-down-to-his-feet.-make-one-of-the-foot-angled-a-bit.-make-him-wear-a-light-beige-p.webp?v=1774979381&width=1024',
-                'https://vintares.com/cdn/shop/files/freepik_change-the-stance-of-the-model-in-img1-to-the-right-side.-refer-to-img2-for-the-side-profile-detail-of-the-shoes_0001.webp?v=1774979890&width=1024',
-                'https://vintares.com/cdn/shop/files/freepik_use-img1-as-the-reference-product.-generate-a-clean-ecommerce-flatlay-topdown-view-perfectly-straight-alignment-centered-composition-solid-efefef-background.-remove-hanger-and_5e993af0-40a3-45f2-8bac-d4935d60696c.webp?v=1774979890&width=1024',
-                'https://vintares.com/cdn/shop/files/freepik_create-an-image-of-a-caucasian-man-wearing-the-shoes-in-img1-cut-off-the-image-from-his-knee-down-to-his-feet.-make-one-of-the-foot-angled-a-bit.-make-him-wear-a-light-beige-p_3f9dffa5-c918-44ef-aa83-87d5248de0f7.webp?v=1774979890&width=1024'
+                'assets/products/84640c7fd691.webp',
+                'assets/products/eb9b277a67ce.webp',
+                'assets/products/851720831563.webp',
+                'assets/products/644315b94441.webp'
             ],
             colorVariants: [
-                { name: 'Black', image: 'https://vintares.com/cdn/shop/files/freepik_create-an-image-of-a-caucasian-man-wearing-the-shoes-in-img1-cut-off-the-image-from-his-knee-down-to-his-feet.-make-one-of-the-foot-angled-a-bit.-make-him-wear-a-light-beige-p.webp?v=1774979381&width=1024' },
-                { name: 'Brown', image: 'https://vintares.com/cdn/shop/files/freepik_create-an-image-of-a-caucasian-man-wearing-the-shoes-in-img1-cut-off-the-image-from-his-knee-down-to-his-feet.-make-one-of-the-foot-angled-a-bit.-make-him-wear-a-light-beige-p_3f9dffa5-c918-44ef-aa83-87d5248de0f7.webp?v=1774979890&width=1024' }
+                { name: 'Black', image: 'assets/products/84640c7fd691.webp' },
+                { name: 'Brown', image: 'assets/products/644315b94441.webp' }
             ],
             sizes: ['38.5', '39.5', '40', '41', '41.5', '42.5', '43', '44', '44.5', '45.5']
         },
@@ -2041,16 +2041,16 @@
             originalPrice: 119.90,
             badge: 'SALE',
             images: [
-                'https://vintares.com/cdn/shop/files/freepik_use-img1-as-the-reference-product.-generate-a-clean-ecommerce-flatlay-topdown-view-perfectly-straight-alignment-centered-composition-solid-efefef-background.-remove-hanger-and_f688cb3e-46d4-48ca-a2fd-a18716a88e7a.webp?v=1774871717&width=1024',
-                'https://vintares.com/cdn/shop/files/freepik_make-the-profile-of-the-shoes-in-frontboth-feet-on-the-floor.-.-make-it-facing-front_0001.jpg?v=1774889059&width=1024',
-                'https://vintares.com/cdn/shop/files/freepik_background-is-solid-efefef-and-apply-soft-shadow.-create-an-image-of-a-caucasian-man-wearing-a-light-beige-pants-wear-the-shoes-in-img1-make-the-pants-not-reach-the-shoes.-mak.png?v=1774889059&width=1024',
-                'https://vintares.com/cdn/shop/files/freepik_use-img1-as-the-reference-product.-generate-a-clean-ecommerce-flatlay-topdown-view-perfectly-straight-alignment-centered-composition-solid-efefef-background.-remove-hanger-and_fa44c50b-cd71-49d8-aea5-8ce040a0e5f9.webp?v=1774889059&width=1024'
+                'assets/products/8ac6bc381535.webp',
+                'assets/products/eb707ce28341.webp',
+                'assets/products/51d2afa3dc14.webp',
+                'assets/products/077b7aa5a2c7.webp'
             ],
             colorVariants: [
-                { name: 'Sand Beige',    image: 'https://vintares.com/cdn/shop/files/freepik_use-img1-as-the-reference-product.-generate-a-clean-ecommerce-flatlay-topdown-view-perfectly-straight-alignment-centered-composition-solid-efefef-background.-remove-hanger-and_f688cb3e-46d4-48ca-a2fd-a18716a88e7a.webp?v=1774871717&width=1024' },
-                { name: 'Black',         image: 'https://vintares.com/cdn/shop/files/freepik_use-img1-as-the-reference-product.-generate-a-clean-ecommerce-flatlay-topdown-view-perfectly-straight-alignment-centered-composition-solid-efefef-background.-remove-hanger-and_fa44c50b-cd71-49d8-aea5-8ce040a0e5f9.webp?v=1774889059&width=1024' },
-                { name: 'Charcoal Gray', image: 'https://vintares.com/cdn/shop/files/freepik_apply-the-color-of-the-shoes-in-img2-to-the-color-of-the-shoes-in-img1_0001.webp?v=1774889059&width=1024' },
-                { name: 'Tan Brown',     image: 'https://vintares.com/cdn/shop/files/freepik_apply-the-color-of-the-shoes-in-img2-to-the-color-of-the-shoes-in-img1_0001_1.webp?v=1774889059&width=1024' }
+                { name: 'Sand Beige',    image: 'assets/products/8ac6bc381535.webp' },
+                { name: 'Black',         image: 'assets/products/077b7aa5a2c7.webp' },
+                { name: 'Charcoal Gray', image: 'assets/products/e0360819b565.webp' },
+                { name: 'Tan Brown',     image: 'assets/products/12c4a76618dc.webp' }
             ],
             sizes: ['37', '38', '38.5', '39.5', '40', '41', '41.5', '42.5', '43', '44', '44.5', '45.5']
         },
@@ -2482,15 +2482,15 @@
             originalPrice: 279.90,
             badge: 'SALE',
             images: [
-                'https://vintares.com/cdn/shop/files/freepik__change-the-image-into-square__56249_1.webp?v=1769767893&width=1024',
-                'https://vintares.com/cdn/shop/files/freepik__change-the-stance-of-the-model-to-the-side-make-hi__56248_1.webp?v=1769767935&width=1024',
-                'https://vintares.com/cdn/shop/files/9_df3377ee-b885-4ac9-a925-7e09641dc253.webp?v=1769767935&width=1024',
-                'https://vintares.com/cdn/shop/files/freepik__change-the-image-into-square__56246_1_1.webp?v=1769768016&width=1024'
+                'assets/products/332d56bf8843.webp',
+                'assets/products/01d4e3831000.webp',
+                'assets/products/3291e6a415e4.webp',
+                'assets/products/e6b9787a4da7.webp'
             ],
             colorVariants: [
-                { name: 'White',      image: 'https://vintares.com/cdn/shop/files/freepik__change-the-image-into-square__56249_1.webp?v=1769767893&width=1024' },
-                { name: 'Tan',        image: 'https://vintares.com/cdn/shop/files/freepik__change-the-image-into-square__56246_1_1.webp?v=1769768016&width=1024' },
-                { name: 'Light Blue', image: 'https://vintares.com/cdn/shop/files/freepik__change-the-image-into-square__56244_1.webp?v=1769768063&width=1024' }
+                { name: 'White',      image: 'assets/products/332d56bf8843.webp' },
+                { name: 'Tan',        image: 'assets/products/e6b9787a4da7.webp' },
+                { name: 'Light Blue', image: 'assets/products/c30ff51e2351.webp' }
             ],
             sizes: ['XS', 'S', 'M', 'L', 'XL']
         },
@@ -2502,15 +2502,15 @@
             originalPrice: 199.95,
             badge: 'SALE',
             images: [
-                'https://vintares.com/cdn/shop/files/variant-image-1-Photoroom_1b05d548-cb50-406f-b3a0-fc5c46bb8b4e.jpg?v=1760729677&width=1024',
-                'https://vintares.com/cdn/shop/files/ChatGPTImage17okt2025_21_49_43.png?v=1760731047&width=1024',
-                'https://vintares.com/cdn/shop/files/variant-image-2-Photoroom_cddee024-0c87-4f62-a6a5-9a4f51e87612.jpg?v=1760731047&width=1024',
-                'https://vintares.com/cdn/shop/files/variant-image-3-Photoroom_ab0021a2-cadd-4925-8d28-dfe3c87d0635.jpg?v=1760731053&width=1024'
+                'assets/products/3807e2cf2f28.webp',
+                'assets/products/ced267acc0cc.webp',
+                'assets/products/9f754d7f6e74.webp',
+                'assets/products/20726a743653.webp'
             ],
             colorVariants: [
-                { name: 'Navy Blue', image: 'https://vintares.com/cdn/shop/files/variant-image-1-Photoroom_1b05d548-cb50-406f-b3a0-fc5c46bb8b4e.jpg?v=1760729677&width=1024' },
-                { name: 'Black',     image: 'https://vintares.com/cdn/shop/files/variant-image-2-Photoroom_cddee024-0c87-4f62-a6a5-9a4f51e87612.jpg?v=1760731047&width=1024' },
-                { name: 'Bordeaux',  image: 'https://vintares.com/cdn/shop/files/variant-image-3-Photoroom_ab0021a2-cadd-4925-8d28-dfe3c87d0635.jpg?v=1760731053&width=1024' }
+                { name: 'Navy Blue', image: 'assets/products/3807e2cf2f28.webp' },
+                { name: 'Black',     image: 'assets/products/9f754d7f6e74.webp' },
+                { name: 'Bordeaux',  image: 'assets/products/20726a743653.webp' }
             ],
             sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL']
         },
@@ -3151,19 +3151,19 @@
             originalPrice: 79.90,
             badge: 'SALE',
             images: [
-                'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74161.webp?v=1772649535&width=1024',
-                'https://vintares.com/cdn/shop/files/1_1a81191e-2a51-4c34-8dc9-7d05df484293.webp?v=1772649535&width=1024',
-                'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74162.webp?v=1772649535&width=1024',
-                'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74163.webp?v=1772649535&width=1024'
+                'assets/products/5b6831f66683.webp',
+                'assets/products/6f0f4de561ee.webp',
+                'assets/products/9d9826af07e0.webp',
+                'assets/products/f0c409df760c.webp'
             ],
             colorVariants: [
-                { name: 'Silver Pink',  image: 'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74161.webp?v=1772649535&width=1024' },
-                { name: 'Silver Blue',  image: 'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74162.webp?v=1772649535&width=1024' },
-                { name: 'Gold Gray',    image: 'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74163.webp?v=1772649535&width=1024' },
-                { name: 'Black Yellow', image: 'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74165.webp?v=1772649535&width=1024' },
-                { name: 'Gold Pink',    image: 'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74166.webp?v=1772649535&width=1024' },
-                { name: 'Black Blue',   image: 'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74167.webp?v=1772649788&width=1024' },
-                { name: 'Gold Brown',   image: 'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74168.webp?v=1772650890&width=1024' }
+                { name: 'Silver Pink',  image: 'assets/products/5b6831f66683.webp' },
+                { name: 'Silver Blue',  image: 'assets/products/9d9826af07e0.webp' },
+                { name: 'Gold Gray',    image: 'assets/products/f0c409df760c.webp' },
+                { name: 'Black Yellow', image: 'assets/products/00c53b045b68.webp' },
+                { name: 'Gold Pink',    image: 'assets/products/0222187e133f.webp' },
+                { name: 'Black Blue',   image: 'assets/products/7f11757881fa.webp' },
+                { name: 'Gold Brown',   image: 'assets/products/520b51d5f12c.webp' }
             ],
             sizes: ['One Size']
         },
@@ -3175,15 +3175,15 @@
             originalPrice: 79.90,
             badge: 'SALE',
             images: [
-                'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74170.webp?v=1772651932&width=1024',
-                'https://vintares.com/cdn/shop/files/Screenshot2026-03-05at3.03.29AM.webp?v=1772651932&width=1024',
-                'https://vintares.com/cdn/shop/files/freepik__character-reference-zoom-ou-t-the-image-cut-off-th__74169.webp?v=1772652130&width=1024',
-                'https://vintares.com/cdn/shop/files/freepik__character-reference-char1-zoom-ou-t-the-image-cut-__74171.webp?v=1772652130&width=1024'
+                'assets/products/4968c969b3d5.webp',
+                'assets/products/d63eb10f4201.webp',
+                'assets/products/2ddc26304e65.webp',
+                'assets/products/791883d507cd.webp'
             ],
             colorVariants: [
-                { name: 'Silver Blue', image: 'https://vintares.com/cdn/shop/files/Screenshot2026-03-05at3.03.29AM.webp?v=1772651932&width=1024' },
-                { name: 'Gold Brown',  image: 'https://vintares.com/cdn/shop/files/Screenshot2026-03-05at3.02.33AM.webp?v=1772652130&width=1024' },
-                { name: 'Gold Black',  image: 'https://vintares.com/cdn/shop/files/Screenshot2026-03-05at3.03.49AM.webp?v=1772652130&width=1024' }
+                { name: 'Silver Blue', image: 'assets/products/d63eb10f4201.webp' },
+                { name: 'Gold Brown',  image: 'assets/products/eaf5efcf5ebe.webp' },
+                { name: 'Gold Black',  image: 'assets/products/6ee80c17bef6.webp' }
             ],
             sizes: ['One Size']
         },
@@ -3403,13 +3403,13 @@
             originalPrice: 29.00,
             badge: null,
             images: [
-                'https://vintares.com/cdn/shop/files/main-image-2-Photoroom.jpg?v=1757865933&width=1024',
-                'https://vintares.com/cdn/shop/files/main-image-3-Photoroom.jpg?v=1757865933&width=1024',
-                'https://vintares.com/cdn/shop/files/main-image-4-Photoroom.jpg?v=1757865933&width=1024',
-                'https://vintares.com/cdn/shop/files/main-image-1-Photoroom.jpg?v=1757865933&width=1024'
+                'assets/products/9772141516b7.webp',
+                'assets/products/df5c6ac3466c.webp',
+                'assets/products/383e9f0cf506.webp',
+                'assets/products/e3cfa3ee57a2.webp'
             ],
             colorVariants: [
-                { name: 'Black', image: 'https://vintares.com/cdn/shop/files/main-image-2-Photoroom.jpg?v=1757865933&width=1024' }
+                { name: 'Black', image: 'assets/products/9772141516b7.webp' }
             ],
             sizes: ['One Size']
         },
@@ -3421,16 +3421,16 @@
             originalPrice: 99.95,
             badge: 'SALE',
             images: [
-                'https://vintares.com/cdn/shop/files/variant-image-9-Photoroom_4050fd6f-50b0-4567-b59b-580406402bd3.jpg?v=1755163900&width=1024',
-                'https://vintares.com/cdn/shop/files/variant-image-4-Photoroom_b578d81c-536a-4f04-b71a-c84ab566685c.jpg?v=1755163900&width=1024',
-                'https://vintares.com/cdn/shop/files/variant-image-7-Photoroom_26fb493e-688e-491f-a54e-15f80662f549.jpg?v=1755163900&width=1024',
-                'https://vintares.com/cdn/shop/files/variant-image-2-Photoroom_70866a6e-ec9c-471e-883c-9d44a2dcd819.jpg?v=1756465315&width=1024'
+                'assets/products/2a67b513faa2.webp',
+                'assets/products/b10a413895dc.webp',
+                'assets/products/0caf91ae3a5d.webp',
+                'assets/products/7e9c92507ccd.webp'
             ],
             colorVariants: [
-                { name: 'Navy Blue',     image: 'https://vintares.com/cdn/shop/files/variant-image-9-Photoroom_4050fd6f-50b0-4567-b59b-580406402bd3.jpg?v=1755163900&width=1024' },
-                { name: 'Brown',         image: 'https://vintares.com/cdn/shop/files/variant-image-4-Photoroom_b578d81c-536a-4f04-b71a-c84ab566685c.jpg?v=1755163900&width=1024' },
-                { name: 'Black',         image: 'https://vintares.com/cdn/shop/files/variant-image-7-Photoroom_26fb493e-688e-491f-a54e-15f80662f549.jpg?v=1755163900&width=1024' },
-                { name: 'Emerald Green', image: 'https://vintares.com/cdn/shop/files/variant-image-2-Photoroom_70866a6e-ec9c-471e-883c-9d44a2dcd819.jpg?v=1756465315&width=1024' }
+                { name: 'Navy Blue',     image: 'assets/products/2a67b513faa2.webp' },
+                { name: 'Brown',         image: 'assets/products/b10a413895dc.webp' },
+                { name: 'Black',         image: 'assets/products/0caf91ae3a5d.webp' },
+                { name: 'Emerald Green', image: 'assets/products/7e9c92507ccd.webp' }
             ],
             sizes: ['One Size']
         },
