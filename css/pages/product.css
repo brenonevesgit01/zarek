@@ -1683,25 +1683,22 @@ html, body {
 .harrington-trust-block {
   width: 100%;
   box-sizing: border-box;
-  margin: 8px 0 16px 0;
+  margin: 20px 0;
   padding: 0;
-}
-.harrington-trust-block > * {
-  border: none;
 }
 
 .harrington-social-proof {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 16px;
+  gap: 12px;
+  margin-bottom: 20px;
   font-size: 14px;
   color: #333;
 }
 
 .harrington-avatar {
-  width: 42px;
-  height: 42px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -1712,27 +1709,27 @@ html, body {
   color: #fff;
   border-radius: 50%;
   font-size: 10px;
-  width: 14px;
-  height: 14px;
+  width: 15px;
+  height: 15px;
   text-align: center;
-  line-height: 14px;
+  line-height: 15px;
 }
 
 .harrington-price-row {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 18px;
+  gap: 12px;
+  margin-bottom: 24px;
 }
 
 .harrington-price-current {
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 700;
   color: #111;
 }
 
 .harrington-price-original {
-  font-size: 18px;
+  font-size: 20px;
   color: #e00;
   text-decoration: line-through;
 }
@@ -1742,31 +1739,34 @@ html, body {
   color: #fff;
   font-size: 13px;
   font-weight: 700;
-  padding: 4px 10px;
+  padding: 5px 12px;
   border-radius: 2px;
+  white-space: nowrap;
 }
 
 .harrington-trust-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 16px 0;
+  margin: 0 0 20px 0;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
 }
 
 .harrington-trust-list li {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   font-size: 14px;
   color: #333;
+  line-height: 1.4;
 }
 
 .harrington-trust-list li svg {
   flex-shrink: 0;
   width: 22px;
   height: 22px;
+  stroke: #333;
 }
 
 .harrington-stock-alert {
@@ -1775,14 +1775,8 @@ html, body {
   gap: 8px;
   font-size: 14px;
   color: #333;
-  margin: 0;
+  margin: 0 0 20px 0;
 }
-
-/* Harrington-only: tighten title spacing and remove the divider/flex-gap
-   so the social-proof block sits right below the title (8px gap). */
-body[data-product-id="harrington-leather-trainers"] .product-info { gap: 8px; }
-body[data-product-id="harrington-leather-trainers"] .product-info__name { margin-bottom: 0; }
-body[data-product-id="harrington-leather-trainers"] .product-info__divider { display: none; }
 
 .harrington-stock-dot {
   width: 9px;
@@ -1790,4 +1784,13 @@ body[data-product-id="harrington-leather-trainers"] .product-info__divider { dis
   background: #e00;
   border-radius: 50%;
   flex-shrink: 0;
+  display: inline-block;
 }
+
+/* Harrington-only: tighten title spacing and remove the divider/flex-gap
+   so the social-proof block sits right below the title (8px gap).
+   These rules don't start with .harrington- and don't affect other
+   products (scoped via body[data-product-id]). */
+body[data-product-id="harrington-leather-trainers"] .product-info { gap: 8px; }
+body[data-product-id="harrington-leather-trainers"] .product-info__name { margin-bottom: 0; }
+body[data-product-id="harrington-leather-trainers"] .product-info__divider { display: none; }
