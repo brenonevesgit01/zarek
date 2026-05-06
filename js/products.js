@@ -2041,34 +2041,39 @@
             originalPrice: 100.00,
             badge: 'SALE',
             images: [
-                'assets/products/shoes/white-sneaker-1.webp',
-                'assets/products/shoes/black-sneaker-1.webp',
-                'assets/products/6fe840cdbfd3.webp'
+                'assets/products/shoes/white-sneaker-1.png',
+                'assets/products/shoes/black-sneaker-1.png',
+                'assets/products/shoes/gray-sneaker-1.png'
             ],
             colorVariants: [
                 {
                     name: 'Crystal White',
-                    image: 'assets/products/shoes/white-sneaker-1.webp',
+                    image: 'assets/products/shoes/white-sneaker-1.png',
                     images: [
-                        'assets/products/shoes/white-sneaker-1.webp',
-                        'assets/products/shoes/white-sneaker-2.webp',
-                        'assets/products/shoes/white-sneaker-3.webp'
+                        'assets/products/shoes/white-sneaker-1.png',
+                        'assets/products/shoes/white-sneaker-2.png',
+                        'assets/products/shoes/white-sneaker-3.png',
+                        'assets/products/shoes/white-sneaker-4.png'
                     ]
                 },
                 {
                     name: 'Obsidian Black',
-                    image: 'assets/products/shoes/black-sneaker-1.webp',
+                    image: 'assets/products/shoes/black-sneaker-1.png',
                     images: [
-                        'assets/products/shoes/black-sneaker-1.webp',
-                        'assets/products/shoes/black-sneaker-2.webp',
-                        'assets/products/shoes/black-sneaker-3.webp'
+                        'assets/products/shoes/black-sneaker-1.png',
+                        'assets/products/shoes/black-sneaker-2.png',
+                        'assets/products/shoes/black-sneaker-3.png',
+                        'assets/products/shoes/black-sneaker-4.png'
                     ]
                 },
                 {
                     name: 'Crystal White & Gray',
-                    image: 'assets/products/6fe840cdbfd3.webp',
+                    image: 'assets/products/shoes/gray-sneaker-1.png',
                     images: [
-                        'assets/products/6fe840cdbfd3.webp'
+                        'assets/products/shoes/gray-sneaker-1.png',
+                        'assets/products/shoes/gray-sneaker-2.png',
+                        'assets/products/shoes/gray-sneaker-3.png',
+                        'assets/products/shoes/gray-sneaker-4.png'
                     ]
                 }
             ],
