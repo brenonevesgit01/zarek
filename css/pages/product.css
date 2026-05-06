@@ -1902,12 +1902,6 @@ body[data-product-id="harrington-leather-trainers"] .product-info__divider { dis
   margin: 0;
 }
 
-[data-product-id="harrington-leather-trainers"] img:not(.color-swatch img):not(.gallery-thumb img) {
-  max-width: 100% !important;
-  height: auto !important;
-  object-fit: cover !important;
-}
-
 .harrington-feature-list ul {
   list-style: disc;
   padding-left: 18px;
