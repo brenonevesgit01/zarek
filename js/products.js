@@ -2086,7 +2086,36 @@
                 { title: 'Reinforced stitching', text: 'Strengthens the structure for a longer-lasting trainer.' },
                 { title: 'Cushioned insole', text: 'Comfort all day long with subtle, supportive padding.' },
                 { title: 'Low-cut silhouette', text: 'Versatile timeless shape that pairs with any outfit.' }
-            ]
+            ],
+            featuresHero: 'assets/products/shoes/black-sneaker-1.webp',
+            testimonial: {
+                quote: 'I was so surprised when the shoes arrived. From the first moment you can tell, by their packaging and details, that they were truly made with care.',
+                name: 'Carlos M.',
+                city: 'Manchester, UK',
+                photo: 'assets/products/shoes/customer-review.webp'
+            },
+            faqs: [
+                {
+                    q: 'Where can I find my tracking number?',
+                    a: 'You will receive an email with your tracking number once your order has shipped. This lets you follow your parcel easily from dispatch to delivery.'
+                },
+                {
+                    q: 'How long does my order take to arrive?',
+                    a: 'All orders are processed within 1–2 business days. UK domestic orders arrive within 5–9 business days.'
+                },
+                {
+                    q: 'Is there a guarantee?',
+                    a: 'Got the wrong size or not happy with your order? No worries — you can return your item within 30 days under our simple, hassle-free returns policy.'
+                },
+                {
+                    q: 'How can I contact you?',
+                    a: 'Our team is available Monday to Saturday. Use the contact form or email us at <a href="mailto:support@zarekk.shop">support@zarekk.shop</a> to get in touch.'
+                }
+            ],
+            about: {
+                title: 'About Zarek',
+                text: 'At Zarek, we craft essential menswear with an obsessive eye on material, cut and construction. Founded with a simple idea — to offer beautiful, useful and high-quality pieces built to be worn for years, not seasons. We want online shopping to feel easy, personal and trustworthy.'
+            }
         },
         {
             id: 'wallabee-shoes',
