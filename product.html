@@ -352,6 +352,11 @@
                           </ul>
                         </div>
 
+                        <!-- Harrington-only stock notice (revealed by inline script) -->
+                        <div class="harrington-stock-notice" hidden>
+                          <p><strong>SALE UPDATE:</strong> Due to high order volume, our stock is very limited... If you are still able to press the 'Add to Cart' button, there's still some stock left!</p>
+                        </div>
+
                         <div class="trust-badges">
                           <div class="trust-badge">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
@@ -1197,6 +1202,15 @@
       if (secureCheckout) secureCheckout.style.display = 'none';
       var payIcons = document.querySelector('.harrington-payment-icons');
       if (payIcons) payIcons.hidden = false;
+
+      // Hide the shared trust-badges row + early-spring-sale promo banner;
+      // surface the harrington stock-notice instead.
+      var trustBadges = document.querySelector('.trust-badges');
+      if (trustBadges) trustBadges.style.display = 'none';
+      var promoBanner = document.querySelector('.promo-banner');
+      if (promoBanner) promoBanner.style.display = 'none';
+      var stockNotice = document.querySelector('.harrington-stock-notice');
+      if (stockNotice) stockNotice.hidden = false;
     }
   })();
 </script>

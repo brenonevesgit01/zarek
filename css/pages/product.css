@@ -1857,4 +1857,23 @@ body[data-product-id="harrington-leather-trainers"] .product-info__divider { dis
   display: block;
 }
 
+.harrington-stock-notice {
+  background: #fde8e8;
+  border-left: 3px solid #c00;
+  padding: 12px 14px;
+  margin-top: 16px;
+  border-radius: 2px;
+}
+
+.harrington-stock-notice p {
+  margin: 0;
+  font-size: 13px;
+  color: #c00;
+  line-height: 1.5;
+}
+
+.harrington-stock-notice strong {
+  color: #c00;
+}
+
 
