@@ -258,32 +258,73 @@
                               <h3 id="size-guide-product-name"></h3>
                               <button id="close-size-guide">&#x2715;</button>
                             </div>
-                            <div class="size-guide-toggle">
-                              <button class="unit-btn active" data-unit="in">IN</button>
-                              <button class="unit-btn" data-unit="cm">CM</button>
+                            <!-- Default size guide (clothing) — used by every non-harrington product -->
+                            <div data-size-guide-default>
+                              <div class="size-guide-toggle">
+                                <button class="unit-btn active" data-unit="in">IN</button>
+                                <button class="unit-btn" data-unit="cm">CM</button>
+                              </div>
+                              <table class="size-guide-table">
+                                <thead>
+                                  <tr>
+                                    <th>Size</th>
+                                    <th class="unit-in">Shoulder (inch)</th>
+                                    <th class="unit-in">Chest (inch)</th>
+                                    <th class="unit-in">Sleeve length (inch)</th>
+                                    <th class="unit-cm" style="display:none">Shoulder (cm)</th>
+                                    <th class="unit-cm" style="display:none">Chest (cm)</th>
+                                    <th class="unit-cm" style="display:none">Sleeve length (cm)</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr><td>XS</td><td class="unit-in">16</td><td class="unit-in">36</td><td class="unit-in">24.5</td><td class="unit-cm" style="display:none">40.6</td><td class="unit-cm" style="display:none">91.4</td><td class="unit-cm" style="display:none">62.2</td></tr>
+                                  <tr><td>S</td><td class="unit-in">17</td><td class="unit-in">38</td><td class="unit-in">24</td><td class="unit-cm" style="display:none">43.2</td><td class="unit-cm" style="display:none">96.5</td><td class="unit-cm" style="display:none">61</td></tr>
+                                  <tr><td>M</td><td class="unit-in">18</td><td class="unit-in">40</td><td class="unit-in">25</td><td class="unit-cm" style="display:none">45.7</td><td class="unit-cm" style="display:none">101.6</td><td class="unit-cm" style="display:none">63.5</td></tr>
+                                  <tr><td>L</td><td class="unit-in">19</td><td class="unit-in">42</td><td class="unit-in">25.5</td><td class="unit-cm" style="display:none">48.3</td><td class="unit-cm" style="display:none">106.7</td><td class="unit-cm" style="display:none">64.8</td></tr>
+                                  <tr><td>XL</td><td class="unit-in">20</td><td class="unit-in">44</td><td class="unit-in">26</td><td class="unit-cm" style="display:none">50.8</td><td class="unit-cm" style="display:none">111.8</td><td class="unit-cm" style="display:none">66</td></tr>
+                                  <tr><td>2XL</td><td class="unit-in">21</td><td class="unit-in">46</td><td class="unit-in">26.5</td><td class="unit-cm" style="display:none">53.3</td><td class="unit-cm" style="display:none">116.8</td><td class="unit-cm" style="display:none">67.3</td></tr>
+                                </tbody>
+                              </table>
+                              <p class="size-guide-note"><strong>Note:</strong> Measurements are approximate and may vary slightly. If you're between sizes, we recommend sizing up for comfort. All values are provided as a guide, compare with a similar item you already own for the best fit. Feel free to reach out to us if you have any questions.</p>
                             </div>
-                            <table class="size-guide-table">
-                              <thead>
-                                <tr>
-                                  <th>Size</th>
-                                  <th class="unit-in">Shoulder (inch)</th>
-                                  <th class="unit-in">Chest (inch)</th>
-                                  <th class="unit-in">Sleeve length (inch)</th>
-                                  <th class="unit-cm" style="display:none">Shoulder (cm)</th>
-                                  <th class="unit-cm" style="display:none">Chest (cm)</th>
-                                  <th class="unit-cm" style="display:none">Sleeve length (cm)</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr><td>XS</td><td class="unit-in">16</td><td class="unit-in">36</td><td class="unit-in">24.5</td><td class="unit-cm" style="display:none">40.6</td><td class="unit-cm" style="display:none">91.4</td><td class="unit-cm" style="display:none">62.2</td></tr>
-                                <tr><td>S</td><td class="unit-in">17</td><td class="unit-in">38</td><td class="unit-in">24</td><td class="unit-cm" style="display:none">43.2</td><td class="unit-cm" style="display:none">96.5</td><td class="unit-cm" style="display:none">61</td></tr>
-                                <tr><td>M</td><td class="unit-in">18</td><td class="unit-in">40</td><td class="unit-in">25</td><td class="unit-cm" style="display:none">45.7</td><td class="unit-cm" style="display:none">101.6</td><td class="unit-cm" style="display:none">63.5</td></tr>
-                                <tr><td>L</td><td class="unit-in">19</td><td class="unit-in">42</td><td class="unit-in">25.5</td><td class="unit-cm" style="display:none">48.3</td><td class="unit-cm" style="display:none">106.7</td><td class="unit-cm" style="display:none">64.8</td></tr>
-                                <tr><td>XL</td><td class="unit-in">20</td><td class="unit-in">44</td><td class="unit-in">26</td><td class="unit-cm" style="display:none">50.8</td><td class="unit-cm" style="display:none">111.8</td><td class="unit-cm" style="display:none">66</td></tr>
-                                <tr><td>2XL</td><td class="unit-in">21</td><td class="unit-in">46</td><td class="unit-in">26.5</td><td class="unit-cm" style="display:none">53.3</td><td class="unit-cm" style="display:none">116.8</td><td class="unit-cm" style="display:none">67.3</td></tr>
-                              </tbody>
-                            </table>
-                            <p class="size-guide-note"><strong>Note:</strong> Measurements are approximate and may vary slightly. If you're between sizes, we recommend sizing up for comfort. All values are provided as a guide, compare with a similar item you already own for the best fit. Feel free to reach out to us if you have any questions.</p>
+
+                            <!-- Harrington-only size guide (UK shoe sizes) — revealed by inline script -->
+                            <div data-size-guide-harrington hidden>
+                              <h3>Size Guide</h3>
+                              <div style="overflow-x: auto;">
+                                <table class="size-guide-table">
+                                  <thead>
+                                    <tr>
+                                      <th>UK SIZE</th>
+                                      <th>FOOT LENGTH (CM)</th>
+                                      <th>INSOLE LENGTH (CM)</th>
+                                      <th>EU SIZE</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr><td><strong>UK 3.5</strong></td><td>22.5</td><td>23.5 – 24</td><td>36</td></tr>
+                                    <tr><td><strong>UK 4</strong></td><td>23</td><td>24 – 24.5</td><td>37</td></tr>
+                                    <tr><td><strong>UK 4.5</strong></td><td>23.5</td><td>24.5 – 25</td><td>37.5</td></tr>
+                                    <tr><td><strong>UK 5</strong></td><td>24</td><td>25 – 25.5</td><td>38</td></tr>
+                                    <tr><td><strong>UK 5.5</strong></td><td>24.5</td><td>25.5 – 26</td><td>39</td></tr>
+                                    <tr><td><strong>UK 6</strong></td><td>25</td><td>26 – 26.5</td><td>39.5</td></tr>
+                                    <tr><td><strong>UK 6.5</strong></td><td>25.5</td><td>26.5 – 27</td><td>40</td></tr>
+                                    <tr><td><strong>UK 7</strong></td><td>26</td><td>27 – 27.5</td><td>41</td></tr>
+                                    <tr><td><strong>UK 7.5</strong></td><td>26.5</td><td>27.5 – 28</td><td>41.5</td></tr>
+                                    <tr><td><strong>UK 8</strong></td><td>27</td><td>28 – 28.5</td><td>42</td></tr>
+                                    <tr><td><strong>UK 8.5</strong></td><td>27.5</td><td>28.5 – 29</td><td>43</td></tr>
+                                    <tr><td><strong>UK 9</strong></td><td>28</td><td>29 – 29.5</td><td>43.5</td></tr>
+                                    <tr><td><strong>UK 9.5</strong></td><td>28.5</td><td>29.5 – 30</td><td>44</td></tr>
+                                    <tr><td><strong>UK 10</strong></td><td>29</td><td>30 – 30.5</td><td>44.5</td></tr>
+                                    <tr><td><strong>UK 10.5</strong></td><td>29.5</td><td>30.5 – 31</td><td>45</td></tr>
+                                    <tr><td><strong>UK 11</strong></td><td>30</td><td>31 – 31.5</td><td>46</td></tr>
+                                    <tr><td><strong>UK 11.5</strong></td><td>30.5</td><td>31.5 – 32</td><td>46.5</td></tr>
+                                    <tr><td><strong>UK 12</strong></td><td>31</td><td>32 – 32.5</td><td>47</td></tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <p style="font-size:12px; color:#666; margin-top:12px;">Measurements are approximate. If between sizes, size up for comfort.</p>
+                            </div>
                           </div>
                         </div>
 
@@ -1126,6 +1167,15 @@
           sizeLabel.textContent = this.value;
         });
       }
+
+      // Swap the size-guide modal contents: hide default (clothing) + the
+      // dynamic product-name h3, show the harrington UK shoe sizes block.
+      var defaultGuide = document.querySelector('[data-size-guide-default]');
+      if (defaultGuide) defaultGuide.style.display = 'none';
+      var harringtonGuide = document.querySelector('[data-size-guide-harrington]');
+      if (harringtonGuide) harringtonGuide.hidden = false;
+      var guideHeaderName = document.getElementById('size-guide-product-name');
+      if (guideHeaderName) guideHeaderName.style.display = 'none';
     }
   })();
 </script>
