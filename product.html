@@ -1285,9 +1285,13 @@
       if (featureBlock) featureBlock.hidden = false;
 
       // Hide the shared accordions (Description / Shipping / Returns / Any
-      // Questions?) and surface the harrington reviews slider instead.
+      // Questions?) and the old .testimonials-section (Marcus / Daniel /
+      // James / Thomas / Oliver) — both share the 'WHAT OUR CUSTOMERS SAY'
+      // title and would duplicate the new harrington reviews slider.
       var accordions = document.querySelector('.product-accordions');
       if (accordions) accordions.style.display = 'none';
+      var oldTestimonials = document.querySelector('.testimonials-section');
+      if (oldTestimonials) oldTestimonials.style.display = 'none';
       var reviews = document.querySelector('.harrington-reviews');
       if (reviews) reviews.hidden = false;
     }
