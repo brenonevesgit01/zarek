@@ -1233,6 +1233,31 @@
       if (stockNotice) stockNotice.hidden = false;
       var featureBlock = document.querySelector('.harrington-feature-block');
       if (featureBlock) featureBlock.hidden = false;
+
+      // Build the photo-review slider from product.reviews and replace the
+      // shared .product-accordions block. Falls back to appending into
+      // .product-info if the accordions aren't found.
+      var product = (window.PRODUCTS || []).find(function(x) { return x.id === id; });
+      if (product && product.reviews) {
+        var reviewsHTML = ''
+          + '<div class="harrington-reviews">'
+          +   '<h3 class="harrington-reviews-title">WHAT OUR CUSTOMERS SAY</h3>'
+          +   '<div class="harrington-reviews-slider">'
+          +     product.reviews.map(function(r) {
+                  return ''
+                    + '<div class="harrington-review-card">'
+                    +   '<img src="' + r.img + '" alt="Customer review">'
+                    +   '<div class="harrington-review-stars">★★★★★</div>'
+                    +   '<p class="harrington-review-text">"' + r.text + '"</p>'
+                    +   '<p class="harrington-review-author"><strong>' + r.author + '</strong></p>'
+                    + '</div>';
+                }).join('')
+          +   '</div>'
+          + '</div>';
+        var accordions = document.querySelector('[data-product-id="harrington-leather-trainers"] .product-accordions, [data-product-id="harrington-leather-trainers"] .accordions-section');
+        if (accordions) accordions.outerHTML = reviewsHTML;
+        else document.querySelector('[data-product-id="harrington-leather-trainers"] .product-info').insertAdjacentHTML('beforeend', reviewsHTML);
+      }
     }
   })();
 </script>
