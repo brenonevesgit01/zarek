@@ -35,18 +35,20 @@ html, body {
 }
 
 .gallery__main {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    max-height: 100vw !important;
-    overflow: hidden;
+    position: relative !important;
+    width: 100% !important;
+    height: 0 !important;
+    padding-bottom: 100% !important;
+    overflow: hidden !important;
     background-color: var(--color-bg-light);
 }
 
 .gallery__main-img {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
     width: 100% !important;
     height: 100% !important;
-    max-height: 100vw !important;
     object-fit: cover !important;
     transition: opacity 0.3s ease;
 }
@@ -1944,7 +1946,7 @@ body[data-product-id="harrington-leather-trainers"] .product-info__divider { dis
 
 .harrington-feature-img {
   width: 100% !important;
-  height: auto !important;
+  height: 360px !important;
   max-height: 100vw !important;
   display: block !important;
   border-radius: 4px;
