@@ -1081,6 +1081,10 @@
     if (id === 'harrington-leather-trainers') {
       var block = document.querySelector('[data-harrington-trust]');
       if (block) block.hidden = false;
+      // Hide the original .product-price block — the trust block already
+      // shows the price (£32 / £100 / 68% OFF) and we don't want a duplicate.
+      var origPrice = document.querySelector('.product-price');
+      if (origPrice) origPrice.style.display = 'none';
     }
   })();
 </script>
