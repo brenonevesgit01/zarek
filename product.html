@@ -10,108 +10,6 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/pages/product.css">
     <script async defer src="https://js.whop.com/static/checkout/loader.js"></script>
-    <style>
-      /* Bundle / quantity-break widget — shown only when product has a bundle */
-      .bundle{margin:24px 0 8px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;}
-      .bundle__title{background:#000;color:#fff;font-size:11px;font-weight:700;letter-spacing:2px;padding:14px 16px;text-align:center;text-transform:uppercase;}
-      .bundle__tiers{display:flex;flex-direction:column;border:1px solid #000;border-top:none;}
-      .bundle__tier{display:flex;align-items:center;padding:18px 16px;border-bottom:1px solid #e5e5e5;cursor:pointer;background:#fff;transition:background .15s;}
-      .bundle__tier:last-child{border-bottom:none;}
-      .bundle__tier:hover{background:#fafafa;}
-      .bundle__tier.is-active{background:#f5f5f5;}
-      .bundle__tier-radio{width:20px;height:20px;border:2px solid #bbb;border-radius:50%;margin-right:14px;flex-shrink:0;position:relative;background:#fff;}
-      .bundle__tier.is-active .bundle__tier-radio{border-color:#000;background:#000;}
-      .bundle__tier.is-active .bundle__tier-radio::after{content:'';position:absolute;top:3px;left:3px;width:10px;height:10px;background:#fff;border-radius:50%;}
-      .bundle__tier-info{flex:1;min-width:0;}
-      .bundle__tier-title{font-size:14px;font-weight:600;color:#111;line-height:1.2;}
-      .bundle__tier-subtitle{font-size:10px;color:#888;margin-top:3px;letter-spacing:1.5px;text-transform:uppercase;}
-      .bundle__tier-right{text-align:right;flex-shrink:0;display:flex;flex-direction:column;align-items:flex-end;gap:4px;}
-      .bundle__tier-badge{display:inline-block;font-size:9px;font-weight:700;color:#fff;background:#c1121f;padding:3px 8px;letter-spacing:1.2px;text-transform:uppercase;border-radius:2px;}
-      .bundle__tier-price{font-size:15px;font-weight:700;color:#111;}
-      .bundle__tier-price-was{font-size:11px;color:#888;text-decoration:line-through;display:block;}
-      @media (max-width:600px){.bundle__tier{padding:14px 12px;}}
-
-      /* Update notice (¡ACTUALIZACIÓN! style) */
-      .update-notice{margin:16px 0;padding:14px 16px;background:#fff8e1;border-left:3px solid #f59e0b;font-size:12px;color:#444;line-height:1.5;}
-      .update-notice strong{color:#111;display:block;margin-bottom:4px;font-size:11px;letter-spacing:1px;text-transform:uppercase;}
-
-      /* Customer satisfaction banner */
-      .satisfaction-banner{background:#111;color:#fff;text-align:center;padding:36px 24px;margin:48px 0;}
-      .satisfaction-banner__num{font-size:32px;font-weight:700;letter-spacing:1px;}
-      .satisfaction-banner__num span{color:#4ade80;}
-      .satisfaction-banner__label{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#aaa;margin-top:6px;}
-
-      /* Product features list (Piel de primera, Costuras reforzadas, etc) */
-      .features-list{margin:24px 0;padding:0;list-style:none;}
-      .features-list li{padding:14px 0;border-bottom:1px solid #eee;font-size:13px;line-height:1.5;color:#444;display:flex;align-items:flex-start;gap:12px;}
-      .features-list li:last-child{border-bottom:none;}
-      .features-list li svg{flex-shrink:0;margin-top:2px;}
-      .features-list li strong{color:#111;font-weight:700;display:block;font-size:13px;margin-bottom:2px;}
-
-      /* Trust rows (top of product info, 3 stacked rows with icon) */
-      .trust-rows{margin:18px 0;display:flex;flex-direction:column;gap:0;border-top:1px solid #eee;border-bottom:1px solid #eee;}
-      .trust-row{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #f5f5f5;font-size:13px;color:#333;}
-      .trust-row:last-child{border-bottom:none;}
-      .trust-row__icon{width:28px;height:28px;flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#f59e0b;}
-      .trust-row__icon svg{width:22px;height:22px;}
-      .trust-row__text strong{color:#111;font-weight:600;}
-
-      /* Size guide link with ruler icon */
-      .size-guide-link-row{display:flex;align-items:center;gap:8px;margin:10px 0 18px;font-size:13px;}
-      .size-guide-link-row svg{width:18px;height:18px;color:#666;}
-      .size-guide-link-row a{color:#111;text-decoration:underline;}
-
-      /* Bundle widget — multi-unit picker enhancements */
-      .bundle__tier-pickers{display:none;flex-direction:column;gap:10px;margin-top:14px;padding-top:12px;border-top:1px dashed #ccc;width:100%;}
-      .bundle__tier.is-active .bundle__tier-pickers{display:flex;}
-      .bundle__tier-content{flex:1;display:flex;flex-direction:column;}
-      .bundle__tier-row{display:flex;align-items:center;gap:12px;}
-      .bundle__unit-row{display:flex;gap:8px;align-items:center;}
-      .bundle__unit-label{font-size:11px;color:#666;letter-spacing:1px;text-transform:uppercase;width:60px;flex-shrink:0;}
-      .bundle__unit-select{flex:1;padding:8px 28px 8px 10px;background:#fff url(data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><polyline points='1,1 6,6 11,1' stroke='%23111' stroke-width='1.5' fill='none' stroke-linecap='round'/></svg>) no-repeat right 10px center;background-size:10px;border:1px solid #ddd;font-size:12px;color:#111;font-family:inherit;appearance:none;cursor:pointer;}
-
-      /* Testimonial card (Carlos Madrid style) */
-      .testimonial-section{padding:64px 24px;background:#fafafa;text-align:center;}
-      .testimonial-section h2{font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#111;font-weight:700;margin:0 0 8px;}
-      .testimonial-stars{color:#f59e0b;font-size:18px;margin-bottom:24px;letter-spacing:3px;}
-      .testimonial-card{display:flex;max-width:680px;margin:0 auto;background:#fff;border:1px solid #eee;text-align:left;}
-      .testimonial-card__photo{width:200px;flex-shrink:0;background:#f5f5f5;}
-      .testimonial-card__photo img{width:100%;height:100%;object-fit:cover;display:block;}
-      .testimonial-card__body{padding:24px;display:flex;flex-direction:column;justify-content:center;}
-      .testimonial-card__quote{font-size:14px;line-height:1.6;color:#333;font-style:italic;margin:0 0 12px;}
-      .testimonial-card__name{font-size:13px;font-weight:700;color:#111;}
-      .testimonial-card__city{font-size:11px;color:#888;letter-spacing:1px;text-transform:uppercase;margin-top:2px;}
-      @media(max-width:600px){.testimonial-card{flex-direction:column;}.testimonial-card__photo{width:100%;height:240px;}.testimonial-section{padding:48px 16px;}}
-
-      /* FAQ cards (collapsible style) */
-      .faq-cards-section{padding:64px 24px;max-width:760px;margin:0 auto;}
-      .faq-cards-section h2{font-size:18px;letter-spacing:2px;text-transform:uppercase;color:#111;font-weight:700;text-align:center;margin:0 0 8px;}
-      .faq-cards-section .help-label{font-size:11px;color:#888;letter-spacing:2px;text-transform:uppercase;text-align:center;margin-bottom:32px;}
-      .faq-card{border-bottom:1px solid #e5e5e5;}
-      .faq-card__q{display:flex;align-items:center;justify-content:space-between;padding:18px 0;cursor:pointer;font-size:14px;color:#111;font-weight:500;background:none;border:none;width:100%;text-align:left;font-family:inherit;}
-      .faq-card__q-icon{font-size:18px;color:#f59e0b;font-weight:700;transition:transform .2s;}
-      .faq-card.is-open .faq-card__q-icon{transform:rotate(45deg);}
-      .faq-card__a{display:none;padding:0 0 18px;font-size:13px;color:#666;line-height:1.7;}
-      .faq-card.is-open .faq-card__a{display:block;}
-
-      /* 3 big trust icons section */
-      .three-trust{padding:48px 24px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:900px;margin:0 auto;text-align:center;}
-      @media(max-width:700px){.three-trust{grid-template-columns:1fr;gap:32px;}}
-      .three-trust__item{display:flex;flex-direction:column;align-items:center;gap:12px;}
-      .three-trust__icon{width:64px;height:64px;border:1px solid #ddd;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#111;}
-      .three-trust__icon svg{width:28px;height:28px;}
-      .three-trust__title{font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#111;}
-      .three-trust__text{font-size:12px;color:#666;line-height:1.5;max-width:240px;}
-
-      /* About Zarek section (text-only, dark bg) */
-      .about-section{background:#111;color:#fff;padding:64px 24px;text-align:center;}
-      .about-section__label{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#888;margin:0 0 12px;}
-      .about-section h2{font-family:Georgia,serif;font-size:28px;font-weight:400;letter-spacing:1px;color:#fff;margin:0 0 24px;}
-      .about-section p{font-size:14px;line-height:1.8;color:#ccc;max-width:580px;margin:0 auto;}
-
-      /* Hero image inside features section */
-      .features-hero{margin:24px 0;width:100%;max-width:820px;height:auto;aspect-ratio:16/10;object-fit:cover;display:block;background:#f5f5f5;}
-    </style>
 </head>
 <body>
 <div class="announcement-bar">
@@ -266,22 +164,6 @@
                             <span class="product-price__badge" data-product-badge>Sale</span>
                         </div>
 
-                        <!-- TRUST ROWS — 3 stacked icons (free shipping / guarantee / limited stock) -->
-                        <div class="trust-rows">
-                            <div class="trust-row">
-                                <div class="trust-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
-                                <div class="trust-row__text"><strong>Free Shipping</strong> with Royal Mail UK</div>
-                            </div>
-                            <div class="trust-row">
-                                <div class="trust-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c2.39 0 4.68.94 6.36 2.64"/><polyline points="22 4 12 14 9 11"/></svg></div>
-                                <div class="trust-row__text"><strong>30-Day Guarantee</strong></div>
-                            </div>
-                            <div class="trust-row">
-                                <div class="trust-row__icon" style="color:#c1121f;"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="6"/></svg></div>
-                                <div class="trust-row__text"><strong>Limited stock available</strong></div>
-                            </div>
-                        </div>
-
                         <!-- COLOR -->
                         <div class="variant" data-color-block>
                             <span class="variant__label">
@@ -304,19 +186,7 @@
                             </div>
                         </div>
 
-                        <p class="size-guide-link-row">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M2 8v8M22 8v8M6 8v8M10 8v8M14 8v8M18 8v8"/></svg>
-                            <a href="#" id="open-size-guide">Size guide</a>
-                        </p>
-
-                        <!-- BUNDLE / QUANTITY-BREAK WIDGET (only renders if product has p.bundle) -->
-                        <div class="bundle" data-bundle hidden>
-                            <div class="bundle__title" data-bundle-title>LIMITED TIME OFFER</div>
-                            <div class="bundle__tiers" data-bundle-tiers></div>
-                        </div>
-
-                        <!-- UPDATE NOTICE (only renders if product has p.notice) -->
-                        <div class="update-notice" data-update-notice hidden></div>
+                        <p class="size-guide-link"><a href="#" id="open-size-guide">What's my size?</a></p>
 
                         <!-- SIZE GUIDE MODAL -->
                         <div id="size-guide-modal" style="display:none;">
@@ -384,6 +254,102 @@
                           </div>
                         </div>
 
+                        <div class="promo-banner">
+                          <span class="promo-banner__tag">EARLY SPRING SALE</span>
+                          <h3 class="promo-banner__title">— UP TO 70% OFF —</h3>
+                          <p class="promo-banner__sub">A new season begins. Refresh your wardrobe with timeless essentials crafted for lighter days and effortless layering.</p>
+                          <p class="promo-banner__highlight">Enjoy up to 70% off selected styles for a limited time.</p>
+                          <p class="promo-banner__note">Limited seasonal stock — once sold out, it will not be restocked.</p>
+                        </div>
+
+                        <div class="product-accordions">
+                          <div class="accordion-item">
+                            <button class="accordion-header">
+                              <span>DESCRIPTION</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </button>
+                            <div class="accordion-body">
+                              <p data-product-description>Loading...</p>
+                            </div>
+                          </div>
+
+                          <div class="accordion-item">
+                            <button class="accordion-header">
+                              <span>SHIPPING & DELIVERY</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </button>
+                            <div class="accordion-body">
+                              <p>Standard delivery takes 5–8 business days. Express delivery available at checkout. Free shipping on orders over £100. You will receive a tracking number once your order has been dispatched.</p>
+                            </div>
+                          </div>
+
+                          <div class="accordion-item">
+                            <button class="accordion-header">
+                              <span>RETURNS & REFUNDS</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </button>
+                            <div class="accordion-body">
+                              <p>We accept returns within 30 days of delivery. Items must be unworn, unwashed, and in original condition with all tags attached. To initiate a return, contact our support team. Refunds are processed within 5–7 business days.</p>
+                            </div>
+                          </div>
+
+                          <div class="accordion-item">
+                            <button class="accordion-header">
+                              <span>ANY QUESTIONS?</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </button>
+                            <div class="accordion-body">
+                              <p>Our support team is available Monday to Friday, 9am–6pm. Reach us at <a href="mailto:support@zarek.com">support@zarek.com</a> and we'll get back to you within 24 hours.</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="testimonials-section">
+                          <h3 class="testimonials-title">WHAT OUR CUSTOMERS SAY</h3>
+                          <div class="testimonials-slider">
+                            <div class="testimonial-slide active">
+                              <div class="testimonial-stars">★★★★★</div>
+                              <p class="testimonial-text">"Exceptional quality and fast delivery. The fit was perfect straight out of the box — exactly what I was looking for."</p>
+                              <p class="testimonial-author">Marcus L.</p>
+                              <p class="testimonial-location">New York, NY</p>
+                            </div>
+                            <div class="testimonial-slide">
+                              <div class="testimonial-stars">★★★★★</div>
+                              <p class="testimonial-text">"I've ordered from many stores but Zarek stands out. The materials feel premium and the style is exactly on point."</p>
+                              <p class="testimonial-author">Daniel R.</p>
+                              <p class="testimonial-location">Los Angeles, CA</p>
+                            </div>
+                            <div class="testimonial-slide">
+                              <div class="testimonial-stars">★★★★★</div>
+                              <p class="testimonial-text">"Clean design, great quality. Wore it the same day it arrived and got compliments immediately. Will be ordering again."</p>
+                              <p class="testimonial-author">James K.</p>
+                              <p class="testimonial-location">Chicago, IL</p>
+                            </div>
+                            <div class="testimonial-slide">
+                              <div class="testimonial-stars">★★★★★</div>
+                              <p class="testimonial-text">"Solid construction and a great fit. You can tell a lot of thought went into the details. Highly recommend."</p>
+                              <p class="testimonial-author">Thomas W.</p>
+                              <p class="testimonial-location">Miami, FL</p>
+                            </div>
+                            <div class="testimonial-slide">
+                              <div class="testimonial-stars">★★★★★</div>
+                              <p class="testimonial-text">"Best purchase I've made this year. The quality exceeded my expectations and shipping was faster than expected."</p>
+                              <p class="testimonial-author">Oliver S.</p>
+                              <p class="testimonial-location">Austin, TX</p>
+                            </div>
+                          </div>
+                          <div class="testimonials-controls">
+                            <button class="testimonial-prev">&#8249;</button>
+                            <div class="testimonial-dots">
+                              <span class="dot active"></span>
+                              <span class="dot"></span>
+                              <span class="dot"></span>
+                              <span class="dot"></span>
+                              <span class="dot"></span>
+                            </div>
+                            <button class="testimonial-next">&#8250;</button>
+                          </div>
+                        </div>
 
 
                         <!-- PAYMENT MODAL -->
@@ -409,75 +375,6 @@
         </section>
 
         <!-- =================================================================
-             FEATURES LIST — only renders if product.features defined
-             ================================================================= -->
-        <section class="container" data-features-section hidden style="margin:48px auto;max-width:820px;">
-            <h2 style="font-size:18px;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-align:center;margin:0 0 8px;color:#111;">Timeless Design &amp; All-Day Comfort</h2>
-            <p style="text-align:center;font-size:13px;color:#666;line-height:1.7;max-width:600px;margin:0 auto 24px;">Crafted in premium leather with reinforced stitching, the Harrington Leather Trainers deliver lightweight comfort and great durability. Their cushioned insole provides gentle support, while the elegant low-cut design adds a versatile touch suited even for elegant casual outfits.</p>
-            <img class="features-hero" data-features-hero src="" alt="Harrington Leather Trainers">
-            <ul class="features-list" data-features-list></ul>
-        </section>
-
-        <!-- TESTIMONIAL CARD (single curated review) -->
-        <section class="testimonial-section" data-testimonial-section hidden>
-            <h2>What Our Customers Say</h2>
-            <div class="testimonial-stars">★★★★★</div>
-            <div class="testimonial-card">
-                <div class="testimonial-card__photo">
-                    <img src="" alt="Customer review" data-testimonial-photo>
-                </div>
-                <div class="testimonial-card__body">
-                    <p class="testimonial-card__quote" data-testimonial-quote></p>
-                    <div class="testimonial-card__name" data-testimonial-name></div>
-                    <div class="testimonial-card__city" data-testimonial-city></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ CARDS (collapsible) -->
-        <section class="faq-cards-section" data-faq-cards-section hidden>
-            <h2>Frequently Asked Questions</h2>
-            <p class="help-label">Need help?</p>
-            <div data-faq-cards-list></div>
-        </section>
-
-        <!-- 3 BIG TRUST ICONS -->
-        <section class="three-trust" data-three-trust hidden>
-            <div class="three-trust__item">
-                <div class="three-trust__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
-                <div class="three-trust__title">Free Shipping</div>
-                <div class="three-trust__text">Free shipping worldwide. Order by 17:00 to ship the same day.</div>
-            </div>
-            <div class="three-trust__item">
-                <div class="three-trust__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L4 7v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V7l-8-5z"/><polyline points="9 12 11 14 15 10"/></svg></div>
-                <div class="three-trust__title">Secure Payment</div>
-                <div class="three-trust__text">No worries with your card payment. Encrypted via SSL.</div>
-            </div>
-            <div class="three-trust__item">
-                <div class="three-trust__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M9 1l6 0M10 11v6M14 11v6"/></svg></div>
-                <div class="three-trust__title">30-Day Returns</div>
-                <div class="three-trust__text">Don't like it? Return it within 30 days, no questions asked.</div>
-            </div>
-        </section>
-
-        <!-- ABOUT ZAREK -->
-        <section class="about-section" data-about-section hidden>
-            <p class="about-section__label">About</p>
-            <h2 data-about-title>About Zarek</h2>
-            <p data-about-text></p>
-        </section>
-
-        <!-- =================================================================
-             SATISFACTION BANNER — only renders if product.satisfactionBanner = true
-             ================================================================= -->
-        <section data-satisfaction-banner hidden>
-            <div class="satisfaction-banner">
-                <div class="satisfaction-banner__num">+10,000 <span>✓</span></div>
-                <div class="satisfaction-banner__label">Satisfied Customers</div>
-            </div>
-        </section>
-
-        <!-- =================================================================
              3. RELATED PRODUCTS — "You may also like"
              Rendered by js/products.js (same category, falls back to others)
              ================================================================= -->
@@ -491,6 +388,113 @@
             </div>
         </section>
 
+        <div class="press-section">
+          <div id="press-info-box">
+            <p class="press-logo-name">William C.</p>
+            <p class="press-logo-description">A flawless fit, every time. Zarek blends refined materials with timeless modern design — my first choice for a look that truly stands apart.</p>
+          </div>
+          <div class="press-logo-container">
+            <img src="https://cdn.shopify.com/s/files/1/0693/9387/5134/files/forbes_logo_300x_9c9fa340-cd2f-41bd-9f20-9dfe37311b8a.avif?v=1754728244" alt="Forbes" class="press-logo-img active"
+              data-name="William C."
+              data-description="A flawless fit, every time. Zarek blends refined materials with timeless modern design — my first choice for a look that truly stands apart."
+              onclick="pressShowInfo(event)">
+            <img src="https://cdn.shopify.com/s/files/1/0693/9387/5134/files/1200px-VOGUE_revista_-_logo_300x_d993c682-8abf-4559-b5f3-ca8d435c88a5.avif?v=1754728239" alt="Vogue" class="press-logo-img"
+              data-name="James A."
+              data-description="Clean lines, premium fabrics, and a fit that just works. Zarek has completely elevated my everyday wardrobe."
+              onclick="pressShowInfo(event)">
+            <img src="https://cdn.shopify.com/s/files/1/0693/9387/5134/files/the-business-of-fashion-bof-logo-B19514A78D-seeklogo.com_300x_5c3f66ff-8edd-404e-86af-9b5264a06d68.png?v=1754728297" alt="BOF" class="press-logo-img"
+              data-name="Marcus T."
+              data-description="Unrivalled quality and precise attention to detail. Zarek defines the new standard in modern menswear."
+              onclick="pressShowInfo(event)">
+            <img src="https://cdn.shopify.com/s/files/1/0693/9387/5134/files/gq-logo_300x_8baf593c-ea4f-4322-9cfc-ad55fa296dfb.avif?v=1754728287" alt="GQ" class="press-logo-img"
+              data-name="Daniel R."
+              data-description="Finally, a brand that perfects both style and substance. Zarek pieces are versatile, built to last, and effortlessly sharp."
+              onclick="pressShowInfo(event)">
+          </div>
+        </div>
+
+        <div class="mini-collection-section">
+          <p class="mini-collection-label">OUR PANTS</p>
+          <a href="collection.html?cat=pants" class="mini-collection-view-all">VIEW ALL &rsaquo;</a>
+          <button class="mini-collection-prev">&#8249;</button>
+          <div class="mini-collection-track" id="mini-pants-track"></div>
+          <button class="mini-collection-next">&#8250;</button>
+        </div>
+
+        <a href="collection.html" class="back-to-collection">
+          &larr; BACK TO COLLECTION
+        </a>
+
+        <div class="faq-section">
+          <p class="faq-label">NEED HELP?</p>
+          <h2 class="faq-title">FREQUENTLY ASKED QUESTIONS</h2>
+
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-header">
+                <span>HOW MUCH DOES SHIPPING COST?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="faq-body">
+                <p>We offer free standard shipping on all orders. Express shipping is available at checkout for an additional fee.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-header">
+                <span>HOW LONG WILL IT TAKE TO RECEIVE MY ORDER?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="faq-body">
+                <p>Standard delivery takes 5–8 business days. Express delivery takes 2–3 business days. You will receive a tracking number once your order has been dispatched.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-header">
+                <span>WHERE CAN I FIND MY TRACKING DETAILS?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="faq-body">
+                <p>Once your order ships, you will receive a confirmation email with your tracking number. You can use it to follow your order on our carrier's website.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-header">
+                <span>I ORDERED THE WRONG ITEM, HOW DO I RETURN MY ORDER?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="faq-body">
+                <p>No problem. Contact us at support@zarek.com within 30 days of delivery and we will guide you through the return process. Items must be unworn and in original condition.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-header">
+                <span>ANY OTHER QUESTIONS?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="faq-body">
+                <p>Our support team is available Monday to Friday, 9am–6pm. Reach us at support@zarek.com and we'll get back to you within 24 hours.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trust-strip">
+          <div class="trust-strip-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v3"/><rect x="9" y="11" width="14" height="10" rx="1"/><circle cx="12" cy="20" r="1"/><circle cx="20" cy="20" r="1"/></svg>
+            <p class="trust-strip-title">FREE SHIPPING</p>
+            <p class="trust-strip-text">Fast & free shipping worldwide. Order before <strong>11:00 PM</strong> and we will start processing it today.</p>
+          </div>
+          <div class="trust-strip-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+            <p class="trust-strip-title">SATISFIED OR REFUNDED</p>
+            <p class="trust-strip-text">We want you to be completely satisfied. If not, request a full refund within 30 days, no questions asked.</p>
+          </div>
+          <div class="trust-strip-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            <p class="trust-strip-title">TRUSTED</p>
+            <p class="trust-strip-text">We are committed to offering high-quality products and service to every customer, every time.</p>
+          </div>
+        </div>
     </main>
 
     <!-- =====================================================================
@@ -889,213 +893,21 @@
         }
       });
 
-      // ---- Bundle widget rendering + state ----
-      let activeBundleTier = null; // null = no bundle / use single qty
-      function renderBundleWidget() {
-        const widget = document.querySelector('[data-bundle]');
-        const noticeEl = document.querySelector('[data-update-notice]');
-        const products = window.ZAREK_PRODUCTS;
-        if (!widget || !products) return;
-        const id = new URLSearchParams(window.location.search).get('id');
-        const product = products.find(p => p.id === id);
-        if (!product) return;
-
-        // Update notice (if defined)
-        if (noticeEl && product.notice) {
-          noticeEl.innerHTML = '<strong>UPDATE!</strong>' + product.notice;
-          noticeEl.hidden = false;
-        }
-
-        // Features list (if defined)
-        const featuresSection = document.querySelector('[data-features-section]');
-        const featuresList = document.querySelector('[data-features-list]');
-        if (featuresSection && featuresList && product.features && product.features.length) {
-          featuresList.innerHTML = product.features.map(f => (
-            '<li>' +
-              '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>' +
-              '<div><strong>' + f.title + '</strong>' + f.text + '</div>' +
-            '</li>'
-          )).join('');
-          featuresSection.hidden = false;
-        }
-
-        // Features hero image (inside features section)
-        const featuresHero = document.querySelector('[data-features-hero]');
-        if (featuresHero && product.featuresHero) {
-          featuresHero.src = product.featuresHero;
-        }
-
-        // Satisfaction banner (always show on products with bundle since it's a value-add)
-        const satisfactionEl = document.querySelector('[data-satisfaction-banner]');
-        if (satisfactionEl && product.bundle) {
-          satisfactionEl.hidden = false;
-        }
-
-        // Testimonial card
-        const testEl = document.querySelector('[data-testimonial-section]');
-        if (testEl && product.testimonial) {
-          const t = product.testimonial;
-          testEl.querySelector('[data-testimonial-photo]').src = t.photo || '';
-          testEl.querySelector('[data-testimonial-quote]').textContent = '"' + t.quote + '"';
-          testEl.querySelector('[data-testimonial-name]').textContent = t.name;
-          testEl.querySelector('[data-testimonial-city]').textContent = t.city || '';
-          testEl.hidden = false;
-        }
-
-        // FAQ cards (collapsible)
-        const faqSection = document.querySelector('[data-faq-cards-section]');
-        const faqList = document.querySelector('[data-faq-cards-list]');
-        if (faqSection && faqList && product.faqs && product.faqs.length) {
-          faqList.innerHTML = product.faqs.map(f => (
-            '<div class="faq-card">' +
-              '<button class="faq-card__q"><span>' + f.q + '</span><span class="faq-card__q-icon">+</span></button>' +
-              '<div class="faq-card__a">' + f.a + '</div>' +
-            '</div>'
-          )).join('');
-          faqList.querySelectorAll('.faq-card__q').forEach(btn => {
-            btn.addEventListener('click', () => {
-              btn.parentElement.classList.toggle('is-open');
-            });
-          });
-          faqSection.hidden = false;
-        }
-
-        // 3 trust icons (always show on products with bundle)
-        const threeTrust = document.querySelector('[data-three-trust]');
-        if (threeTrust && product.bundle) threeTrust.hidden = false;
-
-        // About Zarek
-        const aboutEl = document.querySelector('[data-about-section]');
-        if (aboutEl && product.about) {
-          if (product.about.title) aboutEl.querySelector('[data-about-title]').textContent = product.about.title;
-          aboutEl.querySelector('[data-about-text]').textContent = product.about.text;
-          aboutEl.hidden = false;
-        }
-
-        // Bundle widget (if defined)
-        if (!product.bundle || !product.bundle.tiers) return;
-        const titleEl = widget.querySelector('[data-bundle-title]');
-        const tiersEl = widget.querySelector('[data-bundle-tiers]');
-        if (titleEl) titleEl.textContent = product.bundle.title || 'LIMITED TIME OFFER';
-
-        const fmt = n => '£' + Number(n).toFixed(2);
-        let activeIdx = product.bundle.tiers.findIndex(t => t.default) || 0;
-        if (activeIdx < 0) activeIdx = 0;
-
-        function buildUnitPickers(tier) {
-          if (tier.qty <= 1) return '';
-          const colors = (product.colorVariants || []).map(c => c.name);
-          const sizes = product.sizes || [];
-          let html = '<div class="bundle__tier-pickers">';
-          for (let u = 0; u < tier.qty; u++) {
-            html += '<div class="bundle__unit-row">' +
-              '<span class="bundle__unit-label">Pair ' + (u+1) + '</span>' +
-              '<select class="bundle__unit-select" data-unit-color="' + u + '">' +
-                colors.map(c => '<option value="' + c + '">' + c + '</option>').join('') +
-              '</select>' +
-              '<select class="bundle__unit-select" data-unit-size="' + u + '">' +
-                '<option value="">Size</option>' +
-                sizes.map(s => '<option value="' + s + '">EU ' + s + '</option>').join('') +
-              '</select>' +
-            '</div>';
-          }
-          html += '</div>';
-          return html;
-        }
-        function paint() {
-          tiersEl.innerHTML = product.bundle.tiers.map((tier, i) => {
-            const active = i === activeIdx ? ' is-active' : '';
-            const badge = tier.badge ? '<div class="bundle__tier-badge">' + tier.badge + '</div>' : '';
-            const wasPrice = tier.was ? '<div class="bundle__tier-price-was">' + fmt(tier.was) + '</div>' : '';
-            return '<div class="bundle__tier' + active + '" data-tier-idx="' + i + '">' +
-              '<div class="bundle__tier-radio"></div>' +
-              '<div class="bundle__tier-content">' +
-                '<div class="bundle__tier-row">' +
-                  '<div class="bundle__tier-info">' +
-                    '<div class="bundle__tier-title">' + tier.title + '</div>' +
-                    '<div class="bundle__tier-subtitle">' + (tier.subtitle || '') + '</div>' +
-                  '</div>' +
-                  '<div class="bundle__tier-right">' + badge + wasPrice +
-                    '<div class="bundle__tier-price">' + fmt(tier.total) + '</div>' +
-                  '</div>' +
-                '</div>' +
-                buildUnitPickers(tier) +
-              '</div>' +
-            '</div>';
-          }).join('');
-          tiersEl.querySelectorAll('.bundle__tier').forEach(el => {
-            el.addEventListener('click', (e) => {
-              if (e.target.tagName === 'SELECT') return;
-              activeIdx = parseInt(el.dataset.tierIdx);
-              activeBundleTier = product.bundle.tiers[activeIdx];
-              paint();
-              updateAddToCartLabel();
-            });
-          });
-          tiersEl.querySelectorAll('select').forEach(s => {
-            s.addEventListener('click', e => e.stopPropagation());
-          });
-          activeBundleTier = product.bundle.tiers[activeIdx];
-        }
-        widget.hidden = false;
-        paint();
-        updateAddToCartLabel();
-      }
-
-      function updateAddToCartLabel() {
-        const btn = document.querySelector('button.btn-primary');
-        if (!btn || !activeBundleTier) return;
-        const fmt = n => '£' + Number(n).toFixed(2);
-        if (activeBundleTier.qty > 1) {
-          btn.textContent = 'Add to Cart — ' + activeBundleTier.qty + ' for ' + fmt(activeBundleTier.total);
-        } else {
-          btn.textContent = 'Add to Cart';
-        }
-      }
-
-      // Wait for products to load then render bundle
-      (function waitForProducts() {
-        if (window.ZAREK_PRODUCTS) {
-          setTimeout(renderBundleWidget, 100);
-        } else {
-          setTimeout(waitForProducts, 200);
-        }
-      })();
-
       const addToCartBtn = document.querySelector('button.btn-primary');
       if (addToCartBtn) {
         addToCartBtn.addEventListener('click', function(e) {
           e.preventDefault();
           const name = document.querySelector('[data-product-name]')?.textContent || '';
-          const priceText = document.querySelector('[data-product-price-new]')?.textContent || '';
-          const unitPrice = parseFloat(priceText.replace(/[^0-9.]/g,'')) || 0;
-          const originalPrice = parseFloat(document.querySelector('[data-product-price-old]')?.textContent?.replace(/[^0-9.]/g,'')) || unitPrice;
+          const price = parseFloat(document.querySelector('[data-product-price-new]')?.textContent?.replace(/[^0-9.]/g,'')) || 0;
+          const originalPrice = parseFloat(document.querySelector('[data-product-price-old]')?.textContent?.replace(/[^0-9.]/g,'')) || price;
           const color = document.querySelector('[data-variant-value]')?.textContent || '';
           const size = document.querySelector('select.size-select')?.value || '';
           const img = document.querySelector('.gallery__main-img')?.src || '';
           const id = new URLSearchParams(window.location.search).get('id') || name;
 
-          // If a bundle tier with multi-unit pickers is active, add ONE cart line
-          // per unit using the picker's color/size selection. Each line gets the
-          // bundle's discounted unit price.
-          if (activeBundleTier && activeBundleTier.qty > 1) {
-            const tierEl = document.querySelector('.bundle__tier.is-active');
-            const colorSelects = tierEl ? tierEl.querySelectorAll('[data-unit-color]') : [];
-            const sizeSelects  = tierEl ? tierEl.querySelectorAll('[data-unit-size]') : [];
-            const unitPriceBundle = activeBundleTier.total / activeBundleTier.qty;
-            const lineName = name + ' — ' + activeBundleTier.title;
-            for (let u = 0; u < activeBundleTier.qty; u++) {
-              const uColor = (colorSelects[u] && colorSelects[u].value) || color;
-              const uSize  = (sizeSelects[u]  && sizeSelects[u].value)  || size;
-              if (!uSize) { alert('Please pick a size for Pair ' + (u+1)); return; }
-              const lineId = id + '__bundle' + activeBundleTier.qty + '_u' + u;
-              cart.push({ id: lineId, name: lineName, price: unitPriceBundle, originalPrice, color: uColor, size: uSize, img, qty: 1 });
-            }
-          } else {
-            const existing = cart.find(i => i.id === id && i.color === color && i.size === size);
-            if (existing) { existing.qty++; }
-            else { cart.push({ id, name, price: unitPrice, originalPrice, color, size, img, qty: 1 }); }
-          }
+          const existing = cart.find(i => i.id === id && i.color === color && i.size === size);
+          if (existing) { existing.qty++; }
+          else { cart.push({ id, name, price, originalPrice, color, size, img, qty: 1 }); }
 
           saveCart();
           openCart();
