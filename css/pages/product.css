@@ -1794,3 +1794,20 @@ html, body {
 body[data-product-id="harrington-leather-trainers"] .product-info { gap: 4px !important; }
 body[data-product-id="harrington-leather-trainers"] .product-info__name { margin-bottom: 0; }
 body[data-product-id="harrington-leather-trainers"] .product-info__divider { display: none; }
+
+/* Fix overflow mobile - size guide table */
+.size-guide-modal,
+.size-guide-modal table,
+.size-guide-modal *,
+[class*="size-guide"] table,
+[class*="size-guide"] * {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.size-guide-modal table,
+[class*="size-guide"] table {
+  display: block !important;
+  overflow-x: auto !important;
+  white-space: nowrap !important;
+}
