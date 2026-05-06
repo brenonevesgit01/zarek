@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product — Zarek</title>
-    <link rel="stylesheet" href="css/reset.css?v=20260506d">
-    <link rel="stylesheet" href="css/variables.css?v=20260506d">
-    <link rel="stylesheet" href="css/components.css?v=20260506d">
-    <link rel="stylesheet" href="css/layout.css?v=20260506d">
-    <link rel="stylesheet" href="css/pages/product.css?v=20260506d">
+    <link rel="stylesheet" href="css/reset.css?v=20260506e">
+    <link rel="stylesheet" href="css/variables.css?v=20260506e">
+    <link rel="stylesheet" href="css/components.css?v=20260506e">
+    <link rel="stylesheet" href="css/layout.css?v=20260506e">
+    <link rel="stylesheet" href="css/pages/product.css?v=20260506e">
     <script async defer src="https://js.whop.com/static/checkout/loader.js"></script>
 </head>
 <body>
@@ -1264,6 +1264,39 @@
       // 'WHAT OUR CUSTOMERS SAY' header.
       var oldTestimonials = document.querySelector('[data-product-id="harrington-leather-trainers"] .testimonials-section');
       if (oldTestimonials) oldTestimonials.outerHTML = '';
+
+      // BULLETPROOF SIZING — set pixel heights via JS (highest priority,
+      // no CSS rule can override an inline style set on the .style object).
+      // Runs once on load and again on resize. Catches any browser bug or
+      // cached-CSS issue that lets images render too tall.
+      function forceHarringtonImageSizes() {
+        var gm = document.querySelector('.gallery__main');
+        if (gm) {
+          var w = gm.offsetWidth;
+          if (w > 0) {
+            gm.style.height = w + 'px';
+            gm.style.maxHeight = w + 'px';
+            gm.style.padding = '0';
+          }
+        }
+        var fImg = document.querySelector('.harrington-feature-img');
+        if (fImg) {
+          fImg.style.height = '360px';
+          fImg.style.maxHeight = '360px';
+          fImg.style.objectFit = 'cover';
+        }
+        document.querySelectorAll('.harrington-review-card img').forEach(function(im) {
+          im.style.height = '280px';
+          im.style.maxHeight = '280px';
+          im.style.objectFit = 'cover';
+        });
+      }
+      forceHarringtonImageSizes();
+      window.addEventListener('resize', forceHarringtonImageSizes);
+      // Also re-run after images load (in case offsetWidth was 0 initially)
+      window.addEventListener('load', forceHarringtonImageSizes);
+      setTimeout(forceHarringtonImageSizes, 200);
+      setTimeout(forceHarringtonImageSizes, 600);
     }
   })();
 </script>
