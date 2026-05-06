@@ -1778,7 +1778,13 @@ html, body {
 
 /* Harrington-only: tighten title spacing and remove the divider/flex-gap
    so the social-proof block sits right below the title (8px gap). */
-body[data-product-id="harrington-leather-trainers"] .product-info { gap: 8px; }
+body[data-product-id="harrington-leather-trainers"] .product-info {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
+  gap: 8px;
+}
 body[data-product-id="harrington-leather-trainers"] .product-info__name { margin-bottom: 0; }
 body[data-product-id="harrington-leather-trainers"] .product-info__divider { display: none; }
 
