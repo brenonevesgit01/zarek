@@ -1841,15 +1841,20 @@ body[data-product-id="harrington-leather-trainers"] .product-info__divider { dis
 .harrington-payment-icons {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 12px;
   margin-top: 12px;
 }
 
-.harrington-payment-icons img {
-  height: 24px;
-  width: auto;
-  object-fit: contain;
+.harrington-payment-icons .list-payment-lm {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.harrington-payment-icons .list-payment__item svg {
+  display: block;
 }
 
 
