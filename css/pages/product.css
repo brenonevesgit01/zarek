@@ -1681,10 +1681,13 @@ html, body {
    Toggled visible by inline script in product.html when ?id=harrington-leather-trainers.
    ========================================================================== */
 .harrington-trust-block {
+  width: 100%;
+  max-width: 100%;
   border-top: none;
   border-bottom: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 16px 0;
+  box-sizing: border-box;
 }
 .harrington-trust-block > * {
   border: none;
@@ -1695,7 +1698,7 @@ html, body {
   align-items: center;
   gap: 10px;
   margin-top: 4px;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   font-size: 13px;
   color: #333;
 }
@@ -1723,17 +1726,17 @@ html, body {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .harrington-price-current {
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 700;
   color: #111;
 }
 
 .harrington-price-original {
-  font-size: 16px;
+  font-size: 18px;
   color: #e00;
   text-decoration: line-through;
 }
@@ -1741,26 +1744,26 @@ html, body {
 .harrington-badge-off {
   background: #111;
   color: #fff;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
-  padding: 3px 8px;
+  padding: 4px 10px;
   border-radius: 2px;
 }
 
 .harrington-trust-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 12px 0;
+  margin: 0 0 16px 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
 }
 
 .harrington-trust-list li {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 13px;
+  font-size: 14px;
   color: #333;
 }
 
@@ -1768,10 +1771,9 @@ html, body {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 13px;
+  font-size: 14px;
   color: #333;
-  margin: 0;
-  margin-bottom: 0;
+  margin: 0 0 4px 0;
 }
 
 /* Harrington-only: tighten title spacing and remove the divider/flex-gap
