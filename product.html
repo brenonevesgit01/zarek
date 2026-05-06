@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product — Zarek</title>
-    <link rel="stylesheet" href="css/reset.css?v=20260506e">
-    <link rel="stylesheet" href="css/variables.css?v=20260506e">
-    <link rel="stylesheet" href="css/components.css?v=20260506e">
-    <link rel="stylesheet" href="css/layout.css?v=20260506e">
-    <link rel="stylesheet" href="css/pages/product.css?v=20260506e">
+    <link rel="stylesheet" href="css/reset.css?v=20260506f">
+    <link rel="stylesheet" href="css/variables.css?v=20260506f">
+    <link rel="stylesheet" href="css/components.css?v=20260506f">
+    <link rel="stylesheet" href="css/layout.css?v=20260506f">
+    <link rel="stylesheet" href="css/pages/product.css?v=20260506f">
     <script async defer src="https://js.whop.com/static/checkout/loader.js"></script>
 </head>
 <body>
@@ -1274,21 +1274,21 @@
         if (gm) {
           var w = gm.offsetWidth;
           if (w > 0) {
-            gm.style.height = w + 'px';
-            gm.style.maxHeight = w + 'px';
-            gm.style.padding = '0';
+            gm.style.setProperty('height', w + 'px', 'important');
+            gm.style.setProperty('max-height', w + 'px', 'important');
+            gm.style.setProperty('padding-bottom', '0', 'important');
           }
         }
         var fImg = document.querySelector('.harrington-feature-img');
         if (fImg) {
-          fImg.style.height = '360px';
-          fImg.style.maxHeight = '360px';
-          fImg.style.objectFit = 'cover';
+          fImg.style.setProperty('height', '360px', 'important');
+          fImg.style.setProperty('max-height', '360px', 'important');
+          fImg.style.setProperty('object-fit', 'cover', 'important');
         }
         document.querySelectorAll('.harrington-review-card img').forEach(function(im) {
-          im.style.height = '280px';
-          im.style.maxHeight = '280px';
-          im.style.objectFit = 'cover';
+          im.style.setProperty('height', '280px', 'important');
+          im.style.setProperty('max-height', '280px', 'important');
+          im.style.setProperty('object-fit', 'cover', 'important');
         });
       }
       forceHarringtonImageSizes();
