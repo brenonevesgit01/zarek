@@ -2037,8 +2037,8 @@
             id: 'harrington-leather-trainers',
             name: 'Zarek | Harrington Leather Trainers',
             category: 'shoes',
-            price: 69.95,
-            originalPrice: 139.90,
+            price: 32.00,
+            originalPrice: 100.00,
             badge: 'SALE',
             images: [
                 'assets/products/shoes/white-sneaker-1.webp',

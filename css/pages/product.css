@@ -1675,3 +1675,104 @@ html, body {
   text-transform: uppercase;
 }
 
+
+/* ==========================================================================
+   HARRINGTON-ONLY social proof + price + trust icons block
+   Toggled visible by inline script in product.html when ?id=harrington-leather-trainers.
+   ========================================================================== */
+.harrington-trust-block {
+  padding: 16px 0;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  margin: 16px 0;
+}
+
+.harrington-social-proof {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  font-size: 13px;
+  color: #333;
+}
+
+.harrington-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.verified-badge {
+  display: inline-block;
+  background: #1877f2;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 10px;
+  width: 14px;
+  height: 14px;
+  text-align: center;
+  line-height: 14px;
+}
+
+.harrington-price-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.harrington-price-current {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111;
+}
+
+.harrington-price-original {
+  font-size: 16px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.harrington-badge-off {
+  background: #111;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 2px;
+}
+
+.harrington-trust-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.harrington-trust-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #333;
+}
+
+.harrington-stock-alert {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #333;
+  margin: 0;
+}
+
+.harrington-stock-dot {
+  width: 8px;
+  height: 8px;
+  background: #e00;
+  border-radius: 50%;
+  display: inline-block;
+}

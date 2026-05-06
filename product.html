@@ -164,6 +164,46 @@
                             <span class="product-price__badge" data-product-badge>Sale</span>
                         </div>
 
+                        <!-- Social proof + price block (Harrington only — toggled by inline script at end of body) -->
+                        <div class="harrington-trust-block" data-harrington-trust hidden>
+
+                          <!-- Social proof -->
+                          <div class="harrington-social-proof">
+                            <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/rachel-avatar.jpg" alt="Rachel K." class="harrington-avatar" onerror="this.style.display='none'">
+                            <p><strong>Rachel K.</strong> <span class="verified-badge">✔</span> and <strong>7k+ other customers</strong><br>love and recommend <strong>Zarek</strong></p>
+                          </div>
+
+                          <!-- Price -->
+                          <div class="harrington-price-row">
+                            <span class="harrington-price-current">£32.00</span>
+                            <span class="harrington-price-original">£100.00</span>
+                            <span class="harrington-badge-off">68% OFF</span>
+                          </div>
+
+                          <!-- Trust icons -->
+                          <ul class="harrington-trust-list">
+                            <li>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                              Free Shipping with Royal Mail
+                            </li>
+                            <li>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                              Secure payment with PayPal &amp; Credit card
+                            </li>
+                            <li>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                              30 days money back guarantee
+                            </li>
+                          </ul>
+
+                          <!-- Stock indicator -->
+                          <p class="harrington-stock-alert">
+                            <span class="harrington-stock-dot"></span>
+                            Only <strong>4 pieces left</strong>
+                          </p>
+
+                        </div>
+
                         <!-- COLOR -->
                         <div class="variant" data-color-block>
                             <span class="variant__label">
@@ -1033,5 +1073,16 @@
     <button class="cart-checkout-btn" id="cart-checkout-btn">Checkout • <span id="cart-checkout-total">£0.00</span></button>
   </div>
 </div>
+
+<!-- Toggle Harrington-only trust block (per-product opt-in) -->
+<script>
+  (function() {
+    var id = new URLSearchParams(window.location.search).get('id');
+    if (id === 'harrington-leather-trainers') {
+      var block = document.querySelector('[data-harrington-trust]');
+      if (block) block.hidden = false;
+    }
+  })();
+</script>
 </body>
 </html>
