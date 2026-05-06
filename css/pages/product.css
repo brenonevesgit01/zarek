@@ -1794,25 +1794,3 @@ html, body {
 body[data-product-id="harrington-leather-trainers"] .product-info { gap: 8px; }
 body[data-product-id="harrington-leather-trainers"] .product-info__name { margin-bottom: 0; }
 body[data-product-id="harrington-leather-trainers"] .product-info__divider { display: none; }
-
-@media (max-width: 768px) {
-  body {
-    overflow-x: hidden !important;
-    width: 100% !important;
-  }
-
-  .product-page,
-  .product-container,
-  .product-info,
-  .product-details,
-  .product-content,
-  .harrington-trust-block {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding-left: 16px !important;
-    padding-right: 16px !important;
-    box-sizing: border-box !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-}
