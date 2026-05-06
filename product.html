@@ -1176,6 +1176,11 @@
       if (harringtonGuide) harringtonGuide.hidden = false;
       var guideHeaderName = document.getElementById('size-guide-product-name');
       if (guideHeaderName) guideHeaderName.style.display = 'none';
+
+      // Hide the shared "In stock / Ready to Ship" indicator on Harrington —
+      // the trust block already shows a stock signal ("Only 4 pieces left").
+      var stockIndicator = document.querySelector('.stock-indicator');
+      if (stockIndicator) stockIndicator.style.display = 'none';
     }
   })();
 </script>
