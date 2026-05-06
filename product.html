@@ -442,56 +442,6 @@
                           </div>
                         </div>
 
-                        <!-- Harrington-only reviews slider (revealed by inline script) -->
-                        <div class="harrington-reviews" hidden>
-                          <h3 class="harrington-reviews-title">WHAT OUR CUSTOMERS SAY</h3>
-                          <div class="harrington-reviews-slider">
-
-                            <div class="harrington-review-card">
-                              <img src="https://nuviamoda.com/cdn/shop/files/Caja_sobre_cama_202604042227.jpg?v=1775352449&width=750" alt="Customer review">
-                              <div class="harrington-review-stars">★★★★★</div>
-                              <p class="harrington-review-text">"I don't usually buy trainers online but these completely surprised me. Exactly as shown in the photos and incredibly comfortable from day one."</p>
-                              <p class="harrington-review-author"><strong>James, London</strong></p>
-                            </div>
-
-                            <div class="harrington-review-card">
-                              <img src="https://nuviamoda.com/cdn/shop/files/Man_receiving_package_202604042103.jpg?v=1775348216&width=750" alt="Customer review">
-                              <div class="harrington-review-stars">★★★★★</div>
-                              <p class="harrington-review-text">"I love how they go with everything. I wear them with jeans, chinos, smarter looks — they always work. Incredibly versatile."</p>
-                              <p class="harrington-review-author"><strong>Oliver, Manchester</strong></p>
-                            </div>
-
-                            <div class="harrington-review-card">
-                              <img src="https://nuviamoda.com/cdn/shop/files/Man_receiving_package_202604042106.jpg?v=1775348239&width=750" alt="Customer review">
-                              <div class="harrington-review-stars">★★★★★</div>
-                              <p class="harrington-review-text">"I was looking for trainers I could wear every day without getting tired of them. These are exactly that — comfortable, light and easy to style."</p>
-                              <p class="harrington-review-author"><strong>Thomas, Birmingham</strong></p>
-                            </div>
-
-                            <div class="harrington-review-card">
-                              <img src="https://nuviamoda.com/cdn/shop/files/Woman_taking_photo_202604042107.jpg?v=1775348307&width=750" alt="Customer review">
-                              <div class="harrington-review-stars">★★★★★</div>
-                              <p class="harrington-review-text">"Really impressed by the quality for the price. They look premium, feel comfortable and the design is spot on. Definitely worth it."</p>
-                              <p class="harrington-review-author"><strong>Daniel, Edinburgh</strong></p>
-                            </div>
-
-                            <div class="harrington-review-card">
-                              <img src="https://nuviamoda.com/cdn/shop/files/Quiero_una_foto_202604042054.jpg?v=1775348162&width=750" alt="Customer review">
-                              <div class="harrington-review-stars">★★★★★</div>
-                              <p class="harrington-review-text">"First time ordering from Zarek and I was not disappointed. The trainers are smart, comfortable and exactly what I expected. Would order again."</p>
-                              <p class="harrington-review-author"><strong>George, Bristol</strong></p>
-                            </div>
-
-                            <div class="harrington-review-card">
-                              <img src="https://nuviamoda.com/cdn/shop/files/Person_receiving_shoe_202604042057.jpg?v=1775348195&width=750" alt="Customer review">
-                              <div class="harrington-review-stars">★★★★★</div>
-                              <p class="harrington-review-text">"One of those purchases that genuinely exceeded expectations. Great build, great look, great comfort. Highly recommend."</p>
-                              <p class="harrington-review-author"><strong>Harry, Leeds</strong></p>
-                            </div>
-
-                          </div>
-                        </div>
-
                         <div class="testimonials-section">
                           <h3 class="testimonials-title">WHAT OUR CUSTOMERS SAY</h3>
                           <div class="testimonials-slider">
@@ -1283,14 +1233,6 @@
       if (stockNotice) stockNotice.hidden = false;
       var featureBlock = document.querySelector('.harrington-feature-block');
       if (featureBlock) featureBlock.hidden = false;
-
-      // Hide the shared accordions (DESCRIPTION / SHIPPING & DELIVERY /
-      // RETURNS & REFUNDS / ANY QUESTIONS?) and surface the harrington
-      // reviews slider in their place.
-      var accordions = document.querySelector('.product-accordions');
-      if (accordions) accordions.style.display = 'none';
-      var reviews = document.querySelector('.harrington-reviews');
-      if (reviews) reviews.hidden = false;
     }
   })();
 </script>

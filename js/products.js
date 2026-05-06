@@ -3895,6 +3895,60 @@
                 related = related.slice(0, 8);
                 relatedGrid.innerHTML = related.map((rp) => cardHTML(rp, 'collection')).join('');
             }
+
+            // ---- Harrington-only: hide the shared product accordions
+            // (DESCRIPTION / SHIPPING / RETURNS / QUESTIONS) and inject a
+            // photo-review slider in their place. Other products keep the
+            // default accordions untouched.
+            if (p.id === 'harrington-leather-trainers') {
+                const accordions = document.querySelector('.product-accordions');
+                if (accordions) {
+                    accordions.style.display = 'none';
+                    const harringtonReviews = ''
+                        + '<div class="harrington-reviews">'
+                        +   '<h3 class="harrington-reviews-title">WHAT OUR CUSTOMERS SAY</h3>'
+                        +   '<div class="harrington-reviews-slider">'
+                        +     '<div class="harrington-review-card">'
+                        +       '<img src="https://nuviamoda.com/cdn/shop/files/Caja_sobre_cama_202604042227.jpg?v=1775352449&width=750" alt="Customer review">'
+                        +       '<div class="harrington-review-stars">★★★★★</div>'
+                        +       '<p class="harrington-review-text">"I don\'t usually buy trainers online but these completely surprised me. Exactly as shown and incredibly comfortable from day one."</p>'
+                        +       '<p class="harrington-review-author"><strong>James, London</strong></p>'
+                        +     '</div>'
+                        +     '<div class="harrington-review-card">'
+                        +       '<img src="https://nuviamoda.com/cdn/shop/files/Man_receiving_package_202604042103.jpg?v=1775348216&width=750" alt="Customer review">'
+                        +       '<div class="harrington-review-stars">★★★★★</div>'
+                        +       '<p class="harrington-review-text">"I love how they go with everything — jeans, chinos, smarter looks. They always work. Incredibly versatile."</p>'
+                        +       '<p class="harrington-review-author"><strong>Oliver, Manchester</strong></p>'
+                        +     '</div>'
+                        +     '<div class="harrington-review-card">'
+                        +       '<img src="https://nuviamoda.com/cdn/shop/files/Man_receiving_package_202604042106.jpg?v=1775348239&width=750" alt="Customer review">'
+                        +       '<div class="harrington-review-stars">★★★★★</div>'
+                        +       '<p class="harrington-review-text">"Comfortable, light and easy to style. Exactly what I was looking for to wear every day."</p>'
+                        +       '<p class="harrington-review-author"><strong>Thomas, Birmingham</strong></p>'
+                        +     '</div>'
+                        +     '<div class="harrington-review-card">'
+                        +       '<img src="https://nuviamoda.com/cdn/shop/files/Woman_taking_photo_202604042107.jpg?v=1775348307&width=750" alt="Customer review">'
+                        +       '<div class="harrington-review-stars">★★★★★</div>'
+                        +       '<p class="harrington-review-text">"Really impressed by the quality for the price. They look premium and the design is spot on."</p>'
+                        +       '<p class="harrington-review-author"><strong>Daniel, Edinburgh</strong></p>'
+                        +     '</div>'
+                        +     '<div class="harrington-review-card">'
+                        +       '<img src="https://nuviamoda.com/cdn/shop/files/Quiero_una_foto_202604042054.jpg?v=1775348162&width=750" alt="Customer review">'
+                        +       '<div class="harrington-review-stars">★★★★★</div>'
+                        +       '<p class="harrington-review-text">"First time ordering from Zarek and I was not disappointed. Smart, comfortable, exactly what I expected."</p>'
+                        +       '<p class="harrington-review-author"><strong>George, Bristol</strong></p>'
+                        +     '</div>'
+                        +     '<div class="harrington-review-card">'
+                        +       '<img src="https://nuviamoda.com/cdn/shop/files/Person_receiving_shoe_202604042057.jpg?v=1775348195&width=750" alt="Customer review">'
+                        +       '<div class="harrington-review-stars">★★★★★</div>'
+                        +       '<p class="harrington-review-text">"One of those purchases that genuinely exceeded expectations. Great build, great look, great comfort."</p>'
+                        +       '<p class="harrington-review-author"><strong>Harry, Leeds</strong></p>'
+                        +     '</div>'
+                        +   '</div>'
+                        + '</div>';
+                    accordions.insertAdjacentHTML('afterend', harringtonReviews);
+                }
+            }
         }
     }
 })();
