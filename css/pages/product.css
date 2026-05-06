@@ -1886,16 +1886,18 @@ body[data-product-id="harrington-leather-trainers"] .product-info__divider { dis
 }
 
 .harrington-feature-text-top h3 {
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 22px;
+  font-weight: 600;
   color: #111;
-  margin: 0 0 12px 0;
+  margin: 0 0 14px 0;
+  text-align: left;
+  letter-spacing: 0;
 }
 
 .harrington-feature-text-top p {
-  font-size: 14px;
+  font-size: 15px;
   color: #333;
-  line-height: 1.7;
+  line-height: 1.8;
   text-align: center;
   margin: 0;
 }
