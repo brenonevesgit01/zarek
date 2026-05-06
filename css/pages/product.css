@@ -1934,20 +1934,99 @@ body[data-product-id="harrington-leather-trainers"] .product-info__divider { dis
   margin: 0;
 }
 
-.harrington-reviews{margin-top:32px;width:100%}
-.harrington-reviews-title{font-size:14px;font-weight:700;letter-spacing:2px;text-align:center;color:#111;margin:0 0 20px}
-.harrington-reviews-slider{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:12px;scrollbar-width:none}
-.harrington-reviews-slider::-webkit-scrollbar{display:none}
-.harrington-review-card{min-width:260px;max-width:260px;background:#fff;border:1px solid #eee;border-radius:8px;overflow:hidden;scroll-snap-align:start;flex-shrink:0}
-.harrington-review-stars{color:#f4a900;font-size:16px;padding:12px 14px 4px}
-.harrington-review-text{font-size:13px;color:#333;line-height:1.6;padding:0 14px 8px;margin:0}
-.harrington-review-author{font-size:13px;color:#111;padding:0 14px 14px;margin:0}
+.harrington-reviews {
+  margin-top: 32px;
+  width: 100%;
+}
+
+.harrington-reviews-title {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #111;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+}
+
+.harrington-reviews-slider {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 0 16px 0;
+  scrollbar-width: none;
+}
+
+.harrington-reviews-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.harrington-review-card {
+  min-width: calc(100% - 40px);
+  max-width: calc(100% - 40px);
+  background: #faf9f7;
+  border-radius: 16px;
+  overflow: hidden;
+  scroll-snap-align: center;
+  flex-shrink: 0;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
 
 .harrington-review-card img {
-  width: 100%;
+  width: 80%;
   height: 280px;
   object-fit: cover;
   display: block;
+  border-radius: 12px;
+  margin: 20px auto 16px;
+}
+
+.harrington-review-stars {
+  color: #c8a96e;
+  font-size: 20px;
+  padding: 0 20px 8px;
+  display: block;
+}
+
+.harrington-review-text {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.7;
+  padding: 0 24px 10px;
+  margin: 0;
+  text-align: center;
+}
+
+.harrington-review-author {
+  font-size: 14px;
+  color: #111;
+  padding: 0 24px;
+  margin: 0;
+  text-align: center;
+}
+
+.harrington-review-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.harrington-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ddd;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.harrington-dot.active {
+  background: #111;
 }
 
 .harrington-feature-img {
