@@ -2057,7 +2057,7 @@ body[data-product-id="harrington-leather-trainers"] .product-info__divider { dis
 .product-announcement-track {
   display: inline-flex;
   gap: 80px;
-  animation: productAnnouncementScroll 10s linear infinite;
+  animation: productAnnouncementScroll 20s linear infinite;
 }
 
 .product-announcement-track span {
