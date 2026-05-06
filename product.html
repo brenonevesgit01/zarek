@@ -169,7 +169,7 @@
 
                           <!-- Social proof -->
                           <div class="harrington-social-proof">
-                            <img src="https://olympuslondon.com/cdn/shop/files/rachel.png" alt="Rachel K." class="harrington-avatar" onerror="this.style.display='none'">
+                            <img src="https://olympuslondon.com/cdn/shop/files/rachel.png" alt="Rachel K." class="harrington-avatar" style="max-width:100%;height:auto;" onerror="this.style.display='none'">
                             <p><strong>Rachel K.</strong> <span class="verified-badge">✔</span> and <strong>7k+ other customers</strong><br>love and recommend <strong>Zarek</strong></p>
                           </div>
 
@@ -364,7 +364,7 @@
                             <p>Crafted from <strong>premium leather</strong> with reinforced stitching, the Harrington Leather Trainers offer <strong>lightweight comfort</strong> and <strong>lasting durability</strong>. Their cushioned insole provides <strong>smooth support</strong>, while the clean low-top silhouette brings effortless <strong>versatility</strong> to both streetwear and smart-casual looks.</p>
                           </div>
 
-                          <img src="assets/products/shoes/black-sneaker-1.webp" alt="Harrington Leather Trainers" class="harrington-feature-img">
+                          <img src="assets/products/shoes/black-sneaker-1.webp" alt="Harrington Leather Trainers" class="harrington-feature-img" style="max-width:100%;height:auto;">
 
                           <div class="harrington-feature-list">
                             <ul>
@@ -1246,7 +1246,7 @@
           +     product.reviews.map(function(r) {
                   return ''
                     + '<div class="harrington-review-card">'
-                    +   '<img src="' + r.img + '" alt="Customer review">'
+                    +   '<img src="' + r.img + '" alt="Customer review" style="max-width:100%;height:auto;">'
                     +   '<div class="harrington-review-stars">★★★★★</div>'
                     +   '<p class="harrington-review-text">"' + r.text + '"</p>'
                     +   '<p class="harrington-review-author"><strong>' + r.author + '</strong></p>'
@@ -1258,6 +1258,12 @@
         if (accordions) accordions.outerHTML = reviewsHTML;
         else document.querySelector('[data-product-id="harrington-leather-trainers"] .product-info').insertAdjacentHTML('beforeend', reviewsHTML);
       }
+
+      // Delete the shared .testimonials-section (Marcus / Daniel / James /
+      // Thomas / Oliver) only on the harrington page — it duplicates the
+      // 'WHAT OUR CUSTOMERS SAY' header.
+      var oldTestimonials = document.querySelector('[data-product-id="harrington-leather-trainers"] .testimonials-section');
+      if (oldTestimonials) oldTestimonials.outerHTML = '';
     }
   })();
 </script>
