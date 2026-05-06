@@ -1079,6 +1079,8 @@
   (function() {
     var id = new URLSearchParams(window.location.search).get('id');
     if (id === 'harrington-leather-trainers') {
+      // Tag the body so per-product CSS rules can scope title/divider tweaks.
+      document.body.setAttribute('data-product-id', id);
       var block = document.querySelector('[data-harrington-trust]');
       if (block) block.hidden = false;
       // Hide the original .product-price block — the trust block already
