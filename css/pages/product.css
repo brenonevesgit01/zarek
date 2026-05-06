@@ -1681,10 +1681,13 @@ html, body {
    Toggled visible by inline script in product.html when ?id=harrington-leather-trainers.
    ========================================================================== */
 .harrington-trust-block {
-  padding: 16px 0;
-  border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
-  margin: 16px 0;
+  border-top: none;
+  border-bottom: none;
+  padding: 0;
+  margin: 12px 0;
+}
+.harrington-trust-block > * {
+  border: none;
 }
 
 .harrington-social-proof {
@@ -1746,10 +1749,10 @@ html, body {
 .harrington-trust-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 14px 0;
+  margin: 0 0 10px 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
 }
 
 .harrington-trust-list li {
