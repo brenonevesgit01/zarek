@@ -357,6 +357,21 @@
                           <p><strong>SALE UPDATE:</strong> Due to high order volume, our stock is very limited... If you are still able to press the 'Add to Cart' button, there's still some stock left!</p>
                         </div>
 
+                        <!-- Harrington-only feature block (revealed by inline script) -->
+                        <div class="harrington-feature-block" hidden>
+                          <img src="assets/products/shoes/black-sneaker-1.webp" alt="Harrington Leather Trainers" class="harrington-feature-img">
+
+                          <div class="harrington-feature-text">
+                            <ul>
+                              <li><strong>Premium Leather:</strong> Smooth, durable, and designed for everyday use</li>
+                              <li><strong>Reinforced Stitching:</strong> Strengthens the structure for long-lasting wear</li>
+                              <li><strong>Cushioned Insole:</strong> Soft comfort that supports you throughout the day</li>
+                              <li><strong>Low-Top Silhouette:</strong> A timeless profile that pairs with any outfit</li>
+                            </ul>
+                            <p>Elevate your footwear rotation with trainers that blend durability, comfort, and classic style.</p>
+                          </div>
+                        </div>
+
                         <div class="trust-badges">
                           <div class="trust-badge">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
@@ -1211,6 +1226,8 @@
       if (promoBanner) promoBanner.style.display = 'none';
       var stockNotice = document.querySelector('.harrington-stock-notice');
       if (stockNotice) stockNotice.hidden = false;
+      var featureBlock = document.querySelector('.harrington-feature-block');
+      if (featureBlock) featureBlock.hidden = false;
     }
   })();
 </script>
