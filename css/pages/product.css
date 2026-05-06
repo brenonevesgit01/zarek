@@ -2040,4 +2040,33 @@ body[data-product-id="harrington-leather-trainers"] .product-info__divider { dis
   object-fit: cover !important;
 }
 
+.product-announcement-bar {
+  background: #111;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+
+.product-announcement-track {
+  display: inline-flex;
+  gap: 80px;
+  animation: productAnnouncementScroll 10s linear infinite;
+}
+
+.product-announcement-track span {
+  flex-shrink: 0;
+}
+
+@keyframes productAnnouncementScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 
