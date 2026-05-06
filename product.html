@@ -224,28 +224,29 @@
                             <div class="variant__options" data-size-options>
                                 <!-- Rendered by js/products.js -->
                             </div>
-                            <!-- Harrington-only UK size dropdown (revealed by inline script at end of body) -->
-                            <select id="harrington-size-input" name="size" hidden>
-                              <option value="">Select a size</option>
-                              <option value="UK 3.5">UK 3.5</option>
-                              <option value="UK 4">UK 4</option>
-                              <option value="UK 4.5">UK 4.5</option>
-                              <option value="UK 5">UK 5</option>
-                              <option value="UK 5.5">UK 5.5</option>
-                              <option value="UK 6">UK 6</option>
-                              <option value="UK 6.5">UK 6.5</option>
-                              <option value="UK 7">UK 7</option>
-                              <option value="UK 7.5">UK 7.5</option>
-                              <option value="UK 8">UK 8</option>
-                              <option value="UK 8.5">UK 8.5</option>
-                              <option value="UK 9">UK 9</option>
-                              <option value="UK 9.5">UK 9.5</option>
-                              <option value="UK 10">UK 10</option>
-                              <option value="UK 10.5">UK 10.5</option>
-                              <option value="UK 11">UK 11</option>
-                              <option value="UK 11.5">UK 11.5</option>
-                              <option value="UK 12">UK 12</option>
-                            </select>
+                            <!-- Harrington-only UK size label + grid (revealed by inline script at end of body) -->
+                            <p class="size-label" id="harrington-size-label-row" hidden>SIZE: <span id="harrington-size-label">-</span></p>
+                            <div class="size-grid" id="harrington-size-grid" hidden>
+                              <button class="size-btn" data-size="UK 3.5">UK 3.5</button>
+                              <button class="size-btn" data-size="UK 4">UK 4</button>
+                              <button class="size-btn" data-size="UK 4.5">UK 4.5</button>
+                              <button class="size-btn" data-size="UK 5">UK 5</button>
+                              <button class="size-btn" data-size="UK 5.5">UK 5.5</button>
+                              <button class="size-btn" data-size="UK 6">UK 6</button>
+                              <button class="size-btn" data-size="UK 6.5">UK 6.5</button>
+                              <button class="size-btn" data-size="UK 7">UK 7</button>
+                              <button class="size-btn" data-size="UK 7.5">UK 7.5</button>
+                              <button class="size-btn" data-size="UK 8">UK 8</button>
+                              <button class="size-btn" data-size="UK 8.5">UK 8.5</button>
+                              <button class="size-btn" data-size="UK 9">UK 9</button>
+                              <button class="size-btn" data-size="UK 9.5">UK 9.5</button>
+                              <button class="size-btn" data-size="UK 10">UK 10</button>
+                              <button class="size-btn" data-size="UK 10.5">UK 10.5</button>
+                              <button class="size-btn" data-size="UK 11">UK 11</button>
+                              <button class="size-btn" data-size="UK 11.5">UK 11.5</button>
+                              <button class="size-btn" data-size="UK 12">UK 12</button>
+                            </div>
+                            <input type="hidden" id="harrington-size-input" name="size" value="">
                         </div>
 
                         <p class="size-guide-link"><a href="#" id="open-size-guide">What's my size?</a></p>
@@ -1110,11 +1111,26 @@
       var origPrice = document.querySelector('.product-price');
       if (origPrice) origPrice.style.display = 'none';
 
-      // Replace the auto-rendered size options with the UK size dropdown.
+      // Replace the auto-rendered size options + label with the UK size grid.
       var autoSizes = document.querySelector('[data-size-options]');
       if (autoSizes) autoSizes.style.display = 'none';
-      var dropdown = document.getElementById('harrington-size-input');
-      if (dropdown) dropdown.hidden = false;
+      var origSizeLabel = document.querySelector('[data-size-block] .variant__label');
+      if (origSizeLabel) origSizeLabel.style.display = 'none';
+      var labelRow = document.getElementById('harrington-size-label-row');
+      if (labelRow) labelRow.hidden = false;
+      var grid = document.getElementById('harrington-size-grid');
+      if (grid) grid.hidden = false;
+      document.querySelectorAll('#harrington-size-grid .size-btn').forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          document.querySelectorAll('#harrington-size-grid .size-btn').forEach(function(b) {
+            b.classList.remove('selected');
+          });
+          this.classList.add('selected');
+          document.getElementById('harrington-size-input').value = this.dataset.size;
+          document.getElementById('harrington-size-label').textContent = this.dataset.size;
+        });
+      });
     }
   })();
 </script>

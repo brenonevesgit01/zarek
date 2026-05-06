@@ -1812,3 +1812,31 @@ body[data-product-id="harrington-leather-trainers"] .product-info__divider { dis
   white-space: nowrap !important;
 }
 
+.size-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.size-btn {
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 10px 4px;
+  font-size: 13px;
+  font-family: inherit;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.15s ease;
+  color: #111;
+}
+
+.size-btn:hover {
+  border-color: #111;
+}
+
+.size-btn.selected {
+  border: 2px solid #111;
+  font-weight: 600;
+}
+
