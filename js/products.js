@@ -3201,7 +3201,7 @@
             id: 'geometric-sunglasses',
             name: 'Zarek | Geometric Metal Frame Sunglasses Double Bridge',
             category: 'glasses',
-            price: 39.95,
+            price: 37.90,
             originalPrice: 79.90,
             badge: 'SALE',
             images: [
@@ -3225,8 +3225,8 @@
             id: 'rectangular-sunglasses',
             name: 'Zarek | Rectangular Slim Metal Frame Sunglasses Tinted',
             category: 'glasses',
-            price: 39.95,
-            originalPrice: 79.90,
+            price: 32.90,
+            originalPrice: 69.90,
             badge: 'SALE',
             images: [
                 'assets/products/4968c969b3d5.webp',
@@ -3245,8 +3245,8 @@
             id: 'sunglasses-round-frame-dark-tinted',
             name: 'Zarek | Sunglasses Round Frame',
             category: 'glasses',
-            price: 39.95,
-            originalPrice: 79.90,
+            price: 27.90,
+            originalPrice: 59.90,
             badge: 'SALE',
             colorVariants: [
                 { name: 'Black', images: [
@@ -3261,8 +3261,8 @@
             id: 'sunglasses-square-frame-gold-detail',
             name: 'Zarek | Sunglasses Square Gold',
             category: 'glasses',
-            price: 39.95,
-            originalPrice: 79.90,
+            price: 44.90,
+            originalPrice: 89.90,
             badge: 'SALE',
             colorVariants: [
                 { name: 'Blue Marble', images: [
@@ -3335,8 +3335,8 @@
             id: 'sunglasses-square-full-rim-tinted',
             name: 'Zarek | Sunglasses Square Full-Rim',
             category: 'glasses',
-            price: 39.95,
-            originalPrice: 59.95,
+            price: 24.90,
+            originalPrice: 49.90,
             badge: 'SALE',
             colorVariants: [
                 { name: 'Silver / Blue', images: [
@@ -3387,8 +3387,8 @@
             id: 'sunglasses-geometric-metal-double-bridge',
             name: 'Zarek | Sunglasses Geometric Double Bridge',
             category: 'glasses',
-            price: 39.95,
-            originalPrice: 79.90,
+            price: 42.90,
+            originalPrice: 84.90,
             badge: 'SALE',
             colorVariants: [
                 { name: 'Silver Pink', images: [
@@ -3426,8 +3426,8 @@
             id: 'sunglasses-rectangular-slim-metal-frame',
             name: 'Zarek | Sunglasses Rectangular Slim',
             category: 'glasses',
-            price: 39.95,
-            originalPrice: 79.90,
+            price: 29.90,
+            originalPrice: 64.90,
             badge: 'SALE',
             colorVariants: [
                 { name: 'Sliver Blue', images: [
