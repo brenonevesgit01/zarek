@@ -125,6 +125,143 @@
     }
 
     // ----------------------------------------------------------------------
+    // CART DRAWER — slide-in from the right, opens via ZAREK_CART.open().
+    // Self-injects HTML + CSS on first call so it works on any page that
+    // loads cart.js (no need for per-page markup).
+    // ----------------------------------------------------------------------
+    function ensureDrawer() {
+        if (document.getElementById('zarek-cart-drawer')) return;
+
+        const css = ''
+            + '#zarek-cart-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.45);z-index:9998;opacity:0;visibility:hidden;transition:opacity .25s ease,visibility .25s ease}'
+            + '#zarek-cart-overlay.active{opacity:1;visibility:visible}'
+            + '#zarek-cart-drawer{position:fixed;top:0;right:-420px;width:420px;max-width:100vw;height:100%;background:#fff;z-index:9999;display:flex;flex-direction:column;transition:right .35s ease;box-shadow:-4px 0 24px rgba(0,0,0,0.08)}'
+            + '#zarek-cart-drawer.active{right:0}'
+            + '.zcd-head{display:flex;justify-content:space-between;align-items:center;padding:20px 20px 16px;border-bottom:1px solid #eee}'
+            + '.zcd-title{font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin:0}'
+            + '.zcd-close{background:none;border:none;font-size:22px;cursor:pointer;color:#111;line-height:1;padding:4px 8px}'
+            + '.zcd-body{flex:1;overflow-y:auto;padding:0 20px}'
+            + '.zcd-empty{text-align:center;padding:48px 12px;color:#666;font-size:14px}'
+            + '.zcd-empty a{color:#111;text-decoration:underline}'
+            + '.zcd-item{display:flex;gap:12px;padding:16px 0;border-bottom:1px solid #f0f0f0}'
+            + '.zcd-item img{width:72px;height:72px;object-fit:cover;border-radius:4px;flex-shrink:0;background:#f5f5f5}'
+            + '.zcd-item-meta{flex:1;min-width:0;display:flex;flex-direction:column;gap:4px}'
+            + '.zcd-item-name{font-size:13px;font-weight:600;color:#111;line-height:1.3;margin:0;text-decoration:none}'
+            + '.zcd-item-variant{font-size:11px;color:#666}'
+            + '.zcd-item-row{display:flex;justify-content:space-between;align-items:center;margin-top:6px}'
+            + '.zcd-qty{display:inline-flex;align-items:center;border:1px solid #ddd;border-radius:4px;overflow:hidden}'
+            + '.zcd-qty button{width:26px;height:26px;background:none;border:none;cursor:pointer;font-size:14px;color:#111;display:flex;align-items:center;justify-content:center}'
+            + '.zcd-qty button:hover{background:#f5f5f5}'
+            + '.zcd-qty span{min-width:28px;text-align:center;font-size:13px;font-weight:600}'
+            + '.zcd-item-price{font-size:13px;font-weight:600;color:#111}'
+            + '.zcd-item-remove{background:none;border:none;color:#999;font-size:11px;cursor:pointer;padding:0;margin-top:4px;text-align:left;text-decoration:underline;align-self:flex-start}'
+            + '.zcd-item-remove:hover{color:#c00}'
+            + '.zcd-foot{border-top:1px solid #eee;padding:16px 20px 20px}'
+            + '.zcd-subtotal{display:flex;justify-content:space-between;align-items:center;font-size:14px;font-weight:600;color:#111;margin-bottom:12px}'
+            + '.zcd-subtotal-amount{font-size:16px}'
+            + '.zcd-checkout{display:block;width:100%;background:#111;color:#fff;border:none;padding:14px;font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;text-align:center;text-decoration:none}'
+            + '.zcd-checkout:hover{background:#000}'
+            + '.zcd-view-cart{display:block;text-align:center;margin-top:10px;font-size:12px;color:#666;text-decoration:underline}'
+            + 'body.zcd-open{overflow:hidden}';
+
+        const style = document.createElement('style');
+        style.id = 'zarek-cart-drawer-styles';
+        style.textContent = css;
+        document.head.appendChild(style);
+
+        const overlay = document.createElement('div');
+        overlay.id = 'zarek-cart-overlay';
+        overlay.addEventListener('click', closeDrawer);
+        document.body.appendChild(overlay);
+
+        const drawer = document.createElement('aside');
+        drawer.id = 'zarek-cart-drawer';
+        drawer.setAttribute('aria-label', 'Cart');
+        drawer.innerHTML = ''
+            + '<div class="zcd-head">'
+            +   '<h3 class="zcd-title">Your Cart</h3>'
+            +   '<button type="button" class="zcd-close" aria-label="Close cart">×</button>'
+            + '</div>'
+            + '<div class="zcd-body" data-zcd-body></div>'
+            + '<div class="zcd-foot">'
+            +   '<div class="zcd-subtotal"><span>Subtotal</span><span class="zcd-subtotal-amount" data-zcd-subtotal>£0.00</span></div>'
+            +   '<a class="zcd-checkout" href="checkout.html">Checkout</a>'
+            +   '<a class="zcd-view-cart" href="cart.html">View full cart</a>'
+            + '</div>';
+        document.body.appendChild(drawer);
+
+        drawer.querySelector('.zcd-close').addEventListener('click', closeDrawer);
+    }
+
+    function renderDrawer() {
+        ensureDrawer();
+        const body = document.querySelector('[data-zcd-body]');
+        const subEl = document.querySelector('[data-zcd-subtotal]');
+        if (!body || !subEl) return;
+
+        if (cart.length === 0) {
+            body.innerHTML = '<div class="zcd-empty">Your cart is empty.<br><a href="collection.html">Continue shopping</a></div>';
+        } else {
+            body.innerHTML = cart.map((item, idx) => {
+                const variant = [
+                    item.color ? item.color : '',
+                    item.size ? 'Size ' + item.size : ''
+                ].filter(Boolean).join(' · ');
+                return ''
+                    + '<div class="zcd-item">'
+                    +   '<img src="' + (item.img || '') + '" alt="' + (item.name || '') + '">'
+                    +   '<div class="zcd-item-meta">'
+                    +     '<a class="zcd-item-name" href="product.html?id=' + encodeURIComponent(item.id || '') + '">' + (item.name || '') + '</a>'
+                    +     (variant ? '<span class="zcd-item-variant">' + variant + '</span>' : '')
+                    +     '<div class="zcd-item-row">'
+                    +       '<div class="zcd-qty">'
+                    +         '<button type="button" data-zcd-dec="' + idx + '" aria-label="Decrease">−</button>'
+                    +         '<span>' + item.qty + '</span>'
+                    +         '<button type="button" data-zcd-inc="' + idx + '" aria-label="Increase">+</button>'
+                    +       '</div>'
+                    +       '<span class="zcd-item-price">' + formatPrice(item.price * item.qty) + '</span>'
+                    +     '</div>'
+                    +     '<button type="button" class="zcd-item-remove" data-zcd-rm="' + idx + '">Remove</button>'
+                    +   '</div>'
+                    + '</div>';
+            }).join('');
+
+            body.querySelectorAll('[data-zcd-inc]').forEach((b) => b.addEventListener('click', () => {
+                const i = parseInt(b.dataset.zcdInc, 10);
+                if (cart[i] && cart[i].qty < 99) cart[i].qty++;
+                saveCart(cart); renderDrawer(); updateBadge(); renderCartPage();
+            }));
+            body.querySelectorAll('[data-zcd-dec]').forEach((b) => b.addEventListener('click', () => {
+                const i = parseInt(b.dataset.zcdDec, 10);
+                if (cart[i] && cart[i].qty > 1) cart[i].qty--;
+                saveCart(cart); renderDrawer(); updateBadge(); renderCartPage();
+            }));
+            body.querySelectorAll('[data-zcd-rm]').forEach((b) => b.addEventListener('click', () => {
+                cart.splice(parseInt(b.dataset.zcdRm, 10), 1);
+                saveCart(cart); renderDrawer(); updateBadge(); renderCartPage();
+            }));
+        }
+
+        subEl.textContent = formatPrice(getSubtotal(cart));
+    }
+
+    function openDrawer() {
+        ensureDrawer();
+        renderDrawer();
+        document.getElementById('zarek-cart-overlay').classList.add('active');
+        document.getElementById('zarek-cart-drawer').classList.add('active');
+        document.body.classList.add('zcd-open');
+    }
+
+    function closeDrawer() {
+        const overlay = document.getElementById('zarek-cart-overlay');
+        const drawer = document.getElementById('zarek-cart-drawer');
+        if (overlay) overlay.classList.remove('active');
+        if (drawer) drawer.classList.remove('active');
+        document.body.classList.remove('zcd-open');
+    }
+
+    // ----------------------------------------------------------------------
     // PUBLIC API — used by the homepage featured Add-to-Cart button.
     // ----------------------------------------------------------------------
     window.ZAREK_CART = {
@@ -136,9 +273,12 @@
             else cart.push(Object.assign({ qty: 1 }, item));
             saveCart(cart);
             updateBadge();
+            renderCartPage();
         },
         get: function () { return cart.slice(); },
-        clear: function () { cart = []; saveCart(cart); updateBadge(); renderCartPage(); }
+        clear: function () { cart = []; saveCart(cart); updateBadge(); renderCartPage(); renderDrawer(); },
+        open: openDrawer,
+        close: closeDrawer
     };
 
     // Init

@@ -642,7 +642,10 @@
               size: '',
               img: img
             });
-            window.location.href = 'cart.html';
+            // Open the slide-in cart drawer instead of navigating away.
+            if (typeof window.ZAREK_CART.open === 'function') {
+              window.ZAREK_CART.open();
+            }
           } else {
             // Fallback if cart.js failed to load — go to product detail page.
             window.location.href = 'product.html?id=geometric-sunglasses';
