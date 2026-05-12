@@ -112,12 +112,15 @@
              1. HERO BANNER — full-width, 90vh, image w/ dark overlay
              ================================================================= -->
         <section class="hero">
-            <img
-                class="hero__media"
-                src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=1400"
-                alt=""
-                loading="eager"
-            >
+            <picture>
+                <source media="(max-width: 768px)" srcset="assets/images/hero-mobile.png">
+                <img
+                    class="hero__media"
+                    src="assets/images/hero-desktop.png"
+                    alt=""
+                    loading="eager"
+                >
+            </picture>
             <div class="hero__overlay" aria-hidden="true"></div>
             <div class="hero__content">
                 <span class="hero__badge">Spring Sale</span>
