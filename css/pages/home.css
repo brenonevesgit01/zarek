@@ -1117,6 +1117,12 @@
         height: auto;
         aspect-ratio: 1 / 1;
     }
+
+    /* Hide the 7th category card on mobile so the 6 remaining cards
+       fill 3 perfect rows of 2 (no orphan card hanging at the end). */
+    .category-card--hide-mobile {
+        display: none;
+    }
 }
 
 /* SMALL MOBILE — below 480 */
